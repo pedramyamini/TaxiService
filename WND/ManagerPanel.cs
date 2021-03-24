@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using WND.Car;
+using WND.Driver;
 using WND.Secretary;
 using WND.Utility;
 
@@ -49,6 +51,17 @@ namespace WND
             this.Hide();
             new AddSecretary().Show();
         }
-        
+
+        private void AddDriver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AddDriver().Show();
+        }
+
+        private void EditCar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new EditCar().Show();
+        }
     }
 }

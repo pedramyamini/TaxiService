@@ -77,6 +77,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DriverMap.cs" />
     <Compile Include="Forms\Backup-Restore\Backup-Restore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,12 +89,6 @@
     </Compile>
     <Compile Include="Forms\Call-SMS\Call.Designer.cs">
       <DependentUpon>Call.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Car\AddCar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Car\AddCar.Designer.cs">
-      <DependentUpon>AddCar.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Car\DeleteCar.cs">
       <SubType>Form</SubType>
@@ -138,48 +133,22 @@
     <Compile Include="ManagerPanel.Designer.cs">
       <DependentUpon>ManagerPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103022259588_mig1.cs" />
-    <Compile Include="Migrations\202103022259588_mig1.designer.cs">
-      <DependentUpon>202103022259588_mig1.cs</DependentUpon>
+    <Compile Include="Migrations\202103231952253_migAddDriverCar.cs" />
+    <Compile Include="Migrations\202103231952253_migAddDriverCar.designer.cs">
+      <DependentUpon>202103231952253_migAddDriverCar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103022343252_mig2.cs" />
-    <Compile Include="Migrations\202103022343252_mig2.designer.cs">
-      <DependentUpon>202103022343252_mig2.cs</DependentUpon>
+    <Compile Include="Migrations\202103240647590_DropPhoneColumnFromUsersTable.cs" />
+    <Compile Include="Migrations\202103240647590_DropPhoneColumnFromUsersTable.designer.cs">
+      <DependentUpon>202103240647590_DropPhoneColumnFromUsersTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103022353543_mig3.cs" />
-    <Compile Include="Migrations\202103022353543_mig3.designer.cs">
-      <DependentUpon>202103022353543_mig3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103031101014_mig4.cs" />
-    <Compile Include="Migrations\202103031101014_mig4.designer.cs">
-      <DependentUpon>202103031101014_mig4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103031106306_mig5.cs" />
-    <Compile Include="Migrations\202103031106306_mig5.designer.cs">
-      <DependentUpon>202103031106306_mig5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103031206433_mig6.cs" />
-    <Compile Include="Migrations\202103031206433_mig6.designer.cs">
-      <DependentUpon>202103031206433_mig6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103031511539_mig7.cs" />
-    <Compile Include="Migrations\202103031511539_mig7.designer.cs">
-      <DependentUpon>202103031511539_mig7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103031558473_mig8.cs" />
-    <Compile Include="Migrations\202103031558473_mig8.designer.cs">
-      <DependentUpon>202103031558473_mig8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103032220499_mig9.cs" />
-    <Compile Include="Migrations\202103032220499_mig9.designer.cs">
-      <DependentUpon>202103032220499_mig9.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103081859412_mig10.cs" />
-    <Compile Include="Migrations\202103081859412_mig10.designer.cs">
-      <DependentUpon>202103081859412_mig10.cs</DependentUpon>
+    <Compile Include="Migrations\202103240715516_DropDriversTable.cs" />
+    <Compile Include="Migrations\202103240715516_DropDriversTable.designer.cs">
+      <DependentUpon>202103240715516_DropDriversTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AuthenticatedUser.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Driver.cs" />
     <Compile Include="Models\Roles\Roles.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Forms\Path\AddPath.cs">
@@ -272,9 +241,6 @@
     <EmbeddedResource Include="Forms\Call-SMS\Call.resx">
       <DependentUpon>Call.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Car\AddCar.resx">
-      <DependentUpon>AddCar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Car\DeleteCar.resx">
       <DependentUpon>DeleteCar.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,33 +261,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerPanel.resx">
       <DependentUpon>ManagerPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103022259588_mig1.resx">
-      <DependentUpon>202103022259588_mig1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103022343252_mig2.resx">
-      <DependentUpon>202103022343252_mig2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103022353543_mig3.resx">
-      <DependentUpon>202103022353543_mig3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103031101014_mig4.resx">
-      <DependentUpon>202103031101014_mig4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103031106306_mig5.resx">
-      <DependentUpon>202103031106306_mig5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103031206433_mig6.resx">
-      <DependentUpon>202103031206433_mig6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103031511539_mig7.resx">
-      <DependentUpon>202103031511539_mig7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103031558473_mig8.resx">
-      <DependentUpon>202103031558473_mig8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103032220499_mig9.resx">
-      <DependentUpon>202103032220499_mig9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Path\AddPath.resx">
       <DependentUpon>AddPath.cs</DependentUpon>
@@ -350,8 +289,14 @@
     <EmbeddedResource Include="Forms\Services\DeleteService.resx">
       <DependentUpon>DeleteService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103081859412_mig10.resx">
-      <DependentUpon>202103081859412_mig10.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103231952253_migAddDriverCar.resx">
+      <DependentUpon>202103231952253_migAddDriverCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103240647590_DropPhoneColumnFromUsersTable.resx">
+      <DependentUpon>202103240647590_DropPhoneColumnFromUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103240715516_DropDriversTable.resx">
+      <DependentUpon>202103240715516_DropDriversTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordForgetion.resx">
       <DependentUpon>PasswordForgetion.cs</DependentUpon>
@@ -403,13 +348,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BehComponents.dll" />
-    <Content Include="TaxiService.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TaxiService_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>TaxiService.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\phone-call.png" />

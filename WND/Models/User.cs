@@ -16,7 +16,6 @@ namespace WND.Models
 
         public string Mobile { get; set; }
 
-        public string Phone { get; set; }
 
         public Roles Role { get; set; }
 
