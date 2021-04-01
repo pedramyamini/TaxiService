@@ -108,7 +108,7 @@ namespace WND
             //Search
             if(!string.IsNullOrEmpty(txtSearch.Text))
             {
-                string Search = txtSearch.Text;
+                string Search = txtSearch.Text.PersianToEnglish();
                 TodayServices=TodayServices.Where(s => s.Customer.FullName.Contains(Search)
                 || s.Customer.Mobile.Contains(Search.PersianToEnglish())
                 || s.Driver.FullName.Contains(Search)
@@ -295,6 +295,11 @@ namespace WND
             {
                 e.Cancel = true;
             }
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = e.KeyChar.ToString().PersianToEnglish().ToCharArray()[0];
         }
     }
 }

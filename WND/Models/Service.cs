@@ -19,6 +19,8 @@ namespace WND.Models
 
         public DateTime DateTime { get; set; }
 
+        [Display(Name ="توقف")]
+        [Range(1,1000,ErrorMessage ="{0} باید بین ۱ تا ۱۰۰۰ دقیقه باشد")]
         public int Delay { get; set; }
 
         public bool IsActive { get; set; }

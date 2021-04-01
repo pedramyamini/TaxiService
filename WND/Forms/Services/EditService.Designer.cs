@@ -296,6 +296,7 @@ namespace WND
             this.txtSearch.Size = new System.Drawing.Size(310, 30);
             this.txtSearch.TabIndex = 44;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // label11
             // 

@@ -45,26 +45,30 @@ namespace WND.Path
             {
                 try
                 {
-                    taxiContext.Paths.AddOrUpdate(path);
-                    taxiContext.SaveChanges();
-                    MessageBoxRTL.Info("افزودن مسیر با موفقیت انجام شد.", "");
-                }
-                catch(DbUpdateException ex)
-                {
-                    if(ex!=null)
+                    if(!taxiContext.Paths.Any(p=>p.OriginDestination==path.OriginDestination))
+                    {
+                        taxiContext.Paths.Add(path);
+                        taxiContext.SaveChanges();
+                        MessageBoxRTL.Info("افزودن مسیر با موفقیت انجام شد.", "");
+                    }
+                    else
                     {
                         DialogResult dr;
-                        dr=MessageBoxRTL.Ask("این مسیر قبلا ثبت شده است. آیا تمایل به ویرایش آن دارید؟", "");
-                        if(dr==DialogResult.Yes)
+                        dr = MessageBoxRTL.Ask("این مسیر قبلا ثبت شده است. آیا تمایل به ویرایش آن دارید؟", "");
+                        if (dr == DialogResult.Yes)
                         {
                             try
                             {
                                 Models.Path existingPath = taxiContext.Paths.Where(p => p.OriginDestination == path.OriginDestination)
                                 .Select(p => p).Single();
-                                taxiContext.Paths.Remove(existingPath);
-                                taxiContext.Paths.Add(path);
+                                taxiContext.Paths.Attach(existingPath);
+                                existingPath.OriginDestination = path.OriginDestination;
+                                existingPath.Origin = path.Origin;
+                                existingPath.Destination = path.Destination;
+                                existingPath.Cost = path.Cost;
                                 taxiContext.SaveChanges();
                                 MessageBoxRTL.Info("ویرایش مسیر با موفقیت انجام شد.", "");
+                                return;
                             }
                             catch
                             {
@@ -72,17 +76,18 @@ namespace WND.Path
                             }
                         }
                     }
-                    else
-                    {
-                        MessageBoxRTL.Info("افزودن مسیر با خطا روبرو شد لطفا دوباره تلاش نمایید.", "");
-                    }
+                }
+                catch
+                {
+                    
+                    MessageBoxRTL.Info("افزودن مسیر با خطا روبرو شد لطفا دوباره تلاش نمایید.", "");
                 }
             }
         }
 
         private void AddPath_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+
         }
 
         private void AddPath_FormClosing(object sender, FormClosingEventArgs e)

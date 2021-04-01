@@ -100,6 +100,7 @@ namespace WND.Forms.Customer
                     {
                         taxiContext.Users.Add(customer);
                         taxiContext.SaveChanges();
+                        MessageBoxRTL.Error("افزودن مشتری با موفقیت انجام شد.", string.Empty);
                     }
                     
                 }
