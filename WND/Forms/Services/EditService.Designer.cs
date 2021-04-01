@@ -374,6 +374,7 @@ namespace WND
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ویرایش سرویس";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditService_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditService_FormClosed);
             this.Load += new System.EventHandler(this.EditService_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagridServices)).EndInit();

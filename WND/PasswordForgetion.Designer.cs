@@ -182,6 +182,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "بازیابی کلمه عبور";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PasswordForgetion_FormClosing);
             this.Load += new System.EventHandler(this.PasswordForgetion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

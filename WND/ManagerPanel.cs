@@ -43,14 +43,22 @@ namespace WND
 
         private void ManagerPanel_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
+            if (dr == DialogResult.Yes)
+            {
+                sourceForm.Enabled = true;
+                sourceForm.Show();
+                sourceForm.Focus();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
 
         private void ManagerPanel_FormClosed(object sender, FormClosedEventArgs e)
         {
-            sourceForm.Enabled = true;
-            sourceForm.Show();
-            sourceForm.Focus();
+            
         }
 
         private void AddSecretary_Click(object sender, EventArgs e)

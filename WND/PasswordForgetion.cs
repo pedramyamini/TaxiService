@@ -88,5 +88,13 @@ namespace WND
             }
         }
 
+        private void PasswordForgetion_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
+            if(dr==DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

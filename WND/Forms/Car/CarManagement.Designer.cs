@@ -263,6 +263,7 @@ namespace WND.Car
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "ویرایش خودرو";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditCar_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditCar_FormClosed);
             this.Load += new System.EventHandler(this.EditCar_Load);
             this.ResumeLayout(false);

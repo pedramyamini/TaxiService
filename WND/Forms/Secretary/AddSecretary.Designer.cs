@@ -143,6 +143,7 @@ namespace WND.Secretary
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "افزودن منشی";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddSecretary_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddSecretary_FormClosed);
             this.Load += new System.EventHandler(this.AddSecretary_Load);
             this.ResumeLayout(false);

@@ -222,12 +222,7 @@ namespace WND.Car
 
         private void EditCar_FormClosed(object sender, FormClosedEventArgs e)
         {
-            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
-            if (dr == DialogResult.Yes)
-            {
-                sourceForm.Enabled = true;
-                sourceForm.Focus();
-            }
+            
         }
 
         private void txtLicencePlate2_KeyPress(object sender, KeyPressEventArgs e)
@@ -242,6 +237,20 @@ namespace WND.Car
             {
                 e.Handled = false;
                 txtLicencePlate2.SelectAll();
+            }
+        }
+
+        private void EditCar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
+            if (dr == DialogResult.Yes)
+            {
+                sourceForm.Enabled = true;
+                sourceForm.Focus();
+            }
+            else
+            {
+                e.Cancel = true;
             }
         }
     }

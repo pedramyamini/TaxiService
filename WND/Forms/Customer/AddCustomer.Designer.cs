@@ -123,6 +123,7 @@ namespace WND.Forms.Customer
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "افزودن مشتری";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddCustomer_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddCustomer_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

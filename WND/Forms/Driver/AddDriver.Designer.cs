@@ -32,10 +32,10 @@ namespace WND.Driver
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
-            this.txtMobile = new NumericTextBox();
+            this.txtMobile = new WND.Utility.NumericTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddDriver = new System.Windows.Forms.Button();
-            this.txtSharePercent = new NumericTextBox();
+            this.txtSharePercent = new WND.Utility.NumericTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -119,6 +119,7 @@ namespace WND.Driver
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "افزودن راننده";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddDriver_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddDriver_FormClosed);
             this.Load += new System.EventHandler(this.AddDriver_Load);
             this.ResumeLayout(false);

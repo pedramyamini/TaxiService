@@ -165,12 +165,7 @@ namespace WND
 
         private void EditService_FormClosed(object sender, FormClosedEventArgs e)
         {
-            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", string.Empty);
-            if (dr == DialogResult.Yes)
-            {
-                sourceForm.Enabled = true;
-                sourceForm.Focus();
-            }
+            
         }
 
         private void btnAddService_Click(object sender, EventArgs e)
@@ -286,6 +281,20 @@ namespace WND
         private void btnSearch_Click(object sender, EventArgs e)
         {
             FillServicesGrid();
+        }
+
+        private void EditService_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
+            if (dr == DialogResult.Yes)
+            {
+                sourceForm.Enabled = true;
+                sourceForm.Focus();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

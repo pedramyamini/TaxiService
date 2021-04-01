@@ -119,11 +119,20 @@ namespace WND.Forms.Customer
 
         private void AddCustomer_FormClosed(object sender, FormClosedEventArgs e)
         {
+            
+        }
+
+        private void AddCustomer_FormClosing(object sender, FormClosingEventArgs e)
+        {
             DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
             if (dr == DialogResult.Yes)
             {
                 sourceForm.Enabled = true;
                 sourceForm.Focus();
+            }
+            else
+            {
+                e.Cancel = true;
             }
         }
     }

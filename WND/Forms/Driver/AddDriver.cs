@@ -58,10 +58,10 @@ namespace WND.Driver
                 if (Validation.Validate(driver))
                 {
                     //check fullname and mobile conflict
-                    if (!conflict.Any(d => d.FullName == txtFullName.Text && d.Mobile == txtMobile.Text))
+                    if (!conflict.Any(d => d.FullName == driver.FullName && d.Mobile == driver.Mobile))
                     {
                         //fullname conflict
-                        if(conflict.Any(d => d.FullName == txtFullName.Text))
+                        if(conflict.Any(d => d.FullName == driver.FullName))
                         {
                             //fullname similarity
                             DialogResult dr=MessageBoxRTL.Ask("راننده با این نام قبلا ثبت شده است. آیا از افزودن این راننده به عنوان یک راننده جدید با تشابه اسمی اطمینان دارید؟", "");
@@ -75,14 +75,19 @@ namespace WND.Driver
                             DialogResult dr2 = MessageBoxRTL.Ask("راننده با این نام قبلا ثبت شده است. آیا مایل به ویرایش این راننده هستید؟", "");
                             if (dr2 == DialogResult.Yes)
                             {
-                                Models.Driver driverConflict=conflict.Where(d => d.FullName == txtFullName.Text).Select(d => d).Single();
+                                Models.Driver driverConflict=conflict.Where(d => d.FullName == driver.FullName).Select(d => d).Single();
                                 taxiContext.Users.Remove(driverConflict);
                                 taxiContext.Users.Add(driver);
                                 taxiContext.SaveChanges();
                                 MessageBoxRTL.Info("راننده با موفقیت ویرایش شد.", "");
                             }
                         }
-                        
+                        else
+                        {
+                            taxiContext.Users.Add(driver);
+                            taxiContext.SaveChanges();
+                            MessageBoxRTL.Info("راننده با موفقیت افزوده شد.", "");
+                        }
                     }
                     else
                     {
@@ -90,11 +95,13 @@ namespace WND.Driver
                         DialogResult dr = MessageBoxRTL.Ask("این راننده قبلا ثبت شده است. آیا می‌خواهید آن را ویرایش کنید؟", "");
                         if (dr == DialogResult.Yes)
                         {
-                            foreach (var d in conflict.Where(d=>d.FullName==txtFullName.Text && d.Mobile==txtMobile.Text).AsEnumerable())
+                            foreach (var d in conflict.Where(d=>d.FullName==driver.FullName && d.Mobile==driver.Mobile).AsEnumerable())
                             {
                                 taxiContext.Users.Attach(d);
+                                SharePercent = 0;
+                                int.TryParse(txtSharePercent.Text.PersianToEnglish(),out SharePercent);
+                                d.SharePercent = SharePercent;
                             }
-                            taxiContext.Users.Add(driver);
                             taxiContext.SaveChanges();
                             MessageBoxRTL.Info("راننده با موفقیت ویرایش شد.", "");
                         }
@@ -109,17 +116,26 @@ namespace WND.Driver
 
         private void AddDriver_FormClosed(object sender, FormClosedEventArgs e)
         {
+                            
+        }
+
+        private void AddDriver_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddDriver_FormClosing(object sender, FormClosingEventArgs e)
+        {
             DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
             if (dr == DialogResult.Yes)
             {
                 sourceForm.Enabled = true;
                 sourceForm.Focus();
             }
-        }
-
-        private void AddDriver_Load(object sender, EventArgs e)
-        {
-
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

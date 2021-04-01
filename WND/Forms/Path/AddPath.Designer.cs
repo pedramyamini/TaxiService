@@ -123,6 +123,7 @@ namespace WND.Path
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "افزودن مسیر";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddPath_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddPath_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
