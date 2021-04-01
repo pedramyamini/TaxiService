@@ -80,7 +80,7 @@
             this.btnRegister.Location = new System.Drawing.Point(88, 177);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(97, 40);
-            this.btnRegister.TabIndex = 15;
+            this.btnRegister.TabIndex = 3;
             this.btnRegister.Text = "ورود";
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -94,7 +94,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(165, 26);
-            this.txtPassword.TabIndex = 14;
+            this.txtPassword.TabIndex = 2;
             // 
             // label2
             // 
@@ -115,7 +115,7 @@
             this.txtUsername.MaxLength = 20;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(165, 26);
-            this.txtUsername.TabIndex = 12;
+            this.txtUsername.TabIndex = 1;
             // 
             // label1
             // 
@@ -130,15 +130,21 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btnRegister;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 338);
             this.Controls.Add(this.panelRegister);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(386, 377);
+            this.MinimumSize = new System.Drawing.Size(386, 377);
             this.Name = "Login";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "ورود";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
+            this.Load += new System.EventHandler(this.Login_Load);
+            this.EnabledChanged += new System.EventHandler(this.Login_EnabledChanged);
             this.panelRegister.ResumeLayout(false);
             this.panelRegister.PerformLayout();
             this.ResumeLayout(false);

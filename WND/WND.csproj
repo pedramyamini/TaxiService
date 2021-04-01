@@ -53,6 +53,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="BehComponents, Version=2.1.0.0, Culture=neutral, PublicKeyToken=7aac51afb1c54590, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Desktop\BehComponents.dll</HintPath>
@@ -63,9 +66,16 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,6 +88,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\DriverMap.cs" />
+    <Compile Include="Data\ITaxiDbContext.cs" />
+    <Compile Include="DI\Ninject\Bindings.cs" />
+    <Compile Include="DI\Ninject\DependencyInjection.cs" />
     <Compile Include="Forms\Backup-Restore\Backup-Restore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,19 +103,19 @@
     <Compile Include="Forms\Call-SMS\Call.Designer.cs">
       <DependentUpon>Call.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Car\DeleteCar.cs">
+    <Compile Include="Forms\Car\CarManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Car\DeleteCar.Designer.cs">
-      <DependentUpon>DeleteCar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Car\EditCar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Car\EditCar.Designer.cs">
-      <DependentUpon>EditCar.cs</DependentUpon>
+    <Compile Include="Forms\Car\CarManagement.Designer.cs">
+      <DependentUpon>CarManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\TaxiDbContext.cs" />
+    <Compile Include="Forms\Customer\AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customer\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Driver\AddDriver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,23 +146,28 @@
     <Compile Include="ManagerPanel.Designer.cs">
       <DependentUpon>ManagerPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103231952253_migAddDriverCar.cs" />
-    <Compile Include="Migrations\202103231952253_migAddDriverCar.designer.cs">
-      <DependentUpon>202103231952253_migAddDriverCar.cs</DependentUpon>
+    <Compile Include="Migrations\202103282014422_init.cs" />
+    <Compile Include="Migrations\202103282014422_init.designer.cs">
+      <DependentUpon>202103282014422_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103240647590_DropPhoneColumnFromUsersTable.cs" />
-    <Compile Include="Migrations\202103240647590_DropPhoneColumnFromUsersTable.designer.cs">
-      <DependentUpon>202103240647590_DropPhoneColumnFromUsersTable.cs</DependentUpon>
+    <Compile Include="Migrations\202103282116112_init1.cs" />
+    <Compile Include="Migrations\202103282116112_init1.designer.cs">
+      <DependentUpon>202103282116112_init1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103240715516_DropDriversTable.cs" />
-    <Compile Include="Migrations\202103240715516_DropDriversTable.designer.cs">
-      <DependentUpon>202103240715516_DropDriversTable.cs</DependentUpon>
+    <Compile Include="Migrations\202103310733080_ServiceSoftDeleting.cs" />
+    <Compile Include="Migrations\202103310733080_ServiceSoftDeleting.designer.cs">
+      <DependentUpon>202103310733080_ServiceSoftDeleting.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AuthenticatedUser.cs" />
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Driver.cs" />
+    <Compile Include="Models\Path.cs" />
     <Compile Include="Models\Roles\Roles.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\ServicePath.cs" />
+    <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Forms\Path\AddPath.cs">
       <SubType>Form</SubType>
@@ -205,6 +223,7 @@
     <Compile Include="Forms\Services\DeleteService.Designer.cs">
       <DependentUpon>DeleteService.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModels\ServiceVM.cs" />
     <Compile Include="PasswordForgetion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,7 +251,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\Hash.cs" />
+    <Compile Include="Utility\LicensePlateCalculation.cs" />
     <Compile Include="Utility\MessageBoxRTL.cs" />
+    <Compile Include="Utility\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Utility\Session.cs" />
     <Compile Include="Utility\Validation.cs" />
     <EmbeddedResource Include="Forms\Backup-Restore\Backup-Restore.resx">
@@ -241,11 +264,11 @@
     <EmbeddedResource Include="Forms\Call-SMS\Call.resx">
       <DependentUpon>Call.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Car\DeleteCar.resx">
-      <DependentUpon>DeleteCar.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Car\CarManagement.resx">
+      <DependentUpon>CarManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Car\EditCar.resx">
-      <DependentUpon>EditCar.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Customer\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Driver\AddDriver.resx">
       <DependentUpon>AddDriver.cs</DependentUpon>
@@ -289,14 +312,14 @@
     <EmbeddedResource Include="Forms\Services\DeleteService.resx">
       <DependentUpon>DeleteService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103231952253_migAddDriverCar.resx">
-      <DependentUpon>202103231952253_migAddDriverCar.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103282014422_init.resx">
+      <DependentUpon>202103282014422_init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103240647590_DropPhoneColumnFromUsersTable.resx">
-      <DependentUpon>202103240647590_DropPhoneColumnFromUsersTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103282116112_init1.resx">
+      <DependentUpon>202103282116112_init1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103240715516_DropDriversTable.resx">
-      <DependentUpon>202103240715516_DropDriversTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103310733080_ServiceSoftDeleting.resx">
+      <DependentUpon>202103310733080_ServiceSoftDeleting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordForgetion.resx">
       <DependentUpon>PasswordForgetion.cs</DependentUpon>

@@ -30,23 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.سرویسهاToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.افزودنسرویسToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ویرایشسرویسToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.حذفسرویسToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.مشتریانToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.افزودنمشتریثبتاشتراکToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ویرایشمشتریToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.حذفمشتریToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.رانندگانToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AddDriver = new System.Windows.Forms.ToolStripMenuItem();
             this.ویرایشرانندهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حذفرانندهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.EditCar = new System.Windows.Forms.ToolStripMenuItem();
-            this.حذفخودروToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.افزودنمسیرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddPath = new System.Windows.Forms.ToolStripMenuItem();
             this.ویرایشمسیرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حذفمسیرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.منشیToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +48,6 @@
             this.گزارشبراساسمشتریToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.لیستهمهسرویسهاToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تماسToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.پیامکToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تنظیماتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.راهنماToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,12 +55,12 @@
             this.ویرایشحسابکاربریToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.serviceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
@@ -83,15 +72,12 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.سرویسهاToolStripMenuItem,
-            this.مشتریانToolStripMenuItem,
             this.رانندگانToolStripMenuItem,
-            this.toolStripMenuItem1,
+            this.EditCar,
             this.toolStripMenuItem2,
             this.منشیToolStripMenuItem,
             this.toolStripMenuItem3,
             this.تماسToolStripMenuItem,
-            this.پیامکToolStripMenuItem,
             this.تنظیماتToolStripMenuItem,
             this.راهنماToolStripMenuItem,
             this.ExitMenu});
@@ -100,62 +86,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(790, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // سرویسهاToolStripMenuItem
-            // 
-            this.سرویسهاToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.افزودنسرویسToolStripMenuItem,
-            this.ویرایشسرویسToolStripMenuItem,
-            this.حذفسرویسToolStripMenuItem});
-            this.سرویسهاToolStripMenuItem.Name = "سرویسهاToolStripMenuItem";
-            this.سرویسهاToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.سرویسهاToolStripMenuItem.Text = "سرویس‌ها";
-            // 
-            // افزودنسرویسToolStripMenuItem
-            // 
-            this.افزودنسرویسToolStripMenuItem.Name = "افزودنسرویسToolStripMenuItem";
-            this.افزودنسرویسToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
-            this.افزودنسرویسToolStripMenuItem.Text = "افزودن سرویس";
-            // 
-            // ویرایشسرویسToolStripMenuItem
-            // 
-            this.ویرایشسرویسToolStripMenuItem.Name = "ویرایشسرویسToolStripMenuItem";
-            this.ویرایشسرویسToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
-            this.ویرایشسرویسToolStripMenuItem.Text = "ویرایش سرویس";
-            // 
-            // حذفسرویسToolStripMenuItem
-            // 
-            this.حذفسرویسToolStripMenuItem.Name = "حذفسرویسToolStripMenuItem";
-            this.حذفسرویسToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
-            this.حذفسرویسToolStripMenuItem.Text = "حذف سرویس";
-            // 
-            // مشتریانToolStripMenuItem
-            // 
-            this.مشتریانToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.افزودنمشتریثبتاشتراکToolStripMenuItem,
-            this.ویرایشمشتریToolStripMenuItem,
-            this.حذفمشتریToolStripMenuItem});
-            this.مشتریانToolStripMenuItem.Name = "مشتریانToolStripMenuItem";
-            this.مشتریانToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
-            this.مشتریانToolStripMenuItem.Text = "مشتریان";
-            // 
-            // افزودنمشتریثبتاشتراکToolStripMenuItem
-            // 
-            this.افزودنمشتریثبتاشتراکToolStripMenuItem.Name = "افزودنمشتریثبتاشتراکToolStripMenuItem";
-            this.افزودنمشتریثبتاشتراکToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
-            this.افزودنمشتریثبتاشتراکToolStripMenuItem.Text = "افزودن مشتری(ثبت اشتراک)";
-            // 
-            // ویرایشمشتریToolStripMenuItem
-            // 
-            this.ویرایشمشتریToolStripMenuItem.Name = "ویرایشمشتریToolStripMenuItem";
-            this.ویرایشمشتریToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
-            this.ویرایشمشتریToolStripMenuItem.Text = "ویرایش مشتری";
-            // 
-            // حذفمشتریToolStripMenuItem
-            // 
-            this.حذفمشتریToolStripMenuItem.Name = "حذفمشتریToolStripMenuItem";
-            this.حذفمشتریToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
-            this.حذفمشتریToolStripMenuItem.Text = "حذف مشتری";
             // 
             // رانندگانToolStripMenuItem
             // 
@@ -186,43 +116,29 @@
             this.حذفرانندهToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.حذفرانندهToolStripMenuItem.Text = "حذف راننده";
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EditCar,
-            this.حذفخودروToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(73, 24);
-            this.toolStripMenuItem1.Text = "خودروها";
-            // 
             // EditCar
             // 
             this.EditCar.Name = "EditCar";
-            this.EditCar.Size = new System.Drawing.Size(180, 24);
-            this.EditCar.Text = "ویرایش خودرو";
+            this.EditCar.Size = new System.Drawing.Size(73, 24);
+            this.EditCar.Text = "خودروها";
             this.EditCar.Click += new System.EventHandler(this.EditCar_Click);
-            // 
-            // حذفخودروToolStripMenuItem
-            // 
-            this.حذفخودروToolStripMenuItem.Name = "حذفخودروToolStripMenuItem";
-            this.حذفخودروToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.حذفخودروToolStripMenuItem.Text = "حذف خودرو";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.افزودنمسیرToolStripMenuItem,
+            this.AddPath,
             this.ویرایشمسیرToolStripMenuItem,
             this.حذفمسیرToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(67, 24);
             this.toolStripMenuItem2.Text = "مسیرها";
             // 
-            // افزودنمسیرToolStripMenuItem
+            // AddPath
             // 
-            this.افزودنمسیرToolStripMenuItem.Name = "افزودنمسیرToolStripMenuItem";
-            this.افزودنمسیرToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
-            this.افزودنمسیرToolStripMenuItem.Text = "افزودن مسیر";
+            this.AddPath.Name = "AddPath";
+            this.AddPath.Size = new System.Drawing.Size(161, 24);
+            this.AddPath.Text = "افزودن مسیر";
+            this.AddPath.Click += new System.EventHandler(this.AddPath_Click);
             // 
             // ویرایشمسیرToolStripMenuItem
             // 
@@ -299,12 +215,6 @@
             this.تماسToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
             this.تماسToolStripMenuItem.Text = "تماس";
             // 
-            // پیامکToolStripMenuItem
-            // 
-            this.پیامکToolStripMenuItem.Name = "پیامکToolStripMenuItem";
-            this.پیامکToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
-            this.پیامکToolStripMenuItem.Text = "پیامک";
-            // 
             // تنظیماتToolStripMenuItem
             // 
             this.تنظیماتToolStripMenuItem.Name = "تنظیماتToolStripMenuItem";
@@ -360,6 +270,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(708, 300);
             this.dataGridView1.TabIndex = 5;
             // 
+            // Edit
+            // 
+            this.Edit.HeaderText = "ویرایش";
+            this.Edit.Image = global::WND.Properties.Resources._4213412_compose_document_edit_pen_pencil_write_115364;
+            this.Edit.Name = "Edit";
+            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "حذف";
+            this.Delete.Image = global::WND.Properties.Resources.signdelete_delete_delete_4599;
+            this.Delete.Name = "Delete";
+            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(209, 58);
@@ -395,22 +321,6 @@
             this.dataGridViewImageColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.dataGridViewImageColumn2.Width = 332;
             // 
-            // Edit
-            // 
-            this.Edit.HeaderText = "ویرایش";
-            this.Edit.Image = global::WND.Properties.Resources._4213412_compose_document_edit_pen_pencil_write_115364;
-            this.Edit.Name = "Edit";
-            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "حذف";
-            this.Delete.Image = global::WND.Properties.Resources.signdelete_delete_delete_4599;
-            this.Delete.Name = "Delete";
-            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WND.Properties.Resources.OIP1;
@@ -436,6 +346,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.MaximizeBox = false;
             this.Name = "ManagerPanel";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
@@ -457,23 +368,12 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem سرویسهاToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem افزودنسرویسToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ویرایشسرویسToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem حذفسرویسToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem مشتریانToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem افزودنمشتریثبتاشتراکToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ویرایشمشتریToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem حذفمشتریToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem رانندگانToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AddDriver;
         private System.Windows.Forms.ToolStripMenuItem ویرایشرانندهToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem حذفرانندهToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem EditCar;
-        private System.Windows.Forms.ToolStripMenuItem حذفخودروToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem افزودنمسیرToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddPath;
         private System.Windows.Forms.ToolStripMenuItem ویرایشمسیرToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem حذفمسیرToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
@@ -481,7 +381,6 @@
         private System.Windows.Forms.ToolStripMenuItem گزارشبراساسمشتریToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem لیستهمهسرویسهاToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تماسToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem پیامکToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تنظیماتToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem راهنماToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ExitMenu;
@@ -500,5 +399,6 @@
         private System.Windows.Forms.ToolStripMenuItem ویرایشمنشیToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem حذفمنشیToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ویرایشحسابکاربریToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EditCar;
     }
 }

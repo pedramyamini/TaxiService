@@ -9,10 +9,11 @@ namespace WND
 {
     public partial class Register : Form
     {
-        private TaxiDbContext taxiContext = new TaxiDbContext();
-        public Register()
+        private ITaxiDbContext taxiContext;
+        public Register(ITaxiDbContext _taxiContext)
         {
             InitializeComponent();
+            this.taxiContext = _taxiContext;
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -22,7 +23,7 @@ namespace WND
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void checkboxTogglePasswordDisplay_CheckedChanged(object sender, EventArgs e)
@@ -39,42 +40,30 @@ namespace WND
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if(txtUsername.Text != string.Empty && txtPassword.Text != string.Empty)
+            if (!taxiContext.AuthenticatedUsers.Any())
             {
-                if (!taxiContext.AuthenticatedUsers.Any())
+                AuthenticatedUser user = new AuthenticatedUser()
                 {
-                    if (Validation.ValidatePassword(txtPassword.Text))
-                    {
-                        string Username = txtUsername.Text;
-                        string Password = EasyHash.Hash(txtPassword.Text);
-                        taxiContext.AuthenticatedUsers.Add(new AuthenticatedUser()
-                        {
-                            Username = Username,
-                            Password = Password,
-                            Role = Roles.Admin,
-                            SecurityQuestion = txtSecurityQuestion.Text,
-                            SecurityAnswer = txtSecurityAnswer.Text,
-                        });
-                        taxiContext.SaveChanges();
-                        MessageBoxRTL.Info("ثبت نام مدیر با موفقیت انجام شد.اکنون می‌توانید وارد حساب کاربری‌تان شوید.", "ثبت نام");
-                        this.Hide();
-                        new ManagerPanel().Show();
-                    }
+                    FullName = txtFullName.Text,
+                    Mobile = txtMobile.Text.PersianToEnglish(),
+                    Username = txtUsername.Text,
+                    Password = EasyHash.Hash(txtPassword.Text),
+                    Role = Roles.Admin,
+                    SecurityQuestion = txtSecurityQuestion.Text,
+                    SecurityAnswer = EasyHash.Hash(txtSecurityAnswer.Text),
+                };
+                if (Validation.Validate(user) & Validation.ValidatePassword(txtPassword.Text))
+                {
+                    taxiContext.AuthenticatedUsers.Add(user);
+                    taxiContext.SaveChanges();
+                    MessageBoxRTL.Info("ثبت نام مدیر با موفقیت انجام شد.اکنون می‌توانید وارد حساب کاربری‌تان شوید.", "ثبت نام");
+                    this.Hide();
+                    new ManagerPanel(taxiContext, this).Show();
                 }
             }
         }
 
-        private void checkboxTogglePasswordDisplay_CheckedChanged_1(object sender, EventArgs e)
-        {
-            if (checkboxTogglePasswordDisplay.Checked)
-            {
-                txtPassword.PasswordChar = new char();
-            }
-            else
-            {
-                txtPassword.PasswordChar = '*';
-            }
-        }
+        
 
         private void Register_FormClosed(object sender, FormClosedEventArgs e)
         {

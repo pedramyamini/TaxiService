@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,10 +16,11 @@ namespace WND
 {
     public partial class Login : Form
     {
-        private TaxiDbContext taxiContext = new TaxiDbContext();
-        public Login()
+        private ITaxiDbContext taxiContext;
+        public Login(ITaxiDbContext _taxiContext)
         {
             InitializeComponent();
+            this.taxiContext = _taxiContext;
         }
 
         private void checkboxTogglePasswordDisplay_CheckedChanged(object sender, EventArgs e)
@@ -65,11 +67,13 @@ namespace WND
                     switch (Session.CurrentUser.Role)
                     {
                         case Roles.Admin:
-                            new ManagerPanel().Show();
+                            new ManagerPanel(taxiContext,this).Show();
+                            this.Enabled=false;
                             this.Hide();
                             break;
                         case Roles.Secretary:
-                            new SecretaryPanel().Show();
+                            new SecretaryPanel(taxiContext,this).Show();
+                            this.Enabled = false;
                             this.Hide();
                             break;
                     }
@@ -88,6 +92,17 @@ namespace WND
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Login_EnabledChanged(object sender, EventArgs e)
+        {
+            txtUsername.Text = string.Empty;
+            txtPassword.Text = string.Empty;
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace WND.Driver
+﻿using WND.Utility;
+
+namespace WND.Driver
 {
     partial class AddDriver
     {
@@ -30,10 +32,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
-            this.txtMobile = new System.Windows.Forms.TextBox();
+            this.txtMobile = new NumericTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddDriver = new System.Windows.Forms.Button();
-            this.txtSharePercent = new System.Windows.Forms.TextBox();
+            this.txtSharePercent = new NumericTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -61,7 +63,7 @@
             this.txtMobile.MaxLength = 11;
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.Size = new System.Drawing.Size(140, 26);
-            this.txtMobile.TabIndex = 3;
+            this.txtMobile.TabIndex = 2;
             // 
             // label2
             // 
@@ -89,7 +91,7 @@
             this.txtSharePercent.MaxLength = 11;
             this.txtSharePercent.Name = "txtSharePercent";
             this.txtSharePercent.Size = new System.Drawing.Size(140, 26);
-            this.txtSharePercent.TabIndex = 6;
+            this.txtSharePercent.TabIndex = 3;
             // 
             // label3
             // 
@@ -102,6 +104,7 @@
             // 
             // AddDriver
             // 
+            this.AcceptButton = this.btnAddDriver;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(375, 233);
@@ -116,6 +119,8 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "افزودن راننده";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddDriver_FormClosed);
+            this.Load += new System.EventHandler(this.AddDriver_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,10 +130,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtFullName;
-        private System.Windows.Forms.TextBox txtMobile;
+        private NumericTextBox txtMobile;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddDriver;
-        private System.Windows.Forms.TextBox txtSharePercent;
+        private NumericTextBox txtSharePercent;
         private System.Windows.Forms.Label label3;
     }
 }

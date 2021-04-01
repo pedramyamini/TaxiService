@@ -67,7 +67,7 @@ namespace WND
         {
             if (txtSecurityAnswer.Text != string.Empty)
             {
-                if (user.SecurityAnswer == txtSecurityAnswer.Text)
+                if (user.SecurityAnswer == EasyHash.Hash(txtSecurityAnswer.Text))
                 {
                     txtPassword.Enabled = true;
                     txtPasswordRepeation.Enabled = true;

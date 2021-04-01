@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Ninject.Infrastructure.Language;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Infrastructure;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,43 +17,103 @@ namespace WND.Driver
 {
     public partial class AddDriver : Form
     {
-        private TaxiDbContext taxiContext = new TaxiDbContext();
-        public AddDriver()
+        private ITaxiDbContext taxiContext;
+        Form sourceForm;
+
+
+        public AddDriver(ITaxiDbContext _taxiContext)
         {
             InitializeComponent();
+            _taxiContext = taxiContext;
+        }
+
+        public AddDriver(ITaxiDbContext _taxiContext, Form _sourceForm)
+        {
+            InitializeComponent();
+            taxiContext = _taxiContext;
+            sourceForm = _sourceForm;
         }
 
         private void btnAddDriver_Click(object sender, EventArgs e)
         {
-            if(Validation.ValidateFullName(txtFullName.Text) && Validation.ValidateMobile(txtMobile.Text.PersianToEnglish()) && Validation.ValidateSharePercent(txtSharePercent.Text.PersianToEnglish()))
+            try
             {
-                try
+                int SharePercent = 0;
+                int.TryParse(txtSharePercent.Text.PersianToEnglish(), out SharePercent);
+                Models.Driver driver = new Models.Driver()
                 {
-                    taxiContext.Users.Add(
-                    new Models.Driver()
+                    FullName = txtFullName.Text,
+                    Mobile = txtMobile.Text.PersianToEnglish(),
+                    SharePercent = SharePercent,
+                    Role = Models.Roles.Driver,
+                    Car = new Models.Car()
                     {
-                        FullName = txtFullName.Text,
-                        Mobile = txtMobile.Text.PersianToEnglish(),
-                        SharePercent = int.Parse(txtSharePercent.Text.PersianToEnglish()),
-                        Role = Models.Roles.Driver,
-                        Car=new Models.Car()
-                        {
-                            
-                        }
-                    });
-                    taxiContext.SaveChanges();
-                    MessageBoxRTL.Info("راننده با موفقیت افزوده شد.", "");
-                }
-                catch
+                        Color = string.Empty,
+                        Model = string.Empty,
+                        LicensePlate=string.Empty
+                    }
+                };
+                var conflict = taxiContext.Users.OfType<Models.Driver>();
+                if (Validation.Validate(driver))
                 {
-                    MessageBoxRTL.Error("افزودن راننده با خطا مواجه شد لطفا دوباره تلاش کنید", "");
+                    if (!conflict.Any(d => d.FullName == txtFullName.Text && d.Mobile == txtMobile.Text))
+                    {
+                        if(conflict.Any(d => d.FullName == txtFullName.Text))
+                        {
+                            DialogResult dr=MessageBoxRTL.Ask("راننده با این نام قبلا ثبت شده است. آیا از افزودن این راننده به عنوان یک راننده جدید با تشابه اسمی اطمینان دارید؟", "");
+                            if(dr==DialogResult.Yes)
+                            {
+                                taxiContext.Users.Add(driver);
+                                taxiContext.SaveChanges();
+                                MessageBoxRTL.Info("راننده با موفقیت افزوده شد.", "");
+                            }
+                            DialogResult dr2 = MessageBoxRTL.Ask("راننده با این نام قبلا ثبت شده است. آیا مایل به ویرایش این راننده هستید؟", "");
+                            if (dr2 == DialogResult.Yes)
+                            {
+                                Models.Driver driverConflict=conflict.Where(d => d.FullName == txtFullName.Text).Select(d => d).Single();
+                                taxiContext.Users.Remove(driverConflict);
+                                taxiContext.Users.Add(driver);
+                                taxiContext.SaveChanges();
+                                MessageBoxRTL.Info("راننده با موفقیت ویرایش شد.", "");
+                            }
+                        }
+                        
+                    }
+                    else
+                    {
+                        DialogResult dr = MessageBoxRTL.Ask("این راننده قبلا ثبت شده است. آیا می‌خواهید آن را ویرایش کنید؟", "");
+                        if (dr == DialogResult.Yes)
+                        {
+                            foreach (var d in conflict.Where(d=>d.FullName==txtFullName.Text && d.Mobile==txtMobile.Text).AsEnumerable())
+                            {
+                                taxiContext.Users.Attach(d);
+                            }
+                            taxiContext.Users.Add(driver);
+                            taxiContext.SaveChanges();
+                            MessageBoxRTL.Info("راننده با موفقیت ویرایش شد.", "");
+                        }
+                    }
                 }
-                
             }
-            else
+            catch
             {
-                MessageBoxRTL.Info("لطفا ورودی‌ها را با دقت وارد نمایید.", "");
+                MessageBoxRTL.Error("افزودن راننده با خطا مواجه شد لطفا دوباره تلاش کنید", "");
             }
+        }
+
+        private void AddDriver_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
+            if (dr == DialogResult.Yes)
+            {
+                sourceForm.Enabled = true;
+                sourceForm.Focus();
+            }
+        }
+
+        private void AddDriver_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

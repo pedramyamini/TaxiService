@@ -15,9 +15,14 @@ namespace WND.Models
         [Key, ForeignKey("Driver")]
         public int Id { get; set; }
 
+        [Display(Name ="مدل")]
+        [Required(AllowEmptyStrings =true,ErrorMessage ="{0} نمی‌تواند خالی باشد.")]
         public string Model { get; set; }
+        
         public string LicensePlate { get; set; }
 
+        [Display(Name = "رنگ")]
+        [Required(AllowEmptyStrings = true, ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public string Color { get; set; }
 
         [Required]

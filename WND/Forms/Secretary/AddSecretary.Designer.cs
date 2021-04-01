@@ -1,4 +1,6 @@
-﻿namespace WND.Secretary
+﻿using WND.Utility;
+
+namespace WND.Secretary
 {
     partial class AddSecretary
     {
@@ -33,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnAddSecretary = new System.Windows.Forms.Button();
-            this.txtMobile = new System.Windows.Forms.TextBox();
+            this.txtMobile = new WND.Utility.NumericTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,7 +44,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 48);
+            this.label1.Location = new System.Drawing.Point(75, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
@@ -50,17 +52,17 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(139, 34);
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtUsername.Location = new System.Drawing.Point(147, 40);
             this.txtUsername.MaxLength = 20;
-            this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(142, 38);
+            this.txtUsername.Size = new System.Drawing.Size(142, 26);
             this.txtUsername.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 92);
+            this.label3.Location = new System.Drawing.Point(81, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 4;
@@ -68,18 +70,17 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(139, 80);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtPassword.Location = new System.Drawing.Point(147, 86);
             this.txtPassword.MaxLength = 20;
-            this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(142, 38);
+            this.txtPassword.Size = new System.Drawing.Size(142, 26);
             this.txtPassword.TabIndex = 2;
             // 
             // btnAddSecretary
             // 
-            this.btnAddSecretary.Location = new System.Drawing.Point(117, 247);
+            this.btnAddSecretary.Location = new System.Drawing.Point(116, 247);
             this.btnAddSecretary.Name = "btnAddSecretary";
             this.btnAddSecretary.Size = new System.Drawing.Size(97, 50);
             this.btnAddSecretary.TabIndex = 5;
@@ -89,17 +90,17 @@
             // 
             // txtMobile
             // 
-            this.txtMobile.Location = new System.Drawing.Point(139, 177);
-            this.txtMobile.MaxLength = 12;
-            this.txtMobile.Multiline = true;
+            this.txtMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtMobile.Location = new System.Drawing.Point(147, 183);
+            this.txtMobile.MaxLength = 11;
             this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(142, 38);
+            this.txtMobile.Size = new System.Drawing.Size(142, 26);
             this.txtMobile.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 191);
+            this.label2.Location = new System.Drawing.Point(68, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 7;
@@ -107,16 +108,17 @@
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(139, 128);
-            this.txtFullName.Multiline = true;
+            this.txtFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtFullName.Location = new System.Drawing.Point(147, 134);
+            this.txtFullName.MaxLength = 150;
             this.txtFullName.Name = "txtFullName";
-            this.txtFullName.Size = new System.Drawing.Size(142, 38);
+            this.txtFullName.Size = new System.Drawing.Size(142, 26);
             this.txtFullName.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 142);
+            this.label4.Location = new System.Drawing.Point(39, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 13);
             this.label4.TabIndex = 9;
@@ -124,6 +126,7 @@
             // 
             // AddSecretary
             // 
+            this.AcceptButton = this.btnAddSecretary;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 320);
@@ -140,6 +143,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "افزودن منشی";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddSecretary_FormClosed);
             this.Load += new System.EventHandler(this.AddSecretary_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,7 +157,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnAddSecretary;
-        private System.Windows.Forms.TextBox txtMobile;
+        private NumericTextBox txtMobile;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label label4;

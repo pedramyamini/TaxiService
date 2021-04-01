@@ -11,6 +11,62 @@ namespace WND.Utility
 {
     public static class Validation
     {
+        public static bool Validate(object toValidate)
+        {
+            ValidationContext context = new ValidationContext(toValidate, null, null);
+            IList<ValidationResult> errors = new List<ValidationResult>();
+
+            if (!Validator.TryValidateObject(toValidate, context, errors, true))
+            {
+                string ErrorMessage=string.Empty;
+                foreach (ValidationResult result in errors)
+                    ErrorMessage += "\n " + result.ErrorMessage;
+                MessageBoxRTL.Error(ErrorMessage,string.Empty);
+                return false;
+            }
+            return true;
+        }
+        //public static bool ValidateCustomer(Models.Customer customer)
+        //{
+        //    if(!ValidateFullName(customer.FullName))
+        //    {
+        //        return false;
+        //    }
+        //    if(!ValidateMobile(customer.Mobile))
+        //    {
+        //        return false;
+        //    }
+        //    if(string.IsNullOrEmpty(customer.Address))
+        //    {
+        //        MessageBoxRTL.Error("آدرس مشتری نمی‌تواند خالی باشد","");
+        //    }
+        //    return true;
+        //}
+
+        public static bool ValidateCost(string Cost)
+        {
+            return Cost.Count(c => char.IsNumber(c)) == Cost.Length;
+        }
+        
+        public static bool ValidatePath(Models.Path path)
+        {
+            if(string.IsNullOrEmpty(path.Origin))
+            {
+                MessageBoxRTL.Error("مبدا مسیر نمی‌تواند خالی باشد", "");
+                return false;
+            }
+            if(string.IsNullOrEmpty(path.Destination))
+            {
+                MessageBoxRTL.Error("مقصد مسیر نمی‌تواند خالی باشد", "");
+                return false;
+            }
+            if(path.Cost<=0)
+            {
+                MessageBoxRTL.Error("مقدار هزینه باید عددی باشد و نمی‌تواند خالی یا صفر باشد.", "");
+                return false;
+            }
+            return true;
+        }
         public static bool ValidatePassword(string password)
         {
             if (password.Count(p => char.IsDigit(p)) >= 1
@@ -37,25 +93,25 @@ namespace WND.Utility
             return false;
         }
 
-        public static bool ValidateMobile(string mobile)
-        {
-            if (Regex.IsMatch(mobile, @"^(09)[0-9]{9}$"))
-            {
-                return true;
-            }
-            MessageBoxRTL.Error("شماره همراه باید حداکثر شامل ۱۱ رقم باشد که با ۰ آغاز می‌شود لطفا از وارد کردن کد کشور خودداری کنید.", "");
-            return false;
-        }
+        //public static bool ValidateMobile(string mobile)
+        //{
+        //    if (Regex.IsMatch(mobile, @"^(09)[0-9]{9}$"))
+        //    {
+        //        return true;
+        //    }
+        //    MessageBoxRTL.Error("شماره همراه باید حداکثر شامل ۱۱ رقم باشد که با ۰ آغاز می‌شود لطفا از وارد کردن کد کشور خودداری کنید.", "");
+        //    return false;
+        //}
 
-        public static bool ValidateSharePercent(string SharePercent)
-        {
-            if (Regex.IsMatch(SharePercent, @"^[0-9]{1,3}$") && int.Parse(SharePercent)<=100)
-            {
-                return true;
-            }
-            MessageBoxRTL.Error("درصد اشتراک به صورت عدد و تنها در بازه ۰ تا ۱۰۰ می‌باشد لطفا ورودی را بررسی کنید", "");
-            return false;
-        }
+        //public static bool ValidateSharePercent(string SharePercent)
+        //{
+        //    if (Regex.IsMatch(SharePercent, @"^[0-9]{1,3}$") && int.Parse(SharePercent)<=100)
+        //    {
+        //        return true;
+        //    }
+        //    MessageBoxRTL.Error("درصد اشتراک به صورت عدد و تنها در بازه ۰ تا ۱۰۰ می‌باشد لطفا ورودی را بررسی کنید", "");
+        //    return false;
+        //}
 
         public static string PersianToEnglish(this string persianStr)
         {
