@@ -46,9 +46,17 @@ namespace WND
             DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
             if (dr == DialogResult.Yes)
             {
-                sourceForm.Enabled = true;
-                sourceForm.Show();
-                sourceForm.Focus();
+                if (Utility.Session.RecentlyRegisteredAdmin)
+                {
+                    new Login(taxiContext).Show();
+                    Utility.Session.RecentlyRegisteredAdmin = false;
+                }
+                else
+                {
+                    sourceForm.Enabled = true;
+                    sourceForm.Show();
+                    sourceForm.Focus();
+                }
             }
             else
             {

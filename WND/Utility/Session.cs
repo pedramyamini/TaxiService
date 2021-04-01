@@ -10,5 +10,7 @@ namespace WND.Utility
     public static class Session
     {
         public static AuthenticatedUser CurrentUser { get; set; }
+
+        public static bool RecentlyRegisteredAdmin { get; set; }
     }
 }

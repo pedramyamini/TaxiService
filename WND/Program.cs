@@ -38,8 +38,10 @@ namespace WND
             {
                 if (!taxiContext.AuthenticatedUsers.Any())
                 {
+                    Utility.Session.RecentlyRegisteredAdmin = true;
                     MessageBoxRTL.Info("کاربر گرامی به نرم‌افزار مدیریت تاکسی تلفنی خوش آمدید. لطفا نام کاربری و کلمه عبور مدیر را جهت ثبت نام وارد نمایید", "خوش‌آمدگویی");
                     Application.Run(new Register(taxiContext));
+
                 }
                 else
                 {
