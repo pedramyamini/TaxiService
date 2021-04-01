@@ -46,6 +46,7 @@ namespace WND.Forms.Customer
                     var Customers = taxiContext.Users.OfType<Models.Customer>();
                     if (Customers.Any(c => c.FullName == customer.FullName && c.Mobile != customer.Mobile))
                     {
+                        //fullname conflict. create customer or not?
                         DialogResult dr = MessageBoxRTL.Ask($"مشتری با نام { customer.FullName } قبلا ثبت شده است. آیا می‌خواهید مشتری جدیدی با تشابه اسمی را ثبت نمایید؟", string.Empty);
                         if (dr == DialogResult.Yes)
                         {
@@ -53,6 +54,8 @@ namespace WND.Forms.Customer
                             taxiContext.SaveChanges();
                             MessageBoxRTL.Info($"ثبت اشتراک {customer.FullName} با موفقیت انجام شد.", "");
                         }
+
+                        //update existing customer
                         dr = MessageBoxRTL.Ask($"مشتری با نام { customer.FullName } قبلا ثبت شده است. آیا می‌خواهید مشتری قبلی را ویرایش نمایید؟", string.Empty);
                         if (dr == DialogResult.Yes)
                         {
@@ -63,6 +66,7 @@ namespace WND.Forms.Customer
                             MessageBoxRTL.Info($"ویرایش اشتراک {customer.FullName} با موفقیت انجام شد.", "");
                         }
                     }
+                    //mobile conflict. Update or not?
                     else if(Customers.Any(c=>c.Mobile==customer.Mobile && c.FullName!=customer.FullName))
                     {
                         DialogResult dr = MessageBoxRTL.Ask($"مشتری با شماره همراه { customer.Mobile } قبلا ثبت شده است. آیا می‌خواهید مشتری قبلی را ویرایش نمایید؟", string.Empty);
@@ -75,10 +79,12 @@ namespace WND.Forms.Customer
                             MessageBoxRTL.Info($"ویرایش اشتراک {customer.FullName} با موفقیت انجام شد.", "");
                         }
                     }
+                    //this exact customer already exists. avoid db transaction
                     else if(Customers.Any(c => c.Mobile == customer.Mobile && c.FullName == customer.FullName && c.Address==customer.Address))
                     {
                         MessageBoxRTL.Error("مشتری با مشخصات واردشده قبلا ثبت شده است.", string.Empty);
                     }
+                    //change only existing customer address 
                     else if(Customers.Any(c => c.Mobile == customer.Mobile && c.FullName == customer.FullName && c.Address != customer.Address))
                     {
                         DialogResult dr=MessageBoxRTL.Ask("مشتری با مشخصات واردشده قبلا ثبت شده است. آیا مایل به ویرایش نشانی مشتری هستید؟", string.Empty);
@@ -89,6 +95,7 @@ namespace WND.Forms.Customer
                             taxiContext.SaveChanges();
                         }
                     }
+                    //new customer
                     else
                     {
                         taxiContext.Users.Add(customer);

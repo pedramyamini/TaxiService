@@ -19,7 +19,7 @@ namespace WND.Data
             //using fluent api to make 1:1 between Driver and Car
             modelBuilder.Configurations.Add(new Data.DriverMap());
 
-            //1:1 relationship Service Transaction
+            //1:1 relationship Service & Transaction
             modelBuilder.Entity<Models.Service>()
                 .HasRequired(t => t.Transaction)
                 .WithRequiredDependent(s => s.Service);

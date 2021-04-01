@@ -38,6 +38,7 @@ namespace WND.Driver
         {
             try
             {
+                //default SharePercent=0
                 int SharePercent = 0;
                 int.TryParse(txtSharePercent.Text.PersianToEnglish(), out SharePercent);
                 Models.Driver driver = new Models.Driver()
@@ -56,10 +57,13 @@ namespace WND.Driver
                 var conflict = taxiContext.Users.OfType<Models.Driver>();
                 if (Validation.Validate(driver))
                 {
+                    //check fullname and mobile conflict
                     if (!conflict.Any(d => d.FullName == txtFullName.Text && d.Mobile == txtMobile.Text))
                     {
+                        //fullname conflict
                         if(conflict.Any(d => d.FullName == txtFullName.Text))
                         {
+                            //fullname similarity
                             DialogResult dr=MessageBoxRTL.Ask("راننده با این نام قبلا ثبت شده است. آیا از افزودن این راننده به عنوان یک راننده جدید با تشابه اسمی اطمینان دارید؟", "");
                             if(dr==DialogResult.Yes)
                             {
@@ -67,6 +71,7 @@ namespace WND.Driver
                                 taxiContext.SaveChanges();
                                 MessageBoxRTL.Info("راننده با موفقیت افزوده شد.", "");
                             }
+                            //edit driver with fullname conflict
                             DialogResult dr2 = MessageBoxRTL.Ask("راننده با این نام قبلا ثبت شده است. آیا مایل به ویرایش این راننده هستید؟", "");
                             if (dr2 == DialogResult.Yes)
                             {
@@ -81,6 +86,7 @@ namespace WND.Driver
                     }
                     else
                     {
+                        //edit driver with mobile and fullname conflict
                         DialogResult dr = MessageBoxRTL.Ask("این راننده قبلا ثبت شده است. آیا می‌خواهید آن را ویرایش کنید؟", "");
                         if (dr == DialogResult.Yes)
                         {

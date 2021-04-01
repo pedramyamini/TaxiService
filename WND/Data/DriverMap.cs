@@ -10,6 +10,7 @@ namespace WND.Data
 {
     public class DriverMap:EntityTypeConfiguration<Models.Driver>
     {
+        //1:1 relationship between Driver & Car
         public DriverMap()
         {
             this.HasKey(c => c.Id);

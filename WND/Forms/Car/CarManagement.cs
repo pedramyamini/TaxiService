@@ -29,6 +29,7 @@ namespace WND.Car
 
         void FillTextBoxes()
         {
+            //Fill LincensePlate TextBoxes
             if (LicensePlateTextBoxes.Count == 0)
             {
                 LicensePlateTextBoxes.Add(txtLicencePlate1);
@@ -55,6 +56,7 @@ namespace WND.Car
 
         public void LicensePlateRemoveHint()
         {
+            //Hide LicensePlate Example
             foreach (var txt in LicensePlateTextBoxes)
             {
                 txt.BackColor = Color.White;
@@ -64,6 +66,7 @@ namespace WND.Car
 
         public void LicensePlateAddHint()
         {
+            //Show LicensePlate Example
             txtLicencePlate1.Text = "۱۲";
             txtLicencePlate2.Text = "ت";
             txtLicencePlate3.Text = "۳۴۵";
@@ -76,7 +79,7 @@ namespace WND.Car
 
         void BindCar()
         {
-            //binding
+            //binding car
             try
             {
                 txtModel.Text = selectedDriver.Car.Model;
@@ -104,6 +107,7 @@ namespace WND.Car
 
         private void checkboxShowLicenseExample_CheckedChanged(object sender, EventArgs e)
         {
+            //Show LicensePlate Example
             FillTextBoxes();
             if (checkboxShowLicenseExample.Checked)
             {
@@ -117,6 +121,7 @@ namespace WND.Car
 
         private void EditCar_Load(object sender, EventArgs e)
         {
+            //check if any car exists
             if (taxiContext.Cars.Any())
             {
                 Drivers = taxiContext.Users.OfType<Models.Driver>().Where(u => u.Role == Models.Roles.Driver).Select(u => u);
@@ -152,6 +157,7 @@ namespace WND.Car
             if (dr == DialogResult.Yes)
             {
                 string LicensePlate = LicensePlateCalculation.CalculateLicensePlate(LicensePlateTextBoxes);
+
                 Models.Car car = new Models.Car()
                 {
                     LicensePlate = LicensePlate,
@@ -159,6 +165,7 @@ namespace WND.Car
                     Model = txtModel.Text
                 };
 
+                //validate car
                 if (string.IsNullOrEmpty(car.LicensePlate.Replace("-", "")) || string.IsNullOrEmpty(car.Model) || string.IsNullOrEmpty(car.Color))
                 {
                     MessageBoxRTL.Error("تمامی موارد فرم ضروری هستند و نمی‌توانند خالی باشند.", string.Empty);
@@ -166,6 +173,7 @@ namespace WND.Car
                 }
                 try
                 {
+                    //update car
                     taxiContext.Cars.Attach(selectedDriver.Car);
 
                     selectedDriver.Car = car;
@@ -195,6 +203,7 @@ namespace WND.Car
 
                 try
                 {
+                    //delete car
                     taxiContext.Cars.Attach(selectedDriver.Car);
 
                     selectedDriver.Car = car;
@@ -213,24 +222,17 @@ namespace WND.Car
 
         private void EditCar_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (this.DialogResult == DialogResult.Cancel)
+            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
+            if (dr == DialogResult.Yes)
             {
                 sourceForm.Enabled = true;
                 sourceForm.Focus();
-            }
-            else
-            {
-                DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
-                if (dr == DialogResult.Yes)
-                {
-                    sourceForm.Enabled = true;
-                    sourceForm.Focus();
-                }
             }
         }
 
         private void txtLicencePlate2_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //a LicensePlate only accepts one letter this event checks its correctness
             if (!Regex.IsMatch(e.KeyChar.ToString(), "^([وهیبتعجدسصطقلمنوهیبتعجدسصطقلمن]){1}$"))
             {
                 e.Handled = true;

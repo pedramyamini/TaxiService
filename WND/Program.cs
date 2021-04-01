@@ -32,6 +32,8 @@ namespace WND
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //Register or Login
             using(TaxiDbContext taxiDb=new TaxiDbContext())
             {
                 if (!taxiContext.AuthenticatedUsers.Any())

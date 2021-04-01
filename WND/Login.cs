@@ -55,39 +55,6 @@ namespace WND
             
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            if (txtUsername.Text != string.Empty && txtPassword.Text != string.Empty)
-            {
-                string Password = EasyHash.Hash(txtPassword.Text);
-                Session.CurrentUser = taxiContext.AuthenticatedUsers.FirstOrDefault(au => au.Username == txtUsername.Text && au.Password == Password);
-                if (Session.CurrentUser != null)
-                {
-                    MessageBoxRTL.Info(string.Format("کاربر گرامی، {0} خوش آمدید", Session.CurrentUser.Username), "");
-                    switch (Session.CurrentUser.Role)
-                    {
-                        case Roles.Admin:
-                            new ManagerPanel(taxiContext,this).Show();
-                            this.Enabled=false;
-                            this.Hide();
-                            break;
-                        case Roles.Secretary:
-                            new SecretaryPanel(taxiContext,this).Show();
-                            this.Enabled = false;
-                            this.Hide();
-                            break;
-                    }
-                }
-                else
-                {
-                    MessageBoxRTL.Info("کاربری با این مشخصات یافت نشد. لطفا از صحت نام کاربری و کلمه عبور خود اطمینان حاصل نمایید", "");
-                }
-            }
-            else
-            {
-                MessageBoxRTL.Info("نام کاربری و کلمه عبور نمی‌تواند خالی باشد", "");
-            }
-        }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -103,6 +70,41 @@ namespace WND
         {
             txtUsername.Text = string.Empty;
             txtPassword.Text = string.Empty;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text != string.Empty && txtPassword.Text != string.Empty)
+            {
+                string Password = EasyHash.Hash(txtPassword.Text);
+                Session.CurrentUser = taxiContext.AuthenticatedUsers.FirstOrDefault(au => au.Username == txtUsername.Text && au.Password == Password);
+                if (Session.CurrentUser != null)
+                {
+                    MessageBoxRTL.Info(string.Format("کاربر گرامی، {0} خوش آمدید", Session.CurrentUser.Username), "");
+                    //checking Role
+                    switch (Session.CurrentUser.Role)
+                    {
+                        case Roles.Admin:
+                            new ManagerPanel(taxiContext, this).Show();
+                            this.Enabled = false;
+                            this.Hide();
+                            break;
+                        case Roles.Secretary:
+                            new SecretaryPanel(taxiContext, this).Show();
+                            this.Enabled = false;
+                            this.Hide();
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBoxRTL.Info("کاربری با این مشخصات یافت نشد. لطفا از صحت نام کاربری و کلمه عبور خود اطمینان حاصل نمایید", "");
+                }
+            }
+            else
+            {
+                MessageBoxRTL.Info("نام کاربری و کلمه عبور نمی‌تواند خالی باشد", "");
+            }
         }
     }
 }

@@ -104,6 +104,8 @@ namespace WND
             var TodayServices = taxiContext.Services
                 .Where(s => s.DateTime >= TodayStart && s.DateTime <= TodayEnd && !s.IsDeleted)
                 .OrderByDescending(s => s.DateTime).ToList();
+
+            //Search
             if(!string.IsNullOrEmpty(txtSearch.Text))
             {
                 string Search = txtSearch.Text;
