@@ -53,7 +53,7 @@ namespace WND.Car
             // 
             // btnEditCar
             // 
-            this.btnEditCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnEditCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEditCar.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnEditCar.ForeColor = System.Drawing.Color.White;
             this.btnEditCar.Location = new System.Drawing.Point(96, 281);
@@ -257,11 +257,13 @@ namespace WND.Car
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboboxDrivers);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(445, 400);
             this.MinimumSize = new System.Drawing.Size(445, 400);
             this.Name = "EditCar";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ویرایش خودرو";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditCar_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditCar_FormClosed);

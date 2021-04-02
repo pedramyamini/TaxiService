@@ -45,10 +45,10 @@
             // 
             this.txtSecurityAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSecurityAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecurityAnswer.Location = new System.Drawing.Point(112, 62);
+            this.txtSecurityAnswer.Location = new System.Drawing.Point(112, 72);
             this.txtSecurityAnswer.MaxLength = 20;
             this.txtSecurityAnswer.Name = "txtSecurityAnswer";
-            this.txtSecurityAnswer.Size = new System.Drawing.Size(163, 26);
+            this.txtSecurityAnswer.Size = new System.Drawing.Size(207, 26);
             this.txtSecurityAnswer.TabIndex = 25;
             // 
             // label4
@@ -56,7 +56,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(31, 68);
+            this.label4.Location = new System.Drawing.Point(31, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 24;
@@ -66,11 +66,11 @@
             // 
             this.txtSecurityQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSecurityQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecurityQuestion.Location = new System.Drawing.Point(112, 27);
+            this.txtSecurityQuestion.Location = new System.Drawing.Point(112, 37);
             this.txtSecurityQuestion.MaxLength = 20;
             this.txtSecurityQuestion.Name = "txtSecurityQuestion";
             this.txtSecurityQuestion.ReadOnly = true;
-            this.txtSecurityQuestion.Size = new System.Drawing.Size(163, 26);
+            this.txtSecurityQuestion.Size = new System.Drawing.Size(207, 26);
             this.txtSecurityQuestion.TabIndex = 23;
             // 
             // label3
@@ -78,7 +78,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(31, 33);
+            this.label3.Location = new System.Drawing.Point(31, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 22;
@@ -89,11 +89,11 @@
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Enabled = false;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(112, 158);
+            this.txtPassword.Location = new System.Drawing.Point(112, 195);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(163, 26);
+            this.txtPassword.Size = new System.Drawing.Size(207, 26);
             this.txtPassword.TabIndex = 27;
             // 
             // label1
@@ -101,7 +101,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(30, 166);
+            this.label1.Location = new System.Drawing.Point(30, 203);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 26;
@@ -112,11 +112,11 @@
             this.txtPasswordRepeation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPasswordRepeation.Enabled = false;
             this.txtPasswordRepeation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordRepeation.Location = new System.Drawing.Point(112, 193);
+            this.txtPasswordRepeation.Location = new System.Drawing.Point(112, 230);
             this.txtPasswordRepeation.MaxLength = 20;
             this.txtPasswordRepeation.Name = "txtPasswordRepeation";
             this.txtPasswordRepeation.PasswordChar = '*';
-            this.txtPasswordRepeation.Size = new System.Drawing.Size(163, 26);
+            this.txtPasswordRepeation.Size = new System.Drawing.Size(207, 26);
             this.txtPasswordRepeation.TabIndex = 29;
             // 
             // label2
@@ -124,7 +124,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(30, 201);
+            this.label2.Location = new System.Drawing.Point(30, 238);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 28;
@@ -132,29 +132,35 @@
             // 
             // btnChangePassword
             // 
+            this.btnChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnChangePassword.Enabled = false;
-            this.btnChangePassword.Location = new System.Drawing.Point(101, 286);
+            this.btnChangePassword.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnChangePassword.ForeColor = System.Drawing.Color.White;
+            this.btnChangePassword.Location = new System.Drawing.Point(146, 303);
             this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Size = new System.Drawing.Size(89, 38);
+            this.btnChangePassword.Size = new System.Drawing.Size(107, 41);
             this.btnChangePassword.TabIndex = 30;
             this.btnChangePassword.Text = "تغییر کلمه عبور";
-            this.btnChangePassword.UseVisualStyleBackColor = true;
+            this.btnChangePassword.UseVisualStyleBackColor = false;
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // btnVerify
             // 
-            this.btnVerify.Location = new System.Drawing.Point(102, 105);
+            this.btnVerify.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnVerify.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnVerify.ForeColor = System.Drawing.Color.White;
+            this.btnVerify.Location = new System.Drawing.Point(146, 113);
             this.btnVerify.Name = "btnVerify";
-            this.btnVerify.Size = new System.Drawing.Size(89, 38);
+            this.btnVerify.Size = new System.Drawing.Size(107, 41);
             this.btnVerify.TabIndex = 31;
             this.btnVerify.Text = "صحت سنجی";
-            this.btnVerify.UseVisualStyleBackColor = true;
+            this.btnVerify.UseVisualStyleBackColor = false;
             this.btnVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
             // checkboxTogglePasswordDisplay
             // 
             this.checkboxTogglePasswordDisplay.AutoSize = true;
-            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(175, 239);
+            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(219, 271);
             this.checkboxTogglePasswordDisplay.Name = "checkboxTogglePasswordDisplay";
             this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(100, 17);
             this.checkboxTogglePasswordDisplay.TabIndex = 32;
@@ -166,7 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(306, 347);
+            this.ClientSize = new System.Drawing.Size(350, 367);
             this.Controls.Add(this.checkboxTogglePasswordDisplay);
             this.Controls.Add(this.btnVerify);
             this.Controls.Add(this.btnChangePassword);
@@ -178,9 +184,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtSecurityQuestion);
             this.Controls.Add(this.label3);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(366, 406);
+            this.MinimumSize = new System.Drawing.Size(366, 406);
             this.Name = "PasswordForgetion";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "بازیابی کلمه عبور";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PasswordForgetion_FormClosing);
             this.Load += new System.EventHandler(this.PasswordForgetion_Load);

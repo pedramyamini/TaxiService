@@ -105,12 +105,14 @@
             // 
             // btnAddService
             // 
-            this.btnAddService.Location = new System.Drawing.Point(169, 473);
+            this.btnAddService.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAddService.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnAddService.Location = new System.Drawing.Point(188, 482);
             this.btnAddService.Name = "btnAddService";
-            this.btnAddService.Size = new System.Drawing.Size(135, 56);
+            this.btnAddService.Size = new System.Drawing.Size(123, 55);
             this.btnAddService.TabIndex = 8;
-            this.btnAddService.Text = "افزودن سرویس";
-            this.btnAddService.UseVisualStyleBackColor = true;
+            this.btnAddService.Text = "افزودن";
+            this.btnAddService.UseVisualStyleBackColor = false;
             this.btnAddService.Click += new System.EventHandler(this.btnAddService_Click);
             // 
             // checkboxIsPaid
@@ -243,7 +245,7 @@
             this.AcceptButton = this.btnAddService;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 561);
+            this.ClientSize = new System.Drawing.Size(482, 568);
             this.Controls.Add(this.txtCar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtCost);
@@ -263,9 +265,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCustomer);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(498, 607);
+            this.MinimumSize = new System.Drawing.Size(498, 607);
             this.Name = "AddService";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن سرویس";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddService_FormClosed);
             this.Load += new System.EventHandler(this.AddService_Load);

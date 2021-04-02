@@ -80,12 +80,14 @@ namespace WND.Secretary
             // 
             // btnAddSecretary
             // 
+            this.btnAddSecretary.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAddSecretary.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnAddSecretary.Location = new System.Drawing.Point(116, 247);
             this.btnAddSecretary.Name = "btnAddSecretary";
-            this.btnAddSecretary.Size = new System.Drawing.Size(97, 50);
+            this.btnAddSecretary.Size = new System.Drawing.Size(114, 50);
             this.btnAddSecretary.TabIndex = 5;
             this.btnAddSecretary.Text = "افزودن";
-            this.btnAddSecretary.UseVisualStyleBackColor = true;
+            this.btnAddSecretary.UseVisualStyleBackColor = false;
             this.btnAddSecretary.Click += new System.EventHandler(this.btnAddSecretary_Click);
             // 
             // txtMobile
@@ -139,9 +141,13 @@ namespace WND.Secretary
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(350, 359);
+            this.MinimumSize = new System.Drawing.Size(350, 359);
             this.Name = "AddSecretary";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن منشی";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddSecretary_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddSecretary_FormClosed);

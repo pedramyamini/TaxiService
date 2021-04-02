@@ -241,32 +241,41 @@ namespace WND
             // 
             // btnEditService
             // 
+            this.btnEditService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEditService.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnEditService.ForeColor = System.Drawing.Color.White;
             this.btnEditService.Location = new System.Drawing.Point(677, 496);
             this.btnEditService.Name = "btnEditService";
-            this.btnEditService.Size = new System.Drawing.Size(134, 45);
+            this.btnEditService.Size = new System.Drawing.Size(134, 50);
             this.btnEditService.TabIndex = 9;
-            this.btnEditService.Text = "ویرایش سرویس";
-            this.btnEditService.UseVisualStyleBackColor = true;
+            this.btnEditService.Text = "ویرایش";
+            this.btnEditService.UseVisualStyleBackColor = false;
             this.btnEditService.Click += new System.EventHandler(this.btnEditService_Click);
             // 
             // btnDeleteService
             // 
+            this.btnDeleteService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDeleteService.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteService.ForeColor = System.Drawing.Color.White;
             this.btnDeleteService.Location = new System.Drawing.Point(818, 496);
             this.btnDeleteService.Name = "btnDeleteService";
-            this.btnDeleteService.Size = new System.Drawing.Size(134, 45);
+            this.btnDeleteService.Size = new System.Drawing.Size(134, 50);
             this.btnDeleteService.TabIndex = 10;
-            this.btnDeleteService.Text = "حذف سرویس";
-            this.btnDeleteService.UseVisualStyleBackColor = true;
+            this.btnDeleteService.Text = "حذف";
+            this.btnDeleteService.UseVisualStyleBackColor = false;
             this.btnDeleteService.Click += new System.EventHandler(this.btnDeleteService_Click);
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(537, 496);
+            this.btnClear.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnClear.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(522, 496);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(134, 45);
+            this.btnClear.Size = new System.Drawing.Size(149, 50);
             this.btnClear.TabIndex = 41;
             this.btnClear.Text = "پاک کردن ورودی‌ها";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // dateTimePicker1

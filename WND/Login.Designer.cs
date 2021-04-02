@@ -41,12 +41,15 @@
             // 
             // btnRestorePassword
             // 
-            this.btnRestorePassword.Location = new System.Drawing.Point(153, 114);
+            this.btnRestorePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRestorePassword.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnRestorePassword.ForeColor = System.Drawing.Color.White;
+            this.btnRestorePassword.Location = new System.Drawing.Point(5, 130);
             this.btnRestorePassword.Name = "btnRestorePassword";
-            this.btnRestorePassword.Size = new System.Drawing.Size(99, 23);
+            this.btnRestorePassword.Size = new System.Drawing.Size(115, 40);
             this.btnRestorePassword.TabIndex = 18;
             this.btnRestorePassword.Text = "بازیابی کلمه عبور";
-            this.btnRestorePassword.UseVisualStyleBackColor = true;
+            this.btnRestorePassword.UseVisualStyleBackColor = false;
             this.btnRestorePassword.Click += new System.EventHandler(this.btnRestorePassword_Click);
             // 
             // panelRegister
@@ -67,7 +70,7 @@
             // checkboxTogglePasswordDisplay
             // 
             this.checkboxTogglePasswordDisplay.AutoSize = true;
-            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(20, 118);
+            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(20, 95);
             this.checkboxTogglePasswordDisplay.Name = "checkboxTogglePasswordDisplay";
             this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(100, 17);
             this.checkboxTogglePasswordDisplay.TabIndex = 16;
@@ -77,12 +80,15 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(88, 177);
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnRegister.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(137, 130);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(97, 40);
+            this.btnRegister.Size = new System.Drawing.Size(115, 40);
             this.btnRegister.TabIndex = 3;
             this.btnRegister.Text = "ورود";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
@@ -133,14 +139,15 @@
             this.AcceptButton = this.btnRegister;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 338);
+            this.ClientSize = new System.Drawing.Size(370, 314);
             this.Controls.Add(this.panelRegister);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(386, 377);
-            this.MinimumSize = new System.Drawing.Size(386, 377);
+            this.MaximumSize = new System.Drawing.Size(386, 353);
+            this.MinimumSize = new System.Drawing.Size(386, 353);
             this.Name = "Login";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ورود";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.Load += new System.EventHandler(this.Login_Load);

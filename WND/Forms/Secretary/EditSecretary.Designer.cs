@@ -41,17 +41,20 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(155, 221);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(127, 224);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 50);
+            this.button1.Size = new System.Drawing.Size(114, 50);
             this.button1.TabIndex = 13;
             this.button1.Text = "ویرایش";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(155, 157);
+            this.textBox3.Location = new System.Drawing.Point(127, 158);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
@@ -62,7 +65,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 169);
+            this.label3.Location = new System.Drawing.Point(56, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 11;
@@ -71,7 +74,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(155, 113);
+            this.textBox2.Location = new System.Drawing.Point(127, 114);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(142, 38);
@@ -81,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 127);
+            this.label2.Location = new System.Drawing.Point(56, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 9;
@@ -90,7 +93,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(155, 69);
+            this.textBox1.Location = new System.Drawing.Point(127, 70);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(142, 38);
@@ -100,7 +103,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 83);
+            this.label1.Location = new System.Drawing.Point(56, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 7;
@@ -109,7 +112,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(84, 43);
+            this.label4.Location = new System.Drawing.Point(56, 44);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 14;
@@ -119,7 +122,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(155, 38);
+            this.comboBox1.Location = new System.Drawing.Point(127, 39);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(142, 24);
             this.comboBox1.TabIndex = 15;
@@ -129,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 309);
+            this.ClientSize = new System.Drawing.Size(357, 309);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
@@ -139,9 +142,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(373, 348);
+            this.MinimumSize = new System.Drawing.Size(373, 348);
             this.Name = "EditSecretary";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ویرایش منشی";
             this.ResumeLayout(false);
             this.PerformLayout();

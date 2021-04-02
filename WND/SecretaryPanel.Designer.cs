@@ -62,20 +62,20 @@
             this.AddService,
             this.EditService});
             this.سرویسهاToolStripMenuItem.Name = "سرویسهاToolStripMenuItem";
-            this.سرویسهاToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.سرویسهاToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.سرویسهاToolStripMenuItem.Text = "سرویس‌ها";
             // 
             // AddService
             // 
             this.AddService.Name = "AddService";
-            this.AddService.Size = new System.Drawing.Size(180, 24);
+            this.AddService.Size = new System.Drawing.Size(151, 22);
             this.AddService.Text = "افزودن سرویس";
             this.AddService.Click += new System.EventHandler(this.AddService_Click);
             // 
             // EditService
             // 
             this.EditService.Name = "EditService";
-            this.EditService.Size = new System.Drawing.Size(180, 24);
+            this.EditService.Size = new System.Drawing.Size(151, 22);
             this.EditService.Text = "ویرایش سرویس";
             this.EditService.Click += new System.EventHandler(this.EditService_Click);
             // 
@@ -86,44 +86,44 @@
             this.ویرایشمشتریToolStripMenuItem,
             this.حذفمشتریToolStripMenuItem});
             this.مشتریانToolStripMenuItem.Name = "مشتریانToolStripMenuItem";
-            this.مشتریانToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.مشتریانToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.مشتریانToolStripMenuItem.Text = "مشتریان";
             // 
             // AddCustomer
             // 
             this.AddCustomer.Name = "AddCustomer";
-            this.AddCustomer.Size = new System.Drawing.Size(251, 24);
+            this.AddCustomer.Size = new System.Drawing.Size(209, 22);
             this.AddCustomer.Text = "افزودن مشتری(ثبت اشتراک)";
             this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
             // 
             // ویرایشمشتریToolStripMenuItem
             // 
             this.ویرایشمشتریToolStripMenuItem.Name = "ویرایشمشتریToolStripMenuItem";
-            this.ویرایشمشتریToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
+            this.ویرایشمشتریToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.ویرایشمشتریToolStripMenuItem.Text = "ویرایش مشتری";
             // 
             // حذفمشتریToolStripMenuItem
             // 
             this.حذفمشتریToolStripMenuItem.Name = "حذفمشتریToolStripMenuItem";
-            this.حذفمشتریToolStripMenuItem.Size = new System.Drawing.Size(251, 24);
+            this.حذفمشتریToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.حذفمشتریToolStripMenuItem.Text = "حذف مشتری";
             // 
             // تماسToolStripMenuItem
             // 
             this.تماسToolStripMenuItem.Name = "تماسToolStripMenuItem";
-            this.تماسToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.تماسToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.تماسToolStripMenuItem.Text = "تماس";
             // 
             // تنظیماتToolStripMenuItem
             // 
             this.تنظیماتToolStripMenuItem.Name = "تنظیماتToolStripMenuItem";
-            this.تنظیماتToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.تنظیماتToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.تنظیماتToolStripMenuItem.Text = "تنظیمات";
             // 
             // راهنماToolStripMenuItem
             // 
             this.راهنماToolStripMenuItem.Name = "راهنماToolStripMenuItem";
-            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
+            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.راهنماToolStripMenuItem.Text = "راهنما";
             // 
             // خروجToolStripMenuItem
@@ -131,13 +131,13 @@
             this.خروجToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnLogOutToolStripMenuItem});
             this.خروجToolStripMenuItem.Name = "خروجToolStripMenuItem";
-            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.خروجToolStripMenuItem.Text = "خروج";
             // 
             // btnLogOutToolStripMenuItem
             // 
             this.btnLogOutToolStripMenuItem.Name = "btnLogOutToolStripMenuItem";
-            this.btnLogOutToolStripMenuItem.Size = new System.Drawing.Size(211, 24);
+            this.btnLogOutToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.btnLogOutToolStripMenuItem.Text = "خروج از حساب کاربری";
             this.btnLogOutToolStripMenuItem.Click += new System.EventHandler(this.btnLogOutToolStripMenuItem_Click);
             // 
@@ -152,7 +152,7 @@
             this.خروجToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(856, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(856, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -240,9 +240,13 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(872, 500);
+            this.MinimumSize = new System.Drawing.Size(872, 500);
             this.Name = "SecretaryPanel";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "سیستم تاکسی تلفنی - پنل منشی";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SecretaryPanel_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SecretaryPanel_FormClosed);

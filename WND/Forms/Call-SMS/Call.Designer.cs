@@ -32,19 +32,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.calling = new System.Windows.Forms.DataGridViewImageColumn();
+            this.driversBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.driversBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mobileDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.calling = new System.Windows.Forms.DataGridViewImageColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -92,12 +89,54 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "راننده";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.calling});
+            this.dataGridView1.DataSource = this.driversBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(17, 58);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(475, 127);
+            this.dataGridView1.TabIndex = 2;
+            // 
+            // calling
+            // 
+            this.calling.DataPropertyName = "Id";
+            this.calling.HeaderText = "تماس";
+            this.calling.Image = global::WND.Properties.Resources.phone_call1;
+            this.calling.Name = "calling";
+            // 
+            // driversBindingSource
+            // 
+            this.driversBindingSource.DataMember = "Drivers";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 39);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "جستجو";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(116, 6);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(387, 39);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(509, 295);
+            this.tabPage2.Size = new System.Drawing.Size(509, 208);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "مشتری";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -107,7 +146,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(509, 295);
+            this.tabPage4.Size = new System.Drawing.Size(509, 208);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "منشی";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -117,7 +156,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(509, 295);
+            this.tabPage3.Size = new System.Drawing.Size(509, 208);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "مدیر";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -131,69 +170,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "مخاطب";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(116, 6);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(387, 39);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 39);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "جستجو";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.fullNameDataGridViewTextBoxColumn,
-            this.mobileDataGridViewTextBoxColumn,
-            this.calling});
-            this.dataGridView1.DataSource = this.driversBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 58);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(475, 127);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // taxiDataSet1
-            // 
-            // 
-            // driversBindingSource
-            // 
-            this.driversBindingSource.DataMember = "Drivers";
-            // 
-            // driversTableAdapter
-            // 
-            
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "شناسه";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "نام راننده";
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            // 
-            // mobileDataGridViewTextBoxColumn
-            // 
-            this.mobileDataGridViewTextBoxColumn.DataPropertyName = "Mobile";
-            this.mobileDataGridViewTextBoxColumn.HeaderText = "شماره همراه";
-            this.mobileDataGridViewTextBoxColumn.Name = "mobileDataGridViewTextBoxColumn";
-            // 
             // dataGridViewImageColumn1
             // 
             this.dataGridViewImageColumn1.DataPropertyName = "Id";
@@ -201,13 +177,6 @@
             this.dataGridViewImageColumn1.Image = global::WND.Properties.Resources.phone_call;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 108;
-            // 
-            // calling
-            // 
-            this.calling.DataPropertyName = "Id";
-            this.calling.HeaderText = "تماس";
-            this.calling.Image = global::WND.Properties.Resources.phone_call1;
-            this.calling.Name = "calling";
             // 
             // label3
             // 
@@ -241,12 +210,15 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.LimeGreen;
+            this.button2.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(726, 151);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 39);
+            this.button2.Size = new System.Drawing.Size(114, 50);
             this.button2.TabIndex = 6;
             this.button2.Text = "پاسخ دادن";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
@@ -283,9 +255,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(949, 393);
+            this.MinimumSize = new System.Drawing.Size(949, 393);
             this.Name = "Call";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تماس";
             this.Load += new System.EventHandler(this.Call_Load);
             this.tabControl1.ResumeLayout(false);

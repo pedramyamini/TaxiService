@@ -32,11 +32,11 @@ namespace WND.Driver
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
-            this.txtMobile = new WND.Utility.NumericTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddDriver = new System.Windows.Forms.Button();
-            this.txtSharePercent = new WND.Utility.NumericTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtSharePercent = new WND.Utility.NumericTextBox();
+            this.txtMobile = new WND.Utility.NumericTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,15 +56,6 @@ namespace WND.Driver
             this.txtFullName.Size = new System.Drawing.Size(140, 26);
             this.txtFullName.TabIndex = 1;
             // 
-            // txtMobile
-            // 
-            this.txtMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile.Location = new System.Drawing.Point(165, 81);
-            this.txtMobile.MaxLength = 11;
-            this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(140, 26);
-            this.txtMobile.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -76,22 +67,16 @@ namespace WND.Driver
             // 
             // btnAddDriver
             // 
-            this.btnAddDriver.Location = new System.Drawing.Point(129, 166);
+            this.btnAddDriver.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAddDriver.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnAddDriver.ForeColor = System.Drawing.Color.Black;
+            this.btnAddDriver.Location = new System.Drawing.Point(134, 180);
             this.btnAddDriver.Name = "btnAddDriver";
-            this.btnAddDriver.Size = new System.Drawing.Size(133, 40);
+            this.btnAddDriver.Size = new System.Drawing.Size(114, 50);
             this.btnAddDriver.TabIndex = 4;
             this.btnAddDriver.Text = "افزودن";
-            this.btnAddDriver.UseVisualStyleBackColor = true;
+            this.btnAddDriver.UseVisualStyleBackColor = false;
             this.btnAddDriver.Click += new System.EventHandler(this.btnAddDriver_Click);
-            // 
-            // txtSharePercent
-            // 
-            this.txtSharePercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSharePercent.Location = new System.Drawing.Point(165, 122);
-            this.txtSharePercent.MaxLength = 11;
-            this.txtSharePercent.Name = "txtSharePercent";
-            this.txtSharePercent.Size = new System.Drawing.Size(140, 26);
-            this.txtSharePercent.TabIndex = 3;
             // 
             // label3
             // 
@@ -102,12 +87,30 @@ namespace WND.Driver
             this.label3.TabIndex = 5;
             this.label3.Text = "حق اشتراک(درصد)";
             // 
+            // txtSharePercent
+            // 
+            this.txtSharePercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSharePercent.Location = new System.Drawing.Point(165, 122);
+            this.txtSharePercent.MaxLength = 11;
+            this.txtSharePercent.Name = "txtSharePercent";
+            this.txtSharePercent.Size = new System.Drawing.Size(140, 26);
+            this.txtSharePercent.TabIndex = 3;
+            // 
+            // txtMobile
+            // 
+            this.txtMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobile.Location = new System.Drawing.Point(165, 81);
+            this.txtMobile.MaxLength = 11;
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(140, 26);
+            this.txtMobile.TabIndex = 2;
+            // 
             // AddDriver
             // 
             this.AcceptButton = this.btnAddDriver;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(375, 233);
+            this.ClientSize = new System.Drawing.Size(375, 257);
             this.Controls.Add(this.txtSharePercent);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnAddDriver);
@@ -115,9 +118,13 @@ namespace WND.Driver
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(391, 296);
+            this.MinimumSize = new System.Drawing.Size(391, 296);
             this.Name = "AddDriver";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن راننده";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddDriver_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddDriver_FormClosed);

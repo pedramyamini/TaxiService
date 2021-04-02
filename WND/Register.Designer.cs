@@ -167,12 +167,14 @@ namespace WND
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(113, 283);
+            this.btnRegister.BackColor = System.Drawing.Color.LightGreen;
+            this.btnRegister.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnRegister.Location = new System.Drawing.Point(104, 283);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(97, 40);
+            this.btnRegister.Size = new System.Drawing.Size(114, 50);
             this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "ثبت نام";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // txtPassword
@@ -233,6 +235,7 @@ namespace WND
             this.Name = "Register";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ثبت نام";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register_FormClosed);

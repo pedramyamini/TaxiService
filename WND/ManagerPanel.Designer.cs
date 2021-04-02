@@ -83,7 +83,7 @@
             this.ExitMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(790, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(790, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -94,32 +94,32 @@
             this.ویرایشرانندهToolStripMenuItem,
             this.حذفرانندهToolStripMenuItem});
             this.رانندگانToolStripMenuItem.Name = "رانندگانToolStripMenuItem";
-            this.رانندگانToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.رانندگانToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.رانندگانToolStripMenuItem.Text = "رانندگان";
             // 
             // AddDriver
             // 
             this.AddDriver.Name = "AddDriver";
-            this.AddDriver.Size = new System.Drawing.Size(180, 24);
+            this.AddDriver.Size = new System.Drawing.Size(140, 22);
             this.AddDriver.Text = "افزودن راننده";
             this.AddDriver.Click += new System.EventHandler(this.AddDriver_Click);
             // 
             // ویرایشرانندهToolStripMenuItem
             // 
             this.ویرایشرانندهToolStripMenuItem.Name = "ویرایشرانندهToolStripMenuItem";
-            this.ویرایشرانندهToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.ویرایشرانندهToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.ویرایشرانندهToolStripMenuItem.Text = "ویرایش راننده";
             // 
             // حذفرانندهToolStripMenuItem
             // 
             this.حذفرانندهToolStripMenuItem.Name = "حذفرانندهToolStripMenuItem";
-            this.حذفرانندهToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.حذفرانندهToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.حذفرانندهToolStripMenuItem.Text = "حذف راننده";
             // 
             // EditCar
             // 
             this.EditCar.Name = "EditCar";
-            this.EditCar.Size = new System.Drawing.Size(73, 24);
+            this.EditCar.Size = new System.Drawing.Size(59, 20);
             this.EditCar.Text = "خودروها";
             this.EditCar.Click += new System.EventHandler(this.EditCar_Click);
             // 
@@ -130,26 +130,26 @@
             this.ویرایشمسیرToolStripMenuItem,
             this.حذفمسیرToolStripMenuItem});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(67, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(55, 20);
             this.toolStripMenuItem2.Text = "مسیرها";
             // 
             // AddPath
             // 
             this.AddPath.Name = "AddPath";
-            this.AddPath.Size = new System.Drawing.Size(161, 24);
+            this.AddPath.Size = new System.Drawing.Size(139, 22);
             this.AddPath.Text = "افزودن مسیر";
             this.AddPath.Click += new System.EventHandler(this.AddPath_Click);
             // 
             // ویرایشمسیرToolStripMenuItem
             // 
             this.ویرایشمسیرToolStripMenuItem.Name = "ویرایشمسیرToolStripMenuItem";
-            this.ویرایشمسیرToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.ویرایشمسیرToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.ویرایشمسیرToolStripMenuItem.Text = "ویرایش مسیر";
             // 
             // حذفمسیرToolStripMenuItem
             // 
             this.حذفمسیرToolStripMenuItem.Name = "حذفمسیرToolStripMenuItem";
-            this.حذفمسیرToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.حذفمسیرToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.حذفمسیرToolStripMenuItem.Text = "حذف مسیر";
             // 
             // منشیToolStripMenuItem
@@ -159,26 +159,26 @@
             this.ویرایشمنشیToolStripMenuItem,
             this.حذفمنشیToolStripMenuItem});
             this.منشیToolStripMenuItem.Name = "منشیToolStripMenuItem";
-            this.منشیToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.منشیToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.منشیToolStripMenuItem.Text = "منشی";
             // 
             // AddSecretary
             // 
             this.AddSecretary.Name = "AddSecretary";
-            this.AddSecretary.Size = new System.Drawing.Size(163, 24);
+            this.AddSecretary.Size = new System.Drawing.Size(141, 22);
             this.AddSecretary.Text = "افزودن منشی";
             this.AddSecretary.Click += new System.EventHandler(this.AddSecretary_Click);
             // 
             // ویرایشمنشیToolStripMenuItem
             // 
             this.ویرایشمنشیToolStripMenuItem.Name = "ویرایشمنشیToolStripMenuItem";
-            this.ویرایشمنشیToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
+            this.ویرایشمنشیToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.ویرایشمنشیToolStripMenuItem.Text = "ویرایش منشی";
             // 
             // حذفمنشیToolStripMenuItem
             // 
             this.حذفمنشیToolStripMenuItem.Name = "حذفمنشیToolStripMenuItem";
-            this.حذفمنشیToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
+            this.حذفمنشیToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.حذفمنشیToolStripMenuItem.Text = "حذف منشی";
             // 
             // toolStripMenuItem3
@@ -188,43 +188,43 @@
             this.گزارشبراساسمشتریToolStripMenuItem,
             this.لیستهمهسرویسهاToolStripMenuItem});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(90, 24);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(73, 20);
             this.toolStripMenuItem3.Text = "گزارش‌گیری";
             // 
             // گزارشبراساسرانندهToolStripMenuItem
             // 
             this.گزارشبراساسرانندهToolStripMenuItem.Name = "گزارشبراساسرانندهToolStripMenuItem";
-            this.گزارشبراساسرانندهToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.گزارشبراساسرانندهToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.گزارشبراساسرانندهToolStripMenuItem.Text = "گزارش بر اساس راننده";
             // 
             // گزارشبراساسمشتریToolStripMenuItem
             // 
             this.گزارشبراساسمشتریToolStripMenuItem.Name = "گزارشبراساسمشتریToolStripMenuItem";
-            this.گزارشبراساسمشتریToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.گزارشبراساسمشتریToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.گزارشبراساسمشتریToolStripMenuItem.Text = "گزارش بر اساس مشتری";
             // 
             // لیستهمهسرویسهاToolStripMenuItem
             // 
             this.لیستهمهسرویسهاToolStripMenuItem.Name = "لیستهمهسرویسهاToolStripMenuItem";
-            this.لیستهمهسرویسهاToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.لیستهمهسرویسهاToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.لیستهمهسرویسهاToolStripMenuItem.Text = "لیست همه سرویس‌ها";
             // 
             // تماسToolStripMenuItem
             // 
             this.تماسToolStripMenuItem.Name = "تماسToolStripMenuItem";
-            this.تماسToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.تماسToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.تماسToolStripMenuItem.Text = "تماس";
             // 
             // تنظیماتToolStripMenuItem
             // 
             this.تنظیماتToolStripMenuItem.Name = "تنظیماتToolStripMenuItem";
-            this.تنظیماتToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.تنظیماتToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.تنظیماتToolStripMenuItem.Text = "تنظیمات";
             // 
             // راهنماToolStripMenuItem
             // 
             this.راهنماToolStripMenuItem.Name = "راهنماToolStripMenuItem";
-            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
+            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.راهنماToolStripMenuItem.Text = "راهنما";
             // 
             // ExitMenu
@@ -233,20 +233,20 @@
             this.Logout,
             this.ویرایشحسابکاربریToolStripMenuItem});
             this.ExitMenu.Name = "ExitMenu";
-            this.ExitMenu.Size = new System.Drawing.Size(104, 24);
+            this.ExitMenu.Size = new System.Drawing.Size(84, 20);
             this.ExitMenu.Text = "حساب کاربری";
             // 
             // Logout
             // 
             this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(211, 24);
+            this.Logout.Size = new System.Drawing.Size(178, 22);
             this.Logout.Text = "خروج از حساب کاربری";
             this.Logout.Click += new System.EventHandler(this.Logout_Click);
             // 
             // ویرایشحسابکاربریToolStripMenuItem
             // 
             this.ویرایشحسابکاربریToolStripMenuItem.Name = "ویرایشحسابکاربریToolStripMenuItem";
-            this.ویرایشحسابکاربریToolStripMenuItem.Size = new System.Drawing.Size(211, 24);
+            this.ویرایشحسابکاربریToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.ویرایشحسابکاربریToolStripMenuItem.Text = "ویرایش حساب کاربری";
             // 
             // label1
@@ -347,9 +347,12 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(806, 482);
+            this.MinimumSize = new System.Drawing.Size(806, 482);
             this.Name = "ManagerPanel";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "پنل مدیریت";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ManagerPanel_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ManagerPanel_FormClosed);

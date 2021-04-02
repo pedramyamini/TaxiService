@@ -86,12 +86,14 @@ namespace WND.Forms.Customer
             // 
             // btnAddCustomer
             // 
-            this.btnAddCustomer.Location = new System.Drawing.Point(119, 326);
+            this.btnAddCustomer.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAddCustomer.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnAddCustomer.Location = new System.Drawing.Point(119, 327);
             this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(97, 50);
+            this.btnAddCustomer.Size = new System.Drawing.Size(114, 50);
             this.btnAddCustomer.TabIndex = 4;
             this.btnAddCustomer.Text = "افزودن";
-            this.btnAddCustomer.UseVisualStyleBackColor = true;
+            this.btnAddCustomer.UseVisualStyleBackColor = false;
             this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // txtMobile
@@ -122,6 +124,7 @@ namespace WND.Forms.Customer
             this.Name = "AddCustomer";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن مشتری";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddCustomer_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddCustomer_FormClosed);

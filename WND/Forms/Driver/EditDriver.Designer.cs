@@ -75,12 +75,15 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(117, 180);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(119, 190);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 40);
+            this.button1.Size = new System.Drawing.Size(114, 50);
             this.button1.TabIndex = 9;
             this.button1.Text = "ویرایش";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -107,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 237);
+            this.ClientSize = new System.Drawing.Size(350, 268);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
@@ -115,9 +118,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(366, 307);
+            this.MinimumSize = new System.Drawing.Size(366, 307);
             this.Name = "EditDriver";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ویرایش راننده";
             this.ResumeLayout(false);
             this.PerformLayout();

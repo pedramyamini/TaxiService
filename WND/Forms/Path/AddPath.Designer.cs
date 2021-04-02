@@ -95,12 +95,12 @@ namespace WND.Path
             // 
             // btnAddPath
             // 
-            this.btnAddPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAddPath.BackColor = System.Drawing.Color.LightGreen;
             this.btnAddPath.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnAddPath.ForeColor = System.Drawing.Color.White;
-            this.btnAddPath.Location = new System.Drawing.Point(131, 208);
+            this.btnAddPath.ForeColor = System.Drawing.Color.Black;
+            this.btnAddPath.Location = new System.Drawing.Point(130, 202);
             this.btnAddPath.Name = "btnAddPath";
-            this.btnAddPath.Size = new System.Drawing.Size(94, 49);
+            this.btnAddPath.Size = new System.Drawing.Size(114, 50);
             this.btnAddPath.TabIndex = 4;
             this.btnAddPath.Text = "افزودن";
             this.btnAddPath.UseVisualStyleBackColor = false;
@@ -119,9 +119,13 @@ namespace WND.Path
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtOrigin);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(363, 321);
+            this.MinimumSize = new System.Drawing.Size(363, 321);
             this.Name = "AddPath";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن مسیر";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddPath_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddPath_FormClosed);
