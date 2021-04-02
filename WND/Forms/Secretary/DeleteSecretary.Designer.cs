@@ -52,16 +52,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 52);
+            this.label4.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.label4.Location = new System.Drawing.Point(81, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(41, 23);
             this.label4.TabIndex = 23;
             this.label4.Text = "منشی";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Font = new System.Drawing.Font("B Yekan", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(137, 230);
             this.button1.Name = "button1";
@@ -85,9 +86,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(66, 178);
+            this.label3.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.label3.Location = new System.Drawing.Point(59, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(63, 23);
             this.label3.TabIndex = 20;
             this.label3.Text = "کلمه عبور";
             // 
@@ -105,9 +107,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 136);
+            this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.label2.Location = new System.Drawing.Point(43, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(79, 23);
             this.label2.TabIndex = 18;
             this.label2.Text = "شماره همراه";
             // 
@@ -125,9 +128,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 92);
+            this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.label1.Location = new System.Drawing.Point(63, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.Size = new System.Drawing.Size(59, 23);
             this.label1.TabIndex = 16;
             this.label1.Text = "نام منشی";
             // 

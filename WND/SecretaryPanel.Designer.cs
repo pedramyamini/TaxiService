@@ -61,21 +61,22 @@
             this.سرویسهاToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AddService,
             this.EditService});
+            this.سرویسهاToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.سرویسهاToolStripMenuItem.Name = "سرویسهاToolStripMenuItem";
-            this.سرویسهاToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.سرویسهاToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.سرویسهاToolStripMenuItem.Text = "سرویس‌ها";
             // 
             // AddService
             // 
             this.AddService.Name = "AddService";
-            this.AddService.Size = new System.Drawing.Size(151, 22);
+            this.AddService.Size = new System.Drawing.Size(160, 24);
             this.AddService.Text = "افزودن سرویس";
             this.AddService.Click += new System.EventHandler(this.AddService_Click);
             // 
             // EditService
             // 
             this.EditService.Name = "EditService";
-            this.EditService.Size = new System.Drawing.Size(151, 22);
+            this.EditService.Size = new System.Drawing.Size(160, 24);
             this.EditService.Text = "ویرایش سرویس";
             this.EditService.Click += new System.EventHandler(this.EditService_Click);
             // 
@@ -85,59 +86,64 @@
             this.AddCustomer,
             this.ویرایشمشتریToolStripMenuItem,
             this.حذفمشتریToolStripMenuItem});
+            this.مشتریانToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.مشتریانToolStripMenuItem.Name = "مشتریانToolStripMenuItem";
-            this.مشتریانToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.مشتریانToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.مشتریانToolStripMenuItem.Text = "مشتریان";
             // 
             // AddCustomer
             // 
             this.AddCustomer.Name = "AddCustomer";
-            this.AddCustomer.Size = new System.Drawing.Size(209, 22);
+            this.AddCustomer.Size = new System.Drawing.Size(221, 24);
             this.AddCustomer.Text = "افزودن مشتری(ثبت اشتراک)";
             this.AddCustomer.Click += new System.EventHandler(this.AddCustomer_Click);
             // 
             // ویرایشمشتریToolStripMenuItem
             // 
             this.ویرایشمشتریToolStripMenuItem.Name = "ویرایشمشتریToolStripMenuItem";
-            this.ویرایشمشتریToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.ویرایشمشتریToolStripMenuItem.Size = new System.Drawing.Size(221, 24);
             this.ویرایشمشتریToolStripMenuItem.Text = "ویرایش مشتری";
             // 
             // حذفمشتریToolStripMenuItem
             // 
             this.حذفمشتریToolStripMenuItem.Name = "حذفمشتریToolStripMenuItem";
-            this.حذفمشتریToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
+            this.حذفمشتریToolStripMenuItem.Size = new System.Drawing.Size(221, 24);
             this.حذفمشتریToolStripMenuItem.Text = "حذف مشتری";
             // 
             // تماسToolStripMenuItem
             // 
+            this.تماسToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.تماسToolStripMenuItem.Name = "تماسToolStripMenuItem";
-            this.تماسToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.تماسToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
             this.تماسToolStripMenuItem.Text = "تماس";
             // 
             // تنظیماتToolStripMenuItem
             // 
+            this.تنظیماتToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.تنظیماتToolStripMenuItem.Name = "تنظیماتToolStripMenuItem";
-            this.تنظیماتToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.تنظیماتToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.تنظیماتToolStripMenuItem.Text = "تنظیمات";
             // 
             // راهنماToolStripMenuItem
             // 
+            this.راهنماToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.راهنماToolStripMenuItem.Name = "راهنماToolStripMenuItem";
-            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.راهنماToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.راهنماToolStripMenuItem.Text = "راهنما";
             // 
             // خروجToolStripMenuItem
             // 
             this.خروجToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnLogOutToolStripMenuItem});
+            this.خروجToolStripMenuItem.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.خروجToolStripMenuItem.Name = "خروجToolStripMenuItem";
-            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.خروجToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
             this.خروجToolStripMenuItem.Text = "خروج";
             // 
             // btnLogOutToolStripMenuItem
             // 
             this.btnLogOutToolStripMenuItem.Name = "btnLogOutToolStripMenuItem";
-            this.btnLogOutToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.btnLogOutToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
             this.btnLogOutToolStripMenuItem.Text = "خروج از حساب کاربری";
             this.btnLogOutToolStripMenuItem.Click += new System.EventHandler(this.btnLogOutToolStripMenuItem_Click);
             // 
@@ -152,7 +158,7 @@
             this.خروجToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(856, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(856, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -168,6 +174,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.button1.Location = new System.Drawing.Point(629, 68);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 46);
@@ -185,6 +192,7 @@
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.Location = new System.Drawing.Point(74, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 47);
@@ -205,6 +213,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(708, 300);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Edit
             // 

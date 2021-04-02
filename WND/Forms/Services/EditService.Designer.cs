@@ -40,7 +40,6 @@ namespace WND
             this.txtOriginInDetail = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboboxPaths = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.checkboxIsPaid = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -73,7 +72,7 @@ namespace WND
             this.datagridServices.Name = "datagridServices";
             this.datagridServices.ReadOnly = true;
             this.datagridServices.RowTemplate.ReadOnly = true;
-            this.datagridServices.Size = new System.Drawing.Size(990, 197);
+            this.datagridServices.Size = new System.Drawing.Size(1044, 197);
             this.datagridServices.TabIndex = 0;
             this.datagridServices.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridServices_CellClick);
             this.datagridServices.SelectionChanged += new System.EventHandler(this.datagridServices_SelectionChanged);
@@ -81,7 +80,7 @@ namespace WND
             // txtCar
             // 
             this.txtCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCar.Location = new System.Drawing.Point(503, 328);
+            this.txtCar.Location = new System.Drawing.Point(563, 328);
             this.txtCar.Multiline = true;
             this.txtCar.Name = "txtCar";
             this.txtCar.ReadOnly = true;
@@ -93,25 +92,27 @@ namespace WND
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(500, 308);
+            this.label9.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label9.Location = new System.Drawing.Point(559, 302);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 13);
+            this.label9.Size = new System.Drawing.Size(99, 23);
             this.label9.TabIndex = 40;
             this.label9.Text = "مشخصات خودرو";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(519, 450);
+            this.label6.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label6.Location = new System.Drawing.Point(606, 450);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.Size = new System.Drawing.Size(88, 23);
             this.label6.TabIndex = 38;
-            this.label6.Text = "هزینه(تومان)";
+            this.label6.Text = "هزینه (تومان)";
             // 
             // txtDestinationInDetail
             // 
             this.txtDestinationInDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDestinationInDetail.Location = new System.Drawing.Point(89, 401);
+            this.txtDestinationInDetail.Location = new System.Drawing.Point(105, 401);
             this.txtDestinationInDetail.Multiline = false;
             this.txtDestinationInDetail.Name = "txtDestinationInDetail";
             this.txtDestinationInDetail.Size = new System.Drawing.Size(375, 36);
@@ -121,9 +122,10 @@ namespace WND
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(26, 411);
+            this.label8.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label8.Location = new System.Drawing.Point(13, 401);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 13);
+            this.label8.Size = new System.Drawing.Size(80, 23);
             this.label8.TabIndex = 37;
             this.label8.Text = "آدرس مقصد";
             // 
@@ -133,7 +135,7 @@ namespace WND
             this.comboboxDrivers.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboboxDrivers.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboboxDrivers.FormattingEnabled = true;
-            this.comboboxDrivers.Location = new System.Drawing.Point(577, 259);
+            this.comboboxDrivers.Location = new System.Drawing.Point(637, 259);
             this.comboboxDrivers.Name = "comboboxDrivers";
             this.comboboxDrivers.Size = new System.Drawing.Size(384, 33);
             this.comboboxDrivers.Sorted = true;
@@ -143,7 +145,7 @@ namespace WND
             // txtOriginInDetail
             // 
             this.txtOriginInDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOriginInDetail.Location = new System.Drawing.Point(89, 359);
+            this.txtOriginInDetail.Location = new System.Drawing.Point(105, 359);
             this.txtOriginInDetail.MaxLength = 500;
             this.txtOriginInDetail.Multiline = false;
             this.txtOriginInDetail.Name = "txtOriginInDetail";
@@ -154,9 +156,10 @@ namespace WND
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(33, 369);
+            this.label7.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label7.Location = new System.Drawing.Point(21, 367);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
+            this.label7.Size = new System.Drawing.Size(72, 23);
             this.label7.TabIndex = 36;
             this.label7.Text = "آدرس مبدا";
             // 
@@ -166,7 +169,7 @@ namespace WND
             this.comboboxPaths.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboboxPaths.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboboxPaths.FormattingEnabled = true;
-            this.comboboxPaths.Location = new System.Drawing.Point(89, 320);
+            this.comboboxPaths.Location = new System.Drawing.Point(105, 320);
             this.comboboxPaths.MaxLength = 500;
             this.comboboxPaths.Name = "comboboxPaths";
             this.comboboxPaths.Size = new System.Drawing.Size(375, 33);
@@ -174,21 +177,13 @@ namespace WND
             this.comboboxPaths.TabIndex = 2;
             this.comboboxPaths.SelectedIndexChanged += new System.EventHandler(this.comboboxPaths_SelectedIndexChanged);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(709, 451);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 13);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "وضعیت پرداخت";
-            // 
             // checkboxIsPaid
             // 
             this.checkboxIsPaid.AutoSize = true;
-            this.checkboxIsPaid.Location = new System.Drawing.Point(790, 450);
+            this.checkboxIsPaid.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.checkboxIsPaid.Location = new System.Drawing.Point(916, 447);
             this.checkboxIsPaid.Name = "checkboxIsPaid";
-            this.checkboxIsPaid.Size = new System.Drawing.Size(81, 17);
+            this.checkboxIsPaid.Size = new System.Drawing.Size(102, 27);
             this.checkboxIsPaid.TabIndex = 7;
             this.checkboxIsPaid.Text = "پرداخت شده";
             this.checkboxIsPaid.UseVisualStyleBackColor = true;
@@ -196,27 +191,30 @@ namespace WND
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(537, 270);
+            this.label4.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label4.Location = new System.Drawing.Point(587, 267);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.Size = new System.Drawing.Size(44, 23);
             this.label4.TabIndex = 31;
             this.label4.Text = "راننده";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 453);
+            this.label3.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Location = new System.Drawing.Point(9, 447);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.Size = new System.Drawing.Size(87, 23);
             this.label3.TabIndex = 28;
-            this.label3.Text = "توقف(دقیقه)";
+            this.label3.Text = "توقف (دقیقه)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 329);
+            this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.Location = new System.Drawing.Point(54, 320);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.Size = new System.Drawing.Size(39, 23);
             this.label2.TabIndex = 24;
             this.label2.Text = "مسیر";
             // 
@@ -225,7 +223,7 @@ namespace WND
             this.txtCustomer.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCustomer.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomer.Location = new System.Drawing.Point(89, 260);
+            this.txtCustomer.Location = new System.Drawing.Point(105, 260);
             this.txtCustomer.Name = "txtCustomer";
             this.txtCustomer.Size = new System.Drawing.Size(375, 30);
             this.txtCustomer.TabIndex = 1;
@@ -233,16 +231,17 @@ namespace WND
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 269);
+            this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(45, 260);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(48, 23);
             this.label1.TabIndex = 22;
             this.label1.Text = "مشتری";
             // 
             // btnEditService
             // 
             this.btnEditService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEditService.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnEditService.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnEditService.ForeColor = System.Drawing.Color.White;
             this.btnEditService.Location = new System.Drawing.Point(677, 496);
             this.btnEditService.Name = "btnEditService";
@@ -255,7 +254,7 @@ namespace WND
             // btnDeleteService
             // 
             this.btnDeleteService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDeleteService.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteService.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnDeleteService.ForeColor = System.Drawing.Color.White;
             this.btnDeleteService.Location = new System.Drawing.Point(818, 496);
             this.btnDeleteService.Name = "btnDeleteService";
@@ -268,7 +267,7 @@ namespace WND
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.LightSalmon;
-            this.btnClear.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnClear.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(522, 496);
             this.btnClear.Name = "btnClear";
@@ -280,7 +279,7 @@ namespace WND
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(89, 212);
+            this.dateTimePicker1.Location = new System.Drawing.Point(105, 212);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 42;
@@ -289,9 +288,10 @@ namespace WND
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(52, 215);
+            this.label10.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label10.Location = new System.Drawing.Point(56, 209);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 13);
+            this.label10.Size = new System.Drawing.Size(37, 23);
             this.label10.TabIndex = 43;
             this.label10.Text = "تاریخ";
             // 
@@ -300,7 +300,7 @@ namespace WND
             this.txtSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(540, 206);
+            this.txtSearch.Location = new System.Drawing.Point(600, 206);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(310, 30);
             this.txtSearch.TabIndex = 44;
@@ -310,15 +310,17 @@ namespace WND
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(330, 215);
+            this.label11.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label11.Location = new System.Drawing.Point(341, 209);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(204, 13);
+            this.label11.Size = new System.Drawing.Size(253, 23);
             this.label11.TabIndex = 45;
-            this.label11.Text = "جستجو(بر اساس نام و شماره همراه و مسیر)";
+            this.label11.Text = "جستجو (بر اساس نام و شماره همراه و مسیر)";
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(856, 206);
+            this.btnSearch.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnSearch.Location = new System.Drawing.Point(916, 206);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(105, 30);
             this.btnSearch.TabIndex = 46;
@@ -329,7 +331,7 @@ namespace WND
             // txtCost
             // 
             this.txtCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCost.Location = new System.Drawing.Point(589, 443);
+            this.txtCost.Location = new System.Drawing.Point(697, 447);
             this.txtCost.Name = "txtCost";
             this.txtCost.ReadOnly = true;
             this.txtCost.Size = new System.Drawing.Size(114, 30);
@@ -339,7 +341,7 @@ namespace WND
             // txtDelay
             // 
             this.txtDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDelay.Location = new System.Drawing.Point(89, 443);
+            this.txtDelay.Location = new System.Drawing.Point(105, 443);
             this.txtDelay.Name = "txtDelay";
             this.txtDelay.Size = new System.Drawing.Size(375, 30);
             this.txtDelay.TabIndex = 5;
@@ -348,7 +350,7 @@ namespace WND
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 554);
+            this.ClientSize = new System.Drawing.Size(1044, 554);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtSearch);
@@ -367,7 +369,6 @@ namespace WND
             this.Controls.Add(this.txtOriginInDetail);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboboxPaths);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.checkboxIsPaid);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDelay);
@@ -377,7 +378,6 @@ namespace WND
             this.Controls.Add(this.label1);
             this.Controls.Add(this.datagridServices);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1006, 593);
             this.MinimumSize = new System.Drawing.Size(1006, 593);
             this.Name = "EditService";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -406,7 +406,6 @@ namespace WND
         private System.Windows.Forms.RichTextBox txtOriginInDetail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboboxPaths;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkboxIsPaid;
         private System.Windows.Forms.Label label4;
         private NumericTextBox txtDelay;

@@ -54,7 +54,7 @@ namespace WND.Car
             // btnEditCar
             // 
             this.btnEditCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEditCar.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnEditCar.Font = new System.Drawing.Font("B Yekan", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnEditCar.ForeColor = System.Drawing.Color.White;
             this.btnEditCar.Location = new System.Drawing.Point(96, 281);
             this.btnEditCar.Name = "btnEditCar";
@@ -67,7 +67,7 @@ namespace WND.Car
             // txtColor
             // 
             this.txtColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColor.Location = new System.Drawing.Point(163, 213);
+            this.txtColor.Location = new System.Drawing.Point(163, 233);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(198, 26);
             this.txtColor.TabIndex = 7;
@@ -75,9 +75,10 @@ namespace WND.Car
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(133, 222);
+            this.label4.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.label4.Location = new System.Drawing.Point(123, 233);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 13);
+            this.label4.Size = new System.Drawing.Size(33, 23);
             this.label4.TabIndex = 15;
             this.label4.Text = "رنگ";
             // 
@@ -85,7 +86,7 @@ namespace WND.Car
             // 
             this.txtLicencePlate1.BackColor = System.Drawing.Color.White;
             this.txtLicencePlate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLicencePlate1.Location = new System.Drawing.Point(322, 154);
+            this.txtLicencePlate1.Location = new System.Drawing.Point(322, 162);
             this.txtLicencePlate1.MaxLength = 2;
             this.txtLicencePlate1.Name = "txtLicencePlate1";
             this.txtLicencePlate1.Size = new System.Drawing.Size(38, 26);
@@ -95,11 +96,12 @@ namespace WND.Car
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 162);
+            this.label3.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.label3.Location = new System.Drawing.Point(25, 162);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.Size = new System.Drawing.Size(134, 23);
             this.label3.TabIndex = 13;
-            this.label3.Text = "پلاک(از چپ به راست)";
+            this.label3.Text = "پلاک (از چپ به راست)";
             // 
             // txtModel
             // 
@@ -112,9 +114,10 @@ namespace WND.Car
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(100, 108);
+            this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.label2.Location = new System.Drawing.Point(83, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(73, 23);
             this.label2.TabIndex = 11;
             this.label2.Text = "مدل خودرو";
             // 
@@ -132,9 +135,10 @@ namespace WND.Car
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(122, 67);
+            this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.label1.Location = new System.Drawing.Point(112, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(44, 23);
             this.label1.TabIndex = 9;
             this.label1.Text = "راننده";
             // 
@@ -142,7 +146,7 @@ namespace WND.Car
             // 
             this.txtLicencePlate2.BackColor = System.Drawing.Color.White;
             this.txtLicencePlate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLicencePlate2.Location = new System.Drawing.Point(277, 154);
+            this.txtLicencePlate2.Location = new System.Drawing.Point(277, 162);
             this.txtLicencePlate2.MaxLength = 1;
             this.txtLicencePlate2.Name = "txtLicencePlate2";
             this.txtLicencePlate2.Size = new System.Drawing.Size(38, 26);
@@ -154,7 +158,7 @@ namespace WND.Car
             // 
             this.txtLicencePlate3.BackColor = System.Drawing.Color.White;
             this.txtLicencePlate3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLicencePlate3.Location = new System.Drawing.Point(207, 154);
+            this.txtLicencePlate3.Location = new System.Drawing.Point(207, 162);
             this.txtLicencePlate3.MaxLength = 3;
             this.txtLicencePlate3.Name = "txtLicencePlate3";
             this.txtLicencePlate3.Size = new System.Drawing.Size(64, 26);
@@ -165,7 +169,7 @@ namespace WND.Car
             // 
             this.txtLicencePlate4.BackColor = System.Drawing.Color.White;
             this.txtLicencePlate4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLicencePlate4.Location = new System.Drawing.Point(163, 154);
+            this.txtLicencePlate4.Location = new System.Drawing.Point(163, 162);
             this.txtLicencePlate4.MaxLength = 2;
             this.txtLicencePlate4.Name = "txtLicencePlate4";
             this.txtLicencePlate4.Size = new System.Drawing.Size(38, 26);
@@ -175,46 +179,52 @@ namespace WND.Car
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(326, 138);
+            this.label5.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label5.Location = new System.Drawing.Point(322, 138);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.Size = new System.Drawing.Size(40, 20);
             this.label5.TabIndex = 21;
             this.label5.Text = "۲ رقم";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(277, 138);
+            this.label6.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label6.Location = new System.Drawing.Point(273, 138);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.Size = new System.Drawing.Size(43, 20);
             this.label6.TabIndex = 22;
             this.label6.Text = "۱ حرف";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(222, 138);
+            this.label7.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label7.Location = new System.Drawing.Point(216, 138);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.Size = new System.Drawing.Size(40, 20);
             this.label7.TabIndex = 23;
             this.label7.Text = "۳ رقم";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(166, 138);
+            this.label8.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label8.Location = new System.Drawing.Point(161, 138);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 13);
+            this.label8.Size = new System.Drawing.Size(40, 20);
             this.label8.TabIndex = 24;
             this.label8.Text = "۲ رقم";
             // 
             // checkboxShowLicenseExample
             // 
             this.checkboxShowLicenseExample.AutoSize = true;
-            this.checkboxShowLicenseExample.Location = new System.Drawing.Point(251, 190);
+            this.checkboxShowLicenseExample.Font = new System.Drawing.Font("B Yekan", 11.25F);
+            this.checkboxShowLicenseExample.Location = new System.Drawing.Point(255, 200);
             this.checkboxShowLicenseExample.Name = "checkboxShowLicenseExample";
             this.checkboxShowLicenseExample.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.checkboxShowLicenseExample.Size = new System.Drawing.Size(110, 17);
+            this.checkboxShowLicenseExample.Size = new System.Drawing.Size(134, 27);
             this.checkboxShowLicenseExample.TabIndex = 25;
             this.checkboxShowLicenseExample.TabStop = false;
             this.checkboxShowLicenseExample.Text = "مشاهده نمونه پلاک";
@@ -224,7 +234,7 @@ namespace WND.Car
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnDelete.Font = new System.Drawing.Font("B Yekan", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(234, 281);
             this.btnDelete.Name = "btnDelete";

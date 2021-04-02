@@ -42,7 +42,7 @@
             // btnRestorePassword
             // 
             this.btnRestorePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnRestorePassword.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnRestorePassword.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnRestorePassword.ForeColor = System.Drawing.Color.White;
             this.btnRestorePassword.Location = new System.Drawing.Point(5, 130);
             this.btnRestorePassword.Name = "btnRestorePassword";
@@ -70,9 +70,10 @@
             // checkboxTogglePasswordDisplay
             // 
             this.checkboxTogglePasswordDisplay.AutoSize = true;
-            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(20, 95);
+            this.checkboxTogglePasswordDisplay.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(20, 82);
             this.checkboxTogglePasswordDisplay.Name = "checkboxTogglePasswordDisplay";
-            this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(100, 17);
+            this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(121, 27);
             this.checkboxTogglePasswordDisplay.TabIndex = 16;
             this.checkboxTogglePasswordDisplay.Text = "نمایش کلمه عبور";
             this.checkboxTogglePasswordDisplay.UseVisualStyleBackColor = true;
@@ -81,7 +82,7 @@
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnRegister.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnRegister.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Location = new System.Drawing.Point(137, 130);
             this.btnRegister.Name = "btnRegister";
@@ -107,9 +108,10 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(203, 61);
+            this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.Location = new System.Drawing.Point(193, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(63, 23);
             this.label2.TabIndex = 13;
             this.label2.Text = "کلمه عبور";
             // 
@@ -128,9 +130,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(197, 26);
+            this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(193, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(63, 23);
             this.label1.TabIndex = 11;
             this.label1.Text = "نام کاربری";
             // 

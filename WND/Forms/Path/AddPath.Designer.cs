@@ -42,9 +42,10 @@ namespace WND.Path
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 51);
+            this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(77, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 13);
+            this.label1.Size = new System.Drawing.Size(34, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "مبدا";
             // 
@@ -69,9 +70,10 @@ namespace WND.Path
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 96);
+            this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.Location = new System.Drawing.Point(69, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.Size = new System.Drawing.Size(42, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "مقصد";
             // 
@@ -87,16 +89,17 @@ namespace WND.Path
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 147);
+            this.label3.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Location = new System.Drawing.Point(23, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.Size = new System.Drawing.Size(88, 23);
             this.label3.TabIndex = 4;
-            this.label3.Text = "هزینه(تومان)";
+            this.label3.Text = "هزینه (تومان)";
             // 
             // btnAddPath
             // 
             this.btnAddPath.BackColor = System.Drawing.Color.LightGreen;
-            this.btnAddPath.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnAddPath.Font = new System.Drawing.Font("B Yekan", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnAddPath.ForeColor = System.Drawing.Color.Black;
             this.btnAddPath.Location = new System.Drawing.Point(130, 202);
             this.btnAddPath.Name = "btnAddPath";

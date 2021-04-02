@@ -85,9 +85,10 @@ namespace WND
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(203, 56);
+            this.label5.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label5.Location = new System.Drawing.Point(204, 54);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.Size = new System.Drawing.Size(79, 23);
             this.label5.TabIndex = 34;
             this.label5.Text = "شماره همراه";
             // 
@@ -106,9 +107,10 @@ namespace WND
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(203, 24);
+            this.label6.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label6.Location = new System.Drawing.Point(204, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 13);
+            this.label6.Size = new System.Drawing.Size(104, 23);
             this.label6.TabIndex = 33;
             this.label6.Text = "نام و نام خانوادگی";
             // 
@@ -127,9 +129,10 @@ namespace WND
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(203, 224);
+            this.label4.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label4.Location = new System.Drawing.Point(204, 218);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.Size = new System.Drawing.Size(74, 23);
             this.label4.TabIndex = 30;
             this.label4.Text = "پاسخ امنیتی";
             // 
@@ -148,18 +151,20 @@ namespace WND
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(203, 189);
+            this.label3.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Location = new System.Drawing.Point(204, 186);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(79, 23);
             this.label3.TabIndex = 29;
             this.label3.Text = "سوال امنیتی";
             // 
             // checkboxTogglePasswordDisplay
             // 
             this.checkboxTogglePasswordDisplay.AutoSize = true;
-            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(33, 148);
+            this.checkboxTogglePasswordDisplay.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(33, 146);
             this.checkboxTogglePasswordDisplay.Name = "checkboxTogglePasswordDisplay";
-            this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(100, 17);
+            this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(121, 27);
             this.checkboxTogglePasswordDisplay.TabIndex = 28;
             this.checkboxTogglePasswordDisplay.Text = "نمایش کلمه عبور";
             this.checkboxTogglePasswordDisplay.UseVisualStyleBackColor = true;
@@ -168,7 +173,7 @@ namespace WND
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.LightGreen;
-            this.btnRegister.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnRegister.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnRegister.Location = new System.Drawing.Point(104, 283);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(114, 50);
@@ -193,9 +198,10 @@ namespace WND
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(203, 125);
+            this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.Location = new System.Drawing.Point(204, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(63, 23);
             this.label2.TabIndex = 27;
             this.label2.Text = "کلمه عبور";
             // 
@@ -214,9 +220,10 @@ namespace WND
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(203, 90);
+            this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(204, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(63, 23);
             this.label1.TabIndex = 26;
             this.label1.Text = "نام کاربری";
             // 

@@ -16,5 +16,10 @@ namespace WND.Path
         {
             InitializeComponent();
         }
+
+        private void DeletePath_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

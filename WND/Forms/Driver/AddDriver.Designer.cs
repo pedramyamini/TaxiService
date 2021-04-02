@@ -42,9 +42,10 @@ namespace WND.Driver
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 50);
+            this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(54, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.Size = new System.Drawing.Size(104, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "نام و نام خانوادگی";
             // 
@@ -59,16 +60,17 @@ namespace WND.Driver
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 89);
+            this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.Location = new System.Drawing.Point(79, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.Size = new System.Drawing.Size(79, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "شماره همراه";
             // 
             // btnAddDriver
             // 
             this.btnAddDriver.BackColor = System.Drawing.Color.LightGreen;
-            this.btnAddDriver.Font = new System.Drawing.Font("B Nazanin", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnAddDriver.Font = new System.Drawing.Font("B Yekan", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnAddDriver.ForeColor = System.Drawing.Color.Black;
             this.btnAddDriver.Location = new System.Drawing.Point(134, 180);
             this.btnAddDriver.Name = "btnAddDriver";
@@ -81,11 +83,12 @@ namespace WND.Driver
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(65, 130);
+            this.label3.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Location = new System.Drawing.Point(38, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.Size = new System.Drawing.Size(120, 23);
             this.label3.TabIndex = 5;
-            this.label3.Text = "حق اشتراک(درصد)";
+            this.label3.Text = "حق اشتراک (درصد)";
             // 
             // txtSharePercent
             // 

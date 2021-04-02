@@ -16,5 +16,10 @@ namespace WND.Path
         {
             InitializeComponent();
         }
+
+        private void EditPath_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
