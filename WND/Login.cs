@@ -106,5 +106,10 @@ namespace WND
                 MessageBoxRTL.Info("نام کاربری و کلمه عبور نمی‌تواند خالی باشد", "");
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

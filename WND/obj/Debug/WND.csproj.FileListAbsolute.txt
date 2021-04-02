@@ -316,12 +316,10 @@ J:\TaxiService\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
 J:\TaxiService\WND\obj\Debug\WND.Secretary.EditSecretary.resources
 J:\TaxiService\WND\obj\Debug\WND.AddService.resources
 J:\TaxiService\WND\obj\Debug\WND.DeleteService.resources
-J:\TaxiService\WND\obj\Debug\WND.Migrations.init.resources
-J:\TaxiService\WND\obj\Debug\WND.Migrations.init1.resources
-J:\TaxiService\WND\obj\Debug\WND.Migrations.ServiceSoftDeleting.resources
 J:\TaxiService\WND\obj\Debug\WND.PasswordForgetion.resources
 J:\TaxiService\WND\obj\Debug\WND.SecretaryPanel.resources
 J:\TaxiService\WND\obj\Debug\WND.EditService.resources
 J:\TaxiService\WND\obj\Debug\WND.Register.resources
 J:\TaxiService\WND\obj\Debug\WND.Properties.Resources.resources
 J:\TaxiService\WND\obj\Debug\WND.csproj.GenerateResource.Cache
+J:\TaxiService\WND\obj\Debug\WND.Migrations.final.resources

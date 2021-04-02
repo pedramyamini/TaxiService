@@ -30,8 +30,8 @@ namespace WND
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.panelRegister = new System.Windows.Forms.Panel();
-            this.txtMobile = new WND.Utility.NumericTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,7 +45,10 @@ namespace WND
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtMobile = new WND.Utility.NumericTextBox();
             this.panelRegister.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelRegister
@@ -64,21 +67,11 @@ namespace WND
             this.panelRegister.Controls.Add(this.label2);
             this.panelRegister.Controls.Add(this.txtUsername);
             this.panelRegister.Controls.Add(this.label1);
-            this.panelRegister.Location = new System.Drawing.Point(12, 12);
+            this.panelRegister.Location = new System.Drawing.Point(57, 74);
             this.panelRegister.Name = "panelRegister";
             this.panelRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.panelRegister.Size = new System.Drawing.Size(327, 359);
             this.panelRegister.TabIndex = 11;
-            // 
-            // txtMobile
-            // 
-            this.txtMobile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile.Location = new System.Drawing.Point(33, 50);
-            this.txtMobile.MaxLength = 11;
-            this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(165, 26);
-            this.txtMobile.TabIndex = 2;
             // 
             // label5
             // 
@@ -86,7 +79,8 @@ namespace WND
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label5.Location = new System.Drawing.Point(204, 54);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(204, 49);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 23);
             this.label5.TabIndex = 34;
@@ -96,7 +90,7 @@ namespace WND
             // 
             this.txtFullName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFullName.Location = new System.Drawing.Point(33, 18);
+            this.txtFullName.Location = new System.Drawing.Point(33, 4);
             this.txtFullName.MaxLength = 20;
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(165, 26);
@@ -108,7 +102,8 @@ namespace WND
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label6.Location = new System.Drawing.Point(204, 22);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(204, 8);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 23);
             this.label6.TabIndex = 33;
@@ -118,7 +113,7 @@ namespace WND
             // 
             this.txtSecurityAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSecurityAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecurityAnswer.Location = new System.Drawing.Point(33, 218);
+            this.txtSecurityAnswer.Location = new System.Drawing.Point(33, 270);
             this.txtSecurityAnswer.MaxLength = 150;
             this.txtSecurityAnswer.Name = "txtSecurityAnswer";
             this.txtSecurityAnswer.Size = new System.Drawing.Size(165, 26);
@@ -130,7 +125,8 @@ namespace WND
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label4.Location = new System.Drawing.Point(204, 218);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(204, 269);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 23);
             this.label4.TabIndex = 30;
@@ -140,7 +136,7 @@ namespace WND
             // 
             this.txtSecurityQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSecurityQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecurityQuestion.Location = new System.Drawing.Point(33, 183);
+            this.txtSecurityQuestion.Location = new System.Drawing.Point(33, 225);
             this.txtSecurityQuestion.MaxLength = 150;
             this.txtSecurityQuestion.Name = "txtSecurityQuestion";
             this.txtSecurityQuestion.Size = new System.Drawing.Size(165, 26);
@@ -152,7 +148,8 @@ namespace WND
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.Location = new System.Drawing.Point(204, 186);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(204, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 23);
             this.label3.TabIndex = 29;
@@ -162,7 +159,8 @@ namespace WND
             // 
             this.checkboxTogglePasswordDisplay.AutoSize = true;
             this.checkboxTogglePasswordDisplay.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(33, 146);
+            this.checkboxTogglePasswordDisplay.ForeColor = System.Drawing.Color.White;
+            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(33, 162);
             this.checkboxTogglePasswordDisplay.Name = "checkboxTogglePasswordDisplay";
             this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(121, 27);
             this.checkboxTogglePasswordDisplay.TabIndex = 28;
@@ -172,11 +170,12 @@ namespace WND
             // 
             // btnRegister
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.LightGreen;
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(188)))), ((int)(((byte)(28)))));
             this.btnRegister.Font = new System.Drawing.Font("B Yekan", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnRegister.Location = new System.Drawing.Point(104, 283);
+            this.btnRegister.ForeColor = System.Drawing.Color.Black;
+            this.btnRegister.Location = new System.Drawing.Point(61, 311);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(114, 50);
+            this.btnRegister.Size = new System.Drawing.Size(115, 40);
             this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "ثبت نام";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -186,7 +185,7 @@ namespace WND
             // 
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(33, 114);
+            this.txtPassword.Location = new System.Drawing.Point(33, 128);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -199,7 +198,8 @@ namespace WND
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(204, 117);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(204, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 23);
             this.label2.TabIndex = 27;
@@ -209,7 +209,7 @@ namespace WND
             // 
             this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(33, 82);
+            this.txtUsername.Location = new System.Drawing.Point(33, 86);
             this.txtUsername.MaxLength = 20;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(165, 26);
@@ -221,11 +221,33 @@ namespace WND
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(204, 86);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(204, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 23);
             this.label1.TabIndex = 26;
             this.label1.Text = "نام کاربری";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(121)))), ((int)(((byte)(169)))));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(328, -21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(600, 600);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 35;
+            this.pictureBox2.TabStop = false;
+            // 
+            // txtMobile
+            // 
+            this.txtMobile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobile.Location = new System.Drawing.Point(33, 45);
+            this.txtMobile.MaxLength = 11;
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(165, 26);
+            this.txtMobile.TabIndex = 2;
             // 
             // Register
             // 
@@ -233,12 +255,14 @@ namespace WND
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(121)))), ((int)(((byte)(169)))));
             this.BackgroundImage = global::WND.Properties.Resources.OIP1;
-            this.ClientSize = new System.Drawing.Size(351, 381);
+            this.ClientSize = new System.Drawing.Size(940, 497);
             this.Controls.Add(this.panelRegister);
+            this.Controls.Add(this.pictureBox2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(367, 420);
-            this.MinimumSize = new System.Drawing.Size(367, 420);
+            this.MaximumSize = new System.Drawing.Size(956, 536);
+            this.MinimumSize = new System.Drawing.Size(956, 536);
             this.Name = "Register";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
@@ -249,6 +273,7 @@ namespace WND
             this.Load += new System.EventHandler(this.Login_Load);
             this.panelRegister.ResumeLayout(false);
             this.panelRegister.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -270,5 +295,6 @@ namespace WND
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -158,14 +158,14 @@
             this.خروجToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(856, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(940, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WND.Properties.Resources.OIP1;
-            this.pictureBox1.Location = new System.Drawing.Point(-75, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(967, 543);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,8 +174,8 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.Location = new System.Drawing.Point(629, 68);
+            this.button1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button1.Location = new System.Drawing.Point(685, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 46);
             this.button1.TabIndex = 11;
@@ -184,7 +184,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(237, 70);
+            this.textBox1.Location = new System.Drawing.Point(293, 88);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(386, 44);
@@ -192,8 +192,8 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("B Yekan", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(74, 70);
+            this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Location = new System.Drawing.Point(130, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 47);
             this.label1.TabIndex = 8;
@@ -209,7 +209,7 @@
             this.Edit,
             this.Delete});
             this.dataGridView1.DataSource = this.serviceBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(74, 130);
+            this.dataGridView1.Location = new System.Drawing.Point(130, 148);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(708, 300);
             this.dataGridView1.TabIndex = 12;
@@ -241,7 +241,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WND.Properties.Resources.OIP1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(856, 461);
+            this.ClientSize = new System.Drawing.Size(940, 497);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -250,13 +250,13 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(872, 500);
-            this.MinimumSize = new System.Drawing.Size(872, 500);
+            this.MaximumSize = new System.Drawing.Size(956, 536);
+            this.MinimumSize = new System.Drawing.Size(956, 536);
             this.Name = "SecretaryPanel";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "سیستم تاکسی تلفنی - پنل منشی";
+            this.Text = "تاکسی‌دار - پنل منشی";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SecretaryPanel_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SecretaryPanel_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);

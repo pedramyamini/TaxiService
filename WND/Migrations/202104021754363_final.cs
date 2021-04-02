@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class init : DbMigration
+    public partial class final : DbMigration
     {
         public override void Up()
         {
@@ -51,6 +51,7 @@
                         IsActive = c.Boolean(nullable: false),
                         CustomerId = c.Int(nullable: false),
                         DriverId = c.Int(nullable: false),
+                        IsDeleted = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Users", t => t.CustomerId, cascadeDelete: true)

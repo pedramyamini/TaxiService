@@ -146,17 +146,9 @@
     <Compile Include="ManagerPanel.Designer.cs">
       <DependentUpon>ManagerPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103282014422_init.cs" />
-    <Compile Include="Migrations\202103282014422_init.designer.cs">
-      <DependentUpon>202103282014422_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103282116112_init1.cs" />
-    <Compile Include="Migrations\202103282116112_init1.designer.cs">
-      <DependentUpon>202103282116112_init1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202103310733080_ServiceSoftDeleting.cs" />
-    <Compile Include="Migrations\202103310733080_ServiceSoftDeleting.designer.cs">
-      <DependentUpon>202103310733080_ServiceSoftDeleting.cs</DependentUpon>
+    <Compile Include="Migrations\202104021754363_final.cs" />
+    <Compile Include="Migrations\202104021754363_final.designer.cs">
+      <DependentUpon>202104021754363_final.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AuthenticatedUser.cs" />
@@ -312,14 +304,8 @@
     <EmbeddedResource Include="Forms\Services\DeleteService.resx">
       <DependentUpon>DeleteService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103282014422_init.resx">
-      <DependentUpon>202103282014422_init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103282116112_init1.resx">
-      <DependentUpon>202103282116112_init1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202103310733080_ServiceSoftDeleting.resx">
-      <DependentUpon>202103310733080_ServiceSoftDeleting.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104021754363_final.resx">
+      <DependentUpon>202104021754363_final.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordForgetion.resx">
       <DependentUpon>PasswordForgetion.cs</DependentUpon>

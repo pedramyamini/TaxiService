@@ -91,7 +91,7 @@
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Enabled = false;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(112, 195);
+            this.txtPassword.Location = new System.Drawing.Point(112, 173);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -104,7 +104,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(9, 195);
+            this.label1.Location = new System.Drawing.Point(9, 173);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 23);
             this.label1.TabIndex = 26;
@@ -115,7 +115,7 @@
             this.txtPasswordRepeation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPasswordRepeation.Enabled = false;
             this.txtPasswordRepeation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordRepeation.Location = new System.Drawing.Point(112, 230);
+            this.txtPasswordRepeation.Location = new System.Drawing.Point(112, 208);
             this.txtPasswordRepeation.MaxLength = 20;
             this.txtPasswordRepeation.Name = "txtPasswordRepeation";
             this.txtPasswordRepeation.PasswordChar = '*';
@@ -128,7 +128,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(10, 230);
+            this.label2.Location = new System.Drawing.Point(10, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 23);
             this.label2.TabIndex = 28;
@@ -136,11 +136,11 @@
             // 
             // btnChangePassword
             // 
-            this.btnChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(188)))), ((int)(((byte)(28)))));
             this.btnChangePassword.Enabled = false;
             this.btnChangePassword.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnChangePassword.ForeColor = System.Drawing.Color.White;
-            this.btnChangePassword.Location = new System.Drawing.Point(146, 304);
+            this.btnChangePassword.ForeColor = System.Drawing.Color.Black;
+            this.btnChangePassword.Location = new System.Drawing.Point(146, 314);
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Size = new System.Drawing.Size(107, 41);
             this.btnChangePassword.TabIndex = 30;
@@ -150,7 +150,7 @@
             // 
             // btnVerify
             // 
-            this.btnVerify.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnVerify.BackColor = System.Drawing.Color.Black;
             this.btnVerify.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnVerify.ForeColor = System.Drawing.Color.White;
             this.btnVerify.Location = new System.Drawing.Point(146, 113);
@@ -165,7 +165,7 @@
             // 
             this.checkboxTogglePasswordDisplay.AutoSize = true;
             this.checkboxTogglePasswordDisplay.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(227, 262);
+            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(227, 240);
             this.checkboxTogglePasswordDisplay.Name = "checkboxTogglePasswordDisplay";
             this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(121, 27);
             this.checkboxTogglePasswordDisplay.TabIndex = 32;

@@ -83,7 +83,7 @@
             this.ExitMenu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(790, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(940, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -101,20 +101,20 @@
             // AddDriver
             // 
             this.AddDriver.Name = "AddDriver";
-            this.AddDriver.Size = new System.Drawing.Size(152, 24);
+            this.AddDriver.Size = new System.Drawing.Size(150, 24);
             this.AddDriver.Text = "افزودن راننده";
             this.AddDriver.Click += new System.EventHandler(this.AddDriver_Click);
             // 
             // ویرایشرانندهToolStripMenuItem
             // 
             this.ویرایشرانندهToolStripMenuItem.Name = "ویرایشرانندهToolStripMenuItem";
-            this.ویرایشرانندهToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.ویرایشرانندهToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
             this.ویرایشرانندهToolStripMenuItem.Text = "ویرایش راننده";
             // 
             // حذفرانندهToolStripMenuItem
             // 
             this.حذفرانندهToolStripMenuItem.Name = "حذفرانندهToolStripMenuItem";
-            this.حذفرانندهToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.حذفرانندهToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
             this.حذفرانندهToolStripMenuItem.Text = "حذف راننده";
             // 
             // EditCar
@@ -263,7 +263,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(46, 58);
+            this.label1.Location = new System.Drawing.Point(130, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 47);
             this.label1.TabIndex = 4;
@@ -277,7 +277,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Edit,
             this.Delete});
-            this.dataGridView1.Location = new System.Drawing.Point(46, 118);
+            this.dataGridView1.Location = new System.Drawing.Point(130, 148);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(708, 300);
             this.dataGridView1.TabIndex = 5;
@@ -300,7 +300,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(209, 58);
+            this.textBox1.Location = new System.Drawing.Point(293, 88);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(386, 44);
@@ -309,7 +309,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("B Yekan", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button1.Location = new System.Drawing.Point(601, 56);
+            this.button1.Location = new System.Drawing.Point(685, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 46);
             this.button1.TabIndex = 7;
@@ -352,7 +352,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 443);
+            this.ClientSize = new System.Drawing.Size(940, 497);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
@@ -360,13 +360,13 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(806, 482);
-            this.MinimumSize = new System.Drawing.Size(806, 482);
+            this.MaximumSize = new System.Drawing.Size(956, 536);
+            this.MinimumSize = new System.Drawing.Size(956, 536);
             this.Name = "ManagerPanel";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "پنل مدیریت";
+            this.Text = "تاکسی‌دار - پنل مدیریت";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ManagerPanel_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ManagerPanel_FormClosed);
             this.Load += new System.EventHandler(this.ManagerPanel_Load);
