@@ -1,0 +1,471 @@
+C:\Users\Pedram\source\repos\WND\WND\bin\Debug\WND.exe.config
+C:\Users\Pedram\source\repos\WND\WND\bin\Debug\WND.exe
+C:\Users\Pedram\source\repos\WND\WND\bin\Debug\WND.pdb
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.csprojAssemblyReference.cache
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Login.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Properties.Resources.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.csproj.GenerateResource.cache
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.csproj.CoreCompileInputs.cache
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.exe
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.pdb
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.AddService.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.EditService.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.ManagerPanel.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.DeleteService.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.SecretaryPanel.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Call_SMS.Call.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Car.AddCar.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Car.DeleteCar.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Car.EditCar.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Driver.AddDriver.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Driver.EditDriver.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Path.AddPath.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Path.DeletePath.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Path.EditPath.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Report.Reporting.resources
+C:\Users\Pedram\source\repos\WND\WND\bin\Debug\EntityFramework.dll
+C:\Users\Pedram\source\repos\WND\WND\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pedram\source\repos\WND\WND\bin\Debug\EntityFramework.xml
+C:\Users\Pedram\source\repos\WND\WND\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.csproj.CopyComplete
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig1.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig2.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig3.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig4.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig5.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig6.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig7.resources
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig8.resources
+C:\Users\Pedram\source\repos\WND\WND\bin\Debug\BehComponents.dll
+C:\Users\Pedram\source\repos\WND\WND\obj\Debug\WND.Migrations.mig9.resources
+J:\Ali_Projects\WND\WND\bin\Debug\WND.exe.config
+J:\Ali_Projects\WND\WND\obj\Debug\WND.exe
+J:\Ali_Projects\WND\WND\obj\Debug\WND.pdb
+J:\Ali_Projects\WND\WND\bin\Debug\WND.exe
+J:\Ali_Projects\WND\WND\bin\Debug\WND.pdb
+J:\Ali_Projects\WND\WND\bin\Debug\BehComponents.dll
+J:\Ali_Projects\WND\WND\bin\Debug\EntityFramework.dll
+J:\Ali_Projects\WND\WND\bin\Debug\EntityFramework.SqlServer.dll
+J:\Ali_Projects\WND\WND\bin\Debug\EntityFramework.xml
+J:\Ali_Projects\WND\WND\bin\Debug\EntityFramework.SqlServer.xml
+J:\Ali_Projects\WND\WND\obj\Debug\WND.csprojResolveAssemblyReference.cache
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Call_SMS.Call.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Car.AddCar.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Car.DeleteCar.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Car.EditCar.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Driver.AddDriver.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Driver.EditDriver.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.ManagerPanel.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig1.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig2.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig3.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig4.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig5.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig6.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig7.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig8.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Migrations.mig9.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Path.AddPath.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Path.DeletePath.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Path.EditPath.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Report.Reporting.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.AddService.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.DeleteService.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.SecretaryPanel.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.EditService.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Login.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.Properties.Resources.resources
+J:\Ali_Projects\WND\WND\obj\Debug\WND.csproj.GenerateResource.Cache
+J:\Ali_Projects\WND\WND\bin\Debug\TaxiService.mdf
+J:\Ali_Projects\WND\WND\bin\Debug\TaxiService_log.ldf
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\TaxiService.mdf
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\TaxiService_log.ldf
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\WND.exe.config
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\WND.exe
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\WND.pdb
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\BehComponents.dll
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\EntityFramework.dll
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\EntityFramework.xml
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.csprojAssemblyReference.cache
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Call_SMS.Call.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Car.AddCar.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Car.DeleteCar.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Car.EditCar.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Driver.AddDriver.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Driver.EditDriver.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.ManagerPanel.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig1.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig2.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig3.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig4.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig5.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig6.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig7.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig8.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Migrations.mig9.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Path.AddPath.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Path.DeletePath.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Path.EditPath.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Report.Reporting.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.AddService.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.DeleteService.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.SecretaryPanel.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.EditService.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Login.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.Properties.Resources.resources
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.csproj.GenerateResource.cache
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.csproj.CoreCompileInputs.cache
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.csproj.CopyComplete
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.exe
+C:\Users\Pedram\Downloads\Compressed\Taxi_Service-master\Taxi_Service-master\WND\obj\Debug\WND.pdb
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\TaxiService.mdf
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\TaxiService_log.ldf
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\WND.exe.config
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\WND.exe
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\WND.pdb
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\BehComponents.dll
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\EntityFramework.dll
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\EntityFramework.xml
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.csprojAssemblyReference.cache
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Call_SMS.Call.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Car.AddCar.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Car.DeleteCar.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Car.EditCar.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Driver.AddDriver.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Driver.EditDriver.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.ManagerPanel.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig1.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig2.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig3.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig4.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig5.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig6.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig7.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig8.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig9.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Path.AddPath.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Path.DeletePath.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Path.EditPath.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Report.Reporting.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.AddService.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.DeleteService.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.SecretaryPanel.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.EditService.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Login.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Properties.Resources.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.csproj.GenerateResource.cache
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.csproj.CoreCompileInputs.cache
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.csproj.CopyComplete
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.exe
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.pdb
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.PasswordForgetion.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Register.resources
+C:\Users\Pedram\Downloads\Compressed\TaxiService-master\TaxiService-master\WND\obj\Debug\WND.Migrations.mig10.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\WND.exe.config
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.exe
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.pdb
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\TaxiService.mdf
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\TaxiService_log.ldf
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\WND.exe
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\WND.pdb
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\BehComponents.dll
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\EntityFramework.dll
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\EntityFramework.xml
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.csprojResolveAssemblyReference.cache
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Call_SMS.Call.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Car.AddCar.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Car.DeleteCar.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Car.EditCar.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Driver.AddDriver.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Driver.EditDriver.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Login.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.ManagerPanel.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig1.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig2.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig3.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig4.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig5.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig6.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig7.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig8.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig9.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Path.AddPath.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Path.DeletePath.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Path.EditPath.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Report.Reporting.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.AddService.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.DeleteService.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Migrations.mig10.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.PasswordForgetion.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.SecretaryPanel.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.EditService.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Register.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.Properties.Resources.resources
+C:\Users\ali\Desktop\TaxiService-master (1)\Taxi_Service\WND\obj\Debug\WND.csproj.GenerateResource.Cache
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\WND.exe.config
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\WND.exe
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\WND.pdb
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\AutoMapper.dll
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\BehComponents.dll
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\EntityFramework.dll
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\EntityFramework.SqlServer.dll
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\Ninject.dll
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\System.ValueTuple.dll
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\AutoMapper.pdb
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\AutoMapper.xml
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\EntityFramework.xml
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\EntityFramework.SqlServer.xml
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\Ninject.xml
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\bin\Debug\System.ValueTuple.xml
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Call_SMS.Call.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Car.EditCar.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Forms.Customer.AddCustomer.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Driver.AddDriver.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Driver.EditDriver.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Login.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.ManagerPanel.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Path.AddPath.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Path.DeletePath.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Path.EditPath.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Report.Reporting.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.AddService.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.DeleteService.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.PasswordForgetion.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.SecretaryPanel.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.EditService.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Register.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Properties.Resources.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.csproj.GenerateResource.cache
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.csproj.CoreCompileInputs.cache
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.csproj.CopyComplete
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.exe
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.pdb
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Migrations.init.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Migrations.init1.resources
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.csprojAssemblyReference.cache
+H:\Drive D\Pedram\Learning\Computer\Term4\SoftwareEngineering\Project\TaxiService\Taxi_Service\WND\obj\Debug\WND.Migrations.ServiceSoftDeleting.resources
+J:\TaxiService\WND\bin\Debug\WND.exe.config
+J:\TaxiService\WND\obj\Debug\WND.exe
+J:\TaxiService\WND\obj\Debug\WND.pdb
+J:\TaxiService\WND\bin\Debug\WND.exe
+J:\TaxiService\WND\bin\Debug\WND.pdb
+J:\TaxiService\WND\bin\Debug\AutoMapper.dll
+J:\TaxiService\WND\bin\Debug\BehComponents.dll
+J:\TaxiService\WND\bin\Debug\EntityFramework.dll
+J:\TaxiService\WND\bin\Debug\EntityFramework.SqlServer.dll
+J:\TaxiService\WND\bin\Debug\Ninject.dll
+J:\TaxiService\WND\bin\Debug\System.ValueTuple.dll
+J:\TaxiService\WND\bin\Debug\AutoMapper.pdb
+J:\TaxiService\WND\bin\Debug\AutoMapper.xml
+J:\TaxiService\WND\bin\Debug\EntityFramework.xml
+J:\TaxiService\WND\bin\Debug\EntityFramework.SqlServer.xml
+J:\TaxiService\WND\bin\Debug\Ninject.xml
+J:\TaxiService\WND\bin\Debug\System.ValueTuple.xml
+J:\TaxiService\WND\obj\Debug\WND.csprojResolveAssemblyReference.cache
+J:\TaxiService\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+J:\TaxiService\WND\obj\Debug\WND.Call_SMS.Call.resources
+J:\TaxiService\WND\obj\Debug\WND.Car.EditCar.resources
+J:\TaxiService\WND\obj\Debug\WND.Forms.Customer.AddCustomer.resources
+J:\TaxiService\WND\obj\Debug\WND.Driver.AddDriver.resources
+J:\TaxiService\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+J:\TaxiService\WND\obj\Debug\WND.Driver.EditDriver.resources
+J:\TaxiService\WND\obj\Debug\WND.Login.resources
+J:\TaxiService\WND\obj\Debug\WND.ManagerPanel.resources
+J:\TaxiService\WND\obj\Debug\WND.Path.AddPath.resources
+J:\TaxiService\WND\obj\Debug\WND.Path.DeletePath.resources
+J:\TaxiService\WND\obj\Debug\WND.Path.EditPath.resources
+J:\TaxiService\WND\obj\Debug\WND.Report.Reporting.resources
+J:\TaxiService\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+J:\TaxiService\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+J:\TaxiService\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+J:\TaxiService\WND\obj\Debug\WND.AddService.resources
+J:\TaxiService\WND\obj\Debug\WND.DeleteService.resources
+J:\TaxiService\WND\obj\Debug\WND.PasswordForgetion.resources
+J:\TaxiService\WND\obj\Debug\WND.SecretaryPanel.resources
+J:\TaxiService\WND\obj\Debug\WND.EditService.resources
+J:\TaxiService\WND\obj\Debug\WND.Register.resources
+J:\TaxiService\WND\obj\Debug\WND.Properties.Resources.resources
+J:\TaxiService\WND\obj\Debug\WND.csproj.GenerateResource.Cache
+J:\TaxiService\WND\obj\Debug\WND.Migrations.final.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\WND.exe.config
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\WND.exe
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\WND.pdb
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\AutoMapper.dll
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\BehComponents.dll
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\EntityFramework.dll
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\Ninject.dll
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\System.ValueTuple.dll
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\AutoMapper.pdb
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\AutoMapper.xml
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\EntityFramework.xml
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\Ninject.xml
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\bin\Debug\System.ValueTuple.xml
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.csprojAssemblyReference.cache
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Call_SMS.Call.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Car.EditCar.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Forms.Customer.AddCustomer.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Driver.AddDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Driver.EditDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Login.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.ManagerPanel.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Path.AddPath.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Path.DeletePath.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Path.EditPath.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Report.Reporting.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.AddService.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.DeleteService.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Migrations.final.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.PasswordForgetion.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.SecretaryPanel.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.EditService.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Register.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.Properties.Resources.resources
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.csproj.GenerateResource.cache
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.csproj.CoreCompileInputs.cache
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.csproj.CopyComplete
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.exe
+C:\Users\Pedram\Desktop\TaxiDar\TaxiService\WND\obj\Debug\WND.pdb
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\WND.exe.config
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\WND.exe
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\WND.pdb
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\AutoMapper.dll
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\BehComponents.dll
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\EntityFramework.dll
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\Ninject.dll
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\System.ValueTuple.dll
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\AutoMapper.pdb
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\AutoMapper.xml
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\EntityFramework.xml
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\Ninject.xml
+C:\Users\Pedram\Desktop\TaxiDar\WND\bin\Debug\System.ValueTuple.xml
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.csprojAssemblyReference.cache
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Call_SMS.Call.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Car.EditCar.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Forms.Customer.AddCustomer.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Driver.AddDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Driver.EditDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Login.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.ManagerPanel.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Path.AddPath.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Path.DeletePath.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Path.EditPath.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Report.Reporting.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.AddService.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.DeleteService.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Migrations.final.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.PasswordForgetion.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.SecretaryPanel.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.EditService.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Register.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.Properties.Resources.resources
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.csproj.GenerateResource.cache
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.csproj.CoreCompileInputs.cache
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.csproj.CopyComplete
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.exe
+C:\Users\Pedram\Desktop\TaxiDar\WND\obj\Debug\WND.pdb
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\WND.exe.config
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\WND.exe
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\WND.pdb
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\BehComponents.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\EntityFramework.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Ninject.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\System.ValueTuple.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\EntityFramework.xml
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Ninject.xml
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\System.ValueTuple.xml
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.csprojAssemblyReference.cache
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Call_SMS.Call.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Car.EditCar.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Forms.Customer.AddCustomer.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Driver.AddDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Driver.EditDriver.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Login.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.ManagerPanel.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Path.AddPath.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Path.DeletePath.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Report.Reporting.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.AddService.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.DeleteService.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Migrations.final.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.PasswordForgetion.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.SecretaryPanel.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.EditService.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Register.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Properties.Resources.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.csproj.GenerateResource.cache
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.csproj.CoreCompileInputs.cache
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.csproj.CopyComplete
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.exe
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.pdb
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Telerik.WinControls.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Telerik.WinControls.Themes.Windows7.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\TelerikCommon.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Telerik.WinControls.xml
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.exe.licenses
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\Telerik.WinControls.Themes.Material.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.g.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\BaseFormLibrary.dll
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\bin\Debug\BaseFormLibrary.pdb
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Forms.Path.EditPath.resources
+C:\Users\Pedram\Desktop\TaxiDar Backup\WND\obj\Debug\WND.Migrations.mig1.resources
