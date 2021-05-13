@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WND.Data;
-using WND.Models;
+using Models;
 using WND.Utility;
 
 namespace WND

@@ -32,7 +32,16 @@ namespace WND
         {
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnExit
+            // 
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // dataGridViewImageColumn1
             // 
@@ -56,16 +65,21 @@ namespace WND
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1370, 749);
-            this.MinimumSize = new System.Drawing.Size(1370, 749);
+            this.MaximumSize = new System.Drawing.Size(1386, 788);
+            this.MinimumSize = new System.Drawing.Size(1386, 788);
             this.Name = "ManagerPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تاکسی‌دار - پنل مدیریت";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ManagerPanel_FormClosed);
             this.Load += new System.EventHandler(this.ManagerPanel_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             this.ResumeLayout(false);
 
         }

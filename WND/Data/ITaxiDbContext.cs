@@ -4,15 +4,15 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WND.Models;
+using Models;
 
 namespace WND.Data
 {
     public interface ITaxiDbContext
     {
-        DbSet<User> Users { get; set; }
+        DbSet<Models.User> Users { get; set; }
 
-        DbSet<AuthenticatedUser> AuthenticatedUsers { get; set; }
+        DbSet<Models.AuthenticatedUser> AuthenticatedUsers { get; set; }
 
         DbSet<Models.Car> Cars { get; set; }
 

@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Reflection.Emit;
-using WND.Models;
+using Models;
 
 namespace WND.Data
 {
@@ -55,9 +55,9 @@ namespace WND.Data
             throw new NotImplementedException();
         }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Models.User> Users { get; set; }
 
-        public DbSet<AuthenticatedUser> AuthenticatedUsers { get; set; }
+        public DbSet<Models.AuthenticatedUser> AuthenticatedUsers { get; set; }
 
         public DbSet<Models.Car> Cars { get; set; }
         public DbSet<Models.Path> Paths { get; set; }

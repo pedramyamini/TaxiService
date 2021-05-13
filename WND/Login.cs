@@ -1,4 +1,5 @@
 ﻿using BaseFormLibrary;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,13 +11,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WND.Data;
-using WND.Models;
 using WND.Utility;
 using MessageBoxRTL = WND.Utility.MessageBoxRTL;
 
 namespace WND
 {
-    public partial class Login : LoginForm
+    public partial class Login : BaseFormLibrary.LoginForm
     {
         public Login()
         {
@@ -102,7 +102,7 @@ namespace WND
 
         private void InitializeComponent()
         {
-            ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)this.btnContactUs).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();

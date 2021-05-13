@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pedram\\Desktop\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj": {}
+    "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pedram\\Desktop\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj": {
+    "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pedram\\Desktop\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj",
+        "projectUniqueName": "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj",
         "projectName": "BaseFormLibrary",
-        "projectPath": "C:\\Users\\Pedram\\Desktop\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj",
+        "projectPath": "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj",
         "packagesPath": "C:\\Users\\Pedram\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pedram\\Desktop\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\obj\\",
+        "outputPath": "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages",
@@ -31,7 +31,55 @@
         },
         "frameworks": {
           "net45": {
-            "targetAlias": "net45",
+            "targetAlias": "net4.5",
+            "projectReferences": {
+              "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj": {
+                "projectPath": "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net4.5",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj",
+        "projectName": "Models",
+        "projectPath": "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\Pedram\\.nuget\\packages\\",
+        "outputPath": "H:\\Final Project\\TaxiDar Backup\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pedram\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WinForms.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net4.5",
             "projectReferences": {}
           }
         },
@@ -43,7 +91,13 @@
       },
       "frameworks": {
         "net45": {
-          "targetAlias": "net45",
+          "targetAlias": "net4.5",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }

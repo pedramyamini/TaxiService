@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WND.Data;
 using WND.DI.Ninject;
-using WND.Models;
+using Models;
 using WND.Utility;
 
 namespace WND.Car

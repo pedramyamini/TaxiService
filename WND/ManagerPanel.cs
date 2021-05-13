@@ -65,5 +65,10 @@ namespace WND
             this.Enabled = false;
             new AddSecretary().Show();
         }
+
+        protected override void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

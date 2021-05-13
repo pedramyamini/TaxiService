@@ -33,7 +33,8 @@ namespace WND.Forms.Path
             // 
             // EditPath
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "EditPath";
             this.ResumeLayout(false);
 

@@ -171,16 +171,6 @@
       <DependentUpon>202105090838103_mig1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AuthenticatedUser.cs" />
-    <Compile Include="Models\Car.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Driver.cs" />
-    <Compile Include="Models\Path.cs" />
-    <Compile Include="Models\Roles\Roles.cs" />
-    <Compile Include="Models\Service.cs" />
-    <Compile Include="Models\ServicePath.cs" />
-    <Compile Include="Models\Transaction.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Forms\Path\AddPath.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,7 +219,6 @@
     <Compile Include="Forms\Services\DeleteService.Designer.cs">
       <DependentUpon>DeleteService.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\ViewModels\ServiceVM.cs" />
     <Compile Include="PasswordForgetion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -421,6 +410,10 @@
     <ProjectReference Include="..\BaseFormLibrary\BaseFormLibrary.csproj">
       <Project>{D5D0A9C6-7A2F-4987-BF06-BC8109003289}</Project>
       <Name>BaseFormLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{e9a1cec7-8a2c-47ba-a1e2-8a3631940412}</Project>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

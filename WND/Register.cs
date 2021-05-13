@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Windows.Forms;
 using WND.Data;
-using WND.Models;
+using Models;
 using WND.Utility;
 using MessageBoxRTL = WND.Utility.MessageBoxRTL;
 

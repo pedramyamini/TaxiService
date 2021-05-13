@@ -5,7 +5,7 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
     using WND.Data;
-    using WND.Models;
+    using Models;
 
     internal sealed class Configuration : DbMigrationsConfiguration<WND.Data.TaxiDbContext>
     {

@@ -10,8 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WND.Data;
-using WND.Models;
 using WND.Utility;
+using Models;
 
 namespace WND.Driver
 {
@@ -37,7 +37,7 @@ namespace WND.Driver
                     FullName = txtFullName.Text,
                     Mobile = txtMobile.Text.PersianToEnglish(),
                     SharePercent = SharePercent,
-                    Role = Models.Roles.Driver,
+                    Role = Roles.Driver,
                     Car = new Models.Car()
                     {
                         Color = string.Empty,

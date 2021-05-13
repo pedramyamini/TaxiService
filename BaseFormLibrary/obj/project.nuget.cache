@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EZ8ne2mLTdZ1YrlBI4/J66xUs9AC9vrJdr5jWHqlxzMm5ftOvJgLXIM2zEYQkQfQu+0QlWweL1qg+izyeoTVEw==",
+  "dgSpecHash": "npocX4MIayxiQFX9ny5aslvr80ZpWSC6nfJEkCTQobYi/mv38EPeu8b2tmoCdy4olDzruy6fcCNQB9KTy2ljLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedram\\Desktop\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pedram\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512"
+  ],
   "logs": []
 }
