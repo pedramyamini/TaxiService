@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WND.Data;
 using Models;
-using WND.Utility;
+using Utility;
 
 namespace WND
 {

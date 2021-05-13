@@ -1,4 +1,5 @@
 ﻿using BaseFormLibrary;
+using Utility;
 
 namespace WND
 {
@@ -30,10 +31,10 @@ namespace WND
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSecurityQuestion = new BaseFormLibrary.SizableTextBox();
-            this.txtSecurityAnswer = new BaseFormLibrary.SizableTextBox();
-            this.txtPassword = new BaseFormLibrary.SizableTextBox();
-            this.txtPasswordRepeation = new BaseFormLibrary.SizableTextBox();
+            this.txtSecurityQuestion = new SizableTextBox();
+            this.txtSecurityAnswer = new SizableTextBox();
+            this.txtPassword = new SizableTextBox();
+            this.txtPasswordRepeation = new SizableTextBox();
             this.btnChangePassword = new System.Windows.Forms.PictureBox();
             this.btnVerify = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();

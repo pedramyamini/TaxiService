@@ -1,4 +1,4 @@
-﻿using WND.Utility;
+﻿using Utility;
 
 namespace WND.Secretary
 {
@@ -35,7 +35,7 @@ namespace WND.Secretary
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnAddSecretary = new System.Windows.Forms.Button();
-            this.txtMobile = new WND.Utility.NumericTextBox();
+            this.txtMobile = new Utility.NumericTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();

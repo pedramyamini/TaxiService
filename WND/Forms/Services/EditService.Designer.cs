@@ -1,4 +1,4 @@
-﻿using WND.Utility;
+﻿using Utility;
 
 namespace WND
 {
@@ -55,9 +55,9 @@ namespace WND
             this.btnSearch = new System.Windows.Forms.Button();
             this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.txtCost = new WND.Utility.NumericTextBox();
-            this.txtDelay = new WND.Utility.NumericTextBox();
-            this.radGridServices = new WND.Utility.RadGridViewCustom();
+            this.txtCost = new Utility.NumericTextBox();
+            this.txtDelay = new Utility.NumericTextBox();
+            this.radGridServices = new Utility.RadGridViewCustom();
             ((System.ComponentModel.ISupportInitialize)(this.radGridServices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridServices.MasterTemplate)).BeginInit();
             this.SuspendLayout();

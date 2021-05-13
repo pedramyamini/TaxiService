@@ -583,3 +583,6 @@ H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.exe
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.pdb
 H:\Final Project\TaxiDar Backup\WND\bin\Debug\Models.dll
 H:\Final Project\TaxiDar Backup\WND\bin\Debug\Models.pdb
+H:\Final Project\TaxiDar Backup\WND\bin\Debug\Utility.exe
+H:\Final Project\TaxiDar Backup\WND\bin\Debug\Utility.pdb
+H:\Final Project\TaxiDar Backup\WND\bin\Debug\Utility.exe.config

@@ -1,4 +1,4 @@
-﻿using WND.Utility;
+﻿using Utility;
 
 namespace WND.Path
 {
@@ -34,7 +34,7 @@ namespace WND.Path
             this.txtOrigin = new System.Windows.Forms.TextBox();
             this.txtDestination = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCost = new WND.Utility.NumericTextBox();
+            this.txtCost = new Utility.NumericTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAddPath = new System.Windows.Forms.Button();
             this.SuspendLayout();

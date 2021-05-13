@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Telerik.WinControls.UI;
 
-namespace WND.Utility
+namespace Utility
 {
-    public class RadGridViewCustom:RadGridView
+    public class RadGridViewCustom : RadGridView
     {
         public override string ThemeClassName
         {
@@ -28,13 +28,13 @@ namespace WND.Utility
             this.MasterTemplate.AllowDragToGroup = false;
             this.MasterTemplate.AllowEditRow = false;
             this.MasterTemplate.AutoSizeColumnsMode = GridViewAutoSizeColumnsMode.Fill;
-            
+
 
             //delete btn
             GridViewCommandColumn deleteBtnColumn = new GridViewCommandColumn();
             deleteBtnColumn.AllowHide = false;
             deleteBtnColumn.HeaderText = "حذف";
-            deleteBtnColumn.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
+            deleteBtnColumn.Image = Utility.Properties.Resources.Icon_material_delete_forever;
             deleteBtnColumn.MaxWidth = 50;
             deleteBtnColumn.Name = "GridDeleteBtn";
             deleteBtnColumn.Width = 50;
@@ -43,14 +43,14 @@ namespace WND.Utility
             GridViewCommandColumn editBtnColumn = new GridViewCommandColumn();
             editBtnColumn.AllowHide = false;
             editBtnColumn.HeaderText = "ویرایش";
-            editBtnColumn.Image = global::WND.Properties.Resources.Icon_feather_edit;
+            editBtnColumn.Image = Utility.Properties.Resources.Icon_feather_edit;
             editBtnColumn.MaxWidth = 60;
             editBtnColumn.Name = "GridEditBtn";
             editBtnColumn.Width = 60;
 
             this.MasterTemplate.Columns.AddRange(new GridViewDataColumn[] {
             editBtnColumn,deleteBtnColumn});
-            
+
             this.MasterTemplate.EnableGrouping = false;
             TableViewDefinition tableViewDefinition = new TableViewDefinition();
             this.ViewDefinition = tableViewDefinition;
@@ -63,7 +63,7 @@ namespace WND.Utility
         }
         protected override void OnSelectionChanged(object sender, EventArgs e)
         {
-            if(this!=null && this.SelectedCells.Count>0)
+            if (this != null && this.SelectedCells.Count > 0)
             {
                 if (!this.CurrentCell.IsSelected)
                 {
@@ -82,7 +82,7 @@ namespace WND.Utility
 
         protected override void OnCellClick(object sender, GridViewCellEventArgs e)
         {
-            
+
             base.OnCellClick(sender, e);
         }
     }

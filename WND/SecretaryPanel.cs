@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WND.Data;
 using WND.Forms.Customer;
-using WND.Utility;
+using Utility;
 
 namespace WND
 {

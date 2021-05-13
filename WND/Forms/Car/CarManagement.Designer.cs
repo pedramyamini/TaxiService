@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-using WND.Utility;
+using Utility;
 
 namespace WND.Car
 {
@@ -34,15 +34,15 @@ namespace WND.Car
             this.btnEditCar = new System.Windows.Forms.Button();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtLicencePlate1 = new WND.Utility.NumericTextBox();
+            this.txtLicencePlate1 = new Utility.NumericTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboboxDrivers = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtLicencePlate2 = new System.Windows.Forms.TextBox();
-            this.txtLicencePlate3 = new WND.Utility.NumericTextBox();
-            this.txtLicencePlate4 = new WND.Utility.NumericTextBox();
+            this.txtLicencePlate3 = new Utility.NumericTextBox();
+            this.txtLicencePlate4 = new Utility.NumericTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();

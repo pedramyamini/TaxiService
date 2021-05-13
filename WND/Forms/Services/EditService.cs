@@ -16,8 +16,8 @@ using WND.Data;
 using Models;
 using Models.ViewModels;
 using WND.Properties;
-using WND.Utility;
-using MessageBoxRTL = WND.Utility.MessageBoxRTL;
+using Utility;
+
 
 namespace WND
 {

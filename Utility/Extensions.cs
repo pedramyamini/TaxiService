@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WND.Utility
+namespace Utility
 {
     public static class Extensions
     {

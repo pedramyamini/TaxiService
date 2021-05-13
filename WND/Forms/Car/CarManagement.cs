@@ -15,7 +15,7 @@ using System.Windows.Forms;
 using WND.Data;
 using WND.DI.Ninject;
 using Models;
-using WND.Utility;
+using Utility;
 
 namespace WND.Car
 {

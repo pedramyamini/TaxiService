@@ -32,6 +32,19 @@
         "runtime": {
           "bin/placeholder/Models.dll": {}
         }
+      },
+      "Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utility.dll": {}
+        }
       }
     }
   },
@@ -97,11 +110,17 @@
       "type": "project",
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
+    },
+    "Utility/1.0.0": {
+      "type": "project",
+      "path": "../Utility/Utility.csproj",
+      "msbuildProject": "../Utility/Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.5": [
-      "Models >= 1.0.0"
+      "Models >= 1.0.0",
+      "Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -140,6 +159,9 @@
           "projectReferences": {
             "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj": {
               "projectPath": "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj"
+            },
+            "H:\\Final Project\\TaxiDar Backup\\Utility\\Utility.csproj": {
+              "projectPath": "H:\\Final Project\\TaxiDar Backup\\Utility\\Utility.csproj"
             }
           }
         }

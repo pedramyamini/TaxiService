@@ -4,8 +4,8 @@ using System.Linq;
 using System.Windows.Forms;
 using WND.Data;
 using Models;
-using WND.Utility;
-using MessageBoxRTL = WND.Utility.MessageBoxRTL;
+using Utility;
+
 
 namespace WND
 {

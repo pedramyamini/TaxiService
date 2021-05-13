@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WND.Utility
+namespace Utility
 {
     public static class Validation
     {
@@ -18,17 +18,17 @@ namespace WND.Utility
 
             if (!Validator.TryValidateObject(toValidate, context, errors, true))
             {
-                string ErrorMessage=string.Empty;
+                string ErrorMessage = string.Empty;
                 foreach (ValidationResult result in errors)
                     ErrorMessage += "\n " + result.ErrorMessage;
-                MessageBoxRTL.Error(ErrorMessage,string.Empty);
+                MessageBoxRTL.Error(ErrorMessage, string.Empty);
                 return false;
             }
             return true;
         }
-        
-        
-        
+
+
+
         public static bool ValidatePassword(string password)
         {
             if (password.Count(p => char.IsDigit(p)) >= 1

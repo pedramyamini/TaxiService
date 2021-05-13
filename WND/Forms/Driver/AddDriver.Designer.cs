@@ -1,4 +1,4 @@
-﻿using WND.Utility;
+﻿using Utility;
 
 namespace WND.Driver
 {
@@ -35,8 +35,8 @@ namespace WND.Driver
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddDriver = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtSharePercent = new WND.Utility.NumericTextBox();
-            this.txtMobile = new WND.Utility.NumericTextBox();
+            this.txtSharePercent = new Utility.NumericTextBox();
+            this.txtMobile = new Utility.NumericTextBox();
             this.SuspendLayout();
             // 
             // label1

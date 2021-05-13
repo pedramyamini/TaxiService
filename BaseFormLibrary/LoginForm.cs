@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Utility;
 
 
 
@@ -57,8 +58,8 @@ namespace BaseFormLibrary
             this.btnLogin = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.PictureBox();
             this.checkboxTogglePasswordDisplay = new System.Windows.Forms.PictureBox();
-            this.txtPassword = new BaseFormLibrary.SizableTextBox();
-            this.txtUsername = new BaseFormLibrary.SizableTextBox();
+            this.txtPassword = new SizableTextBox();
+            this.txtUsername = new SizableTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();

@@ -1,6 +1,5 @@
 ﻿using BaseFormLibrary;
-using WND.Utility;
-using NumericTextBox = BaseFormLibrary.NumericTextBox;
+using Utility;
 
 namespace WND
 {
@@ -41,7 +40,7 @@ namespace WND
             this.btnContactUs = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtFullName = new System.Windows.Forms.TextBox();
-            this.txtMobile = new BaseFormLibrary.NumericTextBox();
+            this.txtMobile = new NumericTextBox();
             this.txtSecurityQuestion = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtSecurityAnswer = new System.Windows.Forms.TextBox();

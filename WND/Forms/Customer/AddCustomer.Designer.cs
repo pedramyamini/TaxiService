@@ -1,4 +1,4 @@
-﻿using WND.Utility;
+﻿using Utility;
 
 namespace WND.Forms.Customer
 {
@@ -36,7 +36,7 @@ namespace WND.Forms.Customer
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAddCustomer = new System.Windows.Forms.Button();
-            this.txtMobile = new WND.Utility.NumericTextBox();
+            this.txtMobile = new Utility.NumericTextBox();
             this.SuspendLayout();
             // 
             // txtAddress

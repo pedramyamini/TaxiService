@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using WND.Properties;
-using WND.Utility;
+using Utility;
 
 namespace WND.Forms.Path
 {

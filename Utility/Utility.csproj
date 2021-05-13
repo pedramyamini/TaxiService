@@ -1,28 +1,28 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net4.5</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj" />
-    <ProjectReference Include="..\Utility\Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="BehComponents">
-      <HintPath>..\..\..\source\repos\WND\WND\BehComponents.dll</HintPath>
+      <HintPath>..\WND\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for WinForms R1 2021\Bin40\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for WinForms R1 2021\Bin40\Telerik.WinControls.GridView.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ClosableForm.cs" />
-    <Compile Update="BaseForm.cs" />
-    <Compile Update="NumericTextBox.cs" />
-    <Compile Update="RegisterForm.cs" />
-    <Compile Update="LoginForm.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -31,12 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="LoginBase - Copy - Copy.resx">
-      <DependentUpon>LoginForm.resx</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="LoginBase - Copy.resx">
-      <DependentUpon>LoginForm.resx</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -10,8 +10,8 @@ using WND.Forms.Path;
 using WND.Migrations;
 using WND.Path;
 using WND.Secretary;
-using WND.Utility;
-using MessageBoxRTL = WND.Utility.MessageBoxRTL;
+using Utility;
+
 
 namespace WND
 {

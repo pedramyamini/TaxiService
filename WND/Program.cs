@@ -12,7 +12,7 @@ using WND.Call_SMS;
 using WND.Data;
 using WND.DI.Ninject;
 using WND.Report;
-using WND.Utility;
+using Utility;
 
 namespace WND
 {

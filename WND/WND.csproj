@@ -245,18 +245,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\Hash.cs" />
-    <Compile Include="Utility\LicensePlateCalculation.cs" />
-    <Compile Include="Utility\MessageBoxRTL.cs" />
-    <Compile Include="Utility\NumericTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Utility\RadGridViewCustom.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Utility\Session.cs" />
-    <Compile Include="Utility\Extensions.cs" />
-    <Compile Include="Utility\Validation.cs" />
     <EmbeddedResource Include="Forms\Backup-Restore\Backup-Restore.resx">
       <DependentUpon>Backup-Restore.cs</DependentUpon>
     </EmbeddedResource>
@@ -415,7 +403,12 @@
       <Project>{e9a1cec7-8a2c-47ba-a1e2-8a3631940412}</Project>
       <Name>Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{dabf2afa-d7af-4986-9aa2-383e26298018}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

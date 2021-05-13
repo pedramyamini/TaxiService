@@ -11,8 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WND.Data;
-using WND.Utility;
-using MessageBoxRTL = WND.Utility.MessageBoxRTL;
+using Utility;
+
 
 namespace WND
 {
