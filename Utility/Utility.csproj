@@ -15,10 +15,10 @@
       <HintPath>..\WND\BehComponents.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.WinControls">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for WinForms R1 2021\Bin40\Telerik.WinControls.dll</HintPath>
+      <HintPath>..\Telerik.WinControls.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.WinControls.GridView">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for WinForms R1 2021\Bin40\Telerik.WinControls.GridView.dll</HintPath>
+      <HintPath>..\Telerik.WinControls.GridView.dll</HintPath>
     </Reference>
   </ItemGroup>
 
