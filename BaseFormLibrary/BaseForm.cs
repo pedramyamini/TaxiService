@@ -12,10 +12,10 @@ using Utility;
 
 namespace BaseFormLibrary
 {
-    public class BaseForm:Form
+    public class BaseForm : Form
     {
-        Dictionary<string, bool> MenuItems = new Dictionary<string, bool>();
-        Dictionary<string, Bitmap> MenuImageSources = new Dictionary<string, Bitmap>();
+
+        protected bool SwitchBetweenForms = false;
 
 
         private Label lblTaxiName;
@@ -23,10 +23,10 @@ namespace BaseFormLibrary
         private PictureBox pictureboxChangeCamera;
         private Label lblFullName;
         private Label lblRule;
-        public PictureBox btnDashboard;
-        public PictureBox btnDrivers;
-        public PictureBox btnServices;
-        public PictureBox btnPaths;
+        protected PictureBox btnDashboard;
+        protected PictureBox btnDrivers;
+        protected PictureBox btnServices;
+        protected PictureBox btnPaths;
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
         private PictureBox pictureBox11;
@@ -34,28 +34,13 @@ namespace BaseFormLibrary
         public PictureBox btnExit;
         private PictureBox pictureBox1;
         //private FormCustom _sourceForm;
-        
+
 
         public BaseForm()
         {
-            MenuItems.Add("Dashboard", false);
-            MenuItems.Add("Drivers", false);
-            MenuItems.Add("Services", false);
-            MenuItems.Add("Paths", false);
-
-            MenuImageSources.Add("Dashboard", Properties.Resources.Dashboard);
-            MenuImageSources.Add("DashboardOut", Properties.Resources.Dashboard_out);
-            MenuImageSources.Add("Drivers", Properties.Resources.Drivers);
-            MenuImageSources.Add("DriversOut", Properties.Resources.Drivers_out);
-            MenuImageSources.Add("Services", Properties.Resources.Services);
-            MenuImageSources.Add("ServicesOut", Properties.Resources.Services_out);
-            MenuImageSources.Add("Paths", Properties.Resources.Paths);
-            MenuImageSources.Add("PathsOut", Properties.Resources.Paths_out);
-
-
-
+            
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-            this.Size = new System.Drawing.Size(1370,749);
+            this.Size = new System.Drawing.Size(1370, 749);
             this.WindowState = FormWindowState.Maximized;
             this.RightToLeft = RightToLeft.Yes;
             this.RightToLeftLayout = true;
@@ -64,14 +49,7 @@ namespace BaseFormLibrary
             profile_image.MakeTransparent(Color.Transparent);
             this.pictureboxProfile.Image = (Image)profile_image;
             this.Show();
-            //if (sourceForm != null)
-            //{
-            //    _sourceForm = sourceForm;
-            //    _sourceForm.Hide();
-            //    this.Show();
-            //}
 
-            
         }
 
         void ResetMenu()
@@ -101,47 +79,22 @@ namespace BaseFormLibrary
             btnPaths.BackColor = Color.FromArgb(246, 190, 100);
         }
 
-        void ChangeMenuSelectedItem(string ItemName)
-        {
-            string ItemNameWithoutBtn = ItemName.Replace("btn", "");
-            bool IsSelected = MenuItems.TryGetValue(ItemNameWithoutBtn, out IsSelected);
-            PictureBox btn = this.Controls.OfType<PictureBox>().Where(p => p.Name == ItemName).Single();
-            btn.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            ResetMenu();
-            
-            if (!IsSelected)
-            {
-                btn.Image = MenuImageSources[ItemNameWithoutBtn];
-                btn.Refresh();
-                MenuItems[ItemNameWithoutBtn] = false;
-                btn.Width = 93;
-                btn.BackColor = Color.FromArgb(246, 190, 100);
-            }
-            else
-            {
-                btn.Image = MenuImageSources[ItemNameWithoutBtn + "Out"];
-                btn.Refresh();
-                MenuItems[ItemNameWithoutBtn] = true;
-                btn.Width = 180;
-                btn.BackColor = Color.FromArgb(242, 242, 242);
-            }
-
-            btn.Height = 67;
-        }
+        
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
-            if (dr == DialogResult.OK)
+            if (!SwitchBetweenForms)
             {
-                
-            }
-            else
-            {
-                e.Cancel = true;
-            }
+                DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
+                if (dr == DialogResult.OK)
+                {
 
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
             base.OnFormClosing(e);
         }
 
@@ -185,7 +138,6 @@ namespace BaseFormLibrary
             this.lblTaxiName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTaxiName.Size = new System.Drawing.Size(215, 35);
             this.lblTaxiName.TabIndex = 1;
-            this.lblTaxiName.Text = "تاکسی دار";
             this.lblTaxiName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFullName
@@ -197,7 +149,6 @@ namespace BaseFormLibrary
             this.lblFullName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblFullName.Size = new System.Drawing.Size(94, 32);
             this.lblFullName.TabIndex = 5;
-            //this.lblFullName.Text = "پدرام یمینی";
             this.lblFullName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblRule
@@ -209,7 +160,6 @@ namespace BaseFormLibrary
             this.lblRule.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblRule.Size = new System.Drawing.Size(91, 31);
             this.lblRule.TabIndex = 6;
-            this.lblRule.Text = "مدیر تاکسی";
             this.lblRule.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDateTime
@@ -221,7 +171,6 @@ namespace BaseFormLibrary
             this.lblDateTime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblDateTime.Size = new System.Drawing.Size(134, 28);
             this.lblDateTime.TabIndex = 14;
-            //this.lblDateTime.Text = "چهارشنبه 22 اردیبهشت 1400";
             this.lblDateTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnExit
@@ -391,32 +340,35 @@ namespace BaseFormLibrary
 
         protected virtual void btnExit_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void BaseForm_Load(object sender, EventArgs e)
         {
+            lblRule.Text = Utility.Session.CurrentUser.Role == Models.Roles.Admin ? "مدیر" : "منشی";
             lblDateTime.Text = DateTime.Today.ToPersianDateString();
+            lblFullName.Text = Session.CurrentUser.FullName;
+            lblTaxiName.Text = Session.CurrentUser.TaxiName;
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
+        protected virtual void btnDashboard_Click(object sender, EventArgs e)
         {
-            ChangeMenuSelectedItem(nameof(btnDashboard));
+
         }
 
-        private void btnDrivers_Click(object sender, EventArgs e)
+        protected virtual void btnDrivers_Click(object sender, EventArgs e)
         {
-            ChangeMenuSelectedItem(nameof(btnDrivers));
+            
         }
 
-        private void btnServices_Click(object sender, EventArgs e)
+        protected virtual void btnServices_Click(object sender, EventArgs e)
         {
-            ChangeMenuSelectedItem(nameof(btnServices));
+            
         }
 
-        private void btnPaths_Click(object sender, EventArgs e)
+        protected virtual void btnPaths_Click(object sender, EventArgs e)
         {
-            ChangeMenuSelectedItem(nameof(btnPaths));
+            
         }
     }
 }

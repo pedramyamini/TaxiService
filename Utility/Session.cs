@@ -11,6 +11,8 @@ namespace Utility
     {
         public static AuthenticatedUser CurrentUser { get; set; }
 
+        public static bool RecentlyLogedIn { get; set; }
+
         public static bool RecentlyRegisteredAdmin { get; set; }
 
     }

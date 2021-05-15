@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Utility
 {
@@ -48,5 +50,18 @@ namespace Utility
             }
             return persianStr;
         }
+
+        public static void ChangeMenuItemImage(this PictureBox btn,Image image)
+        {
+            btn.Image = image;
+            btn.Width = 180;
+            btn.Height = 67;
+            btn.BackColor = Color.FromArgb(242, 242, 242);
+            btn.SizeMode = PictureBoxSizeMode.StretchImage;
+            
+            btn.Refresh();
+        }
+
+        
     }
 }

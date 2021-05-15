@@ -93,6 +93,26 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dashboard_out {
+            get {
+                object obj = ResourceManager.GetObject("Dashboard_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Drivers_out {
+            get {
+                object obj = ResourceManager.GetObject("Drivers_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_104 {
             get {
                 object obj = ResourceManager.GetObject("Group 104", resourceCulture);
@@ -243,6 +263,16 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Paths_out {
+            get {
+                object obj = ResourceManager.GetObject("Paths_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap phone_call {
             get {
                 object obj = ResourceManager.GetObject("phone-call", resourceCulture);
@@ -256,6 +286,16 @@ namespace WND.Properties {
         internal static System.Drawing.Bitmap phone_call1 {
             get {
                 object obj = ResourceManager.GetObject("phone-call1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Service_out {
+            get {
+                object obj = ResourceManager.GetObject("Service_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

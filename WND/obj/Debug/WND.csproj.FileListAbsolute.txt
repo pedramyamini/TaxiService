@@ -559,7 +559,6 @@ H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Driver.DeleteDriver.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Driver.EditDriver.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Forms.Path.EditPath.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Login.resources
-H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.ManagerPanel.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Path.AddPath.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Path.DeletePath.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Report.Reporting.resources
@@ -571,7 +570,6 @@ H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.DeleteService.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Migrations.final.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Migrations.mig1.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.PasswordForgetion.resources
-H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.SecretaryPanel.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.EditService.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Register.resources
 H:\Final Project\TaxiDar Backup\WND\obj\Debug\WND.Properties.Resources.resources

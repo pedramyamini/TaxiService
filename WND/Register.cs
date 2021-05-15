@@ -59,7 +59,8 @@ namespace WND
                     TaxiDbContext.Instance.SaveChanges();
                     Utility.MessageBoxRTL.Info("ثبت نام مدیر با موفقیت انجام شد.اکنون می‌توانید وارد حساب کاربری‌تان شوید.", "ثبت نام");
                     this.Hide();
-                    new ManagerPanel();
+                    new Dashboard();
+                    Session.RecentlyLogedIn = true;
                 }
             }
         }

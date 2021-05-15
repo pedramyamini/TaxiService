@@ -16,7 +16,7 @@ using Utility;
 
 namespace WND
 {
-    public partial class Login : BaseFormLibrary.LoginForm
+    public partial class Login : LoginForm
     {
         public Login()
         {
@@ -75,16 +75,21 @@ namespace WND
                 if (Session.CurrentUser != null)
                 {
                     MessageBoxRTL.Info(string.Format("کاربر گرامی، {0} خوش آمدید", Session.CurrentUser.Username), "");
+
+                    Session.RecentlyLogedIn = true;
+                    new Dashboard();
+                    
                     //checking Role
-                    switch (Session.CurrentUser.Role)
-                    {
-                        case Roles.Admin:
-                            new ManagerPanel();
-                            break;
-                        case Roles.Secretary:
-                            new SecretaryPanel();
-                            break;
-                    }
+                    //switch (Session.CurrentUser.Role)
+                    //{
+                    //    case Roles.Admin:
+                    //        new ManagerPanel();
+                    //        break;
+                    //    case Roles.Secretary:
+                    //        new SecretaryPanel();
+                    //        break;
+                    //}
+
                 }
                 else
                 {
