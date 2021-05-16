@@ -124,27 +124,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pedram\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\ali\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj",
+      "projectUniqueName": "J:\\TaxiService-master\\BaseFormLibrary\\BaseFormLibrary.csproj",
       "projectName": "BaseFormLibrary",
-      "projectPath": "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\BaseFormLibrary.csproj",
-      "packagesPath": "C:\\Users\\Pedram\\.nuget\\packages\\",
-      "outputPath": "H:\\Final Project\\TaxiDar Backup\\BaseFormLibrary\\obj\\",
+      "projectPath": "J:\\TaxiService-master\\BaseFormLibrary\\BaseFormLibrary.csproj",
+      "packagesPath": "C:\\Users\\ali\\.nuget\\packages\\",
+      "outputPath": "J:\\TaxiService-master\\BaseFormLibrary\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Pedram\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WinForms.config"
+        "C:\\Users\\ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net45"
@@ -157,11 +150,11 @@
         "net45": {
           "targetAlias": "net4.5",
           "projectReferences": {
-            "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj": {
-              "projectPath": "H:\\Final Project\\TaxiDar Backup\\Models\\Models.csproj"
+            "J:\\TaxiService-master\\Models\\Models.csproj": {
+              "projectPath": "J:\\TaxiService-master\\Models\\Models.csproj"
             },
-            "H:\\Final Project\\TaxiDar Backup\\Utility\\Utility.csproj": {
-              "projectPath": "H:\\Final Project\\TaxiDar Backup\\Utility\\Utility.csproj"
+            "J:\\TaxiService-master\\Utility\\Utility.csproj": {
+              "projectPath": "J:\\TaxiService-master\\Utility\\Utility.csproj"
             }
           }
         }
@@ -175,7 +168,7 @@
     "frameworks": {
       "net45": {
         "targetAlias": "net4.5",
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

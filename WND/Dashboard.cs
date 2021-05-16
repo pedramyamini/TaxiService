@@ -56,5 +56,29 @@ namespace WND
 
             base.btnServices_Click(sender, e);
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void btnDriversThumbnail_Click(object sender, EventArgs e)
+        {
+            this.CloseWithoutAsk();
+            new Drivers();
+        }
+
+        private void btnServicesThumbnail_Click(object sender, EventArgs e)
+        {
+            this.CloseWithoutAsk();
+            new Services();
+        }
+
+        private void btnPathsThumbnail_Click(object sender, EventArgs e)
+        {
+            this.CloseWithoutAsk();
+            new Paths();
+        }
     }
 }

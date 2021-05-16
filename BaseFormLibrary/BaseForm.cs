@@ -49,7 +49,11 @@ namespace BaseFormLibrary
             this.Show();
 
         }
-
+        protected void CloseWithoutAsk()
+        {
+            this.SwitchBetweenForms = true;
+            this.Close();
+        }
         void ResetMenu()
         {
             btnDashboard.Image = Properties.Resources.Dashboard;
