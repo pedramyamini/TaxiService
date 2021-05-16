@@ -1,7 +1,8 @@
-﻿
+﻿using BaseFormLibrary;
+
 namespace WND.Forms.Driver
 {
-    partial class Drivers
+    partial class Drivers : BaseForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +30,28 @@ namespace WND.Forms.Driver
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // Drivers
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Location = new System.Drawing.Point(0, 0);
+            this.Name = "Drivers";
             this.Text = "Drivers";
+            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

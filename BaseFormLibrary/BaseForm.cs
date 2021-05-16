@@ -38,16 +38,14 @@ namespace BaseFormLibrary
 
         public BaseForm()
         {
-            
+
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-            this.Size = new System.Drawing.Size(1370, 749);
+            this.Size = new System.Drawing.Size(1386, 788);
             this.WindowState = FormWindowState.Maximized;
             this.RightToLeft = RightToLeft.Yes;
             this.RightToLeftLayout = true;
+            //this.pictureboxProfile.Image = Resources.user_profile;
             this.InitializeComponent();
-            Bitmap profile_image = Resources.user_profile;
-            profile_image.MakeTransparent(Color.Transparent);
-            this.pictureboxProfile.Image = (Image)profile_image;
             this.Show();
 
         }
@@ -79,7 +77,7 @@ namespace BaseFormLibrary
             btnPaths.BackColor = Color.FromArgb(246, 190, 100);
         }
 
-        
+
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
@@ -88,7 +86,7 @@ namespace BaseFormLibrary
                 DialogResult dr = MessageBoxRTL.Ask("آیا از خروج اطمینان دارید؟", "");
                 if (dr == DialogResult.OK)
                 {
-
+                    (Utility.Session.LoginForm as Form).Show();
                 }
                 else
                 {
@@ -345,10 +343,14 @@ namespace BaseFormLibrary
 
         private void BaseForm_Load(object sender, EventArgs e)
         {
-            lblRule.Text = Utility.Session.CurrentUser.Role == Models.Roles.Admin ? "مدیر" : "منشی";
-            lblDateTime.Text = DateTime.Today.ToPersianDateString();
-            lblFullName.Text = Session.CurrentUser.FullName;
-            lblTaxiName.Text = Session.CurrentUser.TaxiName;
+            //to avoid designer error
+            if (Session.CurrentUser != null)
+            {
+                lblRule.Text = Utility.Session.CurrentUser.Role == Models.Roles.Admin ? "مدیر" : "منشی";
+                lblDateTime.Text = DateTime.Today.ToPersianDateString();
+                lblFullName.Text = Session.CurrentUser.FullName;
+                lblTaxiName.Text = Session.CurrentUser.TaxiName;
+            }
         }
 
         protected virtual void btnDashboard_Click(object sender, EventArgs e)
@@ -358,17 +360,17 @@ namespace BaseFormLibrary
 
         protected virtual void btnDrivers_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         protected virtual void btnServices_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         protected virtual void btnPaths_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

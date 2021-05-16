@@ -10,8 +10,11 @@ using Utility;
 
 namespace BaseFormLibrary
 {
+    
     public class LoginForm:Form
     {
+
+
         public PictureBox btnContactUs;
         public PictureBox btnExit;
         public Button btnRestorePassword;

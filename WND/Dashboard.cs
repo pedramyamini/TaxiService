@@ -20,6 +20,7 @@ namespace WND
         public Dashboard()
         {
             btnDashboard.ChangeMenuItemImage(Properties.Resources.Dashboard_out);
+            InitializeComponent();
         }
 
 

@@ -78,7 +78,8 @@ namespace WND
 
                     Session.RecentlyLogedIn = true;
                     new Dashboard();
-                    
+                    Utility.Session.LoginForm = this;
+                    this.Hide();
                     //checking Role
                     //switch (Session.CurrentUser.Role)
                     //{

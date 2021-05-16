@@ -1,8 +1,12 @@
 ﻿
+using BaseFormLibrary;
+using System.Windows.Forms;
+
 namespace WND
 {
-    partial class Dashboard
+    partial class Dashboard : BaseForm
     {
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -31,8 +35,12 @@ namespace WND
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.WindowState = FormWindowState.Maximized;
+            this.RightToLeft = RightToLeft.Yes;
+            this.RightToLeftLayout = true;
             this.Text = "Dashboard";
+
         }
 
         #endregion

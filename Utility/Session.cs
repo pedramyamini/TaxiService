@@ -15,5 +15,7 @@ namespace Utility
 
         public static bool RecentlyRegisteredAdmin { get; set; }
 
+        public static object LoginForm { get; set; }
+
     }
 }
