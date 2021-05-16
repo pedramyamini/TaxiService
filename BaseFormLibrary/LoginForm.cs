@@ -189,7 +189,6 @@ namespace BaseFormLibrary
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(117, 30);
             this.txtPassword.TabIndex = 2;
-            this.txtPassword.Text = "Pedr@m1378";
             // 
             // txtUsername
             // 
@@ -202,7 +201,6 @@ namespace BaseFormLibrary
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(141, 30);
             this.txtUsername.TabIndex = 1;
-            this.txtUsername.Text = "Pedram";
             // 
             // LoginForm
             // 

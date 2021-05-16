@@ -108,35 +108,36 @@ namespace WND
 
         private void InitializeComponent()
         {
-            ((System.ComponentModel.ISupportInitialize)this.btnContactUs).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnRestorePassword
+            // 
+            this.btnRestorePassword.FlatAppearance.BorderSize = 0;
+            this.btnRestorePassword.Click += new System.EventHandler(this.btnRestorePassword_Click);
             // 
             // checkboxTogglePasswordDisplay
             // 
             this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(1050, 493);
             this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(31, 30);
             // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(934, 429);
-            this.txtUsername.Size = new System.Drawing.Size(145, 30);
-            this.txtUsername.TabIndex = 1;
-            // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(932, 490);
             this.txtPassword.Size = new System.Drawing.Size(115, 30);
-            this.txtPassword.TabIndex = 2;
+            this.txtPassword.Text = "AliSafinal7";
             // 
-            // btnRestorePassword
+            // txtUsername
             // 
-            this.btnRestorePassword.FlatAppearance.BorderSize = 0;
-            this.btnRestorePassword.Click += new System.EventHandler(this.btnRestorePassword_Click);
+            this.txtUsername.Location = new System.Drawing.Point(934, 429);
+            this.txtUsername.Size = new System.Drawing.Size(145, 30);
+            this.txtUsername.Text = "AliSafinal7";
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // pictureBox1
             // 
@@ -148,10 +149,10 @@ namespace WND
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -173,6 +174,11 @@ namespace WND
             {
                 MessageBoxRTL.Error("کاربری با این مشخصات یافت نشد", string.Empty);
             }
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
 

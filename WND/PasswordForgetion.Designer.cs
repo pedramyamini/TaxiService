@@ -31,10 +31,10 @@ namespace WND
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSecurityQuestion = new SizableTextBox();
-            this.txtSecurityAnswer = new SizableTextBox();
-            this.txtPassword = new SizableTextBox();
-            this.txtPasswordRepeation = new SizableTextBox();
+            this.txtSecurityQuestion = new Utility.SizableTextBox();
+            this.txtSecurityAnswer = new Utility.SizableTextBox();
+            this.txtPassword = new Utility.SizableTextBox();
+            this.txtPasswordRepeation = new Utility.SizableTextBox();
             this.btnChangePassword = new System.Windows.Forms.PictureBox();
             this.btnVerify = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,6 +53,7 @@ namespace WND
             this.txtSecurityQuestion.Location = new System.Drawing.Point(117, 13);
             this.txtSecurityQuestion.Multiline = true;
             this.txtSecurityQuestion.Name = "txtSecurityQuestion";
+            this.txtSecurityQuestion.ReadOnly = true;
             this.txtSecurityQuestion.Size = new System.Drawing.Size(177, 44);
             this.txtSecurityQuestion.TabIndex = 1;
             // 
@@ -91,6 +92,7 @@ namespace WND
             // 
             // btnChangePassword
             // 
+            this.btnChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChangePassword.Enabled = false;
             this.btnChangePassword.Image = global::WND.Properties.Resources.Group_105__2_;
             this.btnChangePassword.Location = new System.Drawing.Point(91, 386);
@@ -103,6 +105,7 @@ namespace WND
             // 
             // btnVerify
             // 
+            this.btnVerify.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVerify.Image = global::WND.Properties.Resources.Group_1092;
             this.btnVerify.Location = new System.Drawing.Point(117, 138);
             this.btnVerify.Name = "btnVerify";

@@ -257,6 +257,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Backup-Restore\Backup-Restore.resx">
       <DependentUpon>Backup-Restore.cs</DependentUpon>
     </EmbeddedResource>
