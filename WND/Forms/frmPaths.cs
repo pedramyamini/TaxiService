@@ -23,8 +23,7 @@ namespace WND.Forms
 
         protected override void btnDashboard_Click(object sender, EventArgs e)
         {
-            SwitchBetweenForms = true;
-            this.Close();
+            this.CloseWithoutAsk();
             new Dashboard();
 
             base.btnDashboard_Click(sender, e);
@@ -32,8 +31,7 @@ namespace WND.Forms
 
         protected override void btnDrivers_Click(object sender, EventArgs e)
         {
-            SwitchBetweenForms = true;
-            this.Close();
+            this.CloseWithoutAsk();
             new Drivers();
 
             base.btnDrivers_Click(sender, e);
@@ -48,8 +46,7 @@ namespace WND.Forms
 
         protected override void btnServices_Click(object sender, EventArgs e)
         {
-            SwitchBetweenForms = true;
-            this.Close();
+            this.CloseWithoutAsk();
             new Services.Services();
 
             base.btnServices_Click(sender, e);

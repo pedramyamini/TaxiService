@@ -37,7 +37,7 @@ namespace WND.Forms
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtOrigin = new Utility.SizableTextBox();
-            this.txtCost = new Utility.SizableTextBox();
+            this.txtCost = new Utility.NumericTextBox();
             this.txtDestination = new Utility.SizableTextBox();
             this.txtSearch = new Utility.SizableTextBox();
             this.lblDestination = new System.Windows.Forms.Label();
@@ -283,7 +283,7 @@ namespace WND.Forms
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
         public Utility.SizableTextBox txtOrigin;
-        public Utility.SizableTextBox txtCost;
+        public Utility.NumericTextBox txtCost;
         public Utility.SizableTextBox txtDestination;
         public Utility.SizableTextBox txtSearch;
         public System.Windows.Forms.Label lblDestination;
