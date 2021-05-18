@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WND", "WND\WND.csproj", "{A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseFormLibrary", "BaseFormLibrary\BaseFormLibrary.csproj", "{D5D0A9C6-7A2F-4987-BF06-BC8109003289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{E9A1CEC7-8A2C-47BA-A1E2-8A3631940412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{E9A1CEC7-8A2C-47BA-A1E2-8A3631940412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{DABF2AFA-D7AF-4986-9AA2-383E26298018}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "Utility\Utility.csproj", "{DABF2AFA-D7AF-4986-9AA2-383E26298018}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\TaxiService-master\\BaseFormLibrary\\BaseFormLibrary.csproj",
+      "projectUniqueName": "I:\\TaxiService-master\\BaseFormLibrary\\BaseFormLibrary.csproj",
       "projectName": "BaseFormLibrary",
-      "projectPath": "J:\\TaxiService-master\\BaseFormLibrary\\BaseFormLibrary.csproj",
+      "projectPath": "I:\\TaxiService-master\\BaseFormLibrary\\BaseFormLibrary.csproj",
       "packagesPath": "C:\\Users\\ali\\.nuget\\packages\\",
-      "outputPath": "J:\\TaxiService-master\\BaseFormLibrary\\obj\\",
+      "outputPath": "I:\\TaxiService-master\\BaseFormLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ali\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -150,11 +150,11 @@
         "net45": {
           "targetAlias": "net4.5",
           "projectReferences": {
-            "J:\\TaxiService-master\\Models\\Models.csproj": {
-              "projectPath": "J:\\TaxiService-master\\Models\\Models.csproj"
+            "I:\\TaxiService-master\\Models\\Models.csproj": {
+              "projectPath": "I:\\TaxiService-master\\Models\\Models.csproj"
             },
-            "J:\\TaxiService-master\\Utility\\Utility.csproj": {
-              "projectPath": "J:\\TaxiService-master\\Utility\\Utility.csproj"
+            "I:\\TaxiService-master\\Utility\\Utility.csproj": {
+              "projectPath": "I:\\TaxiService-master\\Utility\\Utility.csproj"
             }
           }
         }
@@ -168,7 +168,7 @@
     "frameworks": {
       "net45": {
         "targetAlias": "net4.5",
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

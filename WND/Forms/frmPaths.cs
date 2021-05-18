@@ -10,17 +10,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utility;
 using WND.Forms.Driver;
-using WND.Forms.Path;
 
-namespace WND.Forms.Services
+namespace WND.Forms
 {
-    public partial class Services : BaseForm
+    public partial class frmPaths : BaseForm
     {
-        public Services()
+        public frmPaths()
         {
-            btnServices.ChangeMenuItemImage(Properties.Resources.Service_out);
+            btnPaths.ChangeMenuItemImage(Properties.Resources.Paths_out);
             InitializeComponent();
         }
+
         protected override void btnDashboard_Click(object sender, EventArgs e)
         {
             SwitchBetweenForms = true;
@@ -41,16 +41,16 @@ namespace WND.Forms.Services
 
         protected override void btnPaths_Click(object sender, EventArgs e)
         {
-            SwitchBetweenForms = true;
-            this.Close();
-            new frmPaths();
+            
 
             base.btnPaths_Click(sender, e);
         }
 
         protected override void btnServices_Click(object sender, EventArgs e)
         {
-            
+            SwitchBetweenForms = true;
+            this.Close();
+            new Services.Services();
 
             base.btnServices_Click(sender, e);
         }

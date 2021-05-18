@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utility;
 using WND.Forms.Driver;
-using WND.Forms.Path;
+using WND.Forms;
 using WND.Forms.Services;
 
 namespace WND
@@ -43,7 +43,7 @@ namespace WND
         {
             SwitchBetweenForms = true;
             this.Close();
-            new Paths();
+            new frmPaths();
 
             base.btnPaths_Click(sender, e);
         }
@@ -78,7 +78,13 @@ namespace WND
         private void btnPathsThumbnail_Click(object sender, EventArgs e)
         {
             this.CloseWithoutAsk();
-            new Paths();
+            new frmPaths();
+        }
+
+        private void btnCustomersThumbnail_Click(object sender, EventArgs e)
+        {
+            this.CloseWithoutAsk();
+            new frmCustomers();
         }
     }
 }

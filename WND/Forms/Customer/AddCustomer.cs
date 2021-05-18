@@ -15,7 +15,7 @@ using Utility;
 
 namespace WND.Forms.Customer
 {
-    public partial class AddCustomer : BaseForm
+    public partial class AddCustomer : Form
     {
         public AddCustomer()
         {

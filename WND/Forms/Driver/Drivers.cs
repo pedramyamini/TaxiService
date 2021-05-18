@@ -19,6 +19,7 @@ namespace WND.Forms.Driver
         public Drivers()
         {
             btnDrivers.ChangeMenuItemImage(Properties.Resources.Drivers_out);
+            InitializeComponent();
         }
         protected override void btnDashboard_Click(object sender, EventArgs e)
         {
@@ -39,7 +40,7 @@ namespace WND.Forms.Driver
         {
             SwitchBetweenForms = true;
             this.Close();
-            new Paths();
+            new frmPaths();
 
             base.btnPaths_Click(sender, e);
         }

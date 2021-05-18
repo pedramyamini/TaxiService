@@ -41,6 +41,22 @@ namespace WND
             this.btnServicesThumbnail = new System.Windows.Forms.PictureBox();
             this.btnDriversThumbnail = new System.Windows.Forms.PictureBox();
             this.btnSecretaryThumbnail = new System.Windows.Forms.PictureBox();
+            this.txtCustomerName = new Utility.SizableTextBox();
+            this.lblCost = new System.Windows.Forms.Label();
+            this.lblCustomerPhone = new System.Windows.Forms.Label();
+            this.comboboxPaths = new System.Windows.Forms.ComboBox();
+            this.comboboxDrivers = new System.Windows.Forms.ComboBox();
+            this.checkboxIsPaid = new System.Windows.Forms.CheckBox();
+            this.txtDestinationInDetail = new Utility.SizableTextBox();
+            this.txtOriginInDetail = new Utility.SizableTextBox();
+            this.lblCar = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.txtDelay = new Utility.NumericTextBox();
+            this.lblLicencePlate3 = new System.Windows.Forms.Label();
+            this.lblLicencePlate4 = new System.Windows.Forms.Label();
+            this.lblLicencePlate2 = new System.Windows.Forms.Label();
+            this.lblLicencePlate1 = new System.Windows.Forms.Label();
+            this.btnAddService = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -87,6 +103,7 @@ namespace WND
             this.btnCustomersThumbnail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCustomersThumbnail.TabIndex = 18;
             this.btnCustomersThumbnail.TabStop = false;
+            this.btnCustomersThumbnail.Click += new System.EventHandler(this.btnCustomersThumbnail_Click);
             // 
             // btnPathsThumbnail
             // 
@@ -135,11 +152,214 @@ namespace WND
             this.btnSecretaryThumbnail.TabIndex = 22;
             this.btnSecretaryThumbnail.TabStop = false;
             // 
+            // txtCustomerName
+            // 
+            this.txtCustomerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtCustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCustomerName.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerName.Location = new System.Drawing.Point(312, 567);
+            this.txtCustomerName.MaxLength = 75;
+            this.txtCustomerName.Multiline = true;
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(163, 28);
+            this.txtCustomerName.TabIndex = 23;
+            // 
+            // lblCost
+            // 
+            this.lblCost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.lblCost.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCost.Location = new System.Drawing.Point(578, 675);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(91, 28);
+            this.lblCost.TabIndex = 24;
+            // 
+            // lblCustomerPhone
+            // 
+            this.lblCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.lblCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCustomerPhone.Location = new System.Drawing.Point(312, 622);
+            this.lblCustomerPhone.Name = "lblCustomerPhone";
+            this.lblCustomerPhone.Size = new System.Drawing.Size(163, 28);
+            this.lblCustomerPhone.TabIndex = 25;
+            // 
+            // comboboxPaths
+            // 
+            this.comboboxPaths.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboboxPaths.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboboxPaths.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.comboboxPaths.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboboxPaths.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.comboboxPaths.FormattingEnabled = true;
+            this.comboboxPaths.Location = new System.Drawing.Point(578, 566);
+            this.comboboxPaths.MaxLength = 75;
+            this.comboboxPaths.Name = "comboboxPaths";
+            this.comboboxPaths.Size = new System.Drawing.Size(165, 24);
+            this.comboboxPaths.Sorted = true;
+            this.comboboxPaths.TabIndex = 26;
+            // 
+            // comboboxDrivers
+            // 
+            this.comboboxDrivers.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboboxDrivers.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboboxDrivers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.comboboxDrivers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboboxDrivers.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.comboboxDrivers.FormattingEnabled = true;
+            this.comboboxDrivers.Location = new System.Drawing.Point(578, 618);
+            this.comboboxDrivers.MaxLength = 75;
+            this.comboboxDrivers.Name = "comboboxDrivers";
+            this.comboboxDrivers.Size = new System.Drawing.Size(165, 24);
+            this.comboboxDrivers.Sorted = true;
+            this.comboboxDrivers.TabIndex = 27;
+            // 
+            // checkboxIsPaid
+            // 
+            this.checkboxIsPaid.Font = new System.Drawing.Font("IRANYekan", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkboxIsPaid.Location = new System.Drawing.Point(712, 688);
+            this.checkboxIsPaid.Name = "checkboxIsPaid";
+            this.checkboxIsPaid.Size = new System.Drawing.Size(14, 14);
+            this.checkboxIsPaid.TabIndex = 28;
+            this.checkboxIsPaid.UseVisualStyleBackColor = true;
+            // 
+            // txtDestinationInDetail
+            // 
+            this.txtDestinationInDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.txtDestinationInDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDestinationInDetail.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtDestinationInDetail.Location = new System.Drawing.Point(1102, 568);
+            this.txtDestinationInDetail.MaxLength = 50;
+            this.txtDestinationInDetail.Multiline = true;
+            this.txtDestinationInDetail.Name = "txtDestinationInDetail";
+            this.txtDestinationInDetail.Size = new System.Drawing.Size(175, 28);
+            this.txtDestinationInDetail.TabIndex = 29;
+            // 
+            // txtOriginInDetail
+            // 
+            this.txtOriginInDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.txtOriginInDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOriginInDetail.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtOriginInDetail.Location = new System.Drawing.Point(866, 568);
+            this.txtOriginInDetail.MaxLength = 50;
+            this.txtOriginInDetail.Multiline = true;
+            this.txtOriginInDetail.Name = "txtOriginInDetail";
+            this.txtOriginInDetail.Size = new System.Drawing.Size(171, 28);
+            this.txtOriginInDetail.TabIndex = 30;
+            // 
+            // lblCar
+            // 
+            this.lblCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.lblCar.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCar.Location = new System.Drawing.Point(889, 618);
+            this.lblCar.Name = "lblCar";
+            this.lblCar.Size = new System.Drawing.Size(265, 28);
+            this.lblCar.TabIndex = 31;
+            // 
+            // lblDate
+            // 
+            this.lblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.lblDate.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblDate.Location = new System.Drawing.Point(312, 674);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(90, 28);
+            this.lblDate.TabIndex = 32;
+            // 
+            // txtDelay
+            // 
+            this.txtDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.txtDelay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDelay.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtDelay.Location = new System.Drawing.Point(448, 675);
+            this.txtDelay.MaxLength = 3;
+            this.txtDelay.Multiline = true;
+            this.txtDelay.Name = "txtDelay";
+            this.txtDelay.Size = new System.Drawing.Size(27, 28);
+            this.txtDelay.TabIndex = 33;
+            // 
+            // lblLicencePlate3
+            // 
+            this.lblLicencePlate3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(213)))), ((int)(((byte)(81)))));
+            this.lblLicencePlate3.Font = new System.Drawing.Font("IRANYekan", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLicencePlate3.ForeColor = System.Drawing.Color.Black;
+            this.lblLicencePlate3.Location = new System.Drawing.Point(1187, 622);
+            this.lblLicencePlate3.Name = "lblLicencePlate3";
+            this.lblLicencePlate3.Size = new System.Drawing.Size(28, 22);
+            this.lblLicencePlate3.TabIndex = 35;
+            this.lblLicencePlate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLicencePlate4
+            // 
+            this.lblLicencePlate4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(213)))), ((int)(((byte)(81)))));
+            this.lblLicencePlate4.Font = new System.Drawing.Font("IRANYekan", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLicencePlate4.ForeColor = System.Drawing.Color.Black;
+            this.lblLicencePlate4.Location = new System.Drawing.Point(1160, 622);
+            this.lblLicencePlate4.Name = "lblLicencePlate4";
+            this.lblLicencePlate4.Size = new System.Drawing.Size(21, 22);
+            this.lblLicencePlate4.TabIndex = 34;
+            this.lblLicencePlate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLicencePlate2
+            // 
+            this.lblLicencePlate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(213)))), ((int)(((byte)(81)))));
+            this.lblLicencePlate2.Font = new System.Drawing.Font("IRANYekan", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLicencePlate2.ForeColor = System.Drawing.Color.Black;
+            this.lblLicencePlate2.Location = new System.Drawing.Point(1219, 622);
+            this.lblLicencePlate2.Name = "lblLicencePlate2";
+            this.lblLicencePlate2.Size = new System.Drawing.Size(20, 22);
+            this.lblLicencePlate2.TabIndex = 36;
+            this.lblLicencePlate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblLicencePlate1
+            // 
+            this.lblLicencePlate1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(213)))), ((int)(((byte)(81)))));
+            this.lblLicencePlate1.Font = new System.Drawing.Font("IRANYekan", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLicencePlate1.ForeColor = System.Drawing.Color.Black;
+            this.lblLicencePlate1.Location = new System.Drawing.Point(1242, 622);
+            this.lblLicencePlate1.Name = "lblLicencePlate1";
+            this.lblLicencePlate1.Size = new System.Drawing.Size(22, 22);
+            this.lblLicencePlate1.TabIndex = 37;
+            this.lblLicencePlate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAddService
+            // 
+            this.btnAddService.BackColor = System.Drawing.Color.White;
+            this.btnAddService.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddService.BackgroundImage")));
+            this.btnAddService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddService.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddService.FlatAppearance.BorderSize = 0;
+            this.btnAddService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnAddService.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAddService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddService.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnAddService.Location = new System.Drawing.Point(817, 668);
+            this.btnAddService.Name = "btnAddService";
+            this.btnAddService.Size = new System.Drawing.Size(460, 38);
+            this.btnAddService.TabIndex = 38;
+            this.btnAddService.UseVisualStyleBackColor = false;
+            // 
             // Dashboard
             // 
+            this.AcceptButton = this.btnAddService;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btnAddService);
+            this.Controls.Add(this.lblLicencePlate1);
+            this.Controls.Add(this.lblLicencePlate2);
+            this.Controls.Add(this.lblLicencePlate3);
+            this.Controls.Add(this.lblLicencePlate4);
+            this.Controls.Add(this.txtDelay);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.lblCar);
+            this.Controls.Add(this.txtOriginInDetail);
+            this.Controls.Add(this.txtDestinationInDetail);
+            this.Controls.Add(this.checkboxIsPaid);
+            this.Controls.Add(this.comboboxDrivers);
+            this.Controls.Add(this.comboboxPaths);
+            this.Controls.Add(this.lblCustomerPhone);
+            this.Controls.Add(this.lblCost);
+            this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.btnSecretaryThumbnail);
             this.Controls.Add(this.btnDriversThumbnail);
             this.Controls.Add(this.btnServicesThumbnail);
@@ -162,6 +382,22 @@ namespace WND
             this.Controls.SetChildIndex(this.btnServicesThumbnail, 0);
             this.Controls.SetChildIndex(this.btnDriversThumbnail, 0);
             this.Controls.SetChildIndex(this.btnSecretaryThumbnail, 0);
+            this.Controls.SetChildIndex(this.txtCustomerName, 0);
+            this.Controls.SetChildIndex(this.lblCost, 0);
+            this.Controls.SetChildIndex(this.lblCustomerPhone, 0);
+            this.Controls.SetChildIndex(this.comboboxPaths, 0);
+            this.Controls.SetChildIndex(this.comboboxDrivers, 0);
+            this.Controls.SetChildIndex(this.checkboxIsPaid, 0);
+            this.Controls.SetChildIndex(this.txtDestinationInDetail, 0);
+            this.Controls.SetChildIndex(this.txtOriginInDetail, 0);
+            this.Controls.SetChildIndex(this.lblCar, 0);
+            this.Controls.SetChildIndex(this.lblDate, 0);
+            this.Controls.SetChildIndex(this.txtDelay, 0);
+            this.Controls.SetChildIndex(this.lblLicencePlate4, 0);
+            this.Controls.SetChildIndex(this.lblLicencePlate3, 0);
+            this.Controls.SetChildIndex(this.lblLicencePlate2, 0);
+            this.Controls.SetChildIndex(this.lblLicencePlate1, 0);
+            this.Controls.SetChildIndex(this.btnAddService, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
@@ -175,6 +411,7 @@ namespace WND
             ((System.ComponentModel.ISupportInitialize)(this.btnDriversThumbnail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSecretaryThumbnail)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -187,5 +424,21 @@ namespace WND
         private PictureBox btnServicesThumbnail;
         private PictureBox btnDriversThumbnail;
         private PictureBox btnSecretaryThumbnail;
+        public Utility.SizableTextBox txtCustomerName;
+        public Label lblCost;
+        public Label lblCustomerPhone;
+        private ComboBox comboboxPaths;
+        private ComboBox comboboxDrivers;
+        private CheckBox checkboxIsPaid;
+        public Utility.SizableTextBox txtDestinationInDetail;
+        public Utility.SizableTextBox txtOriginInDetail;
+        public Label lblCar;
+        public Label lblDate;
+        public Utility.NumericTextBox txtDelay;
+        private Label lblLicencePlate4;
+        private Label lblLicencePlate3;
+        private Label lblLicencePlate2;
+        private Label lblLicencePlate1;
+        private Button btnAddService;
     }
 }

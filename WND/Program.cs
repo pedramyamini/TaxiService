@@ -13,6 +13,7 @@ using WND.Data;
 using WND.DI.Ninject;
 using WND.Report;
 using Utility;
+using WND.Forms;
 
 namespace WND
 {

@@ -121,6 +121,10 @@ namespace WND
             this.btnRestorePassword.FlatAppearance.BorderSize = 0;
             this.btnRestorePassword.Click += new System.EventHandler(this.btnRestorePassword_Click);
             // 
+            // btnLogin
+            // 
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
+            // 
             // checkboxTogglePasswordDisplay
             // 
             this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(1050, 493);
@@ -177,6 +181,11 @@ namespace WND
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
 
         }
