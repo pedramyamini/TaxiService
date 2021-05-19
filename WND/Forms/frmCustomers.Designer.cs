@@ -2,7 +2,7 @@
 using BaseFormLibrary;
 using System.Windows.Forms;
 
-namespace WND
+namespace WND.Forms
 {
     partial class frmCustomers : BaseForm
     {
@@ -51,6 +51,7 @@ namespace WND
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
+            this.lblCustomerName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -256,10 +257,10 @@ namespace WND
             this.btnPrevious.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrevious.BackgroundImage")));
             this.btnPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrevious.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPrevious.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.btnPrevious.FlatAppearance.BorderSize = 0;
-            this.btnPrevious.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnPrevious.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnPrevious.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.btnPrevious.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrevious.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnPrevious.Location = new System.Drawing.Point(1250, 635);
@@ -274,10 +275,10 @@ namespace WND
             this.btnNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNext.BackgroundImage")));
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.btnNext.FlatAppearance.BorderSize = 0;
-            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnNext.Location = new System.Drawing.Point(1212, 635);
@@ -286,12 +287,24 @@ namespace WND
             this.btnNext.TabIndex = 54;
             this.btnNext.UseVisualStyleBackColor = false;
             // 
+            // lblCustomerName
+            // 
+            this.lblCustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.lblCustomerName.Font = new System.Drawing.Font("IRANYekan", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCustomerName.Location = new System.Drawing.Point(789, 206);
+            this.lblCustomerName.Name = "lblCustomerName";
+            this.lblCustomerName.Size = new System.Drawing.Size(443, 47);
+            this.lblCustomerName.TabIndex = 55;
+            this.lblCustomerName.Text = "مسافرت‌های مسلم جهانبخت";
+            this.lblCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmCustomers
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.lblCustomerName);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnCancel);
@@ -334,6 +347,7 @@ namespace WND
             this.Controls.SetChildIndex(this.btnCancel, 0);
             this.Controls.SetChildIndex(this.btnPrevious, 0);
             this.Controls.SetChildIndex(this.btnNext, 0);
+            this.Controls.SetChildIndex(this.lblCustomerName, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
@@ -366,5 +380,6 @@ namespace WND
         private Button btnCancel;
         private Button btnPrevious;
         private Button btnNext;
+        public Label lblCustomerName;
     }
 }

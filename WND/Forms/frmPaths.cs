@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utility;
-using WND.Forms.Driver;
+using WND.Forms;
 
 namespace WND.Forms
 {
@@ -24,7 +24,7 @@ namespace WND.Forms
         protected override void btnDashboard_Click(object sender, EventArgs e)
         {
             this.CloseWithoutAsk();
-            new Dashboard();
+            new frmDashboard();
 
             base.btnDashboard_Click(sender, e);
         }
@@ -32,7 +32,7 @@ namespace WND.Forms
         protected override void btnDrivers_Click(object sender, EventArgs e)
         {
             this.CloseWithoutAsk();
-            new Drivers();
+            new frmDrivers();
 
             base.btnDrivers_Click(sender, e);
         }
@@ -47,7 +47,7 @@ namespace WND.Forms
         protected override void btnServices_Click(object sender, EventArgs e)
         {
             this.CloseWithoutAsk();
-            new Services.Services();
+            new frmServices();
 
             base.btnServices_Click(sender, e);
         }

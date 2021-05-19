@@ -9,14 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utility;
-using WND.Forms.Path;
-using WND.Forms.Services;
+using WND.Forms;
 
-namespace WND.Forms.Driver
+namespace WND.Forms
 {
-    public partial class Drivers : BaseForm
+    public partial class frmDrivers : BaseForm
     {
-        public Drivers()
+        public frmDrivers()
         {
             btnDrivers.ChangeMenuItemImage(Properties.Resources.Drivers_out);
             InitializeComponent();
@@ -25,7 +24,7 @@ namespace WND.Forms.Driver
         {
             SwitchBetweenForms = true;
             this.Close();
-            new Dashboard();
+            new frmDashboard();
 
             base.btnDashboard_Click(sender, e);
         }
@@ -49,7 +48,7 @@ namespace WND.Forms.Driver
         {
             SwitchBetweenForms = true;
             this.Close();
-            new Services.Services();
+            new frmServices();
 
             base.btnServices_Click(sender, e);
         }

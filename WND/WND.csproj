@@ -97,11 +97,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard.cs">
+    <Compile Include="Forms\frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="Forms\frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\DriverMap.cs" />
     <Compile Include="Data\ITaxiDbContext.cs" />
@@ -132,6 +132,18 @@
     <Compile Include="Forms\Customer\AddCustomer.Designer.cs">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmSecretaries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSecretaries.Designer.cs">
+      <DependentUpon>frmSecretaries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReporting.Designer.cs">
+      <DependentUpon>frmReporting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,11 +162,11 @@
     <Compile Include="Forms\Driver\DeleteDriver.Designer.cs">
       <DependentUpon>DeleteDriver.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Driver\Drivers.cs">
+    <Compile Include="Forms\frmDrivers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Driver\Drivers.Designer.cs">
-      <DependentUpon>Drivers.cs</DependentUpon>
+    <Compile Include="Forms\frmDrivers.Designer.cs">
+      <DependentUpon>frmDrivers.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Driver\EditDriver.cs">
       <SubType>Form</SubType>
@@ -174,11 +186,11 @@
     <Compile Include="Forms\frmPaths.Designer.cs">
       <DependentUpon>frmPaths.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Services\Services.cs">
+    <Compile Include="Forms\frmServices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Services\Services.Designer.cs">
-      <DependentUpon>Services.cs</DependentUpon>
+    <Compile Include="Forms\frmServices.Designer.cs">
+      <DependentUpon>frmServices.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -263,8 +275,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Backup-Restore\Backup-Restore.resx">
       <DependentUpon>Backup-Restore.cs</DependentUpon>
@@ -277,6 +289,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Customer\AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSecretaries.resx">
+      <DependentUpon>frmSecretaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReporting.resx">
+      <DependentUpon>frmReporting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
@@ -295,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPaths.resx">
       <DependentUpon>frmPaths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmServices.resx">
+      <DependentUpon>frmServices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

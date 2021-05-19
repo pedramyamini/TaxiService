@@ -2,9 +2,9 @@
 using BaseFormLibrary;
 using System.Windows.Forms;
 
-namespace WND
+namespace WND.Forms
 {
-    partial class Dashboard : BaseForm
+    partial class frmSecretaries : BaseForm
     {
         
         /// <summary>
@@ -33,7 +33,7 @@ namespace WND
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSecretaries));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnReportThumbnail = new System.Windows.Forms.PictureBox();
             this.btnCustomersThumbnail = new System.Windows.Forms.PictureBox();

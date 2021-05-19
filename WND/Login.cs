@@ -77,7 +77,7 @@ namespace WND
                     MessageBoxRTL.Info(string.Format("کاربر گرامی، {0} خوش آمدید", Session.CurrentUser.Username), "");
 
                     Session.RecentlyLogedIn = true;
-                    new Dashboard();
+                    new frmDashboard();
                     Utility.Session.LoginForm = this;
                     this.Hide();
                     //checking Role
@@ -127,7 +127,7 @@ namespace WND
             // 
             // checkboxTogglePasswordDisplay
             // 
-            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(1050, 493);
+            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(1050, 490);
             this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(31, 30);
             // 
             // txtPassword

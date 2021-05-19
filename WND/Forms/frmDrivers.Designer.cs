@@ -1,8 +1,8 @@
 ﻿using BaseFormLibrary;
 
-namespace WND.Forms.Driver
+namespace WND.Forms
 {
-    partial class Drivers : BaseForm
+    partial class frmDrivers : BaseForm
     {
         /// <summary>
         /// Required designer variable.
