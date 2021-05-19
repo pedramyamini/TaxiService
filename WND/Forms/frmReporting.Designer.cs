@@ -357,7 +357,7 @@ namespace WND.Forms
             this.btnCancel.TabIndex = 56;
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
-            // Dashboard
+            // frmReporting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -387,8 +387,9 @@ namespace WND.Forms
             this.Controls.Add(this.btnReportThumbnail);
             this.Controls.Add(this.pictureBox2);
             this.Location = new System.Drawing.Point(0, 0);
-            this.Name = "Dashboard";
-            this.Text = "Dashboard";
+            this.Name = "frmReporting";
+            this.ShowIcon = false;
+            this.Text = "گزارش‌گیری";
             this.Controls.SetChildIndex(this.btnDashboard, 0);
             this.Controls.SetChildIndex(this.btnDrivers, 0);
             this.Controls.SetChildIndex(this.btnServices, 0);

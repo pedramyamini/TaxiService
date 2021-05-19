@@ -152,6 +152,7 @@ namespace WND
             this.ClientSize = new System.Drawing.Size(1354, 710);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Login";
+            this.Text = "ورود";
             ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).EndInit();

@@ -290,6 +290,9 @@
     <EmbeddedResource Include="Forms\Customer\AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDrivers.resx">
+      <DependentUpon>frmDrivers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSecretaries.resx">
       <DependentUpon>frmSecretaries.cs</DependentUpon>
     </EmbeddedResource>

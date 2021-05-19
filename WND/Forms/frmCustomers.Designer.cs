@@ -134,7 +134,7 @@ namespace WND.Forms
             this.txtCustomerFullName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCustomerFullName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerFullName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCustomerFullName.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerFullName.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerFullName.Location = new System.Drawing.Point(282, 535);
             this.txtCustomerFullName.MaxLength = 75;
             this.txtCustomerFullName.Multiline = true;
@@ -147,7 +147,7 @@ namespace WND.Forms
             this.txtCustomerPhone.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerPhone.Location = new System.Drawing.Point(507, 535);
             this.txtCustomerPhone.MaxLength = 75;
             this.txtCustomerPhone.Multiline = true;
@@ -160,7 +160,7 @@ namespace WND.Forms
             this.txtCustomerAddress.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCustomerAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCustomerAddress.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerAddress.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerAddress.Location = new System.Drawing.Point(282, 580);
             this.txtCustomerAddress.MaxLength = 75;
             this.txtCustomerAddress.Multiline = true;
@@ -173,7 +173,7 @@ namespace WND.Forms
             this.txtSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearch.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtSearch.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtSearch.Location = new System.Drawing.Point(223, 138);
             this.txtSearch.MaxLength = 75;
             this.txtSearch.Multiline = true;
@@ -324,7 +324,8 @@ namespace WND.Forms
             this.Controls.Add(this.pictureBox2);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frmCustomers";
-            this.Text = "Dashboard";
+            this.ShowIcon = false;
+            this.Text = "مسافران";
             this.Controls.SetChildIndex(this.btnDashboard, 0);
             this.Controls.SetChildIndex(this.btnDrivers, 0);
             this.Controls.SetChildIndex(this.btnServices, 0);

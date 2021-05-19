@@ -158,7 +158,7 @@ namespace WND
             this.txtCustomerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCustomerName.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerName.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerName.Location = new System.Drawing.Point(312, 567);
             this.txtCustomerName.MaxLength = 75;
             this.txtCustomerName.Multiline = true;
@@ -169,7 +169,7 @@ namespace WND
             // lblCost
             // 
             this.lblCost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblCost.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCost.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblCost.Location = new System.Drawing.Point(578, 675);
             this.lblCost.Name = "lblCost";
             this.lblCost.Size = new System.Drawing.Size(91, 28);
@@ -178,7 +178,7 @@ namespace WND
             // lblCustomerPhone
             // 
             this.lblCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblCustomerPhone.Location = new System.Drawing.Point(312, 622);
             this.lblCustomerPhone.Name = "lblCustomerPhone";
             this.lblCustomerPhone.Size = new System.Drawing.Size(163, 28);
@@ -190,12 +190,12 @@ namespace WND
             this.comboboxPaths.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboboxPaths.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.comboboxPaths.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboboxPaths.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.comboboxPaths.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.comboboxPaths.FormattingEnabled = true;
             this.comboboxPaths.Location = new System.Drawing.Point(578, 566);
             this.comboboxPaths.MaxLength = 75;
             this.comboboxPaths.Name = "comboboxPaths";
-            this.comboboxPaths.Size = new System.Drawing.Size(165, 24);
+            this.comboboxPaths.Size = new System.Drawing.Size(165, 30);
             this.comboboxPaths.Sorted = true;
             this.comboboxPaths.TabIndex = 26;
             // 
@@ -205,12 +205,12 @@ namespace WND
             this.comboboxDrivers.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboboxDrivers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.comboboxDrivers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboboxDrivers.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.comboboxDrivers.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.comboboxDrivers.FormattingEnabled = true;
             this.comboboxDrivers.Location = new System.Drawing.Point(578, 618);
             this.comboboxDrivers.MaxLength = 75;
             this.comboboxDrivers.Name = "comboboxDrivers";
-            this.comboboxDrivers.Size = new System.Drawing.Size(165, 24);
+            this.comboboxDrivers.Size = new System.Drawing.Size(165, 30);
             this.comboboxDrivers.Sorted = true;
             this.comboboxDrivers.TabIndex = 27;
             // 
@@ -250,7 +250,7 @@ namespace WND
             // lblCar
             // 
             this.lblCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblCar.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCar.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblCar.Location = new System.Drawing.Point(889, 618);
             this.lblCar.Name = "lblCar";
             this.lblCar.Size = new System.Drawing.Size(265, 28);
@@ -259,7 +259,7 @@ namespace WND
             // lblDate
             // 
             this.lblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblDate.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblDate.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblDate.Location = new System.Drawing.Point(312, 674);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(90, 28);
@@ -269,7 +269,7 @@ namespace WND
             // 
             this.txtDelay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtDelay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDelay.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtDelay.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtDelay.Location = new System.Drawing.Point(448, 675);
             this.txtDelay.MaxLength = 3;
             this.txtDelay.Multiline = true;
@@ -357,7 +357,7 @@ namespace WND
             this.btnCancel.TabIndex = 56;
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
-            // Dashboard
+            // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -387,8 +387,9 @@ namespace WND
             this.Controls.Add(this.btnReportThumbnail);
             this.Controls.Add(this.pictureBox2);
             this.Location = new System.Drawing.Point(0, 0);
-            this.Name = "Dashboard";
-            this.Text = "Dashboard";
+            this.Name = "frmDashboard";
+            this.ShowIcon = false;
+            this.Text = "پیشخوان";
             this.Controls.SetChildIndex(this.btnDashboard, 0);
             this.Controls.SetChildIndex(this.btnDrivers, 0);
             this.Controls.SetChildIndex(this.btnServices, 0);

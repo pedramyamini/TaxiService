@@ -812,3 +812,4 @@ I:\TaxiService\WND\obj\Debug\WND.Forms.frmServices.resources
 I:\TaxiService\WND\obj\Debug\WND.Forms.frmSecretaries.resources
 I:\TaxiService\WND\obj\Debug\WND.Forms.frmReporting.resources
 I:\TaxiService\WND\obj\Debug\WND.Forms.frmCustomers.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.frmDrivers.resources
