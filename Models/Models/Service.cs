@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -19,7 +20,8 @@ namespace Models
 
         public DateTime DateTime { get; set; }
 
-        [Display(Name ="توقف")]
+        [DisplayName("توقف")]
+        [Display(Name = "توقف")]
         [Range(0,1000,ErrorMessage ="{0} باید بین 0 تا ۱۰۰۰ دقیقه باشد")]
         public int Delay { get; set; }
 
@@ -28,6 +30,7 @@ namespace Models
         [ForeignKey(nameof(Models.Customer))]
         public int CustomerId { get; set; }
         [Required(ErrorMessage = "{0} ضروری است.")]
+        [DisplayName("مشتری")]
         [Display(Name = "مشتری")]
         public virtual Customer Customer { get; set; }
 
@@ -35,17 +38,20 @@ namespace Models
         public int DriverId { get; set; }
         
         [Required(ErrorMessage ="{0} ضروری است.")]
-        [Display(Name ="راننده")]
+        [DisplayName("راننده")]
+        [Display(Name = "راننده")]
         public virtual Driver Driver { get; set; }
 
 
         [Required(ErrorMessage = "{0} ضروری است.")]
+        [DisplayName("تراکنش")]
         [Display(Name = "تراکنش")]
         public virtual Transaction Transaction { get; set; }
 
         public bool IsDeleted { get; set; }
 
         [Required(ErrorMessage = "{0} ضروری است.")]
+        [DisplayName("مسیر")]
         [Display(Name = "مسیر")]
         public virtual ICollection<Models.ServicePath> ServicePaths { get; set; }
     }

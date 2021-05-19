@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -14,12 +15,14 @@ namespace Models
         [Key, ForeignKey("Driver")]
         public int Id { get; set; }
 
-        [Display(Name ="مدل")]
+        [DisplayName("مدل")]
+        [Display(Name = "مدل")]
         [Required(AllowEmptyStrings =true,ErrorMessage ="{0} نمی‌تواند خالی باشد.")]
         public string Model { get; set; }
         
         public string LicensePlate { get; set; }
 
+        [DisplayName("رنگ")]
         [Display(Name = "رنگ")]
         [Required(AllowEmptyStrings = true, ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public string Color { get; set; }

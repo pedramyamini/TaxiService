@@ -1,4 +1,6 @@
 ﻿
+using Utility;
+
 namespace WND.Forms
 {
     partial class frmPaths
@@ -30,6 +32,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPaths));
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn2 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -42,7 +47,9 @@ namespace WND.Forms
             this.txtSearch = new Utility.SizableTextBox();
             this.lblDestination = new System.Windows.Forms.Label();
             this.lblOrigin = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCost = new System.Windows.Forms.Label();
+            this.gridPaths = new Utility.RadGridViewCustom();
+            this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -51,6 +58,8 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPaths)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPaths.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -118,6 +127,7 @@ namespace WND.Forms
             this.btnSave.Size = new System.Drawing.Size(272, 30);
             this.btnSave.TabIndex = 42;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -136,6 +146,7 @@ namespace WND.Forms
             this.btnCancel.Size = new System.Drawing.Size(128, 30);
             this.btnCancel.TabIndex = 53;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtOrigin
             // 
@@ -144,7 +155,7 @@ namespace WND.Forms
             this.txtOrigin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOrigin.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtOrigin.Location = new System.Drawing.Point(314, 551);
-            this.txtOrigin.MaxLength = 75;
+            this.txtOrigin.MaxLength = 20;
             this.txtOrigin.Multiline = true;
             this.txtOrigin.Name = "txtOrigin";
             this.txtOrigin.Size = new System.Drawing.Size(167, 28);
@@ -157,7 +168,7 @@ namespace WND.Forms
             this.txtCost.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCost.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCost.Location = new System.Drawing.Point(314, 603);
-            this.txtCost.MaxLength = 75;
+            this.txtCost.MaxLength = 6;
             this.txtCost.Multiline = true;
             this.txtCost.Name = "txtCost";
             this.txtCost.Size = new System.Drawing.Size(167, 28);
@@ -170,7 +181,7 @@ namespace WND.Forms
             this.txtDestination.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDestination.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtDestination.Location = new System.Drawing.Point(592, 551);
-            this.txtDestination.MaxLength = 75;
+            this.txtDestination.MaxLength = 20;
             this.txtDestination.Multiline = true;
             this.txtDestination.Name = "txtDestination";
             this.txtDestination.Size = new System.Drawing.Size(167, 28);
@@ -192,7 +203,7 @@ namespace WND.Forms
             // lblDestination
             // 
             this.lblDestination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(143)))));
-            this.lblDestination.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblDestination.Font = new System.Drawing.Font("IRANYekan", 6F);
             this.lblDestination.ForeColor = System.Drawing.Color.White;
             this.lblDestination.Location = new System.Drawing.Point(1055, 185);
             this.lblDestination.Name = "lblDestination";
@@ -203,31 +214,73 @@ namespace WND.Forms
             // lblOrigin
             // 
             this.lblOrigin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(143)))));
-            this.lblOrigin.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblOrigin.Font = new System.Drawing.Font("IRANYekan", 6F);
             this.lblOrigin.ForeColor = System.Drawing.Color.White;
             this.lblOrigin.Location = new System.Drawing.Point(1055, 477);
             this.lblOrigin.Name = "lblOrigin";
-            this.lblOrigin.Size = new System.Drawing.Size(75, 24);
+            this.lblOrigin.Size = new System.Drawing.Size(79, 24);
             this.lblOrigin.TabIndex = 59;
             this.lblOrigin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lblCost
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(143)))));
-            this.label1.Font = new System.Drawing.Font("IRANYekan", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1192, 650);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 40);
-            this.label1.TabIndex = 60;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(143)))));
+            this.lblCost.Font = new System.Drawing.Font("IRANYekan", 13F);
+            this.lblCost.ForeColor = System.Drawing.Color.White;
+            this.lblCost.Location = new System.Drawing.Point(1192, 650);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(73, 40);
+            this.lblCost.TabIndex = 60;
+            this.lblCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gridPaths
+            // 
+            this.gridPaths.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gridPaths.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridPaths.Location = new System.Drawing.Point(248, 188);
+            // 
+            // 
+            // 
+            this.gridPaths.MasterTemplate.AllowAddNewRow = false;
+            this.gridPaths.MasterTemplate.AllowColumnReorder = false;
+            this.gridPaths.MasterTemplate.AllowDragToGroup = false;
+            this.gridPaths.MasterTemplate.AllowEditRow = false;
+            this.gridPaths.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewCommandColumn1.AllowHide = false;
+            gridViewCommandColumn1.HeaderText = "ویرایش";
+            gridViewCommandColumn1.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn1.Image")));
+            gridViewCommandColumn1.MaxWidth = 60;
+            gridViewCommandColumn1.Name = "GridEditBtn";
+            gridViewCommandColumn1.Width = 60;
+            gridViewCommandColumn2.AllowHide = false;
+            gridViewCommandColumn2.HeaderText = "حذف";
+            gridViewCommandColumn2.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn2.Image")));
+            gridViewCommandColumn2.MaxWidth = 50;
+            gridViewCommandColumn2.Name = "GridDeleteBtn";
+            //this.gridPaths.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            //gridViewCommandColumn1,
+            //gridViewCommandColumn2});
+            this.gridPaths.MasterTemplate.EnableGrouping = false;
+            this.gridPaths.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
+            this.gridPaths.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.gridPaths.Name = "gridPaths";
+            this.gridPaths.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.gridPaths.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
+            this.gridPaths.Size = new System.Drawing.Size(538, 278);
+            this.gridPaths.TabIndex = 61;
+            this.gridPaths.ThemeName = "Material";
+            this.gridPaths.CellClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.gridPaths_CellClick);
             // 
             // frmPaths
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.gridPaths);
+            this.Controls.Add(this.lblCost);
             this.Controls.Add(this.lblOrigin);
             this.Controls.Add(this.lblDestination);
             this.Controls.Add(this.txtSearch);
@@ -240,10 +293,10 @@ namespace WND.Forms
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frmPaths";
             this.Text = "Paths";
+            this.Load += new System.EventHandler(this.frmPaths_Load);
             this.Controls.SetChildIndex(this.btnDashboard, 0);
             this.Controls.SetChildIndex(this.btnDrivers, 0);
             this.Controls.SetChildIndex(this.btnServices, 0);
@@ -261,7 +314,8 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.txtSearch, 0);
             this.Controls.SetChildIndex(this.lblDestination, 0);
             this.Controls.SetChildIndex(this.lblOrigin, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.lblCost, 0);
+            this.Controls.SetChildIndex(this.gridPaths, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
@@ -270,10 +324,16 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPaths.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPaths)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
+
+
+
 
         #endregion
 
@@ -289,6 +349,8 @@ namespace WND.Forms
         public Utility.SizableTextBox txtSearch;
         public System.Windows.Forms.Label lblDestination;
         public System.Windows.Forms.Label lblOrigin;
-        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lblCost;
+        private RadGridViewCustom gridPaths;
+        private Telerik.WinControls.Themes.MaterialTheme materialTheme1;
     }
 }

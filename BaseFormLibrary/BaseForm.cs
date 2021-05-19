@@ -45,7 +45,19 @@ namespace BaseFormLibrary
             this.RightToLeft = RightToLeft.Yes;
             this.RightToLeftLayout = true;
             //this.pictureboxProfile.Image = Resources.user_profile;
+
+
             this.InitializeComponent();
+
+            //to avoid designer error
+            if (Session.CurrentUser != null)
+            {
+                lblRule.Text = Utility.Session.CurrentUser.Role == Models.Roles.Admin ? "مدیر" : "منشی";
+                lblDateTime.Text = DateTime.Today.ToPersianDateString();
+                lblFullName.Text = Session.CurrentUser.FullName;
+                lblTaxiName.Text = Session.CurrentUser.TaxiName;
+            }
+
             this.Show();
 
         }
@@ -345,16 +357,9 @@ namespace BaseFormLibrary
             this.Close();
         }
 
-        private void BaseForm_Load(object sender, EventArgs e)
+        protected virtual void BaseForm_Load(object sender, EventArgs e)
         {
-            //to avoid designer error
-            if (Session.CurrentUser != null)
-            {
-                lblRule.Text = Utility.Session.CurrentUser.Role == Models.Roles.Admin ? "مدیر" : "منشی";
-                lblDateTime.Text = DateTime.Today.ToPersianDateString();
-                lblFullName.Text = Session.CurrentUser.FullName;
-                lblTaxiName.Text = Session.CurrentUser.TaxiName;
-            }
+            
         }
 
         protected virtual void btnDashboard_Click(object sender, EventArgs e)

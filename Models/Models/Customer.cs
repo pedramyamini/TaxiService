@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,8 @@ namespace Models
 {
     public class Customer:User
     {
-        [Display(Name = "نشانی")]
+        [DisplayName("نشانی")]
+        [Display(Name ="نشانی")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "وارد کردن {0} ضروری است")]
         public string Address { get; set; }
 
