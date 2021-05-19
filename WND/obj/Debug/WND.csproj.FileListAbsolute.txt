@@ -721,12 +721,10 @@ H:\Final Project\TaxiService\WND\bin\Debug\Telerik.WinControls.GridView.xml
 H:\Final Project\TaxiService\WND\bin\Debug\Telerik.WinControls.UI.xml
 H:\Final Project\TaxiService\WND\obj\Debug\WND.csprojAssemblyReference.cache
 H:\Final Project\TaxiService\WND\obj\Debug\WND.g.resources
-H:\Final Project\TaxiService\WND\obj\Debug\WND.Dashboard.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Call_SMS.Call.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Car.EditCar.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Forms.Customer.AddCustomer.resources
-H:\Final Project\TaxiService\WND\obj\Debug\WND.frmCustomers.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Driver.AddDriver.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Driver.DeleteDriver.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Driver.EditDriver.resources
@@ -756,3 +754,66 @@ H:\Final Project\TaxiService\WND\obj\Debug\WND.pdb
 H:\Final Project\TaxiService\WND\bin\Debug\WND.exe.config
 H:\Final Project\TaxiService\WND\bin\Debug\WND.exe
 H:\Final Project\TaxiService\WND\bin\Debug\WND.pdb
+I:\TaxiService\WND\bin\Debug\WND.exe.config
+I:\TaxiService\WND\bin\Debug\WND.exe
+I:\TaxiService\WND\bin\Debug\WND.pdb
+I:\TaxiService\WND\bin\Debug\BaseFormLibrary.dll
+I:\TaxiService\WND\bin\Debug\BehComponents.dll
+I:\TaxiService\WND\bin\Debug\EntityFramework.dll
+I:\TaxiService\WND\bin\Debug\EntityFramework.SqlServer.dll
+I:\TaxiService\WND\bin\Debug\Models.dll
+I:\TaxiService\WND\bin\Debug\Ninject.dll
+I:\TaxiService\WND\bin\Debug\System.ValueTuple.dll
+I:\TaxiService\WND\bin\Debug\Utility.exe
+I:\TaxiService\WND\bin\Debug\BaseFormLibrary.pdb
+I:\TaxiService\WND\bin\Debug\Models.pdb
+I:\TaxiService\WND\bin\Debug\Utility.pdb
+I:\TaxiService\WND\bin\Debug\Utility.exe.config
+I:\TaxiService\WND\bin\Debug\EntityFramework.xml
+I:\TaxiService\WND\bin\Debug\EntityFramework.SqlServer.xml
+I:\TaxiService\WND\bin\Debug\Ninject.xml
+I:\TaxiService\WND\bin\Debug\System.ValueTuple.xml
+I:\TaxiService\WND\obj\Debug\WND.csprojAssemblyReference.cache
+I:\TaxiService\WND\obj\Debug\WND.g.resources
+I:\TaxiService\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
+I:\TaxiService\WND\obj\Debug\WND.Call_SMS.Call.resources
+I:\TaxiService\WND\obj\Debug\WND.Car.EditCar.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.Customer.AddCustomer.resources
+I:\TaxiService\WND\obj\Debug\WND.Driver.AddDriver.resources
+I:\TaxiService\WND\obj\Debug\WND.Driver.DeleteDriver.resources
+I:\TaxiService\WND\obj\Debug\WND.Driver.EditDriver.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.Path.EditPath.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.frmPaths.resources
+I:\TaxiService\WND\obj\Debug\WND.Login.resources
+I:\TaxiService\WND\obj\Debug\WND.Path.AddPath.resources
+I:\TaxiService\WND\obj\Debug\WND.Path.DeletePath.resources
+I:\TaxiService\WND\obj\Debug\WND.Report.Reporting.resources
+I:\TaxiService\WND\obj\Debug\WND.Secretary.AddSecretary.resources
+I:\TaxiService\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
+I:\TaxiService\WND\obj\Debug\WND.Secretary.EditSecretary.resources
+I:\TaxiService\WND\obj\Debug\WND.AddService.resources
+I:\TaxiService\WND\obj\Debug\WND.DeleteService.resources
+I:\TaxiService\WND\obj\Debug\WND.Migrations.final.resources
+I:\TaxiService\WND\obj\Debug\WND.Migrations.mig1.resources
+I:\TaxiService\WND\obj\Debug\WND.PasswordForgetion.resources
+I:\TaxiService\WND\obj\Debug\WND.EditService.resources
+I:\TaxiService\WND\obj\Debug\WND.Register.resources
+I:\TaxiService\WND\obj\Debug\WND.Properties.Resources.resources
+I:\TaxiService\WND\obj\Debug\WND.csproj.GenerateResource.cache
+I:\TaxiService\WND\obj\Debug\WND.exe.licenses
+I:\TaxiService\WND\obj\Debug\WND.csproj.CoreCompileInputs.cache
+I:\TaxiService\WND\obj\Debug\WND.csproj.CopyComplete
+I:\TaxiService\WND\obj\Debug\WND.exe
+I:\TaxiService\WND\obj\Debug\WND.pdb
+I:\TaxiService\WND\obj\Debug\WND.frmDashboard.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.frmServices.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.frmSecretaries.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.frmReporting.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.frmCustomers.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.frmDrivers.resources
+H:\Final Project\TaxiService\WND\obj\Debug\WND.frmDashboard.resources
+H:\Final Project\TaxiService\WND\obj\Debug\WND.Forms.frmDrivers.resources
+H:\Final Project\TaxiService\WND\obj\Debug\WND.Forms.frmSecretaries.resources
+H:\Final Project\TaxiService\WND\obj\Debug\WND.Forms.frmReporting.resources
+H:\Final Project\TaxiService\WND\obj\Debug\WND.Forms.frmCustomers.resources
+H:\Final Project\TaxiService\WND\obj\Debug\WND.Forms.frmServices.resources

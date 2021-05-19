@@ -113,7 +113,7 @@ namespace BaseFormLibrary
         }
 
 
-        private void InitializeComponent()
+        protected void InitializeComponent()
         {
             this.lblTaxiName = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();

@@ -31,6 +31,7 @@ namespace WND
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnRegister = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,7 @@ namespace WND
             this.btnContactUs = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtFullName = new System.Windows.Forms.TextBox();
-            this.txtMobile = new NumericTextBox();
+            this.txtMobile = new Utility.NumericTextBox();
             this.txtSecurityQuestion = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtSecurityAnswer = new System.Windows.Forms.TextBox();
@@ -232,9 +233,11 @@ namespace WND
             this.Controls.Add(this.btnContactUs);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(0, 0);
             this.MaximizeBox = false;
             this.Name = "Register";
+            this.ShowIcon = false;
             this.Text = "ثبت نام";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register_FormClosed);

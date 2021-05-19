@@ -295,8 +295,13 @@ namespace WND.Forms
             this.Controls.Add(this.pictureBox4);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frmPaths";
+<<<<<<< HEAD
+            this.Text = "Paths";
+            this.Load += new System.EventHandler(this.frmPaths_Load);
+=======
             this.ShowIcon = false;
             this.Text = "مسیرها";
+>>>>>>> origin/UI
             this.Controls.SetChildIndex(this.btnDashboard, 0);
             this.Controls.SetChildIndex(this.btnDrivers, 0);
             this.Controls.SetChildIndex(this.btnServices, 0);

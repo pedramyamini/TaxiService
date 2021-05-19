@@ -2,7 +2,7 @@
 using BaseFormLibrary;
 using System.Windows.Forms;
 
-namespace WND
+namespace WND.Forms
 {
     partial class frmCustomers : BaseForm
     {
@@ -51,6 +51,7 @@ namespace WND
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
+            this.lblCustomerName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -133,7 +134,7 @@ namespace WND
             this.txtCustomerFullName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCustomerFullName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerFullName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCustomerFullName.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerFullName.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerFullName.Location = new System.Drawing.Point(282, 535);
             this.txtCustomerFullName.MaxLength = 75;
             this.txtCustomerFullName.Multiline = true;
@@ -146,7 +147,7 @@ namespace WND
             this.txtCustomerPhone.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerPhone.Location = new System.Drawing.Point(507, 535);
             this.txtCustomerPhone.MaxLength = 75;
             this.txtCustomerPhone.Multiline = true;
@@ -159,7 +160,7 @@ namespace WND
             this.txtCustomerAddress.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtCustomerAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCustomerAddress.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerAddress.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerAddress.Location = new System.Drawing.Point(282, 580);
             this.txtCustomerAddress.MaxLength = 75;
             this.txtCustomerAddress.Multiline = true;
@@ -172,7 +173,7 @@ namespace WND
             this.txtSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearch.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtSearch.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtSearch.Location = new System.Drawing.Point(223, 138);
             this.txtSearch.MaxLength = 75;
             this.txtSearch.Multiline = true;
@@ -256,10 +257,10 @@ namespace WND
             this.btnPrevious.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrevious.BackgroundImage")));
             this.btnPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrevious.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPrevious.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.btnPrevious.FlatAppearance.BorderSize = 0;
-            this.btnPrevious.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnPrevious.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnPrevious.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.btnPrevious.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrevious.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnPrevious.Location = new System.Drawing.Point(1250, 635);
@@ -274,10 +275,10 @@ namespace WND
             this.btnNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNext.BackgroundImage")));
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNext.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.btnNext.FlatAppearance.BorderSize = 0;
-            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnNext.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnNext.Location = new System.Drawing.Point(1212, 635);
@@ -286,12 +287,24 @@ namespace WND
             this.btnNext.TabIndex = 54;
             this.btnNext.UseVisualStyleBackColor = false;
             // 
+            // lblCustomerName
+            // 
+            this.lblCustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.lblCustomerName.Font = new System.Drawing.Font("IRANYekan", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblCustomerName.Location = new System.Drawing.Point(789, 206);
+            this.lblCustomerName.Name = "lblCustomerName";
+            this.lblCustomerName.Size = new System.Drawing.Size(443, 47);
+            this.lblCustomerName.TabIndex = 55;
+            this.lblCustomerName.Text = "مسافرت‌های مسلم جهانبخت";
+            this.lblCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmCustomers
             // 
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.lblCustomerName);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnCancel);
@@ -311,7 +324,8 @@ namespace WND
             this.Controls.Add(this.pictureBox2);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frmCustomers";
-            this.Text = "Dashboard";
+            this.ShowIcon = false;
+            this.Text = "مسافران";
             this.Controls.SetChildIndex(this.btnDashboard, 0);
             this.Controls.SetChildIndex(this.btnDrivers, 0);
             this.Controls.SetChildIndex(this.btnServices, 0);
@@ -334,6 +348,7 @@ namespace WND
             this.Controls.SetChildIndex(this.btnCancel, 0);
             this.Controls.SetChildIndex(this.btnPrevious, 0);
             this.Controls.SetChildIndex(this.btnNext, 0);
+            this.Controls.SetChildIndex(this.lblCustomerName, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
@@ -366,5 +381,6 @@ namespace WND
         private Button btnCancel;
         private Button btnPrevious;
         private Button btnNext;
+        public Label lblCustomerName;
     }
 }

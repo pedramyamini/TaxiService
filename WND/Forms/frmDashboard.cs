@@ -11,26 +11,27 @@ using System.Windows.Forms;
 using Utility;
 using WND.Forms;
 
-namespace WND.Forms
+namespace WND
 {
-    public partial class frmCustomers : BaseForm
+    public partial class frmDashboard : BaseForm
     {
-        public frmCustomers()
+        public frmDashboard()
         {
+            btnDashboard.ChangeMenuItemImage(Properties.Resources.Dashboard_out);
             InitializeComponent();
         }
 
 
         protected override void btnDashboard_Click(object sender, EventArgs e)
         {
-            this.CloseWithoutAsk();
-            new frmDashboard();
+            //Nothing to do because already dashboard is open
             base.btnDashboard_Click(sender, e);
         }
 
         protected override void btnDrivers_Click(object sender, EventArgs e)
         {
-            this.CloseWithoutAsk();
+            SwitchBetweenForms = true;
+            this.Close();
             new frmDrivers();
 
             base.btnDrivers_Click(sender, e);
@@ -38,7 +39,8 @@ namespace WND.Forms
 
         protected override void btnPaths_Click(object sender, EventArgs e)
         {
-            this.CloseWithoutAsk();
+            SwitchBetweenForms = true;
+            this.Close();
             new frmPaths();
 
             base.btnPaths_Click(sender, e);
@@ -46,10 +48,16 @@ namespace WND.Forms
 
         protected override void btnServices_Click(object sender, EventArgs e)
         {
-            this.CloseWithoutAsk();
+            SwitchBetweenForms = true;
+            this.Close();
             new frmServices();
 
             base.btnServices_Click(sender, e);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
 
         
@@ -71,9 +79,10 @@ namespace WND.Forms
             new frmPaths();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void btnCustomersThumbnail_Click(object sender, EventArgs e)
         {
-
+            this.CloseWithoutAsk();
+            new frmCustomers();
         }
     }
 }

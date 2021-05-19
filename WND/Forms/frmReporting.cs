@@ -9,15 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Utility;
-using WND.Forms.Driver;
 using WND.Forms;
-using WND.Forms.Services;
 
-namespace WND
+namespace WND.Forms
 {
-    public partial class Dashboard : BaseForm
+    public partial class frmReporting : BaseForm
     {
-        public Dashboard()
+        public frmReporting()
         {
             btnDashboard.ChangeMenuItemImage(Properties.Resources.Dashboard_out);
             InitializeComponent();
@@ -34,7 +32,7 @@ namespace WND
         {
             SwitchBetweenForms = true;
             this.Close();
-            new Drivers();
+            new frmDrivers();
 
             base.btnDrivers_Click(sender, e);
         }
@@ -52,7 +50,7 @@ namespace WND
         {
             SwitchBetweenForms = true;
             this.Close();
-            new Services();
+            new frmServices();
 
             base.btnServices_Click(sender, e);
         }
@@ -66,13 +64,13 @@ namespace WND
         private void btnDriversThumbnail_Click(object sender, EventArgs e)
         {
             this.CloseWithoutAsk();
-            new Drivers();
+            new frmDrivers();
         }
 
         private void btnServicesThumbnail_Click(object sender, EventArgs e)
         {
             this.CloseWithoutAsk();
-            new Services();
+            new frmServices();
         }
 
         private void btnPathsThumbnail_Click(object sender, EventArgs e)
