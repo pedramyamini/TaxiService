@@ -56,7 +56,8 @@ namespace WND
             this.lblLicencePlate4 = new System.Windows.Forms.Label();
             this.lblLicencePlate2 = new System.Windows.Forms.Label();
             this.lblLicencePlate1 = new System.Windows.Forms.Label();
-            this.btnAddService = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -320,31 +321,49 @@ namespace WND
             this.lblLicencePlate1.TabIndex = 37;
             this.lblLicencePlate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAddService
+            // btnSave
             // 
-            this.btnAddService.BackColor = System.Drawing.Color.White;
-            this.btnAddService.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddService.BackgroundImage")));
-            this.btnAddService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddService.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddService.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAddService.FlatAppearance.BorderSize = 0;
-            this.btnAddService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnAddService.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnAddService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddService.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnAddService.Location = new System.Drawing.Point(817, 668);
-            this.btnAddService.Name = "btnAddService";
-            this.btnAddService.Size = new System.Drawing.Size(460, 38);
-            this.btnAddService.TabIndex = 38;
-            this.btnAddService.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.White;
+            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnSave.Location = new System.Drawing.Point(992, 673);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(272, 30);
+            this.btnSave.TabIndex = 55;
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnCancel.Location = new System.Drawing.Point(839, 672);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(128, 30);
+            this.btnCancel.TabIndex = 56;
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
-            this.AcceptButton = this.btnAddService;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.btnAddService);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblLicencePlate1);
             this.Controls.Add(this.lblLicencePlate2);
             this.Controls.Add(this.lblLicencePlate3);
@@ -397,7 +416,8 @@ namespace WND
             this.Controls.SetChildIndex(this.lblLicencePlate3, 0);
             this.Controls.SetChildIndex(this.lblLicencePlate2, 0);
             this.Controls.SetChildIndex(this.lblLicencePlate1, 0);
-            this.Controls.SetChildIndex(this.btnAddService, 0);
+            this.Controls.SetChildIndex(this.btnSave, 0);
+            this.Controls.SetChildIndex(this.btnCancel, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
@@ -439,6 +459,7 @@ namespace WND
         private Label lblLicencePlate3;
         private Label lblLicencePlate2;
         private Label lblLicencePlate1;
-        private Button btnAddService;
+        private Button btnSave;
+        private Button btnCancel;
     }
 }
