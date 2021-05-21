@@ -49,8 +49,6 @@ namespace WND.Forms
             this.lblLicencePlate2 = new System.Windows.Forms.Label();
             this.lblLicencePlate1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.rdbCustomer = new System.Windows.Forms.RadioButton();
-            this.rdbDriver = new System.Windows.Forms.RadioButton();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new Utility.SizableTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -287,32 +285,6 @@ namespace WND.Forms
             this.pictureBox3.TabIndex = 74;
             this.pictureBox3.TabStop = false;
             // 
-            // rdbCustomer
-            // 
-            this.rdbCustomer.AutoSize = true;
-            this.rdbCustomer.BackColor = System.Drawing.Color.White;
-            this.rdbCustomer.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbCustomer.Location = new System.Drawing.Point(672, 161);
-            this.rdbCustomer.Name = "rdbCustomer";
-            this.rdbCustomer.Size = new System.Drawing.Size(71, 21);
-            this.rdbCustomer.TabIndex = 75;
-            this.rdbCustomer.TabStop = true;
-            this.rdbCustomer.Text = "نام مشتری";
-            this.rdbCustomer.UseVisualStyleBackColor = false;
-            // 
-            // rdbDriver
-            // 
-            this.rdbDriver.AutoSize = true;
-            this.rdbDriver.BackColor = System.Drawing.Color.White;
-            this.rdbDriver.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbDriver.Location = new System.Drawing.Point(750, 161);
-            this.rdbDriver.Name = "rdbDriver";
-            this.rdbDriver.Size = new System.Drawing.Size(65, 21);
-            this.rdbDriver.TabIndex = 76;
-            this.rdbDriver.TabStop = true;
-            this.rdbDriver.Text = "نام راننده";
-            this.rdbDriver.UseVisualStyleBackColor = false;
-            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.White;
@@ -325,7 +297,7 @@ namespace WND.Forms
             this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSearch.Location = new System.Drawing.Point(1014, 161);
+            this.btnSearch.Location = new System.Drawing.Point(944, 161);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(38, 25);
             this.btnSearch.TabIndex = 77;
@@ -337,11 +309,11 @@ namespace WND.Forms
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("IRANYekan", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtSearch.Location = new System.Drawing.Point(852, 161);
+            this.txtSearch.Location = new System.Drawing.Point(578, 161);
             this.txtSearch.MaxLength = 75;
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(157, 25);
+            this.txtSearch.Size = new System.Drawing.Size(360, 25);
             this.txtSearch.TabIndex = 78;
             // 
             // label1
@@ -364,8 +336,6 @@ namespace WND.Forms
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.rdbDriver);
-            this.Controls.Add(this.rdbCustomer);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblLicencePlate1);
             this.Controls.Add(this.lblLicencePlate2);
@@ -413,8 +383,6 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.lblLicencePlate2, 0);
             this.Controls.SetChildIndex(this.lblLicencePlate1, 0);
             this.Controls.SetChildIndex(this.pictureBox3, 0);
-            this.Controls.SetChildIndex(this.rdbCustomer, 0);
-            this.Controls.SetChildIndex(this.rdbDriver, 0);
             this.Controls.SetChildIndex(this.btnSearch, 0);
             this.Controls.SetChildIndex(this.txtSearch, 0);
             this.Controls.SetChildIndex(this.label1, 0);
@@ -451,8 +419,6 @@ namespace WND.Forms
         private System.Windows.Forms.Label lblLicencePlate2;
         private System.Windows.Forms.Label lblLicencePlate1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.RadioButton rdbCustomer;
-        private System.Windows.Forms.RadioButton rdbDriver;
         private System.Windows.Forms.Button btnSearch;
         public Utility.SizableTextBox txtSearch;
         private System.Windows.Forms.Label label1;

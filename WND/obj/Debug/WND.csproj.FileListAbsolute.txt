@@ -773,9 +773,7 @@ I:\TaxiService\WND\obj\Debug\WND.csprojAssemblyReference.cache
 I:\TaxiService\WND\obj\Debug\WND.g.resources
 I:\TaxiService\WND\obj\Debug\WND.Backup_Restore.Backup_Restore.resources
 I:\TaxiService\WND\obj\Debug\WND.Call_SMS.Call.resources
-I:\TaxiService\WND\obj\Debug\WND.Car.EditCar.resources
 I:\TaxiService\WND\obj\Debug\WND.Forms.Customer.AddCustomer.resources
-I:\TaxiService\WND\obj\Debug\WND.Driver.AddDriver.resources
 I:\TaxiService\WND\obj\Debug\WND.Driver.DeleteDriver.resources
 I:\TaxiService\WND\obj\Debug\WND.Driver.EditDriver.resources
 I:\TaxiService\WND\obj\Debug\WND.Forms.Path.EditPath.resources
@@ -787,12 +785,10 @@ I:\TaxiService\WND\obj\Debug\WND.Report.Reporting.resources
 I:\TaxiService\WND\obj\Debug\WND.Secretary.AddSecretary.resources
 I:\TaxiService\WND\obj\Debug\WND.Secretary.DeleteSecretary.resources
 I:\TaxiService\WND\obj\Debug\WND.Secretary.EditSecretary.resources
-I:\TaxiService\WND\obj\Debug\WND.AddService.resources
 I:\TaxiService\WND\obj\Debug\WND.DeleteService.resources
 I:\TaxiService\WND\obj\Debug\WND.Migrations.final.resources
 I:\TaxiService\WND\obj\Debug\WND.Migrations.mig1.resources
 I:\TaxiService\WND\obj\Debug\WND.PasswordForgetion.resources
-I:\TaxiService\WND\obj\Debug\WND.EditService.resources
 I:\TaxiService\WND\obj\Debug\WND.Register.resources
 I:\TaxiService\WND\obj\Debug\WND.Properties.Resources.resources
 I:\TaxiService\WND\obj\Debug\WND.csproj.GenerateResource.cache
@@ -822,3 +818,12 @@ H:\Final Project\TaxiService\WND\obj\Debug\WND.Forms.Services.AddService.resourc
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Forms.Services.EditService.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Migrations.SeperateLicensePlateLetterandNumbers.resources
 H:\Final Project\TaxiService\WND\obj\Debug\WND.Migrations.SeperateLicensePlateto4parts.resources
+I:\TaxiService\WND\bin\Debug\Newtonsoft.Json.dll
+I:\TaxiService\WND\bin\Debug\Newtonsoft.Json.xml
+I:\TaxiService\WND\obj\Debug\WND.Forms.Car.CarManagement.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.Driver.AddDriver.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.Services.AddService.resources
+I:\TaxiService\WND\obj\Debug\WND.Migrations.AddDateJoinedtoDriver.resources
+I:\TaxiService\WND\obj\Debug\WND.Migrations.SeperateLicensePlateLetterandNumbers.resources
+I:\TaxiService\WND\obj\Debug\WND.Migrations.SeperateLicensePlateto4parts.resources
+I:\TaxiService\WND\obj\Debug\WND.Forms.Services.EditService.resources

@@ -37,8 +37,6 @@ namespace WND.Forms
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.rdbDriver = new System.Windows.Forms.RadioButton();
-            this.rdbDateJoined = new System.Windows.Forms.RadioButton();
             this.txtSearch = new Utility.SizableTextBox();
             this.lblDateJoined = new System.Windows.Forms.Label();
             this.txtSharePercent = new Utility.NumericTextBox();
@@ -99,37 +97,11 @@ namespace WND.Forms
             this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSearch.Location = new System.Drawing.Point(1021, 152);
+            this.btnSearch.Location = new System.Drawing.Point(962, 152);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(38, 25);
             this.btnSearch.TabIndex = 80;
             this.btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // rdbDriver
-            // 
-            this.rdbDriver.AutoSize = true;
-            this.rdbDriver.BackColor = System.Drawing.Color.White;
-            this.rdbDriver.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbDriver.Location = new System.Drawing.Point(670, 152);
-            this.rdbDriver.Name = "rdbDriver";
-            this.rdbDriver.Size = new System.Drawing.Size(65, 21);
-            this.rdbDriver.TabIndex = 79;
-            this.rdbDriver.TabStop = true;
-            this.rdbDriver.Text = "نام راننده";
-            this.rdbDriver.UseVisualStyleBackColor = false;
-            // 
-            // rdbDateJoined
-            // 
-            this.rdbDateJoined.AutoSize = true;
-            this.rdbDateJoined.BackColor = System.Drawing.Color.White;
-            this.rdbDateJoined.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbDateJoined.Location = new System.Drawing.Point(741, 152);
-            this.rdbDateJoined.Name = "rdbDateJoined";
-            this.rdbDateJoined.Size = new System.Drawing.Size(83, 21);
-            this.rdbDateJoined.TabIndex = 78;
-            this.rdbDateJoined.TabStop = true;
-            this.rdbDateJoined.Text = "تاریخ عضویت";
-            this.rdbDateJoined.UseVisualStyleBackColor = false;
             // 
             // txtSearch
             // 
@@ -137,11 +109,11 @@ namespace WND.Forms
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("IRANYekan", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtSearch.Location = new System.Drawing.Point(858, 152);
+            this.txtSearch.Location = new System.Drawing.Point(578, 152);
             this.txtSearch.MaxLength = 75;
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(157, 25);
+            this.txtSearch.Size = new System.Drawing.Size(379, 25);
             this.txtSearch.TabIndex = 81;
             // 
             // lblDateJoined
@@ -328,6 +300,7 @@ namespace WND.Forms
             // 
             // gridDrivers
             // 
+            this.gridDrivers.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.gridDrivers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gridDrivers.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridDrivers.Location = new System.Drawing.Point(209, 188);
@@ -362,6 +335,7 @@ namespace WND.Forms
             // 
             // 
             this.gridDrivers.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
+            this.gridDrivers.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 240, 150);
             this.gridDrivers.Size = new System.Drawing.Size(1102, 271);
             this.gridDrivers.TabIndex = 96;
             this.gridDrivers.ThemeName = "Material";
@@ -387,8 +361,6 @@ namespace WND.Forms
             this.Controls.Add(this.lblDateJoined);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.rdbDriver);
-            this.Controls.Add(this.rdbDateJoined);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Location = new System.Drawing.Point(0, 0);
@@ -402,8 +374,6 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.btnExit, 0);
             this.Controls.SetChildIndex(this.pictureBox2, 0);
             this.Controls.SetChildIndex(this.pictureBox3, 0);
-            this.Controls.SetChildIndex(this.rdbDateJoined, 0);
-            this.Controls.SetChildIndex(this.rdbDriver, 0);
             this.Controls.SetChildIndex(this.btnSearch, 0);
             this.Controls.SetChildIndex(this.txtSearch, 0);
             this.Controls.SetChildIndex(this.lblDateJoined, 0);
@@ -450,8 +420,6 @@ namespace WND.Forms
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.RadioButton rdbDriver;
-        private System.Windows.Forms.RadioButton rdbDateJoined;
         public Utility.SizableTextBox txtSearch;
         public System.Windows.Forms.Label lblDateJoined;
         public Utility.NumericTextBox txtSharePercent;

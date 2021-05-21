@@ -203,24 +203,24 @@ namespace WND.Forms
             // lblDestination
             // 
             this.lblDestination.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(143)))));
-            this.lblDestination.Font = new System.Drawing.Font("IRANYekan", 6F);
+            this.lblDestination.Font = new System.Drawing.Font("IRANYekan", 6.7F);
             this.lblDestination.ForeColor = System.Drawing.Color.White;
-            this.lblDestination.Location = new System.Drawing.Point(1055, 185);
+            this.lblDestination.Location = new System.Drawing.Point(1048, 186);
             this.lblDestination.Name = "lblDestination";
-            this.lblDestination.Size = new System.Drawing.Size(75, 24);
+            this.lblDestination.Size = new System.Drawing.Size(102, 20);
             this.lblDestination.TabIndex = 58;
-            this.lblDestination.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDestination.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblOrigin
             // 
             this.lblOrigin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(143)))), ((int)(((byte)(143)))));
-            this.lblOrigin.Font = new System.Drawing.Font("IRANYekan", 6F);
+            this.lblOrigin.Font = new System.Drawing.Font("IRANYekan", 6.7F);
             this.lblOrigin.ForeColor = System.Drawing.Color.White;
-            this.lblOrigin.Location = new System.Drawing.Point(1055, 477);
+            this.lblOrigin.Location = new System.Drawing.Point(1043, 478);
             this.lblOrigin.Name = "lblOrigin";
-            this.lblOrigin.Size = new System.Drawing.Size(79, 24);
+            this.lblOrigin.Size = new System.Drawing.Size(102, 20);
             this.lblOrigin.TabIndex = 59;
-            this.lblOrigin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblOrigin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCost
             // 
@@ -235,6 +235,7 @@ namespace WND.Forms
             // 
             // gridPaths
             // 
+            this.gridPaths.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.gridPaths.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gridPaths.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridPaths.Location = new System.Drawing.Point(248, 188);
@@ -269,6 +270,7 @@ namespace WND.Forms
             // 
             // 
             this.gridPaths.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
+            this.gridPaths.RootElement.ControlBounds = new System.Drawing.Rectangle(248, 188, 240, 150);
             this.gridPaths.Size = new System.Drawing.Size(538, 278);
             this.gridPaths.TabIndex = 61;
             this.gridPaths.ThemeName = "Material";
