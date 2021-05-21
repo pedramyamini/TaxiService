@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ju7WpGwqHiz8BDQb8PcKYVEpO2FWcH2BEs6pk4V3FG24pamnbHdIoRaycbrAJWNKlMSjgI7gsLG/PFI4Nk0NVg==",
+  "dgSpecHash": "CiwDKrDHCQv1ac/Xewd12j7xVSbM+n/AGclvSBV8FZ8Zd0USgOfVQDM+l5jfc0OLjks5Rbb88+J0h1ugJ0974Q==",
   "success": true,
   "projectFilePath": "H:\\Final Project\\TaxiService\\BaseFormLibrary\\BaseFormLibrary.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Pedram\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512"
+    "C:\\Users\\Pedram\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\Pedram\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

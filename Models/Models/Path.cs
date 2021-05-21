@@ -47,7 +47,7 @@ namespace Models
         [Range(1, 10000000, ErrorMessage = "{0} باید مقداری صحیح بین 1 تومان تا 10 میلیون تومان باشد.")]
         public int Cost { get; set; }
 
-        public virtual ICollection<Models.ServicePath> ServicePaths { get; set; }
+        public virtual ICollection<ServicePath> ServicePaths { get; set; }
 
         public object Clone()
         {

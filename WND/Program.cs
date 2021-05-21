@@ -47,6 +47,8 @@ namespace WND
             else
             {
                 Login login = new Login();
+                login.txtUsername.Text = "Pedram";
+                login.txtPassword.Text = "Pedr@m1378";
                 Application.Run(login);
             }
         }

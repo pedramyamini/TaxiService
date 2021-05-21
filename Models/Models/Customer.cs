@@ -15,6 +15,6 @@ namespace Models
         [Required(AllowEmptyStrings = false, ErrorMessage = "وارد کردن {0} ضروری است")]
         public string Address { get; set; }
 
-        public virtual ICollection<Models.Service> Services { get; set; }
+        public virtual ICollection<Service> Services { get; set; }
     }
 }

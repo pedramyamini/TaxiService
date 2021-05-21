@@ -27,14 +27,14 @@ namespace Models
 
         public bool IsActive { get; set; }
 
-        [ForeignKey(nameof(Models.Customer))]
+        [ForeignKey(nameof(Customer))]
         public int CustomerId { get; set; }
         [Required(ErrorMessage = "{0} ضروری است.")]
         [DisplayName("مشتری")]
         [Display(Name = "مشتری")]
         public virtual Customer Customer { get; set; }
 
-        [ForeignKey(nameof(Models.Driver))]
+        [ForeignKey(nameof(Driver))]
         public int DriverId { get; set; }
         
         [Required(ErrorMessage ="{0} ضروری است.")]
@@ -53,6 +53,6 @@ namespace Models
         [Required(ErrorMessage = "{0} ضروری است.")]
         [DisplayName("مسیر")]
         [Display(Name = "مسیر")]
-        public virtual ICollection<Models.ServicePath> ServicePaths { get; set; }
+        public virtual ICollection<ServicePath> ServicePaths { get; set; }
     }
 }

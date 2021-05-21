@@ -20,7 +20,18 @@ namespace Models
         [Required(AllowEmptyStrings =true,ErrorMessage ="{0} نمی‌تواند خالی باشد.")]
         public string Model { get; set; }
         
-        public string LicensePlate { get; set; }
+        [RegularExpression("^[0-9]{2}$", ErrorMessage ="دو رقم ابتدایی پلاک از چپ صحیح نیست")]
+        public string LicensePlate1 { get; set; }
+
+        [RegularExpression("^[0-9]{3}$", ErrorMessage = "سه رقم میانی پلاک نیست")]
+        public string LicensePlate3 { get; set; }
+
+        [RegularExpression("^[0-9]{2}$", ErrorMessage = "دو رقم انتهایی پلاک از راست صحیح نیست")]
+        public string LicensePlate4 { get; set; }
+
+
+        [RegularExpression("^[تجدسصطقعلمنوهیتجدسصطقعلمنوهی]{1}$", ErrorMessage ="حرف پلاک از محدوده حروف مجاز خارج است")]
+        public string LicensePlate2 { get; set; }
 
         [DisplayName("رنگ")]
         [Display(Name = "رنگ")]

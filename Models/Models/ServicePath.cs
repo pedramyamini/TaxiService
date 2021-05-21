@@ -14,12 +14,12 @@ namespace Models
 
         public int Id { get; set; }
 
-        [ForeignKey(nameof(Models.Service))]
+        [ForeignKey(nameof(Service))]
         public int ServiceId { get; set; }
 
         public virtual Service Service { get; set; }
 
-        [ForeignKey(nameof(Models.Path))]
+        [ForeignKey(nameof(Path))]
         public  int PathId { get; set; }
 
         public virtual Path Path { get; set; }

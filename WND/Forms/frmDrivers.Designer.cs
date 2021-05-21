@@ -31,6 +31,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDrivers));
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn2 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -42,7 +45,7 @@ namespace WND.Forms
             this.txtDriverName = new Utility.SizableTextBox();
             this.comboboxCarModel = new System.Windows.Forms.ComboBox();
             this.comboboxCarColor = new System.Windows.Forms.ComboBox();
-            this.txtDriverPhone = new Utility.SizableTextBox();
+            this.txtDriverPhone = new Utility.NumericTextBox();
             this.txtLicencePlate4 = new Utility.NumericTextBox();
             this.txtLicencePlate1 = new Utility.NumericTextBox();
             this.txtLicencePlate3 = new Utility.NumericTextBox();
@@ -50,6 +53,8 @@ namespace WND.Forms
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.CarPhoto = new System.Windows.Forms.PictureBox();
+            this.gridDrivers = new Utility.RadGridViewCustom();
+            this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -58,6 +63,8 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CarPhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDrivers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDrivers.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -140,7 +147,7 @@ namespace WND.Forms
             // lblDateJoined
             // 
             this.lblDateJoined.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblDateJoined.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblDateJoined.Font = new System.Drawing.Font("IRANYekan", 6F);
             this.lblDateJoined.Location = new System.Drawing.Point(300, 664);
             this.lblDateJoined.Name = "lblDateJoined";
             this.lblDateJoined.Size = new System.Drawing.Size(85, 28);
@@ -208,7 +215,7 @@ namespace WND.Forms
             this.txtDriverPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDriverPhone.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtDriverPhone.Location = new System.Drawing.Point(303, 612);
-            this.txtDriverPhone.MaxLength = 75;
+            this.txtDriverPhone.MaxLength = 11;
             this.txtDriverPhone.Multiline = true;
             this.txtDriverPhone.Name = "txtDriverPhone";
             this.txtDriverPhone.Size = new System.Drawing.Size(163, 28);
@@ -288,6 +295,7 @@ namespace WND.Forms
             this.btnSave.Size = new System.Drawing.Size(272, 30);
             this.btnSave.TabIndex = 94;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -306,6 +314,7 @@ namespace WND.Forms
             this.btnCancel.Size = new System.Drawing.Size(128, 30);
             this.btnCancel.TabIndex = 93;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // CarPhoto
             // 
@@ -317,11 +326,52 @@ namespace WND.Forms
             this.CarPhoto.TabIndex = 95;
             this.CarPhoto.TabStop = false;
             // 
+            // gridDrivers
+            // 
+            this.gridDrivers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gridDrivers.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridDrivers.Location = new System.Drawing.Point(209, 188);
+            // 
+            // 
+            // 
+            this.gridDrivers.MasterTemplate.AllowAddNewRow = false;
+            this.gridDrivers.MasterTemplate.AllowColumnReorder = false;
+            this.gridDrivers.MasterTemplate.AllowDragToGroup = false;
+            this.gridDrivers.MasterTemplate.AllowEditRow = false;
+            this.gridDrivers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewCommandColumn1.AllowHide = false;
+            gridViewCommandColumn1.HeaderText = "ویرایش";
+            gridViewCommandColumn1.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn1.Image")));
+            gridViewCommandColumn1.MaxWidth = 60;
+            gridViewCommandColumn1.Name = "GridEditBtn";
+            gridViewCommandColumn1.Width = 60;
+            gridViewCommandColumn2.AllowHide = false;
+            gridViewCommandColumn2.HeaderText = "حذف";
+            gridViewCommandColumn2.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn2.Image")));
+            gridViewCommandColumn2.MaxWidth = 50;
+            gridViewCommandColumn2.Name = "GridDeleteBtn";
+            //this.gridDrivers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            //gridViewCommandColumn1,
+            //gridViewCommandColumn2});
+            this.gridDrivers.MasterTemplate.EnableGrouping = false;
+            this.gridDrivers.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
+            this.gridDrivers.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.gridDrivers.Name = "gridDrivers";
+            this.gridDrivers.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.gridDrivers.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
+            this.gridDrivers.Size = new System.Drawing.Size(1102, 271);
+            this.gridDrivers.TabIndex = 96;
+            this.gridDrivers.ThemeName = "Material";
+            // 
             // frmDrivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.gridDrivers);
             this.Controls.Add(this.CarPhoto);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
@@ -369,6 +419,7 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.btnCancel, 0);
             this.Controls.SetChildIndex(this.btnSave, 0);
             this.Controls.SetChildIndex(this.CarPhoto, 0);
+            this.Controls.SetChildIndex(this.gridDrivers, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
@@ -377,9 +428,21 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CarPhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDrivers.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDrivers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void BtnCancel_Click(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void BtnSave_Click(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
@@ -395,7 +458,7 @@ namespace WND.Forms
         public Utility.SizableTextBox txtDriverName;
         private System.Windows.Forms.ComboBox comboboxCarModel;
         private System.Windows.Forms.ComboBox comboboxCarColor;
-        public Utility.SizableTextBox txtDriverPhone;
+        public Utility.NumericTextBox txtDriverPhone;
         public Utility.NumericTextBox txtLicencePlate4;
         public Utility.NumericTextBox txtLicencePlate1;
         public Utility.NumericTextBox txtLicencePlate3;
@@ -403,5 +466,7 @@ namespace WND.Forms
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.PictureBox CarPhoto;
+        private Utility.RadGridViewCustom gridDrivers;
+        private Telerik.WinControls.Themes.MaterialTheme materialTheme1;
     }
 }

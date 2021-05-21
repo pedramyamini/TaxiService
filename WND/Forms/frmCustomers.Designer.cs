@@ -34,13 +34,16 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomers));
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn3 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn4 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txtCustomerFullName = new Utility.SizableTextBox();
-            this.txtCustomerPhone = new Utility.SizableTextBox();
+            this.txtCustomerPhone = new Utility.NumericTextBox();
             this.txtCustomerAddress = new Utility.SizableTextBox();
             this.txtSearch = new Utility.SizableTextBox();
             this.lblTotalCost = new System.Windows.Forms.Label();
@@ -51,7 +54,10 @@ namespace WND.Forms
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.gridCustomers = new Utility.RadGridViewCustom();
             this.lblCustomerName = new System.Windows.Forms.Label();
+            this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -60,6 +66,8 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCustomers.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -90,6 +98,7 @@ namespace WND.Forms
             this.btnSave.Size = new System.Drawing.Size(272, 30);
             this.btnSave.TabIndex = 38;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // pictureBox3
             // 
@@ -149,7 +158,7 @@ namespace WND.Forms
             this.txtCustomerPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerPhone.Location = new System.Drawing.Point(507, 535);
-            this.txtCustomerPhone.MaxLength = 75;
+            this.txtCustomerPhone.MaxLength = 11;
             this.txtCustomerPhone.Multiline = true;
             this.txtCustomerPhone.Name = "txtCustomerPhone";
             this.txtCustomerPhone.Size = new System.Drawing.Size(163, 28);
@@ -250,6 +259,7 @@ namespace WND.Forms
             this.btnCancel.Size = new System.Drawing.Size(128, 30);
             this.btnCancel.TabIndex = 52;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnPrevious
             // 
@@ -287,16 +297,66 @@ namespace WND.Forms
             this.btnNext.TabIndex = 54;
             this.btnNext.UseVisualStyleBackColor = false;
             // 
+            // lbl1
+            // 
+            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.lbl1.Font = new System.Drawing.Font("IRANYekan", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl1.Location = new System.Drawing.Point(872, 203);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(106, 47);
+            this.lbl1.TabIndex = 55;
+            this.lbl1.Text = "مسافرت‌های";
+            this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gridCustomers
+            // 
+            this.gridCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gridCustomers.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridCustomers.Location = new System.Drawing.Point(212, 221);
+            // 
+            // 
+            // 
+            this.gridCustomers.MasterTemplate.AllowAddNewRow = false;
+            this.gridCustomers.MasterTemplate.AllowColumnReorder = false;
+            this.gridCustomers.MasterTemplate.AllowDragToGroup = false;
+            this.gridCustomers.MasterTemplate.AllowEditRow = false;
+            this.gridCustomers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewCommandColumn3.AllowHide = false;
+            gridViewCommandColumn3.HeaderText = "ویرایش";
+            gridViewCommandColumn3.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn3.Image")));
+            gridViewCommandColumn3.MaxWidth = 60;
+            gridViewCommandColumn3.Name = "GridEditBtn";
+            gridViewCommandColumn3.Width = 60;
+            gridViewCommandColumn4.AllowHide = false;
+            gridViewCommandColumn4.HeaderText = "حذف";
+            gridViewCommandColumn4.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn4.Image")));
+            gridViewCommandColumn4.MaxWidth = 50;
+            gridViewCommandColumn4.Name = "GridDeleteBtn";
+            //this.gridCustomers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            //gridViewCommandColumn3,
+            //gridViewCommandColumn4});
+            this.gridCustomers.MasterTemplate.EnableGrouping = false;
+            this.gridCustomers.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
+            this.gridCustomers.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.gridCustomers.Name = "gridCustomers";
+            this.gridCustomers.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.gridCustomers.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
+            this.gridCustomers.Size = new System.Drawing.Size(488, 271);
+            this.gridCustomers.TabIndex = 62;
+            this.gridCustomers.ThemeName = "Material";
+            // 
             // lblCustomerName
             // 
             this.lblCustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.lblCustomerName.Font = new System.Drawing.Font("IRANYekan", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblCustomerName.Location = new System.Drawing.Point(789, 206);
+            this.lblCustomerName.Location = new System.Drawing.Point(973, 203);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(443, 47);
-            this.lblCustomerName.TabIndex = 55;
-            this.lblCustomerName.Text = "مسافرت‌های مسلم جهانبخت";
-            this.lblCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCustomerName.Size = new System.Drawing.Size(212, 47);
+            this.lblCustomerName.TabIndex = 63;
+            this.lblCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmCustomers
             // 
@@ -305,6 +365,8 @@ namespace WND.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.lblCustomerName);
+            this.Controls.Add(this.gridCustomers);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnCancel);
@@ -326,11 +388,6 @@ namespace WND.Forms
             this.Name = "frmCustomers";
             this.ShowIcon = false;
             this.Text = "مسافران";
-            this.Controls.SetChildIndex(this.btnDashboard, 0);
-            this.Controls.SetChildIndex(this.btnDrivers, 0);
-            this.Controls.SetChildIndex(this.btnServices, 0);
-            this.Controls.SetChildIndex(this.btnPaths, 0);
-            this.Controls.SetChildIndex(this.btnExit, 0);
             this.Controls.SetChildIndex(this.pictureBox2, 0);
             this.Controls.SetChildIndex(this.btnSave, 0);
             this.Controls.SetChildIndex(this.pictureBox3, 0);
@@ -348,6 +405,13 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.btnCancel, 0);
             this.Controls.SetChildIndex(this.btnPrevious, 0);
             this.Controls.SetChildIndex(this.btnNext, 0);
+            this.Controls.SetChildIndex(this.lbl1, 0);
+            this.Controls.SetChildIndex(this.btnDashboard, 0);
+            this.Controls.SetChildIndex(this.btnDrivers, 0);
+            this.Controls.SetChildIndex(this.btnServices, 0);
+            this.Controls.SetChildIndex(this.btnPaths, 0);
+            this.Controls.SetChildIndex(this.btnExit, 0);
+            this.Controls.SetChildIndex(this.gridCustomers, 0);
             this.Controls.SetChildIndex(this.lblCustomerName, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
@@ -357,6 +421,8 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCustomers.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,7 +436,7 @@ namespace WND.Forms
         private Button btnSearch;
         private PictureBox pictureBox4;
         public Utility.SizableTextBox txtCustomerFullName;
-        public Utility.SizableTextBox txtCustomerPhone;
+        public Utility.NumericTextBox txtCustomerPhone;
         public Utility.SizableTextBox txtCustomerAddress;
         public Utility.SizableTextBox txtSearch;
         public Label lblTotalCost;
@@ -381,6 +447,9 @@ namespace WND.Forms
         private Button btnCancel;
         private Button btnPrevious;
         private Button btnNext;
+        public Label lbl1;
+        private Utility.RadGridViewCustom gridCustomers;
         public Label lblCustomerName;
+        private Telerik.WinControls.Themes.MaterialTheme materialTheme1;
     }
 }
