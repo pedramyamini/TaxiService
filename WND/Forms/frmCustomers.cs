@@ -164,6 +164,7 @@ namespace WND.Forms
                         MessageBoxRTL.Info(".مشتری با موفقیت افزوده شد", string.Empty);
                         UpdateGrid();
                     }
+                    BizObject = null;
                 }
                 catch
                 {

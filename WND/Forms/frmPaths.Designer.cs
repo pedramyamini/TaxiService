@@ -258,9 +258,9 @@ namespace WND.Forms
             gridViewCommandColumn2.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn2.Image")));
             gridViewCommandColumn2.MaxWidth = 50;
             gridViewCommandColumn2.Name = "GridDeleteBtn";
-            //this.gridPaths.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            //gridViewCommandColumn1,
-            //gridViewCommandColumn2});
+            this.gridPaths.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewCommandColumn1,
+            gridViewCommandColumn2});
             this.gridPaths.MasterTemplate.EnableGrouping = false;
             this.gridPaths.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
             this.gridPaths.MasterTemplate.ViewDefinition = tableViewDefinition1;

@@ -31,9 +31,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDrivers));
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn2 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn11 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn12 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition6 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -164,6 +164,9 @@ namespace WND.Forms
             this.comboboxCarModel.Size = new System.Drawing.Size(165, 30);
             this.comboboxCarModel.Sorted = true;
             this.comboboxCarModel.TabIndex = 86;
+            this.comboboxCarModel.SelectedIndexChanged += new System.EventHandler(this.comboboxCarModel_SelectedIndexChanged);
+            this.comboboxCarModel.TextUpdate += new System.EventHandler(this.comboboxCarModel_TextUpdate);
+            this.comboboxCarModel.TextChanged += new System.EventHandler(this.comboboxCarModel_TextChanged);
             // 
             // comboboxCarColor
             // 
@@ -179,6 +182,9 @@ namespace WND.Forms
             this.comboboxCarColor.Size = new System.Drawing.Size(165, 30);
             this.comboboxCarColor.Sorted = true;
             this.comboboxCarColor.TabIndex = 87;
+            this.comboboxCarColor.SelectedIndexChanged += new System.EventHandler(this.comboboxCarColor_SelectedIndexChanged);
+            this.comboboxCarColor.TextUpdate += new System.EventHandler(this.comboboxCarColor_TextUpdate);
+            this.comboboxCarColor.TextChanged += new System.EventHandler(this.comboboxCarColor_TextChanged);
             // 
             // txtDriverPhone
             // 
@@ -290,7 +296,7 @@ namespace WND.Forms
             // 
             // CarPhoto
             // 
-            this.CarPhoto.Image = ((System.Drawing.Image)(resources.GetObject("CarPhoto.Image")));
+            this.CarPhoto.Image = global::WND.Properties.Resources.Unknown_Car;
             this.CarPhoto.Location = new System.Drawing.Point(940, 559);
             this.CarPhoto.Name = "CarPhoto";
             this.CarPhoto.Size = new System.Drawing.Size(253, 77);
@@ -312,30 +318,30 @@ namespace WND.Forms
             this.gridDrivers.MasterTemplate.AllowDragToGroup = false;
             this.gridDrivers.MasterTemplate.AllowEditRow = false;
             this.gridDrivers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewCommandColumn1.AllowHide = false;
-            gridViewCommandColumn1.HeaderText = "ویرایش";
-            gridViewCommandColumn1.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn1.Image")));
-            gridViewCommandColumn1.MaxWidth = 60;
-            gridViewCommandColumn1.Name = "GridEditBtn";
-            gridViewCommandColumn1.Width = 60;
-            gridViewCommandColumn2.AllowHide = false;
-            gridViewCommandColumn2.HeaderText = "حذف";
-            gridViewCommandColumn2.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn2.Image")));
-            gridViewCommandColumn2.MaxWidth = 50;
-            gridViewCommandColumn2.Name = "GridDeleteBtn";
-            //this.gridDrivers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            //gridViewCommandColumn1,
-            //gridViewCommandColumn2});
+            gridViewCommandColumn11.AllowHide = false;
+            gridViewCommandColumn11.HeaderText = "ویرایش";
+            gridViewCommandColumn11.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn11.Image")));
+            gridViewCommandColumn11.MaxWidth = 60;
+            gridViewCommandColumn11.Name = "GridEditBtn";
+            gridViewCommandColumn11.Width = 60;
+            gridViewCommandColumn12.AllowHide = false;
+            gridViewCommandColumn12.HeaderText = "حذف";
+            gridViewCommandColumn12.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn12.Image")));
+            gridViewCommandColumn12.MaxWidth = 50;
+            gridViewCommandColumn12.Name = "GridDeleteBtn";
+            this.gridDrivers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewCommandColumn11,
+            gridViewCommandColumn12});
             this.gridDrivers.MasterTemplate.EnableGrouping = false;
             this.gridDrivers.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
-            this.gridDrivers.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.gridDrivers.MasterTemplate.ViewDefinition = tableViewDefinition6;
             this.gridDrivers.Name = "gridDrivers";
             this.gridDrivers.ReadOnly = true;
             // 
             // 
             // 
             this.gridDrivers.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
-            this.gridDrivers.RootElement.ControlBounds = new System.Drawing.Rectangle(0, 0, 240, 150);
+            this.gridDrivers.RootElement.ControlBounds = new System.Drawing.Rectangle(209, 188, 240, 150);
             this.gridDrivers.Size = new System.Drawing.Size(1102, 271);
             this.gridDrivers.TabIndex = 96;
             this.gridDrivers.ThemeName = "Material";

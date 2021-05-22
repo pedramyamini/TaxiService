@@ -16,12 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="BehComponents">
-      <HintPath>..\..\..\source\repos\WND\WND\BehComponents.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="ClosableForm.cs" />
     <Compile Update="BaseForm.cs" />
     <Compile Update="NumericTextBox.cs" />

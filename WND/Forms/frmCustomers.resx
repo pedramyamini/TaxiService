@@ -2651,27 +2651,6 @@
         K17HbvcL1onKcbUY5PQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="gridViewCommandColumn3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAABGdBTUEAALGPC/xhBQAAAWVJREFUSEvt
-        lOFRwzAMhTMCI3SEbgAjdIN2BDaADWAD2KBsQDeADWAD2ADeF6qeo1i1Y9L+6rv7jhI5erEsuTuhFmIr
-        fsSbWImTaiO+xLd4FO8C83tx0JW4ngDrI90KDDBK170InvfPbgRfxYNaolI9C+L89eIdYvj1X0QZKAkP
-        SiyFF19v50c5vYhzrvj0ihbWyhKShw/3oqEsfqgQ/wwOeILYtTUMVfBK44MKtZpikk24F7si/ilG8RZT
-        ysh7vkNNpfhkU86fdxiBXMJSvNcU02MjgcGTiOID1ZiS0DqQ4fdK47kOHqnG1G6TXEKaxGawyhDVmLIm
-        N8vhSCTKjlPJ1K4vf/WlHcoFECmbv2Rq3YjYzVo8CDMMO3SvJlOGmxICa4GS1V6dTaYYsCNMKGl0dpGa
-        TP+ri+n5TWmU17+fs8tmeXQ52Bx+CObvbibYCHnp/JEYbra/E+yahXNAPvK6y6PrfgGzla9p0f4McAAA
-        AABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="gridViewCommandColumn4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAYAAACAl21KAAAABGdBTUEAALGPC/xhBQAAANxJREFUOE/V
-        lOsNgzAMhBnBI3SEjtARGIENivr4XTYoG5RR2KCjlA3aMxxRYqGE9PGjJ50Ih/2JgKGwOotsDyKPo8jT
-        WnO9ztJQSw25/i7oJLL71CNIhb1X8OUNV0RMQtAv3XLK2kfEpL8AdXTQhGNrMyImGVDLWEdjhnWMtLZm
-        FgdhHUwvspLLcepxfvdq41uzMNXSp5MEsSiYEWQlPJiaKGjwp7UW2XA5b83BoiCsG8aaV8yujDRrVoHo
-        PWxf/w0ewV6WfkZr/FOQ23em3fA6Aaa/kj7DNVuhongB4X6AmG7aKBMAAAAASUVORK5CYII=
-</value>
-  </data>
   <metadata name="materialTheme1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

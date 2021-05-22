@@ -34,9 +34,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomers));
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn3 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn4 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn2 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -321,25 +321,25 @@ namespace WND.Forms
             this.gridCustomers.MasterTemplate.AllowDragToGroup = false;
             this.gridCustomers.MasterTemplate.AllowEditRow = false;
             this.gridCustomers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewCommandColumn3.AllowHide = false;
-            gridViewCommandColumn3.HeaderText = "ویرایش";
-            gridViewCommandColumn3.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn3.Image")));
-            gridViewCommandColumn3.MaxWidth = 60;
-            gridViewCommandColumn3.Name = "GridEditBtn";
-            gridViewCommandColumn3.Width = 60;
-            gridViewCommandColumn4.AllowHide = false;
-            gridViewCommandColumn4.HeaderText = "حذف";
-            gridViewCommandColumn4.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn4.Image")));
-            gridViewCommandColumn4.MaxWidth = 50;
-            gridViewCommandColumn4.Name = "GridDeleteBtn";
-            //this.gridCustomers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            //gridViewCommandColumn3,
-            //gridViewCommandColumn4});
             this.gridCustomers.MasterTemplate.EnableGrouping = false;
             this.gridCustomers.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
-            this.gridCustomers.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.gridCustomers.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.gridCustomers.Name = "gridCustomers";
             this.gridCustomers.ReadOnly = true;
+            gridViewCommandColumn1.AllowHide = false;
+            gridViewCommandColumn1.HeaderText = "ویرایش";
+            gridViewCommandColumn1.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn1.Image")));
+            gridViewCommandColumn1.MaxWidth = 60;
+            gridViewCommandColumn1.Name = "GridEditBtn";
+            gridViewCommandColumn1.Width = 60;
+            gridViewCommandColumn2.AllowHide = false;
+            gridViewCommandColumn2.HeaderText = "حذف";
+            gridViewCommandColumn2.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn2.Image")));
+            gridViewCommandColumn2.MaxWidth = 50;
+            gridViewCommandColumn2.Name = "GridDeleteBtn";
+            this.gridCustomers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewCommandColumn1,
+            gridViewCommandColumn2});
             // 
             // 
             // 

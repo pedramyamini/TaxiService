@@ -52,8 +52,8 @@ namespace Utility
             editBtnColumn.Name = "GridEditBtn";
             editBtnColumn.Width = 60;
 
-            this.MasterTemplate.Columns.AddRange(new GridViewDataColumn[] {
-            editBtnColumn,deleteBtnColumn});
+            //this.MasterTemplate.Columns.AddRange(new GridViewDataColumn[] {
+            //editBtnColumn,deleteBtnColumn});
 
             this.MasterTemplate.EnableGrouping = false;
             TableViewDefinition tableViewDefinition = new TableViewDefinition();

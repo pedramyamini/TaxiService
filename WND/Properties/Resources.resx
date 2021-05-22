@@ -196,4 +196,238 @@
   <data name="Service_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\service_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Dena_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dena_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dena_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dena_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dena_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dena_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dena_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dena_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dena_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dena_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dena_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dena_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dena_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dena_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HatchbackPride_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HatchbackPride_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HatchbackPride_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HatchbackPride_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HatchbackPride_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HatchbackPride_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HatchbackPride_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HatchbackPride_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HatchbackPride_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HatchbackPride_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HatchbackPride_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HatchbackPride_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HatchbackPride_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HatchbackPride_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paykan_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paykan_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paykan_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paykan_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paykan_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paykan_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paykan_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paykan_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paykan_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paykan_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paykan_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paykan_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paykan_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paykan_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206Trunk_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206Trunk_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206Trunk_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206Trunk_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206Trunk_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206Trunk_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206Trunk_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206Trunk_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206Trunk_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206Trunk_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206Trunk_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206Trunk_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206Trunk_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206Trunk_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot206_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot206_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot405_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot405_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot405_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot405_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot405_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot405_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot405_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot405_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot405_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot405_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot405_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot405_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peugeot405_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peugeot405_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeugeotPars_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PeugeotPars_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeugeotPars_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PeugeotPars_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeugeotPars_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PeugeotPars_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeugeotPars_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PeugeotPars_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeugeotPars_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PeugeotPars_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeugeotPars_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PeugeotPars_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeugeotPars_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PeugeotPars_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pride_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pride_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pride_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pride_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pride_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pride_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pride_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pride_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pride_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pride_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pride_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pride_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pride_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pride_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Runna_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Runna_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Runna_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Runna_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Runna_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Runna_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Runna_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Runna_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Runna_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Runna_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Runna_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Runna_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Runna_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Runna_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samand_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samand_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samand_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samand_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samand_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samand_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samand_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samand_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samand_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samand_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samand_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samand_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samand_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samand_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tondar90_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tondar90_Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tondar90_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tondar90_Blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tondar90_Gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tondar90_Gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tondar90_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tondar90_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tondar90_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tondar90_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tondar90_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tondar90_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tondar90_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tondar90_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unknown_Car" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unknown_Car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

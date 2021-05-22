@@ -123,6 +123,8 @@ namespace WND.Forms
             gridPaths.DataSource = TaxiDbContext.Instance.Paths.ToList();
 
             gridPaths.Columns.Where(c => c.Name == "ServicePaths").Single().IsVisible = false;
+            gridPaths.Columns.Where(c => c.Name == "OriginDestination").Single().IsVisible = false;
+
             gridPaths.BestFit();
         }
 
@@ -189,6 +191,7 @@ namespace WND.Forms
                         MessageBoxRTL.Info(".مسیر با موفقیت افزوده شد", string.Empty);
                         UpdateGrid();
                     }
+                    BizObject = null;
                 }
                 catch
                 {

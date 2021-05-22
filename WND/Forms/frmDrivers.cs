@@ -20,6 +20,10 @@ namespace WND.Forms
 {
     public partial class frmDrivers : BaseForm
     {
+        public Bitmap CarImage
+        {
+            get; set;
+        }
         public frmDrivers()
         {
             btnDrivers.ChangeMenuItemImage(Properties.Resources.Drivers_out);
@@ -125,31 +129,56 @@ namespace WND.Forms
                 //    && LicensePlateCalculation.IsCompelete(BizObject.Car))
                 //{
 
-                    txtLicencePlate1.DataBindings.Clear();
-                    txtLicencePlate1.DataBindings.Add("Text", BizObject.Car, nameof(BizObject.Car.LicensePlate1));
+                txtLicencePlate1.DataBindings.Clear();
+                txtLicencePlate1.DataBindings.Add("Text", BizObject.Car, nameof(BizObject.Car.LicensePlate1));
 
-                    txtLicencePlate2.DataBindings.Clear();
-                    txtLicencePlate2.DataBindings.Add("Text",BizObject.Car,nameof(BizObject.Car.LicensePlate2));
+                txtLicencePlate2.DataBindings.Clear();
+                txtLicencePlate2.DataBindings.Add("Text", BizObject.Car, nameof(BizObject.Car.LicensePlate2));
 
-                    txtLicencePlate3.DataBindings.Clear();
-                    txtLicencePlate3.DataBindings.Add("Text", BizObject.Car, nameof(BizObject.Car.LicensePlate3));
+                txtLicencePlate3.DataBindings.Clear();
+                txtLicencePlate3.DataBindings.Add("Text", BizObject.Car, nameof(BizObject.Car.LicensePlate3));
 
-                    txtLicencePlate4.DataBindings.Clear();
-                    txtLicencePlate4.DataBindings.Add("Text", BizObject.Car, nameof(BizObject.Car.LicensePlate4));
+                txtLicencePlate4.DataBindings.Clear();
+                txtLicencePlate4.DataBindings.Add("Text", BizObject.Car, nameof(BizObject.Car.LicensePlate4));
 
-                    lblDateJoined.Text = BizObject.DateJoined.ToPersianDateString();
+                lblDateJoined.Text = BizObject.DateJoined.ToPersianDateString();
 
-                    comboboxCarModel.DataBindings.Clear();
-                    comboboxCarModel.DataBindings.Add("Text", BizObject.Car, nameof(Models.Car.Model));
+                comboboxCarModel.DataBindings.Clear();
+                comboboxCarModel.DataBindings.Add("Text", BizObject.Car, nameof(Models.Car.Model));
 
-                    comboboxCarColor.DataBindings.Clear();
-                    comboboxCarColor.DataBindings.Add("Text", BizObject.Car, nameof(Models.Car.Color));
-                
+                comboboxCarColor.DataBindings.Clear();
+                comboboxCarColor.DataBindings.Add("Text", BizObject.Car, nameof(Models.Car.Color));
+
+                UpdateCarPhote();
             }
             get
             {
                 return bizObject;
             }
+        }
+
+        void UpdateCarPhote()
+        {
+            var CarModel = CarsList.Cars
+                    .SingleOrDefault(m => m.Model == comboboxCarModel.Text);
+            var CarColor =
+                CarModel != null 
+                ? CarModel.Colors.SingleOrDefault(c => c.Title == comboboxCarColor.Text)
+                : CarsList.Cars.Single(c => c.Model == "سایر").Colors.Single(u=>u.Title=="سایر");
+            string CarUrl;
+            if (CarColor!=null)
+            {
+                CarUrl = CarColor.Url.Replace(".png", string.Empty);
+            }
+            else
+            {
+                CarUrl = CarsList.Cars.Single(c=>c.Model=="سایر").Colors.Single(u=>u.Title=="سایر").Url
+                    .Replace(".png",string.Empty);
+            }
+            CarImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(CarUrl);
+            CarPhoto.DataBindings.Clear();
+            CarPhoto.DataBindings.Add("Image", this, nameof(CarImage), true);
+            CarPhoto.Refresh();
         }
 
         void DeleteBizObject()
@@ -218,6 +247,7 @@ namespace WND.Forms
                         MessageBoxRTL.Info(".راننده با موفقیت افزوده شد", string.Empty);
                         UpdateGrid();
                     }
+                    BizObject = null;
                 }
                 catch
                 {
@@ -287,6 +317,36 @@ namespace WND.Forms
             new frmServices();
 
             base.btnServices_Click(sender, e);
+        }
+
+        private void comboboxCarModel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateCarPhote();
+        }
+
+        private void comboboxCarColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateCarPhote();
+        }
+
+        private void comboboxCarModel_TextChanged(object sender, EventArgs e)
+        {
+            UpdateCarPhote();
+        }
+
+        private void comboboxCarColor_TextChanged(object sender, EventArgs e)
+        {
+            UpdateCarPhote();
+        }
+
+        private void comboboxCarModel_TextUpdate(object sender, EventArgs e)
+        {
+            UpdateCarPhote();
+        }
+
+        private void comboboxCarColor_TextUpdate(object sender, EventArgs e)
+        {
+            UpdateCarPhote();
         }
     }
 }
