@@ -10,6 +10,7 @@ using Models;
 
 namespace Models
 {
+    [Serializable]
     public class User
     {
         [Key]

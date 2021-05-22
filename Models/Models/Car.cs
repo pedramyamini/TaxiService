@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    
+    [Serializable]
     public class Car
     {
         [Key, ForeignKey("Driver")]

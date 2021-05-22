@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Models
 {
-    
-    public class Driver:User
+    [Serializable]
+    public class Driver:User,ICloneable
     {
         [Display(Name = "حق اشتراک")]
         [DisplayName("حق اشتراک")]
@@ -27,5 +28,13 @@ namespace Models
 
         public virtual ICollection<Service> Services { get; set; }
 
+        public object Clone()
+        {
+            if(this.GetType().IsSerializable)
+            {
+                return this.CopyObject<Driver>();
+            }
+            return null;
+        }
     }
 }

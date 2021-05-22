@@ -15,6 +15,7 @@ using WND.Data;
 using WND.Forms;
 using Newtonsoft.Json;
 using Models.Models;
+using AutoMapper;
 
 namespace WND.Forms
 {
@@ -162,18 +163,18 @@ namespace WND.Forms
             var CarModel = CarsList.Cars
                     .SingleOrDefault(m => m.Model == comboboxCarModel.Text);
             var CarColor =
-                CarModel != null 
+                CarModel != null
                 ? CarModel.Colors.SingleOrDefault(c => c.Title == comboboxCarColor.Text)
-                : CarsList.Cars.Single(c => c.Model == "سایر").Colors.Single(u=>u.Title=="سایر");
+                : CarsList.Cars.Single(c => c.Model == "سایر").Colors.Single(u => u.Title == "سایر");
             string CarUrl;
-            if (CarColor!=null)
+            if (CarColor != null)
             {
                 CarUrl = CarColor.Url.Replace(".png", string.Empty);
             }
             else
             {
-                CarUrl = CarsList.Cars.Single(c=>c.Model=="سایر").Colors.Single(u=>u.Title=="سایر").Url
-                    .Replace(".png",string.Empty);
+                CarUrl = CarsList.Cars.Single(c => c.Model == "سایر").Colors.Single(u => u.Title == "سایر").Url
+                    .Replace(".png", string.Empty);
             }
             CarImage = (Bitmap)Properties.Resources.ResourceManager.GetObject(CarUrl);
             CarPhoto.DataBindings.Clear();
@@ -200,6 +201,20 @@ namespace WND.Forms
                 }
             }
         }
+
+        void EditBizObject()
+        {
+            BizObject = null;
+            int id;
+            int.TryParse(gridDrivers.SelectedCells.First().RowInfo.Cells["Id"].Value.ToString(), out id);
+            UpdateGrid();
+            Models.Driver DriverToEdit = TaxiDbContext.Instance.Users.OfType<Models.Driver>().Include(u => u.Car).SingleOrDefault(c => c.Id == (int)id && c.Role == Roles.Driver);
+            if (DriverToEdit != null)
+            {
+                //BizObject = (Models.Driver)DriverToEdit.Clone();
+                BizObject = (Models.Driver)DriverToEdit.Clone();
+            }
+        }
         void UpdateGrid()
         {
             gridDrivers.DataSource = TaxiDbContext.Instance.Users.OfType<Models.Driver>().Include(c => c.Car).ToList();
@@ -210,6 +225,9 @@ namespace WND.Forms
             gridDrivers.Columns.Where(c => c.Name == "Car").Single().IsVisible = false;
 
             gridDrivers.BestFit();
+
+
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -228,9 +246,19 @@ namespace WND.Forms
                 {
                     if (BizObject.Id != 0)
                     {
-                        var Driver = TaxiDbContext.Instance.Users.Find(BizObject.Id);
-                        Driver = BizObject;
+                        Models.Driver Driver = (Models.Driver)TaxiDbContext.Instance.Users.Single(d => d.Id == BizObject.Id);
+                        //Driver = BizObject;
+                        Driver.FullName = BizObject.FullName;
+                        Driver.Mobile = BizObject.Mobile;
+                        Driver.SharePercent = BizObject.SharePercent;
+                        Driver.Car.Color = BizObject.Car.Color;
+                        Driver.Car.Model = BizObject.Car.Model;
+                        Driver.Car.LicensePlate1 = BizObject.Car.LicensePlate1;
+                        Driver.Car.LicensePlate2 = BizObject.Car.LicensePlate2;
+                        Driver.Car.LicensePlate3 = BizObject.Car.LicensePlate3;
+                        Driver.Car.LicensePlate4 = BizObject.Car.LicensePlate4;
                         TaxiDbContext.Instance.SaveChanges();
+                        BizObject = null;
                         MessageBoxRTL.Info(".راننده با موفقیت ویرایش شد", string.Empty);
                         UpdateGrid();
                     }
@@ -247,7 +275,6 @@ namespace WND.Forms
                         MessageBoxRTL.Info(".راننده با موفقیت افزوده شد", string.Empty);
                         UpdateGrid();
                     }
-                    BizObject = null;
                 }
                 catch
                 {
@@ -263,13 +290,7 @@ namespace WND.Forms
                 switch (gridDrivers.SelectedCells[0].ColumnInfo.Name)
                 {
                     case "GridEditBtn":
-                        int id;
-                        int.TryParse(gridDrivers.CurrentRow.Cells["Id"].Value.ToString(), out id);
-                        Models.Driver DriverToEdit = TaxiDbContext.Instance.Users.OfType<Models.Driver>().Include(u => u.Car).SingleOrDefault(c => c.Id == (int)id && c.Role == Roles.Driver);
-                        if (DriverToEdit != null)
-                        {
-                            BizObject = DriverToEdit;
-                        }
+                        EditBizObject();
                         break;
                     case "GridDeleteBtn":
                         DeleteBizObject();

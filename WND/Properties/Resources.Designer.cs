@@ -73,26 +73,6 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Capture {
-            get {
-                object obj = ResourceManager.GetObject("Capture", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Capture2 {
-            get {
-                object obj = ResourceManager.GetObject("Capture2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Dashboard_out {
             get {
                 object obj = ResourceManager.GetObject("Dashboard_out", resourceCulture);
@@ -356,26 +336,6 @@ namespace WND.Properties {
         internal static System.Drawing.Bitmap main {
             get {
                 object obj = ResourceManager.GetObject("main", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap OIP {
-            get {
-                object obj = ResourceManager.GetObject("OIP", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap OIP1 {
-            get {
-                object obj = ResourceManager.GetObject("OIP1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -756,26 +716,6 @@ namespace WND.Properties {
         internal static System.Drawing.Bitmap PeugeotPars_Yellow {
             get {
                 object obj = ResourceManager.GetObject("PeugeotPars_Yellow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap phone_call {
-            get {
-                object obj = ResourceManager.GetObject("phone-call", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap phone_call1 {
-            get {
-                object obj = ResourceManager.GetObject("phone-call1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

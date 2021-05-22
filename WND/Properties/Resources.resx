@@ -139,15 +139,6 @@
   <data name="Paths" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Paths.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Capture.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OIP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OIP1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Capture2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Capture2.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="signdelete_delete_delete_4599" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\signdelete_delete_delete_4599.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,23 +148,14 @@
   <data name="Paths (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Paths (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phone-call1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone-call1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Icon feather-edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon feather-edit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OIP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OIP.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 105" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 109" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="phone-call" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone-call.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4213412-compose-document-edit-pen-pencil-write_115364" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4213412-compose-document-edit-pen-pencil-write_115364.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

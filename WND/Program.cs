@@ -8,10 +8,8 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WND.Call_SMS;
 using WND.Data;
 using WND.DI.Ninject;
-using WND.Report;
 using Utility;
 using WND.Forms;
 
