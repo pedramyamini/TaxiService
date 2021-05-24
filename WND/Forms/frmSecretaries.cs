@@ -17,7 +17,6 @@ namespace WND.Forms
     {
         public frmSecretaries()
         {
-            btnDashboard.ChangeMenuItemImage(Properties.Resources.Dashboard_out);
             InitializeComponent();
         }
 
@@ -55,11 +54,6 @@ namespace WND.Forms
             base.btnServices_Click(sender, e);
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         
         private void btnDriversThumbnail_Click(object sender, EventArgs e)
         {
@@ -83,6 +77,12 @@ namespace WND.Forms
         {
             this.CloseWithoutAsk();
             new frmCustomers();
+        }
+
+        private void btnDashboard_Click_1(object sender, EventArgs e)
+        {
+            this.CloseWithoutAsk();
+            new frmDashboard();
         }
     }
 }
