@@ -144,6 +144,7 @@ namespace WND
             this.btnSecretaryThumbnail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSecretaryThumbnail.TabIndex = 22;
             this.btnSecretaryThumbnail.TabStop = false;
+            this.btnSecretaryThumbnail.Click += new System.EventHandler(this.btnSecretaryThumbnail_Click);
             // 
             // txtCustomerName
             // 

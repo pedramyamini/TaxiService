@@ -436,5 +436,11 @@ namespace WND
             this.CloseWithoutAsk();
             new frmCustomers();
         }
+
+        private void btnSecretaryThumbnail_Click(object sender, EventArgs e)
+        {
+            this.CloseWithoutAsk();
+            new frmSecretaries();
+        }
     }
 }

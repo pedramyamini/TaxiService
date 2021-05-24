@@ -117,12 +117,6 @@
     <Compile Include="Forms\frmSecretaries.Designer.cs">
       <DependentUpon>frmSecretaries.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmReporting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmReporting.Designer.cs">
-      <DependentUpon>frmReporting.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\frmCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,9 +223,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSecretaries.resx">
       <DependentUpon>frmSecretaries.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmReporting.resx">
-      <DependentUpon>frmReporting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
