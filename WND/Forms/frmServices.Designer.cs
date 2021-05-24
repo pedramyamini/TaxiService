@@ -1,4 +1,6 @@
 ﻿
+using Utility;
+
 namespace WND.Forms
 {
     partial class frmServices
@@ -30,6 +32,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmServices));
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn2 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
@@ -37,7 +42,7 @@ namespace WND.Forms
             this.txtCustomerName = new Utility.SizableTextBox();
             this.comboboxPaths = new System.Windows.Forms.ComboBox();
             this.comboboxDrivers = new System.Windows.Forms.ComboBox();
-            this.lblCustomerPhone = new System.Windows.Forms.Label();
+            this.txtCustomerPhone = new Utility.NumericTextBox();
             this.lblDate = new System.Windows.Forms.Label();
             this.txtDelay = new Utility.NumericTextBox();
             this.lblCost = new System.Windows.Forms.Label();
@@ -52,6 +57,8 @@ namespace WND.Forms
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new Utility.SizableTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
+            this.gridServices = new Utility.RadGridViewCustom();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -59,6 +66,8 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridServices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridServices.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -88,6 +97,7 @@ namespace WND.Forms
             this.btnCancel.Size = new System.Drawing.Size(128, 30);
             this.btnCancel.TabIndex = 57;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -106,6 +116,7 @@ namespace WND.Forms
             this.btnSave.Size = new System.Drawing.Size(272, 30);
             this.btnSave.TabIndex = 58;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // checkboxIsPaid
             // 
@@ -119,15 +130,16 @@ namespace WND.Forms
             // txtCustomerName
             // 
             this.txtCustomerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtCustomerName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtCustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCustomerName.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerName.Location = new System.Drawing.Point(312, 567);
             this.txtCustomerName.MaxLength = 75;
-            this.txtCustomerName.Multiline = true;
             this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(163, 28);
+            this.txtCustomerName.Size = new System.Drawing.Size(163, 24);
             this.txtCustomerName.TabIndex = 60;
+            this.txtCustomerName.Leave += new System.EventHandler(this.txtCustomerName_Leave);
             // 
             // comboboxPaths
             // 
@@ -143,6 +155,7 @@ namespace WND.Forms
             this.comboboxPaths.Size = new System.Drawing.Size(165, 30);
             this.comboboxPaths.Sorted = true;
             this.comboboxPaths.TabIndex = 61;
+            this.comboboxPaths.TextChanged += new System.EventHandler(this.comboboxPaths_TextChanged);
             // 
             // comboboxDrivers
             // 
@@ -158,20 +171,24 @@ namespace WND.Forms
             this.comboboxDrivers.Size = new System.Drawing.Size(165, 30);
             this.comboboxDrivers.Sorted = true;
             this.comboboxDrivers.TabIndex = 62;
+            this.comboboxDrivers.TextChanged += new System.EventHandler(this.comboboxDrivers_TextChanged);
             // 
-            // lblCustomerPhone
+            // txtCustomerPhone
             // 
-            this.lblCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblCustomerPhone.Location = new System.Drawing.Point(312, 622);
-            this.lblCustomerPhone.Name = "lblCustomerPhone";
-            this.lblCustomerPhone.Size = new System.Drawing.Size(163, 28);
-            this.lblCustomerPhone.TabIndex = 63;
+            this.txtCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.txtCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerPhone.Location = new System.Drawing.Point(312, 622);
+            this.txtCustomerPhone.MaxLength = 11;
+            this.txtCustomerPhone.Name = "txtCustomerPhone";
+            this.txtCustomerPhone.ReadOnly = true;
+            this.txtCustomerPhone.Size = new System.Drawing.Size(163, 31);
+            this.txtCustomerPhone.TabIndex = 63;
+            this.txtCustomerPhone.Text = "09";
             // 
             // lblDate
             // 
             this.lblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblDate.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblDate.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblDate.Location = new System.Drawing.Point(312, 674);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(90, 28);
@@ -328,11 +345,55 @@ namespace WND.Forms
             this.label1.Text = "مشخصات سرویس";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // gridServices
+            // 
+            this.gridServices.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gridServices.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gridServices.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridServices.Location = new System.Drawing.Point(222, 196);
+            // 
+            // 
+            // 
+            this.gridServices.MasterTemplate.AllowAddNewRow = false;
+            this.gridServices.MasterTemplate.AllowColumnReorder = false;
+            this.gridServices.MasterTemplate.AllowDragToGroup = false;
+            this.gridServices.MasterTemplate.AllowEditRow = false;
+            this.gridServices.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewCommandColumn1.AllowHide = false;
+            gridViewCommandColumn1.HeaderText = "ویرایش";
+            gridViewCommandColumn1.Image = global::WND.Properties.Resources.Icon_feather_edit;
+            gridViewCommandColumn1.MaxWidth = 60;
+            gridViewCommandColumn1.Name = "GridEditBtn";
+            gridViewCommandColumn1.Width = 60;
+            gridViewCommandColumn2.AllowHide = false;
+            gridViewCommandColumn2.HeaderText = "حذف";
+            gridViewCommandColumn2.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
+            gridViewCommandColumn2.MaxWidth = 50;
+            gridViewCommandColumn2.Name = "GridDeleteBtn";
+            this.gridServices.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewCommandColumn1,
+            gridViewCommandColumn2});
+            this.gridServices.MasterTemplate.EnableGrouping = false;
+            this.gridServices.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
+            this.gridServices.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.gridServices.Name = "gridServices";
+            this.gridServices.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.gridServices.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
+            this.gridServices.RootElement.ControlBounds = new System.Drawing.Rectangle(222, 196, 240, 150);
+            this.gridServices.Size = new System.Drawing.Size(1078, 271);
+            this.gridServices.TabIndex = 97;
+            this.gridServices.ThemeName = "Material";
+            this.gridServices.CellClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.gridServices_CellClick);
+            // 
             // frmServices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.gridServices);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
@@ -347,7 +408,7 @@ namespace WND.Forms
             this.Controls.Add(this.lblCost);
             this.Controls.Add(this.txtDelay);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.lblCustomerPhone);
+            this.Controls.Add(this.txtCustomerPhone);
             this.Controls.Add(this.comboboxDrivers);
             this.Controls.Add(this.comboboxPaths);
             this.Controls.Add(this.txtCustomerName);
@@ -371,7 +432,7 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.txtCustomerName, 0);
             this.Controls.SetChildIndex(this.comboboxPaths, 0);
             this.Controls.SetChildIndex(this.comboboxDrivers, 0);
-            this.Controls.SetChildIndex(this.lblCustomerPhone, 0);
+            this.Controls.SetChildIndex(this.txtCustomerPhone, 0);
             this.Controls.SetChildIndex(this.lblDate, 0);
             this.Controls.SetChildIndex(this.txtDelay, 0);
             this.Controls.SetChildIndex(this.lblCost, 0);
@@ -386,6 +447,7 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.btnSearch, 0);
             this.Controls.SetChildIndex(this.txtSearch, 0);
             this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.gridServices, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
@@ -393,9 +455,18 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridServices.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridServices)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        
+
+        private void TxtCustomerName_Leave(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
@@ -407,7 +478,7 @@ namespace WND.Forms
         public Utility.SizableTextBox txtCustomerName;
         private System.Windows.Forms.ComboBox comboboxPaths;
         private System.Windows.Forms.ComboBox comboboxDrivers;
-        public System.Windows.Forms.Label lblCustomerPhone;
+        public NumericTextBox txtCustomerPhone;
         public System.Windows.Forms.Label lblDate;
         public Utility.NumericTextBox txtDelay;
         public System.Windows.Forms.Label lblCost;
@@ -422,5 +493,7 @@ namespace WND.Forms
         private System.Windows.Forms.Button btnSearch;
         public Utility.SizableTextBox txtSearch;
         private System.Windows.Forms.Label label1;
+        private Telerik.WinControls.Themes.MaterialTheme materialTheme1;
+        private Utility.RadGridViewCustom gridServices;
     }
 }

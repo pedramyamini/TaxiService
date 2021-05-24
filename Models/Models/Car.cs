@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Models
 {
     [Serializable]
-    public class Car
+    public class Car: ICloneable
     {
         [Key, ForeignKey("Driver")]
         public int Id { get; set; }
@@ -40,5 +40,14 @@ namespace Models
 
         [Required]
         public virtual Driver Driver { get; set; }
+
+        public object Clone()
+        {
+            if (this.GetType().IsSerializable)
+            {
+                return this.CopyObject<Car>();
+            }
+            return null;
+        }
     }
 }

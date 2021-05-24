@@ -50,7 +50,7 @@ namespace WND.Forms
                     lblOrigin.ResetText();
                     lblDestination.ResetText();
 
-                    gridPaths.ClearSelection();
+                    //gridPaths.ClearSelection();
                 }
                 else
                 {
@@ -93,7 +93,8 @@ namespace WND.Forms
             {
                 try
                 {
-                    TaxiDbContext.Instance.Paths.Remove(PathToRemove);
+                    //TaxiDbContext.Instance.Paths.Remove(PathToRemove);
+                    PathToRemove.IsDeleted = true;
                     TaxiDbContext.Instance.SaveChanges();
                     MessageBoxRTL.Info(".مسیر با موفقیت حذف شد", string.Empty);
                     UpdateGrid();
@@ -120,10 +121,11 @@ namespace WND.Forms
 
         void UpdateGrid()
         {
-            gridPaths.DataSource = TaxiDbContext.Instance.Paths.ToList();
+            gridPaths.DataSource = TaxiDbContext.Instance.Paths.Where(p=>!p.IsDeleted).ToList();
 
             gridPaths.Columns.Where(c => c.Name == "ServicePaths").Single().IsVisible = false;
             gridPaths.Columns.Where(c => c.Name == "OriginDestination").Single().IsVisible = false;
+            gridPaths.Columns.Where(c => c.Name == "IsDeleted").Single().IsVisible = false;
 
             gridPaths.BestFit();
         }
@@ -178,9 +180,12 @@ namespace WND.Forms
                 {
                     if (BizObject.Id != 0)
                     {
-                        var path = TaxiDbContext.Instance.Paths.Find(BizObject.Id);
-                        path = BizObject;
+                        Models.Path Path = TaxiDbContext.Instance.Paths.Find(BizObject.Id);
+                        Path.Origin = BizObject.Origin;
+                        Path.Destination = BizObject.Destination;
+                        Path.Cost = BizObject.Cost;
                         TaxiDbContext.Instance.SaveChanges();
+                        BizObject = null;
                         MessageBoxRTL.Info(".مسیر با موفقیت ویرایش شد", string.Empty);
                         UpdateGrid();
                     }
@@ -207,8 +212,7 @@ namespace WND.Forms
                 switch (gridPaths.SelectedCells[0].ColumnInfo.Name)
                 {
                     case "GridEditBtn":
-                        Models.Path PathToEdit = TaxiDbContext.Instance.Paths.Find(gridPaths.CurrentRow.Cells["Id"].Value);
-                        BizObject = PathToEdit;
+                        EditBizObject();
                         break;
                     case "GridDeleteBtn":
                         DeleteBizObject();
@@ -216,6 +220,20 @@ namespace WND.Forms
                     default:
                         break;
                 }
+            }
+        }
+
+        private void EditBizObject()
+        {
+            BizObject = null;
+            int id;
+            int.TryParse(gridPaths.SelectedCells.First().RowInfo.Cells["Id"].Value.ToString(), out id);
+            UpdateGrid();
+            Models.Path PathToEdit = TaxiDbContext.Instance.Paths.Find(id);
+            if (PathToEdit != null)
+            {
+                //BizObject = (Models.Driver)DriverToEdit.Clone();
+                BizObject = (Models.Path)PathToEdit.Clone();
             }
         }
 

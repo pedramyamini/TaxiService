@@ -83,6 +83,16 @@ namespace BaseFormLibrary.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BaseForm_ {
+            get {
+                object obj = ResourceManager.GetObject("BaseForm ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BaseForm__2_ {
             get {
                 object obj = ResourceManager.GetObject("BaseForm (2)", resourceCulture);

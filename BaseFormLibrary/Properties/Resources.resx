@@ -148,6 +148,9 @@
   <data name="Sign Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sign Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Drivers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drivers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Group 104" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,9 +178,6 @@
   <data name="Icon feather-camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon feather-camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Paths_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paths_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="user_profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,19 +190,22 @@
   <data name="Group 107" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 107.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BaseForm (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BaseForm (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icon awesome-user-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon awesome-user-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dashboard_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dashboard_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Drivers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Drivers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Paths_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paths_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 109" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BaseForm (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BaseForm (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BaseForm " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BaseForm .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

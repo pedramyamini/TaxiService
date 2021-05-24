@@ -173,6 +173,34 @@
     <Compile Include="Migrations\202105210700583_Seperate License Plate to 4 parts.designer.cs">
       <DependentUpon>202105210700583_Seperate License Plate to 4 parts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105230947292_Changed Mobile Index On Users IsUnique=false.cs" />
+    <Compile Include="Migrations\202105230947292_Changed Mobile Index On Users IsUnique=false.designer.cs">
+      <DependentUpon>202105230947292_Changed Mobile Index On Users IsUnique=false.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105231639084_Just For resolving errors.cs" />
+    <Compile Include="Migrations\202105231639084_Just For resolving errors.designer.cs">
+      <DependentUpon>202105231639084_Just For resolving errors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105241516081_Add IsDeleted to Driver  and Customer.cs" />
+    <Compile Include="Migrations\202105241516081_Add IsDeleted to Driver  and Customer.designer.cs">
+      <DependentUpon>202105241516081_Add IsDeleted to Driver  and Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105241526147_Add IsDeleted To User.cs" />
+    <Compile Include="Migrations\202105241526147_Add IsDeleted To User.designer.cs">
+      <DependentUpon>202105241526147_Add IsDeleted To User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105241538040_Make IsDeleted Nullable.cs" />
+    <Compile Include="Migrations\202105241538040_Make IsDeleted Nullable.designer.cs">
+      <DependentUpon>202105241538040_Make IsDeleted Nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105241612410_Added IsDeleted To Path.cs" />
+    <Compile Include="Migrations\202105241612410_Added IsDeleted To Path.designer.cs">
+      <DependentUpon>202105241612410_Added IsDeleted To Path.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105241630335_change .cs" />
+    <Compile Include="Migrations\202105241630335_change .designer.cs">
+      <DependentUpon>202105241630335_change .cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PasswordForgetion.cs">
       <SubType>Form</SubType>
@@ -231,6 +259,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105210700583_Seperate License Plate to 4 parts.resx">
       <DependentUpon>202105210700583_Seperate License Plate to 4 parts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105230947292_Changed Mobile Index On Users IsUnique=false.resx">
+      <DependentUpon>202105230947292_Changed Mobile Index On Users IsUnique=false.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105231639084_Just For resolving errors.resx">
+      <DependentUpon>202105231639084_Just For resolving errors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105241516081_Add IsDeleted to Driver  and Customer.resx">
+      <DependentUpon>202105241516081_Add IsDeleted to Driver  and Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105241526147_Add IsDeleted To User.resx">
+      <DependentUpon>202105241526147_Add IsDeleted To User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105241538040_Make IsDeleted Nullable.resx">
+      <DependentUpon>202105241538040_Make IsDeleted Nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105241612410_Added IsDeleted To Path.resx">
+      <DependentUpon>202105241612410_Added IsDeleted To Path.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105241630335_change .resx">
+      <DependentUpon>202105241630335_change .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordForgetion.resx">
       <DependentUpon>PasswordForgetion.cs</DependentUpon>

@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Service
+    [Serializable]
+    public class Service:ICloneable
     {
         public int Id { get; set; }
 
@@ -54,5 +55,14 @@ namespace Models
         [DisplayName("مسیر")]
         [Display(Name = "مسیر")]
         public virtual ICollection<ServicePath> ServicePaths { get; set; }
+
+        public object Clone()
+        {
+            if (this.GetType().IsSerializable)
+            {
+                return this.CopyObject<Service>();
+            }
+            return null;
+        }
     }
 }

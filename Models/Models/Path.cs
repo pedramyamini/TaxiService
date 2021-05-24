@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+    [Serializable]
     public class Path:ICloneable
     {
         [Key]
@@ -51,7 +52,13 @@ namespace Models
 
         public object Clone()
         {
-            return this.MemberwiseClone();
+            if (this.GetType().IsSerializable)
+            {
+                return this.CopyObject<Path>();
+            }
+            return null;
         }
+
+        public bool IsDeleted { get; set; } = false;
     }
 }

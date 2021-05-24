@@ -23,5 +23,10 @@ namespace Utility
                 e.SuppressKeyPress = true;
             base.OnKeyDown(e);
         }
+
+        protected override void OnLostFocus(EventArgs e)
+        {
+            base.OnLostFocus(e);
+        }
     }
 }

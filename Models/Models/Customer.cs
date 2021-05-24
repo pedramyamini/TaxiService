@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Customer:User
+    [Serializable]
+    public class Customer:User,ICloneable
     {
         [DisplayName("نشانی")]
         [Display(Name ="نشانی")]
@@ -16,5 +17,14 @@ namespace Models
         public string Address { get; set; }
 
         public virtual ICollection<Service> Services { get; set; }
+
+        public object Clone()
+        {
+            if (this.GetType().IsSerializable)
+            {
+                return this.CopyObject<Customer>();
+            }
+            return null;
+        }
     }
 }

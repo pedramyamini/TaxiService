@@ -66,23 +66,7 @@ namespace WND.Forms
         }
 
 
-        private Models.Driver initialBizObject = new Models.Driver()
-        {
-            Id = 0,
-            FullName = string.Empty,
-            Mobile = string.Empty,
-            SharePercent = 0,
-            DateJoined = DateTime.Today,
-            Car = new Models.Car()
-            {
-                Color = string.Empty,
-                LicensePlate1 = string.Empty,
-                LicensePlate2 = string.Empty,
-                LicensePlate3 = string.Empty,
-                LicensePlate4 = string.Empty,
-                Model = string.Empty
-            }
-        };
+        
         private Models.Driver bizObject { get; set; }
 
         private Models.Driver BizObject
@@ -190,7 +174,8 @@ namespace WND.Forms
             {
                 try
                 {
-                    TaxiDbContext.Instance.Users.Remove(DriverToRemove);
+                    //TaxiDbContext.Instance.Users.Remove(DriverToRemove);
+                    DriverToRemove.IsDeleted = true;
                     TaxiDbContext.Instance.SaveChanges();
                     MessageBoxRTL.Info(".راننده با موفقیت حذف شد", string.Empty);
                     UpdateGrid();
@@ -217,12 +202,14 @@ namespace WND.Forms
         }
         void UpdateGrid()
         {
-            gridDrivers.DataSource = TaxiDbContext.Instance.Users.OfType<Models.Driver>().Include(c => c.Car).ToList();
+            gridDrivers.DataSource = TaxiDbContext.Instance.Users.OfType<Models.Driver>()
+                .Where(d=>!d.IsDeleted).Include(c => c.Car).ToList();
 
             gridDrivers.Columns.Where(c => c.Name == "Services").Single().IsVisible = false;
             gridDrivers.Columns.Where(c => c.Name == "Role").Single().IsVisible = false;
             gridDrivers.Columns.Where(c => c.Name == "Id").Single().IsVisible = false;
             gridDrivers.Columns.Where(c => c.Name == "Car").Single().IsVisible = false;
+            gridDrivers.Columns.Where(c => c.Name == "IsDeleted").Single().IsVisible = false;
 
             gridDrivers.BestFit();
 
@@ -264,6 +251,8 @@ namespace WND.Forms
                     }
                     else if (BizObject.Id == 0)
                     {
+                        //if(TaxiDbContext.Instance.Users.OfType<Models.Driver>().Any(u => u.Mobile == BizObject.Mobile))
+                        //avoid repeating Driver Mobile
                         if (TaxiDbContext.Instance.Users.Any(u => u.Mobile == BizObject.Mobile))
                         {
                             MessageBoxRTL.Error("شماره همراه قبلا ثبت شده است. لطفا شماره دیگری وارد کنید", string.Empty);

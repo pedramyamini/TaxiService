@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class ServicePath
+    [Serializable]
+    public class ServicePath:ICloneable
     {
         [Key]
 
@@ -23,5 +24,14 @@ namespace Models
         public  int PathId { get; set; }
 
         public virtual Path Path { get; set; }
+
+        public object Clone()
+        {
+            if (this.GetType().IsSerializable)
+            {
+                return this.CopyObject<Driver>();
+            }
+            return null;
+        }
     }
 }

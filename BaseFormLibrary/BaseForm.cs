@@ -20,7 +20,6 @@ namespace BaseFormLibrary
 
         private Label lblTaxiName;
         private PictureBox pictureboxProfile;
-        private PictureBox pictureboxChangeCamera;
         private Label lblFullName;
         private Label lblRule;
         protected PictureBox btnDashboard;
@@ -124,7 +123,6 @@ namespace BaseFormLibrary
             this.btnServices = new System.Windows.Forms.PictureBox();
             this.btnDrivers = new System.Windows.Forms.PictureBox();
             this.btnDashboard = new System.Windows.Forms.PictureBox();
-            this.pictureboxChangeCamera = new System.Windows.Forms.PictureBox();
             this.pictureboxProfile = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -135,7 +133,6 @@ namespace BaseFormLibrary
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxChangeCamera)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -252,22 +249,9 @@ namespace BaseFormLibrary
             this.btnDashboard.TabStop = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // pictureboxChangeCamera
-            // 
-            this.pictureboxChangeCamera.BackColor = System.Drawing.Color.White;
-            this.pictureboxChangeCamera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureboxChangeCamera.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureboxChangeCamera.Image = global::BaseFormLibrary.Properties.Resources.Icon_feather_camera;
-            this.pictureboxChangeCamera.Location = new System.Drawing.Point(1162, 85);
-            this.pictureboxChangeCamera.Name = "pictureboxChangeCamera";
-            this.pictureboxChangeCamera.Size = new System.Drawing.Size(19, 15);
-            this.pictureboxChangeCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureboxChangeCamera.TabIndex = 3;
-            this.pictureboxChangeCamera.TabStop = false;
-            // 
             // pictureboxProfile
             // 
-            this.pictureboxProfile.BackColor = System.Drawing.Color.White;
+            this.pictureboxProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.pictureboxProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureboxProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureboxProfile.Image = global::BaseFormLibrary.Properties.Resources.user_profile;
@@ -283,7 +267,7 @@ namespace BaseFormLibrary
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::BaseFormLibrary.Properties.Resources.BaseForm__2_;
+            this.pictureBox1.Image = global::BaseFormLibrary.Properties.Resources.BaseForm_;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1370, 749);
@@ -326,7 +310,6 @@ namespace BaseFormLibrary
             this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.lblRule);
             this.Controls.Add(this.lblFullName);
-            this.Controls.Add(this.pictureboxChangeCamera);
             this.Controls.Add(this.pictureboxProfile);
             this.Controls.Add(this.lblTaxiName);
             this.Controls.Add(this.pictureBox1);
@@ -342,7 +325,6 @@ namespace BaseFormLibrary
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxChangeCamera)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

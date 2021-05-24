@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Transaction
+    [Serializable]
+    public class Transaction:ICloneable
     {
         
         [Key,ForeignKey("Service")]
@@ -24,5 +25,14 @@ namespace Models
         public bool IsPaid { get; set; }
 
         public virtual Service Service { get; set; }
+
+        public object Clone()
+        {
+            if (this.GetType().IsSerializable)
+            {
+                return this.CopyObject<Transaction>();
+            }
+            return null;
+        }
     }
 }

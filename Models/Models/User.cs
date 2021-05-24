@@ -22,7 +22,7 @@ namespace Models
         public string FullName { get; set; }
 
         [StringLength(11)]
-        [Index(IsUnique = true,IsClustered =false)]
+        [Index(IsUnique = false,IsClustered =false)]
         [DisplayName("شماره همراه")]
         [Display(Name = "شماره همراه")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "وارد کردن {0} ضروری است")]
@@ -30,6 +30,8 @@ namespace Models
         public string Mobile { get; set; }
 
         public Roles Role { get; set; }
+
+        public bool IsDeleted { get; set; } = false;
 
     }
 }

@@ -18,6 +18,8 @@ namespace WND.Forms
 {
     public partial class frmCustomers : BaseForm
     {
+        int CurrentServiceOfCustomerId = 0;
+
         private Models.Customer initialBizObject = new Models.Customer()
         {
             Id = 0,
@@ -74,22 +76,32 @@ namespace WND.Forms
                 txtCustomerAddress.DataBindings.Clear();
                 txtCustomerAddress.DataBindings.Add("Text", bizObject, nameof(Models.Customer.Address));
 
-                if (BizObject.Id != 0 && BizObject.Role == Roles.Customer && BizObject.Services.Count > 0)
+                if (BizObject.Id != 0 && BizObject.Role == Roles.Customer && BizObject.Services.Where(s=>!s.IsDeleted).ToList().Count > 0)
                 {
-                    lblLastCost.DataBindings.Clear();
-                    lblLastCost.DataBindings.Add("Text", BizObject.Services.Last().Transaction, nameof(Transaction.Amount));
+                    Service service = TaxiDbContext.Instance.Services
+                        .Include(s => s.Transaction).Include(s => s.ServicePaths)
+                        .OrderByDescending(s=>s.DateTime).First(s=>s.CustomerId == BizObject.Id && !s.IsDeleted);
 
+                    CurrentServiceOfCustomerId = service.Id;
+                    
+                    //lblLastCost.DataBindings.Clear();
+                    //lblLastCost.DataBindings.Add("Text", service.Transaction , nameof(Transaction.Amount));
+                    lblLastCost.Text = (service.Transaction.Amount / 1000).ToString();
+
+                    var pathId = service.ServicePaths.First().PathId;
+                    Path path = TaxiDbContext.Instance.Paths.Single(p=>p.Id == pathId);
                     lblLastOrigin.DataBindings.Clear();
-                    lblLastOrigin.DataBindings.Add("Text", BizObject.Services.Last().ServicePaths.First().Path, nameof(Models.Path.Origin));
+                    lblLastOrigin.DataBindings.Add("Text", path, nameof(Models.Path.Origin));
 
                     lblLastDestination.DataBindings.Clear();
-                    lblLastDestination.DataBindings.Add("Text", BizObject.Services.Last().ServicePaths.First().Path, nameof(Models.Path.Destination));
+                    lblLastDestination.DataBindings.Add("Text", path, nameof(Models.Path.Destination));
 
-                    var TotalCost = BizObject.Services.Sum(s => s.Transaction.Amount);
+                    
+                    var TotalCost = TaxiDbContext.Instance.Services.Where(s=>s.CustomerId== BizObject.Id).Sum(s => s.Transaction.Amount);
                     lblTotalCost.Text = TotalCost.ToString();
 
-                    lblTotalServices.DataBindings.Clear();
-                    lblTotalServices.DataBindings.Add("Text", BizObject.Services, "Count");
+                    var ServiceCount = TaxiDbContext.Instance.Services.Count(s => s.CustomerId == BizObject.Id);
+                    lblTotalServices.Text = ServiceCount.ToString();
                 }
             }
             get
@@ -106,7 +118,8 @@ namespace WND.Forms
             {
                 try
                 {
-                    TaxiDbContext.Instance.Users.Remove(CustomerToRemove);
+                    //TaxiDbContext.Instance.Users.Remove(CustomerToRemove);
+                    CustomerToRemove.IsDeleted = true;
                     TaxiDbContext.Instance.SaveChanges();
                     MessageBoxRTL.Info(".مشتری با موفقیت حذف شد", string.Empty);
                     UpdateGrid();
@@ -134,11 +147,15 @@ namespace WND.Forms
         }
         void UpdateGrid()
         {
-            gridCustomers.DataSource = TaxiDbContext.Instance.Users.OfType<Models.Customer>().ToList();
+            gridCustomers.DataSource = TaxiDbContext.Instance.Users.OfType<Models.Customer>()
+                .Where(c => !c.IsDeleted).ToList();
 
             gridCustomers.Columns.Where(c => c.Name == "Services").Single().IsVisible = false;
             gridCustomers.Columns.Where(c => c.Name == "Role").Single().IsVisible = false;
             gridCustomers.Columns.Where(c => c.Name == "Id").Single().IsVisible = false;
+            gridCustomers.Columns.Where(c => c.Name == "IsDeleted").Single().IsVisible = false;
+            gridCustomers.Columns.Where(c => c.Name == "Address").Single().IsVisible = false;
+
             gridCustomers.BestFit();
         }
 
@@ -150,9 +167,12 @@ namespace WND.Forms
                 {
                     if (BizObject.Id != 0)
                     {
-                        var Customer = TaxiDbContext.Instance.Users.Find(BizObject.Id);
-                        Customer = BizObject;
+                        Models.Customer Customer = (Models.Customer)TaxiDbContext.Instance.Users.Find(BizObject.Id);
+                        Customer.FullName = BizObject.FullName;
+                        Customer.Mobile = BizObject.Mobile;
+                        Customer.Address = BizObject.Address;
                         TaxiDbContext.Instance.SaveChanges();
+                        BizObject = null;
                         MessageBoxRTL.Info(".مشتری با موفقیت ویرایش شد", string.Empty);
                         UpdateGrid();
                     }
@@ -180,13 +200,7 @@ namespace WND.Forms
                 switch (gridCustomers.SelectedCells[0].ColumnInfo.Name)
                 {
                     case "GridEditBtn":
-                        int id;
-                        int.TryParse(gridCustomers.CurrentRow.Cells["Id"].Value.ToString(), out id);
-                        Models.Customer CustomerToEdit = TaxiDbContext.Instance.Users.OfType<Models.Customer>().Include(u => u.Services).SingleOrDefault(c => c.Id == (int)id && c.Role == Roles.Customer);
-                        if (CustomerToEdit != null)
-                        {
-                            BizObject = CustomerToEdit;
-                        }
+                        EditBizObject();
                         break;
                     case "GridDeleteBtn":
                         DeleteBizObject();
@@ -194,6 +208,19 @@ namespace WND.Forms
                     default:
                         break;
                 }
+            }
+        }
+
+        private void EditBizObject()
+        {
+            BizObject = null;
+            int id;
+            int.TryParse(gridCustomers.SelectedCells.First().RowInfo.Cells["Id"].Value.ToString(), out id);
+            UpdateGrid();
+            Models.Customer CustomerToEdit = TaxiDbContext.Instance.Users.OfType<Models.Customer>().Include(u => u.Services).SingleOrDefault(c => c.Id == (int)id && c.Role == Roles.Customer);
+            if (CustomerToEdit != null)
+            {
+                BizObject = (Models.Customer)CustomerToEdit.Clone();
             }
         }
 
@@ -241,6 +268,58 @@ namespace WND.Forms
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if(CurrentServiceOfCustomerId > 0)
+            {
+                CurrentServiceOfCustomerId++;
+                Service service = TaxiDbContext.Instance.Services.SingleOrDefault(s=>s.Id==CurrentServiceOfCustomerId);
+
+                if(service!=null)
+                {
+                    lblLastCost.Text = (service.Transaction.Amount / 1000).ToString();
+
+                    var pathId = service.ServicePaths.First().PathId;
+                    Path path = TaxiDbContext.Instance.Paths.Single(p => p.Id == pathId);
+                    lblLastOrigin.DataBindings.Clear();
+                    lblLastOrigin.DataBindings.Add("Text", path, nameof(Models.Path.Origin));
+
+                    lblLastDestination.DataBindings.Clear();
+                    lblLastDestination.DataBindings.Add("Text", path, nameof(Models.Path.Destination));
+                }
+                else
+                {
+                    CurrentServiceOfCustomerId--;
+                }
+            }
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            if (CurrentServiceOfCustomerId > 0)
+            {
+                CurrentServiceOfCustomerId--;
+                Service service = TaxiDbContext.Instance.Services.SingleOrDefault(s => s.Id == CurrentServiceOfCustomerId);
+
+                if (service != null)
+                {
+                    lblLastCost.Text = (service.Transaction.Amount / 1000).ToString();
+
+                    var pathId = service.ServicePaths.First().PathId;
+                    Path path = TaxiDbContext.Instance.Paths.Single(p => p.Id == pathId);
+                    lblLastOrigin.DataBindings.Clear();
+                    lblLastOrigin.DataBindings.Add("Text", path, nameof(Models.Path.Origin));
+
+                    lblLastDestination.DataBindings.Clear();
+                    lblLastDestination.DataBindings.Add("Text", path, nameof(Models.Path.Destination));
+                }
+                else
+                {
+                    CurrentServiceOfCustomerId++;
+                }
+            }
         }
     }
 }

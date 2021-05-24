@@ -1,6 +1,7 @@
 ﻿
 using BaseFormLibrary;
 using System.Windows.Forms;
+using Utility;
 
 namespace WND
 {
@@ -42,7 +43,7 @@ namespace WND
             this.btnSecretaryThumbnail = new System.Windows.Forms.PictureBox();
             this.txtCustomerName = new Utility.SizableTextBox();
             this.lblCost = new System.Windows.Forms.Label();
-            this.lblCustomerPhone = new System.Windows.Forms.Label();
+            this.txtCustomerPhone = new Utility.NumericTextBox();
             this.comboboxPaths = new System.Windows.Forms.ComboBox();
             this.comboboxDrivers = new System.Windows.Forms.ComboBox();
             this.checkboxIsPaid = new System.Windows.Forms.CheckBox();
@@ -147,15 +148,16 @@ namespace WND
             // txtCustomerName
             // 
             this.txtCustomerName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtCustomerName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtCustomerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCustomerName.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerName.Location = new System.Drawing.Point(312, 567);
             this.txtCustomerName.MaxLength = 75;
-            this.txtCustomerName.Multiline = true;
             this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(163, 28);
+            this.txtCustomerName.Size = new System.Drawing.Size(163, 24);
             this.txtCustomerName.TabIndex = 23;
+            this.txtCustomerName.Leave += new System.EventHandler(this.txtCustomerName_Leave);
             // 
             // lblCost
             // 
@@ -166,14 +168,16 @@ namespace WND
             this.lblCost.Size = new System.Drawing.Size(91, 28);
             this.lblCost.TabIndex = 24;
             // 
-            // lblCustomerPhone
+            // txtCustomerPhone
             // 
-            this.lblCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblCustomerPhone.Location = new System.Drawing.Point(312, 622);
-            this.lblCustomerPhone.Name = "lblCustomerPhone";
-            this.lblCustomerPhone.Size = new System.Drawing.Size(163, 28);
-            this.lblCustomerPhone.TabIndex = 25;
+            this.txtCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.txtCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtCustomerPhone.Location = new System.Drawing.Point(312, 622);
+            this.txtCustomerPhone.Name = "txtCustomerPhone";
+            this.txtCustomerPhone.ReadOnly = true;
+            this.txtCustomerPhone.Size = new System.Drawing.Size(163, 31);
+            this.txtCustomerPhone.TabIndex = 25;
+            this.txtCustomerPhone.Text = "09";
             // 
             // comboboxPaths
             // 
@@ -189,6 +193,7 @@ namespace WND
             this.comboboxPaths.Size = new System.Drawing.Size(165, 30);
             this.comboboxPaths.Sorted = true;
             this.comboboxPaths.TabIndex = 26;
+            this.comboboxPaths.TextChanged += new System.EventHandler(this.comboboxPaths_TextChanged);
             // 
             // comboboxDrivers
             // 
@@ -204,6 +209,7 @@ namespace WND
             this.comboboxDrivers.Size = new System.Drawing.Size(165, 30);
             this.comboboxDrivers.Sorted = true;
             this.comboboxDrivers.TabIndex = 27;
+            this.comboboxDrivers.TextChanged += new System.EventHandler(this.comboboxDrivers_TextChanged);
             // 
             // checkboxIsPaid
             // 
@@ -329,6 +335,7 @@ namespace WND
             this.btnSave.Size = new System.Drawing.Size(272, 30);
             this.btnSave.TabIndex = 55;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -347,6 +354,7 @@ namespace WND
             this.btnCancel.Size = new System.Drawing.Size(128, 30);
             this.btnCancel.TabIndex = 56;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmDashboard
             // 
@@ -367,7 +375,7 @@ namespace WND
             this.Controls.Add(this.checkboxIsPaid);
             this.Controls.Add(this.comboboxDrivers);
             this.Controls.Add(this.comboboxPaths);
-            this.Controls.Add(this.lblCustomerPhone);
+            this.Controls.Add(this.txtCustomerPhone);
             this.Controls.Add(this.lblCost);
             this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.btnSecretaryThumbnail);
@@ -393,7 +401,7 @@ namespace WND
             this.Controls.SetChildIndex(this.btnSecretaryThumbnail, 0);
             this.Controls.SetChildIndex(this.txtCustomerName, 0);
             this.Controls.SetChildIndex(this.lblCost, 0);
-            this.Controls.SetChildIndex(this.lblCustomerPhone, 0);
+            this.Controls.SetChildIndex(this.txtCustomerPhone, 0);
             this.Controls.SetChildIndex(this.comboboxPaths, 0);
             this.Controls.SetChildIndex(this.comboboxDrivers, 0);
             this.Controls.SetChildIndex(this.checkboxIsPaid, 0);
@@ -434,7 +442,7 @@ namespace WND
         private PictureBox btnSecretaryThumbnail;
         public Utility.SizableTextBox txtCustomerName;
         public Label lblCost;
-        public Label lblCustomerPhone;
+        public NumericTextBox txtCustomerPhone;
         private ComboBox comboboxPaths;
         private ComboBox comboboxDrivers;
         private CheckBox checkboxIsPaid;
