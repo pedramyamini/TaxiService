@@ -18,7 +18,8 @@ namespace WND.Forms
 {
     public partial class frmCustomers : BaseForm
     {
-        int CurrentServiceOfCustomerId = 0;
+        List<Models.Service> ActiveServices = new List<Models.Service>();
+        int CurrentActiveService = 0;
 
         private Models.Customer initialBizObject = new Models.Customer()
         {
@@ -78,11 +79,12 @@ namespace WND.Forms
 
                 if (BizObject.Id != 0 && BizObject.Role == Roles.Customer && BizObject.Services.Where(s=>!s.IsDeleted).ToList().Count > 0)
                 {
-                    Service service = TaxiDbContext.Instance.Services
+                    ActiveServices = TaxiDbContext.Instance.Services.Where(s => !s.IsDeleted && s.CustomerId==BizObject.Id)
                         .Include(s => s.Transaction).Include(s => s.ServicePaths)
-                        .OrderByDescending(s=>s.DateTime).First(s=>s.CustomerId == BizObject.Id && !s.IsDeleted);
+                        .OrderByDescending(s => s.DateTime).ToList();
+                    Service service = ActiveServices.First(s=>s.CustomerId == BizObject.Id && !s.IsDeleted);
 
-                    CurrentServiceOfCustomerId = service.Id;
+                    CurrentActiveService = 0;
                     
                     //lblLastCost.DataBindings.Clear();
                     //lblLastCost.DataBindings.Add("Text", service.Transaction , nameof(Transaction.Amount));
@@ -97,10 +99,10 @@ namespace WND.Forms
                     lblLastDestination.DataBindings.Add("Text", path, nameof(Models.Path.Destination));
 
                     
-                    var TotalCost = TaxiDbContext.Instance.Services.Where(s=>s.CustomerId== BizObject.Id).Sum(s => s.Transaction.Amount);
+                    var TotalCost = TaxiDbContext.Instance.Services.Where(s=>!s.IsDeleted &&  s.CustomerId== BizObject.Id).Sum(s => s.Transaction.Amount);
                     lblTotalCost.Text = TotalCost.ToString();
 
-                    var ServiceCount = TaxiDbContext.Instance.Services.Count(s => s.CustomerId == BizObject.Id);
+                    var ServiceCount = TaxiDbContext.Instance.Services.Count(s=>!s.IsDeleted && s.CustomerId == BizObject.Id);
                     lblTotalServices.Text = ServiceCount.ToString();
                 }
             }
@@ -272,12 +274,13 @@ namespace WND.Forms
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if(CurrentServiceOfCustomerId > 0)
+            if(CurrentActiveService >= 0 && CurrentActiveService < ActiveServices.Count - 1)
             {
-                CurrentServiceOfCustomerId++;
-                Service service = TaxiDbContext.Instance.Services.SingleOrDefault(s=>s.Id==CurrentServiceOfCustomerId);
+                CurrentActiveService++;
 
-                if(service!=null)
+                Service service = ActiveServices[CurrentActiveService];
+
+                if (service!=null)
                 {
                     lblLastCost.Text = (service.Transaction.Amount / 1000).ToString();
 
@@ -289,19 +292,19 @@ namespace WND.Forms
                     lblLastDestination.DataBindings.Clear();
                     lblLastDestination.DataBindings.Add("Text", path, nameof(Models.Path.Destination));
                 }
-                else
-                {
-                    CurrentServiceOfCustomerId--;
-                }
+                //else
+                //{
+                //    CurrentActiveService--;
+                //}
             }
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-            if (CurrentServiceOfCustomerId > 0)
+            if (CurrentActiveService >= 1)
             {
-                CurrentServiceOfCustomerId--;
-                Service service = TaxiDbContext.Instance.Services.SingleOrDefault(s => s.Id == CurrentServiceOfCustomerId);
+                CurrentActiveService--;
+                Service service = ActiveServices[CurrentActiveService];
 
                 if (service != null)
                 {
@@ -315,10 +318,10 @@ namespace WND.Forms
                     lblLastDestination.DataBindings.Clear();
                     lblLastDestination.DataBindings.Add("Text", path, nameof(Models.Path.Destination));
                 }
-                else
-                {
-                    CurrentServiceOfCustomerId++;
-                }
+                //else
+                //{
+                //    CurrentActiveService++;
+                //}
             }
         }
     }
