@@ -7,13 +7,13 @@ namespace WND.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class AddIsDeletedtoDriverandCustomer : IMigrationMetadata
+    public sealed partial class AddDateJoinedToUsers : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddIsDeletedtoDriverandCustomer));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddDateJoinedToUsers));
         
         string IMigrationMetadata.Id
         {
-            get { return "202105241516081_Add IsDeleted to Driver  and Customer"; }
+            get { return "202105280910020_Add DateJoined To Users"; }
         }
         
         string IMigrationMetadata.Source

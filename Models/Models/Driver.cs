@@ -19,11 +19,6 @@ namespace Models
         public int SharePercent { get; set; }
 
 
-        [Display(Name = "تاریخ عوضیت")]
-        [DisplayName("تاریخ عضویت")]
-        public DateTime DateJoined { get; set; }
-
-
         public virtual Car Car { get; set; }
 
         public virtual ICollection<Service> Services { get; set; }

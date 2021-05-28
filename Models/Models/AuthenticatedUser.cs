@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class AuthenticatedUser : User
+    [Serializable]
+    public class AuthenticatedUser : User , ICloneable
     {
         [StringLength(20, MinimumLength = 6, ErrorMessage = "{0} باید بین 6 تا 20 کاراکتر باشد")]
         [DisplayName("نام کاربری")]
@@ -35,5 +36,15 @@ namespace Models
         [Display(Name = "نام تاکسی تلفنی")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public string TaxiName { get; set; } = "تاکسی دار";
+
+
+        public object Clone()
+        {
+            if (this.GetType().IsSerializable)
+            {
+                return this.CopyObject<AuthenticatedUser>();
+            }
+            return null;
+        }
     }
 }

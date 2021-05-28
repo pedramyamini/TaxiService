@@ -34,6 +34,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSecretaries));
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn9 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn10 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition5 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -46,6 +49,8 @@ namespace WND.Forms
             this.txtSecretaryName = new Utility.SizableTextBox();
             this.txtSecretaryUsername = new Utility.SizableTextBox();
             this.txtSecretaryPassword = new Utility.SizableTextBox();
+            this.gridSecretaries = new Utility.RadGridViewCustom();
+            this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
@@ -54,6 +59,8 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSecretaries)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSecretaries.MasterTemplate)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDashboard
@@ -139,6 +146,7 @@ namespace WND.Forms
             this.btnCancel.Size = new System.Drawing.Size(71, 35);
             this.btnCancel.TabIndex = 58;
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -157,13 +165,14 @@ namespace WND.Forms
             this.btnSave.Size = new System.Drawing.Size(71, 79);
             this.btnSave.TabIndex = 59;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtSecretaryPhone
             // 
             this.txtSecretaryPhone.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtSecretaryPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(219)))), ((int)(((byte)(178)))));
             this.txtSecretaryPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSecretaryPhone.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtSecretaryPhone.Font = new System.Drawing.Font("IRANYekan", 8F);
             this.txtSecretaryPhone.Location = new System.Drawing.Point(909, 477);
             this.txtSecretaryPhone.MaxLength = 11;
             this.txtSecretaryPhone.Multiline = true;
@@ -219,11 +228,52 @@ namespace WND.Forms
             this.txtSecretaryPassword.Size = new System.Drawing.Size(107, 28);
             this.txtSecretaryPassword.TabIndex = 93;
             // 
+            // gridSecretaries
+            // 
+            this.gridSecretaries.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gridSecretaries.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridSecretaries.Location = new System.Drawing.Point(212, 263);
+            // 
+            // 
+            // 
+            this.gridSecretaries.MasterTemplate.AllowAddNewRow = false;
+            this.gridSecretaries.MasterTemplate.AllowColumnReorder = false;
+            this.gridSecretaries.MasterTemplate.AllowDragToGroup = false;
+            this.gridSecretaries.MasterTemplate.AllowEditRow = false;
+            this.gridSecretaries.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewCommandColumn9.AllowHide = false;
+            gridViewCommandColumn9.HeaderText = "ویرایش";
+            gridViewCommandColumn9.Image = global::WND.Properties.Resources.Icon_feather_edit;
+            gridViewCommandColumn9.MaxWidth = 60;
+            gridViewCommandColumn9.Name = "GridEditBtn";
+            gridViewCommandColumn9.Width = 60;
+            gridViewCommandColumn10.AllowHide = false;
+            gridViewCommandColumn10.HeaderText = "حذف";
+            gridViewCommandColumn10.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
+            gridViewCommandColumn10.MaxWidth = 50;
+            gridViewCommandColumn10.Name = "GridDeleteBtn";
+            this.gridSecretaries.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewCommandColumn9,
+            gridViewCommandColumn10});
+            this.gridSecretaries.MasterTemplate.EnableGrouping = false;
+            this.gridSecretaries.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
+            this.gridSecretaries.MasterTemplate.ViewDefinition = tableViewDefinition5;
+            this.gridSecretaries.Name = "gridSecretaries";
+            this.gridSecretaries.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.gridSecretaries.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
+            this.gridSecretaries.Size = new System.Drawing.Size(599, 415);
+            this.gridSecretaries.TabIndex = 94;
+            this.gridSecretaries.ThemeName = "Material";
+            // 
             // frmSecretaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.gridSecretaries);
             this.Controls.Add(this.txtSecretaryPassword);
             this.Controls.Add(this.txtSecretaryUsername);
             this.Controls.Add(this.txtSecretaryName);
@@ -257,6 +307,7 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.txtSecretaryName, 0);
             this.Controls.SetChildIndex(this.txtSecretaryUsername, 0);
             this.Controls.SetChildIndex(this.txtSecretaryPassword, 0);
+            this.Controls.SetChildIndex(this.gridSecretaries, 0);
             ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
@@ -265,6 +316,8 @@ namespace WND.Forms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSecretaries.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSecretaries)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,5 +336,7 @@ namespace WND.Forms
         public Utility.SizableTextBox txtSecretaryName;
         public Utility.SizableTextBox txtSecretaryUsername;
         public Utility.SizableTextBox txtSecretaryPassword;
+        private Utility.RadGridViewCustom gridSecretaries;
+        private Telerik.WinControls.Themes.MaterialTheme materialTheme1;
     }
 }

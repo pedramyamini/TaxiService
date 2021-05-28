@@ -52,6 +52,7 @@ namespace WND
                     Role = Roles.Admin,
                     SecurityQuestion = txtSecurityQuestion.Text,
                     SecurityAnswer = EasyHash.Hash(txtSecurityAnswer.Text),
+                    DateJoined = DateTime.Today
                 };
                 if (Validation.Validate(user) & Validation.ValidatePassword(txtPassword.Text))
                 {

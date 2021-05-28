@@ -11,7 +11,7 @@ using Models;
 namespace Models
 {
     [Serializable]
-    public class User
+    public class User:ICloneable
     {
         [Key]
         public int Id { get; set; }
@@ -33,5 +33,19 @@ namespace Models
 
         public bool IsDeleted { get; set; } = false;
 
+
+
+        [DisplayName("تاریخ عضویت")]
+        [Display(Name = "تاریخ عضویت")]
+        public DateTime DateJoined { get; set; }
+
+        public object Clone()
+        {
+            if (this.GetType().IsSerializable)
+            {
+                return this.CopyObject<User>();
+            }
+            return null;
+        }
     }
 }

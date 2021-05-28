@@ -147,53 +147,9 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104021754363_final.cs" />
-    <Compile Include="Migrations\202104021754363_final.designer.cs">
-      <DependentUpon>202104021754363_final.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105090838103_mig1.cs" />
-    <Compile Include="Migrations\202105090838103_mig1.designer.cs">
-      <DependentUpon>202105090838103_mig1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105201107303_Add DateJoined to Driver.cs" />
-    <Compile Include="Migrations\202105201107303_Add DateJoined to Driver.designer.cs">
-      <DependentUpon>202105201107303_Add DateJoined to Driver.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105210620543_Seperate LicensePlate Letter and Numbers.cs" />
-    <Compile Include="Migrations\202105210620543_Seperate LicensePlate Letter and Numbers.designer.cs">
-      <DependentUpon>202105210620543_Seperate LicensePlate Letter and Numbers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105210700583_Seperate License Plate to 4 parts.cs" />
-    <Compile Include="Migrations\202105210700583_Seperate License Plate to 4 parts.designer.cs">
-      <DependentUpon>202105210700583_Seperate License Plate to 4 parts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105230947292_Changed Mobile Index On Users IsUnique=false.cs" />
-    <Compile Include="Migrations\202105230947292_Changed Mobile Index On Users IsUnique=false.designer.cs">
-      <DependentUpon>202105230947292_Changed Mobile Index On Users IsUnique=false.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105231639084_Just For resolving errors.cs" />
-    <Compile Include="Migrations\202105231639084_Just For resolving errors.designer.cs">
-      <DependentUpon>202105231639084_Just For resolving errors.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105241516081_Add IsDeleted to Driver  and Customer.cs" />
-    <Compile Include="Migrations\202105241516081_Add IsDeleted to Driver  and Customer.designer.cs">
-      <DependentUpon>202105241516081_Add IsDeleted to Driver  and Customer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105241526147_Add IsDeleted To User.cs" />
-    <Compile Include="Migrations\202105241526147_Add IsDeleted To User.designer.cs">
-      <DependentUpon>202105241526147_Add IsDeleted To User.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105241538040_Make IsDeleted Nullable.cs" />
-    <Compile Include="Migrations\202105241538040_Make IsDeleted Nullable.designer.cs">
-      <DependentUpon>202105241538040_Make IsDeleted Nullable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105241612410_Added IsDeleted To Path.cs" />
-    <Compile Include="Migrations\202105241612410_Added IsDeleted To Path.designer.cs">
-      <DependentUpon>202105241612410_Added IsDeleted To Path.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105241630335_change .cs" />
-    <Compile Include="Migrations\202105241630335_change .designer.cs">
-      <DependentUpon>202105241630335_change .cs</DependentUpon>
+    <Compile Include="Migrations\202105280910020_Add DateJoined To Users.cs" />
+    <Compile Include="Migrations\202105280910020_Add DateJoined To Users.designer.cs">
+      <DependentUpon>202105280910020_Add DateJoined To Users.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PasswordForgetion.cs">
@@ -236,41 +192,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104021754363_final.resx">
-      <DependentUpon>202104021754363_final.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105090838103_mig1.resx">
-      <DependentUpon>202105090838103_mig1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105201107303_Add DateJoined to Driver.resx">
-      <DependentUpon>202105201107303_Add DateJoined to Driver.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105210620543_Seperate LicensePlate Letter and Numbers.resx">
-      <DependentUpon>202105210620543_Seperate LicensePlate Letter and Numbers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105210700583_Seperate License Plate to 4 parts.resx">
-      <DependentUpon>202105210700583_Seperate License Plate to 4 parts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105230947292_Changed Mobile Index On Users IsUnique=false.resx">
-      <DependentUpon>202105230947292_Changed Mobile Index On Users IsUnique=false.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105231639084_Just For resolving errors.resx">
-      <DependentUpon>202105231639084_Just For resolving errors.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105241516081_Add IsDeleted to Driver  and Customer.resx">
-      <DependentUpon>202105241516081_Add IsDeleted to Driver  and Customer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105241526147_Add IsDeleted To User.resx">
-      <DependentUpon>202105241526147_Add IsDeleted To User.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105241538040_Make IsDeleted Nullable.resx">
-      <DependentUpon>202105241538040_Make IsDeleted Nullable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105241612410_Added IsDeleted To Path.resx">
-      <DependentUpon>202105241612410_Added IsDeleted To Path.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105241630335_change .resx">
-      <DependentUpon>202105241630335_change .cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105280910020_Add DateJoined To Users.resx">
+      <DependentUpon>202105280910020_Add DateJoined To Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PasswordForgetion.resx">
       <DependentUpon>PasswordForgetion.cs</DependentUpon>
