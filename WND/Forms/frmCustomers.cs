@@ -158,12 +158,14 @@ namespace WND.Forms
             gridCustomers.Columns.Where(c => c.Name == "Id").Single().IsVisible = false;
             gridCustomers.Columns.Where(c => c.Name == "IsDeleted").Single().IsVisible = false;
             gridCustomers.Columns.Where(c => c.Name == "Address").Single().IsVisible = false;
+            gridCustomers.Columns.Where(c => c.Name == "DateJoined").Single().IsVisible = false;
 
             gridCustomers.BestFit();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+
             if (BizObject != null && Validation.Validate(BizObject))
             {
                 try
@@ -182,6 +184,7 @@ namespace WND.Forms
                     else if (BizObject.Id == 0)
                     {
                         BizObject.Role = Roles.Customer;
+                        BizObject.DateJoined = DateTime.Today;
                         TaxiDbContext.Instance.Users.Add(BizObject);
                         TaxiDbContext.Instance.SaveChanges();
                         MessageBoxRTL.Info(".مشتری با موفقیت افزوده شد", string.Empty);

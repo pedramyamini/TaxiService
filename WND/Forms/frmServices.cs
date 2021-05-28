@@ -316,7 +316,7 @@ namespace WND.Forms
                             taxiDb.SaveChanges();
                         }
 
-                        db = new TaxiDbContext();
+                        TaxiDbContext.Instance.RefreshDbContext();
 
                         BizObject = null;
                         MessageBoxRTL.Info(".سرویس با موفقیت ویرایش شد", string.Empty);

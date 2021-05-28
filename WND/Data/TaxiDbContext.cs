@@ -13,9 +13,15 @@ namespace WND.Data
     {
         public TaxiDbContext() : base("TaxiService")
         {
-
+            
         }
-        private static readonly Lazy<TaxiDbContext> lazy = new Lazy<TaxiDbContext>(() => new TaxiDbContext());
+
+        public void RefreshDbContext()
+        {
+            Instance.Dispose();
+            lazy = new Lazy<TaxiDbContext>(() => new TaxiDbContext());
+        }
+        private static Lazy<TaxiDbContext> lazy = new Lazy<TaxiDbContext>(() => new TaxiDbContext());
         public static TaxiDbContext Instance
         {
             get
