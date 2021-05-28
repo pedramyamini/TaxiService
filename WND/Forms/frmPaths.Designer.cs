@@ -173,6 +173,7 @@ namespace WND.Forms
             this.txtCost.Name = "txtCost";
             this.txtCost.Size = new System.Drawing.Size(167, 28);
             this.txtCost.TabIndex = 55;
+            this.txtCost.TextChanged += new System.EventHandler(this.txtCost_TextChanged);
             // 
             // txtDestination
             // 

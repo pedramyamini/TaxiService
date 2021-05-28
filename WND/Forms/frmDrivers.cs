@@ -106,8 +106,8 @@ namespace WND.Forms
                 txtDriverPhone.DataBindings.Clear();
                 txtDriverPhone.DataBindings.Add("Text", BizObject, nameof(Models.Driver.Mobile));
 
-                txtSharePercent.DataBindings.Clear();
-                txtSharePercent.DataBindings.Add("Text", BizObject, nameof(Models.Driver.SharePercent));
+                //txtSharePercent.DataBindings.Clear();
+                //txtSharePercent.DataBindings.Add("Text", BizObject, nameof(Models.Driver.SharePercent));
 
 
                 //if (BizObject.Role == Roles.Driver && BizObject.Car != null
@@ -179,6 +179,7 @@ namespace WND.Forms
                     TaxiDbContext.Instance.SaveChanges();
                     MessageBoxRTL.Info(".راننده با موفقیت حذف شد", string.Empty);
                     UpdateGrid();
+                    BizObject = null;
                 }
                 catch
                 {
@@ -198,6 +199,7 @@ namespace WND.Forms
             {
                 //BizObject = (Models.Driver)DriverToEdit.Clone();
                 BizObject = (Models.Driver)DriverToEdit.Clone();
+                txtSharePercent.Text = BizObject.SharePercent.ToString();
             }
         }
         void UpdateGrid()
@@ -217,15 +219,36 @@ namespace WND.Forms
 
         }
 
+        void UpdateDriver()
+        {
+            Models.Driver Driver = (Models.Driver)TaxiDbContext.Instance.Users.Single(d => d.Id == BizObject.Id);
+            //Driver = BizObject;
+            Driver.FullName = BizObject.FullName;
+            Driver.Mobile = BizObject.Mobile;
+            Driver.SharePercent = BizObject.SharePercent;
+            Driver.Car.Color = BizObject.Car.Color;
+            Driver.Car.Model = BizObject.Car.Model;
+            Driver.Car.LicensePlate1 = BizObject.Car.LicensePlate1;
+            Driver.Car.LicensePlate2 = BizObject.Car.LicensePlate2;
+            Driver.Car.LicensePlate3 = BizObject.Car.LicensePlate3;
+            Driver.Car.LicensePlate4 = BizObject.Car.LicensePlate4;
+            BizObject.IsDeleted = false;
+            TaxiDbContext.Instance.SaveChanges();
+            BizObject = null;
+            MessageBoxRTL.Info(".راننده با موفقیت ویرایش شد", string.Empty);
+            UpdateGrid();
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
+            int SharePercent = 0;
+            int.TryParse(txtSharePercent.Text.PersianToEnglish(), out SharePercent);
+            if (BizObject != null && !BizObject.IsDeleted) { BizObject.SharePercent = SharePercent; }
             if (BizObject != null && Validation.Validate(BizObject))
             {
 
-
                 if (!LicensePlateCalculation.IsCompelete(BizObject.Car))
                 {
-                    MessageBoxRTL.Error("پلاک خودرو ضروری است", string.Empty);
                     return;
                 }
 
@@ -233,36 +256,43 @@ namespace WND.Forms
                 {
                     if (BizObject.Id != 0)
                     {
-                        Models.Driver Driver = (Models.Driver)TaxiDbContext.Instance.Users.Single(d => d.Id == BizObject.Id);
-                        //Driver = BizObject;
-                        Driver.FullName = BizObject.FullName;
-                        Driver.Mobile = BizObject.Mobile;
-                        Driver.SharePercent = BizObject.SharePercent;
-                        Driver.Car.Color = BizObject.Car.Color;
-                        Driver.Car.Model = BizObject.Car.Model;
-                        Driver.Car.LicensePlate1 = BizObject.Car.LicensePlate1;
-                        Driver.Car.LicensePlate2 = BizObject.Car.LicensePlate2;
-                        Driver.Car.LicensePlate3 = BizObject.Car.LicensePlate3;
-                        Driver.Car.LicensePlate4 = BizObject.Car.LicensePlate4;
-                        TaxiDbContext.Instance.SaveChanges();
-                        BizObject = null;
-                        MessageBoxRTL.Info(".راننده با موفقیت ویرایش شد", string.Empty);
-                        UpdateGrid();
+                        UpdateDriver();
                     }
                     else if (BizObject.Id == 0)
                     {
                         //if(TaxiDbContext.Instance.Users.OfType<Models.Driver>().Any(u => u.Mobile == BizObject.Mobile))
                         //avoid repeating Driver Mobile
-                        if (TaxiDbContext.Instance.Users.Any(u => u.Mobile == BizObject.Mobile))
+                        if (TaxiDbContext.Instance.Users.Any(u => u.Mobile == BizObject.Mobile
+                        && u.FullName != BizObject.FullName))
                         {
                             MessageBoxRTL.Error("شماره همراه قبلا ثبت شده است. لطفا شماره دیگری وارد کنید", string.Empty);
                             return;
                         }
+
+                        if (TaxiDbContext.Instance.Users.Any(u => u.Mobile == BizObject.Mobile
+                        && u.FullName == BizObject.FullName))
+                        {
+                            DialogResult dr=MessageBoxRTL.Ask("این راننده قبلا ثبت شده است. آیا مایل به ویرایش آن هستید؟", string.Empty);
+                            if(dr==DialogResult.OK)
+                            {
+                                Models.Driver CheckExistingDriver = TaxiDbContext.Instance.Users
+                                    .OfType<Models.Driver>().Single(u => u.Mobile == BizObject.Mobile
+                        && u.FullName == BizObject.FullName);
+                                BizObject = null;
+                                BizObject = CheckExistingDriver;
+                                BizObject.SharePercent = SharePercent;
+                                UpdateDriver();
+                                return;
+                            }
+                            return;
+                        }
+                        BizObject.SharePercent = SharePercent;
                         BizObject.Role = Roles.Driver;
                         TaxiDbContext.Instance.Users.Add(BizObject);
                         TaxiDbContext.Instance.SaveChanges();
                         MessageBoxRTL.Info(".راننده با موفقیت افزوده شد", string.Empty);
                         UpdateGrid();
+                        BizObject = null;
                     }
                 }
                 catch

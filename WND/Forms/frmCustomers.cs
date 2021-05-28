@@ -125,6 +125,7 @@ namespace WND.Forms
                     TaxiDbContext.Instance.SaveChanges();
                     MessageBoxRTL.Info(".مشتری با موفقیت حذف شد", string.Empty);
                     UpdateGrid();
+                    BizObject = null;
                 }
                 catch
                 {

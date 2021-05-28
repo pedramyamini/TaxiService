@@ -22,7 +22,7 @@ namespace WND.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace WND.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WND.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace WND.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _4213412_compose_document_edit_pen_pencil_write_115364 {
+        public static System.Drawing.Bitmap _4213412_compose_document_edit_pen_pencil_write_115364 {
             get {
                 object obj = ResourceManager.GetObject("4213412-compose-document-edit-pen-pencil-write_115364", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dashboard_out {
+        public static System.Drawing.Bitmap Dashboard_out {
             get {
                 object obj = ResourceManager.GetObject("Dashboard_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dena_Black {
+        public static System.Drawing.Bitmap Dena_Black {
             get {
                 object obj = ResourceManager.GetObject("Dena_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dena_Blue {
+        public static System.Drawing.Bitmap Dena_Blue {
             get {
                 object obj = ResourceManager.GetObject("Dena_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dena_Gray {
+        public static System.Drawing.Bitmap Dena_Gray {
             get {
                 object obj = ResourceManager.GetObject("Dena_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dena_Green {
+        public static System.Drawing.Bitmap Dena_Green {
             get {
                 object obj = ResourceManager.GetObject("Dena_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dena_Red {
+        public static System.Drawing.Bitmap Dena_Red {
             get {
                 object obj = ResourceManager.GetObject("Dena_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dena_White {
+        public static System.Drawing.Bitmap Dena_White {
             get {
                 object obj = ResourceManager.GetObject("Dena_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dena_Yellow {
+        public static System.Drawing.Bitmap Dena_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Dena_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Drivers_out {
+        public static System.Drawing.Bitmap Drivers_out {
             get {
                 object obj = ResourceManager.GetObject("Drivers_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_104 {
+        public static System.Drawing.Bitmap Group_104 {
             get {
                 object obj = ResourceManager.GetObject("Group 104", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_105 {
+        public static System.Drawing.Bitmap Group_105 {
             get {
                 object obj = ResourceManager.GetObject("Group 105", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_105__2_ {
+        public static System.Drawing.Bitmap Group_105__2_ {
             get {
                 object obj = ResourceManager.GetObject("Group 105 (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_108 {
+        public static System.Drawing.Bitmap Group_108 {
             get {
                 object obj = ResourceManager.GetObject("Group 108", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +203,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_109 {
+        public static System.Drawing.Bitmap Group_109 {
             get {
                 object obj = ResourceManager.GetObject("Group 109", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_1091 {
+        public static System.Drawing.Bitmap Group_1091 {
             get {
                 object obj = ResourceManager.GetObject("Group 1091", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_1092 {
+        public static System.Drawing.Bitmap Group_1092 {
             get {
                 object obj = ResourceManager.GetObject("Group 1092", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +233,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_111 {
+        public static System.Drawing.Bitmap Group_111 {
             get {
                 object obj = ResourceManager.GetObject("Group 111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +243,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HatchbackPride_Black {
+        public static System.Drawing.Bitmap HatchbackPride_Black {
             get {
                 object obj = ResourceManager.GetObject("HatchbackPride_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +253,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HatchbackPride_Blue {
+        public static System.Drawing.Bitmap HatchbackPride_Blue {
             get {
                 object obj = ResourceManager.GetObject("HatchbackPride_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +263,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HatchbackPride_Gray {
+        public static System.Drawing.Bitmap HatchbackPride_Gray {
             get {
                 object obj = ResourceManager.GetObject("HatchbackPride_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +273,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HatchbackPride_Green {
+        public static System.Drawing.Bitmap HatchbackPride_Green {
             get {
                 object obj = ResourceManager.GetObject("HatchbackPride_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +283,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HatchbackPride_Red {
+        public static System.Drawing.Bitmap HatchbackPride_Red {
             get {
                 object obj = ResourceManager.GetObject("HatchbackPride_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +293,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HatchbackPride_White {
+        public static System.Drawing.Bitmap HatchbackPride_White {
             get {
                 object obj = ResourceManager.GetObject("HatchbackPride_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +303,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HatchbackPride_Yellow {
+        public static System.Drawing.Bitmap HatchbackPride_Yellow {
             get {
                 object obj = ResourceManager.GetObject("HatchbackPride_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +313,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icon_feather_edit {
+        public static System.Drawing.Bitmap Icon_feather_edit {
             get {
                 object obj = ResourceManager.GetObject("Icon feather-edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -323,7 +323,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icon_material_delete_forever {
+        public static System.Drawing.Bitmap Icon_material_delete_forever {
             get {
                 object obj = ResourceManager.GetObject("Icon material-delete-forever", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,7 +333,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap main {
+        public static System.Drawing.Bitmap main {
             get {
                 object obj = ResourceManager.GetObject("main", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +343,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paths {
+        public static System.Drawing.Bitmap Paths {
             get {
                 object obj = ResourceManager.GetObject("Paths", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +353,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paths__3_ {
+        public static System.Drawing.Bitmap Paths__3_ {
             get {
                 object obj = ResourceManager.GetObject("Paths (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +363,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paths_out {
+        public static System.Drawing.Bitmap Paths_out {
             get {
                 object obj = ResourceManager.GetObject("Paths_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +373,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paykan_Black {
+        public static System.Drawing.Bitmap Paykan_Black {
             get {
                 object obj = ResourceManager.GetObject("Paykan_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +383,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paykan_Blue {
+        public static System.Drawing.Bitmap Paykan_Blue {
             get {
                 object obj = ResourceManager.GetObject("Paykan_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +393,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paykan_Gray {
+        public static System.Drawing.Bitmap Paykan_Gray {
             get {
                 object obj = ResourceManager.GetObject("Paykan_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +403,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paykan_Green {
+        public static System.Drawing.Bitmap Paykan_Green {
             get {
                 object obj = ResourceManager.GetObject("Paykan_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -413,7 +413,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paykan_Red {
+        public static System.Drawing.Bitmap Paykan_Red {
             get {
                 object obj = ResourceManager.GetObject("Paykan_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -423,7 +423,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paykan_White {
+        public static System.Drawing.Bitmap Paykan_White {
             get {
                 object obj = ResourceManager.GetObject("Paykan_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -433,7 +433,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paykan_Yellow {
+        public static System.Drawing.Bitmap Paykan_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Paykan_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -443,7 +443,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206_Black {
+        public static System.Drawing.Bitmap Peugeot206_Black {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -453,7 +453,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206_Blue {
+        public static System.Drawing.Bitmap Peugeot206_Blue {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -463,7 +463,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206_Gray {
+        public static System.Drawing.Bitmap Peugeot206_Gray {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -473,7 +473,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206_Green {
+        public static System.Drawing.Bitmap Peugeot206_Green {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -483,7 +483,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206_Red {
+        public static System.Drawing.Bitmap Peugeot206_Red {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -493,7 +493,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206_White {
+        public static System.Drawing.Bitmap Peugeot206_White {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -503,7 +503,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206_Yellow {
+        public static System.Drawing.Bitmap Peugeot206_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -513,7 +513,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206Trunk_Black {
+        public static System.Drawing.Bitmap Peugeot206Trunk_Black {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206Trunk_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -523,7 +523,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206Trunk_Blue {
+        public static System.Drawing.Bitmap Peugeot206Trunk_Blue {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206Trunk_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -533,7 +533,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206Trunk_Gray {
+        public static System.Drawing.Bitmap Peugeot206Trunk_Gray {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206Trunk_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -543,7 +543,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206Trunk_Green {
+        public static System.Drawing.Bitmap Peugeot206Trunk_Green {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206Trunk_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -553,7 +553,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206Trunk_Red {
+        public static System.Drawing.Bitmap Peugeot206Trunk_Red {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206Trunk_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -563,7 +563,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206Trunk_White {
+        public static System.Drawing.Bitmap Peugeot206Trunk_White {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206Trunk_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -573,7 +573,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot206Trunk_Yellow {
+        public static System.Drawing.Bitmap Peugeot206Trunk_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Peugeot206Trunk_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -583,7 +583,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot405_Black {
+        public static System.Drawing.Bitmap Peugeot405_Black {
             get {
                 object obj = ResourceManager.GetObject("Peugeot405_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -593,7 +593,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot405_Blue {
+        public static System.Drawing.Bitmap Peugeot405_Blue {
             get {
                 object obj = ResourceManager.GetObject("Peugeot405_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -603,7 +603,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot405_Gray {
+        public static System.Drawing.Bitmap Peugeot405_Gray {
             get {
                 object obj = ResourceManager.GetObject("Peugeot405_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -613,7 +613,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot405_Green {
+        public static System.Drawing.Bitmap Peugeot405_Green {
             get {
                 object obj = ResourceManager.GetObject("Peugeot405_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -623,7 +623,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot405_Red {
+        public static System.Drawing.Bitmap Peugeot405_Red {
             get {
                 object obj = ResourceManager.GetObject("Peugeot405_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -633,7 +633,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot405_White {
+        public static System.Drawing.Bitmap Peugeot405_White {
             get {
                 object obj = ResourceManager.GetObject("Peugeot405_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -643,7 +643,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Peugeot405_Yellow {
+        public static System.Drawing.Bitmap Peugeot405_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Peugeot405_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -653,7 +653,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PeugeotPars_Black {
+        public static System.Drawing.Bitmap PeugeotPars_Black {
             get {
                 object obj = ResourceManager.GetObject("PeugeotPars_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -663,7 +663,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PeugeotPars_Blue {
+        public static System.Drawing.Bitmap PeugeotPars_Blue {
             get {
                 object obj = ResourceManager.GetObject("PeugeotPars_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -673,7 +673,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PeugeotPars_Gray {
+        public static System.Drawing.Bitmap PeugeotPars_Gray {
             get {
                 object obj = ResourceManager.GetObject("PeugeotPars_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -683,7 +683,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PeugeotPars_Green {
+        public static System.Drawing.Bitmap PeugeotPars_Green {
             get {
                 object obj = ResourceManager.GetObject("PeugeotPars_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -693,7 +693,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PeugeotPars_Red {
+        public static System.Drawing.Bitmap PeugeotPars_Red {
             get {
                 object obj = ResourceManager.GetObject("PeugeotPars_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -703,7 +703,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PeugeotPars_White {
+        public static System.Drawing.Bitmap PeugeotPars_White {
             get {
                 object obj = ResourceManager.GetObject("PeugeotPars_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -713,7 +713,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PeugeotPars_Yellow {
+        public static System.Drawing.Bitmap PeugeotPars_Yellow {
             get {
                 object obj = ResourceManager.GetObject("PeugeotPars_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -723,7 +723,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pride_Black {
+        public static System.Drawing.Bitmap Pride_Black {
             get {
                 object obj = ResourceManager.GetObject("Pride_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -733,7 +733,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pride_Blue {
+        public static System.Drawing.Bitmap Pride_Blue {
             get {
                 object obj = ResourceManager.GetObject("Pride_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -743,7 +743,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pride_Gray {
+        public static System.Drawing.Bitmap Pride_Gray {
             get {
                 object obj = ResourceManager.GetObject("Pride_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -753,7 +753,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pride_Green {
+        public static System.Drawing.Bitmap Pride_Green {
             get {
                 object obj = ResourceManager.GetObject("Pride_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -763,7 +763,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pride_Red {
+        public static System.Drawing.Bitmap Pride_Red {
             get {
                 object obj = ResourceManager.GetObject("Pride_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -773,7 +773,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pride_White {
+        public static System.Drawing.Bitmap Pride_White {
             get {
                 object obj = ResourceManager.GetObject("Pride_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -783,7 +783,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pride_Yellow {
+        public static System.Drawing.Bitmap Pride_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Pride_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -793,7 +793,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Runna_Black {
+        public static System.Drawing.Bitmap Runna_Black {
             get {
                 object obj = ResourceManager.GetObject("Runna_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -803,7 +803,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Runna_Blue {
+        public static System.Drawing.Bitmap Runna_Blue {
             get {
                 object obj = ResourceManager.GetObject("Runna_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -813,7 +813,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Runna_Gray {
+        public static System.Drawing.Bitmap Runna_Gray {
             get {
                 object obj = ResourceManager.GetObject("Runna_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -823,7 +823,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Runna_Green {
+        public static System.Drawing.Bitmap Runna_Green {
             get {
                 object obj = ResourceManager.GetObject("Runna_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -833,7 +833,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Runna_Red {
+        public static System.Drawing.Bitmap Runna_Red {
             get {
                 object obj = ResourceManager.GetObject("Runna_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -843,7 +843,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Runna_White {
+        public static System.Drawing.Bitmap Runna_White {
             get {
                 object obj = ResourceManager.GetObject("Runna_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -853,7 +853,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Runna_Yellow {
+        public static System.Drawing.Bitmap Runna_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Runna_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -863,7 +863,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Samand_Black {
+        public static System.Drawing.Bitmap Samand_Black {
             get {
                 object obj = ResourceManager.GetObject("Samand_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -873,7 +873,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Samand_Blue {
+        public static System.Drawing.Bitmap Samand_Blue {
             get {
                 object obj = ResourceManager.GetObject("Samand_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -883,7 +883,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Samand_Gray {
+        public static System.Drawing.Bitmap Samand_Gray {
             get {
                 object obj = ResourceManager.GetObject("Samand_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -893,7 +893,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Samand_Green {
+        public static System.Drawing.Bitmap Samand_Green {
             get {
                 object obj = ResourceManager.GetObject("Samand_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -903,7 +903,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Samand_Red {
+        public static System.Drawing.Bitmap Samand_Red {
             get {
                 object obj = ResourceManager.GetObject("Samand_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -913,7 +913,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Samand_White {
+        public static System.Drawing.Bitmap Samand_White {
             get {
                 object obj = ResourceManager.GetObject("Samand_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -923,7 +923,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Samand_Yellow {
+        public static System.Drawing.Bitmap Samand_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Samand_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -933,7 +933,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Service_out {
+        public static System.Drawing.Bitmap Service_out {
             get {
                 object obj = ResourceManager.GetObject("Service_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -943,7 +943,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sign_Up {
+        public static System.Drawing.Bitmap Sign_Up {
             get {
                 object obj = ResourceManager.GetObject("Sign Up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -953,7 +953,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap signdelete_delete_delete_4599 {
+        public static System.Drawing.Bitmap signdelete_delete_delete_4599 {
             get {
                 object obj = ResourceManager.GetObject("signdelete_delete_delete_4599", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -963,7 +963,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tondar90_Black {
+        public static System.Drawing.Bitmap Tondar90_Black {
             get {
                 object obj = ResourceManager.GetObject("Tondar90_Black", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -973,7 +973,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tondar90_Blue {
+        public static System.Drawing.Bitmap Tondar90_Blue {
             get {
                 object obj = ResourceManager.GetObject("Tondar90_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -983,7 +983,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tondar90_Gray {
+        public static System.Drawing.Bitmap Tondar90_Gray {
             get {
                 object obj = ResourceManager.GetObject("Tondar90_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -993,7 +993,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tondar90_Green {
+        public static System.Drawing.Bitmap Tondar90_Green {
             get {
                 object obj = ResourceManager.GetObject("Tondar90_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1003,7 +1003,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tondar90_Red {
+        public static System.Drawing.Bitmap Tondar90_Red {
             get {
                 object obj = ResourceManager.GetObject("Tondar90_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1013,7 +1013,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tondar90_White {
+        public static System.Drawing.Bitmap Tondar90_White {
             get {
                 object obj = ResourceManager.GetObject("Tondar90_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1023,7 +1023,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tondar90_Yellow {
+        public static System.Drawing.Bitmap Tondar90_Yellow {
             get {
                 object obj = ResourceManager.GetObject("Tondar90_Yellow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1033,7 +1033,7 @@ namespace WND.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Unknown_Car {
+        public static System.Drawing.Bitmap Unknown_Car {
             get {
                 object obj = ResourceManager.GetObject("Unknown_Car", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

@@ -199,6 +199,7 @@ namespace WND.Forms
                     MessageBoxRTL.Info(".سرویس با موفقیت حذف شد", string.Empty);
                     ClearForm();
                     UpdateGrid();
+                    BizObject = null;
                 }
                 catch
                 {
@@ -368,7 +369,7 @@ namespace WND.Forms
                                 BizObject.Customer = new Models.Customer()
                                 {
                                     FullName = txtCustomerName.Text,
-                                    Mobile = txtCustomerPhone.Text,
+                                    Mobile = txtCustomerPhone.Text.PersianToEnglish(),
                                     Address = "ثبت نشده",
                                     Role = Models.Roles.Customer
                                 };

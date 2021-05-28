@@ -58,26 +58,27 @@ namespace WND.Forms
                 }
 
                 txtOrigin.DataBindings.Clear();
-                txtOrigin.DataBindings.Add("Text", bizObject, nameof(Models.Path.Origin));
+                txtOrigin.DataBindings.Add("Text", BizObject, nameof(Models.Path.Origin));
 
                 lblOrigin.DataBindings.Clear();
                 lblOrigin.DataBindings.Add("Text", txtOrigin, "Text");
 
                 txtDestination.DataBindings.Clear();
-                txtDestination.DataBindings.Add("Text", bizObject, nameof(Models.Path.Destination));
+                txtDestination.DataBindings.Add("Text", BizObject, nameof(Models.Path.Destination));
 
                 lblDestination.DataBindings.Clear();
                 lblDestination.DataBindings.Add("Text", txtDestination, "Text");
 
-                txtCost.DataBindings.Clear();
-                txtCost.DataBindings.Add("Text", bizObject, nameof(Models.Path.Cost));
+                if(!string.IsNullOrEmpty(txtCost.Text) && int.Parse(txtCost.Text)>0)
+                {
+                    lblCost.DataBindings.Clear();
+                    lblCost.DataBindings.Add("Text", txtCost, "Text");
+                }
 
-                lblCost.DataBindings.Clear();
-                lblCost.DataBindings.Add("Text", txtCost, "Text");
-
-                
-
-
+                //if(txtCost.Text != "0" && !string.IsNullOrEmpty(txtCost.Text))
+                //{
+                //    BizObject.Cost = int.Parse(txtCost.Text);
+                //}
             }
             get
             {
@@ -104,6 +105,7 @@ namespace WND.Forms
                     MessageBoxRTL.Error("حذف مسیر با خطا روبرو شد", string.Empty);
                 }
             }
+            BizObject = null;
         }
 
         public frmPaths()
@@ -172,25 +174,51 @@ namespace WND.Forms
 
         }
 
+        void UpdatePath()
+        {
+            Models.Path Path = TaxiDbContext.Instance.Paths.Find(BizObject.Id);
+            Path.IsDeleted = false;
+            Path.Origin = BizObject.Origin;
+            Path.Destination = BizObject.Destination;
+            Path.Cost = BizObject.Cost;
+            TaxiDbContext.Instance.SaveChanges();
+            BizObject = null;
+            MessageBoxRTL.Info(".مسیر با موفقیت ویرایش شد", string.Empty);
+            UpdateGrid();
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
+            int cost = 0;
+            int.TryParse(txtCost.Text.PersianToEnglish(), out cost);
+            if(BizObject !=null && !BizObject.IsDeleted) { BizObject.Cost = cost; }
             if (BizObject!= null && Validation.Validate(BizObject))
             {
                 try
                 {
+                    
                     if (BizObject.Id != 0)
                     {
-                        Models.Path Path = TaxiDbContext.Instance.Paths.Find(BizObject.Id);
-                        Path.Origin = BizObject.Origin;
-                        Path.Destination = BizObject.Destination;
-                        Path.Cost = BizObject.Cost;
-                        TaxiDbContext.Instance.SaveChanges();
-                        BizObject = null;
-                        MessageBoxRTL.Info(".مسیر با موفقیت ویرایش شد", string.Empty);
-                        UpdateGrid();
+                        UpdatePath();
                     }
                     else if (BizObject.Id == 0)
                     {
+                        var CheckExistingPath = TaxiDbContext.Instance.Paths
+                            .SingleOrDefault(p => p.Origin == BizObject.Origin && p.Destination == BizObject.Destination);
+                        if (CheckExistingPath != null)
+                        {
+                            DialogResult dr = MessageBoxRTL.Ask("این مسیر قبلا ثبت شده است. آیا تمایل به ویرایش آن دارید؟", string.Empty);
+                            if (dr == DialogResult.OK)
+                            {
+                                BizObject = null;
+                                BizObject = CheckExistingPath;
+                                BizObject.Cost = cost;
+                                UpdatePath();
+                                return;
+                            }
+                            else { return; }
+                        }
+                        BizObject.Cost = cost;
                         TaxiDbContext.Instance.Paths.Add(BizObject);
                         TaxiDbContext.Instance.SaveChanges();
                         MessageBoxRTL.Info(".مسیر با موفقیت افزوده شد", string.Empty);
@@ -234,12 +262,18 @@ namespace WND.Forms
             {
                 //BizObject = (Models.Driver)DriverToEdit.Clone();
                 BizObject = (Models.Path)PathToEdit.Clone();
+                txtCost.Text = BizObject.Cost.ToString();
             }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             BizObject = null;
+        }
+
+        private void txtCost_TextChanged(object sender, EventArgs e)
+        {
+            lblCost.Text = txtCost.Text;
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Models
         public string LicensePlate4 { get; set; }
 
 
-        [RegularExpression("^[تجدسصطقعلمنوهیتجدسصطقعلمنوهی]{1}$", ErrorMessage ="حرف پلاک از محدوده حروف مجاز خارج است")]
+        [RegularExpression("^[تجدسصطقبژلمنوهیتجدسصطقبژلمنوهی]{1}$", ErrorMessage ="حرف پلاک از محدوده حروف مجاز خارج است")]
         public string LicensePlate2 { get; set; }
 
         [DisplayName("رنگ")]

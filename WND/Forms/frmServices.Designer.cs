@@ -136,6 +136,7 @@ namespace WND.Forms
             this.txtCustomerName.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerName.Location = new System.Drawing.Point(312, 567);
             this.txtCustomerName.MaxLength = 75;
+            this.txtCustomerName.Multiline = true;
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(163, 24);
             this.txtCustomerName.TabIndex = 60;
@@ -176,19 +177,20 @@ namespace WND.Forms
             // txtCustomerPhone
             // 
             this.txtCustomerPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+            this.txtCustomerPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCustomerPhone.Font = new System.Drawing.Font("IRANYekan", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCustomerPhone.Location = new System.Drawing.Point(312, 622);
             this.txtCustomerPhone.MaxLength = 11;
             this.txtCustomerPhone.Name = "txtCustomerPhone";
             this.txtCustomerPhone.ReadOnly = true;
-            this.txtCustomerPhone.Size = new System.Drawing.Size(163, 31);
+            this.txtCustomerPhone.Size = new System.Drawing.Size(163, 24);
             this.txtCustomerPhone.TabIndex = 63;
             this.txtCustomerPhone.Text = "09";
             // 
             // lblDate
             // 
             this.lblDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            this.lblDate.Font = new System.Drawing.Font("IRANYekan", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblDate.Font = new System.Drawing.Font("IRANYekan", 6F);
             this.lblDate.Location = new System.Drawing.Point(312, 674);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(90, 28);

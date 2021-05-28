@@ -363,5 +363,24 @@ namespace BaseFormLibrary
         {
 
         }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                this.OnDispose();
+            }
+            base.Dispose(disposing);
+            System.GC.Collect();
+            System.GC.WaitForPendingFinalizers();
+        }
+
+        /// <summary>
+        /// اینو گذاشتم فقط واسه اینکه یه زمانی خواستید اوراید کنید
+        /// </summary>
+        protected virtual void OnDispose()
+        {
+
+        }
     }
 }
