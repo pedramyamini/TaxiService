@@ -18,6 +18,8 @@ namespace WND.Forms
 {
     public partial class frmCustomers : BaseForm
     {
+        bool Searching = false;
+
         List<Models.Service> ActiveServices = new List<Models.Service>();
         int CurrentActiveService = 0;
 
@@ -326,6 +328,32 @@ namespace WND.Forms
                 //{
                 //    CurrentActiveService++;
                 //}
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSearch.Text) && !string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                Searching = !Searching;
+                if (Searching)
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.cancel;
+
+                    var result = TaxiDbContext.Instance.Users.OfType<Customer>()
+                    .Where(c => !c.IsDeleted).Where(
+                    c => c.FullName.Contains(txtSearch.Text)
+                    || c.Mobile.Contains(txtSearch.Text)
+                    || c.Address.Contains(txtSearch.Text))
+                    .ToList();
+
+                    gridCustomers.DataSource = result;
+                }
+                else
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.search;
+                    UpdateGrid();
+                }
             }
         }
     }

@@ -439,8 +439,15 @@ namespace WND
 
         private void btnSecretaryThumbnail_Click(object sender, EventArgs e)
         {
-            this.CloseWithoutAsk();
-            new frmSecretaries();
+            if(Session.CurrentUser.Role == Models.Roles.Admin)
+            {
+                this.CloseWithoutAsk();
+                new frmSecretaries();
+            }
+            else
+            {
+                MessageBoxRTL.Info("لطفا درخواست خود را از طریق مدیریت تاکسی تلفنی پیگیری نمایید.", string.Empty);
+            }
         }
     }
 }

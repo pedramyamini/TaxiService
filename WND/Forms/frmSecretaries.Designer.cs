@@ -34,9 +34,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSecretaries));
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn9 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn10 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition5 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn5 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn6 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -101,8 +101,8 @@ namespace WND.Forms
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.BackgroundImage = global::WND.Properties.Resources.search;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSearch.FlatAppearance.BorderSize = 0;
@@ -110,11 +110,12 @@ namespace WND.Forms
             this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("IRANYekan", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.btnSearch.Location = new System.Drawing.Point(733, 191);
+            this.btnSearch.Location = new System.Drawing.Point(727, 191);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(36, 23);
             this.btnSearch.TabIndex = 41;
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -241,23 +242,23 @@ namespace WND.Forms
             this.gridSecretaries.MasterTemplate.AllowDragToGroup = false;
             this.gridSecretaries.MasterTemplate.AllowEditRow = false;
             this.gridSecretaries.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewCommandColumn9.AllowHide = false;
-            gridViewCommandColumn9.HeaderText = "ویرایش";
-            gridViewCommandColumn9.Image = global::WND.Properties.Resources.Icon_feather_edit;
-            gridViewCommandColumn9.MaxWidth = 60;
-            gridViewCommandColumn9.Name = "GridEditBtn";
-            gridViewCommandColumn9.Width = 60;
-            gridViewCommandColumn10.AllowHide = false;
-            gridViewCommandColumn10.HeaderText = "حذف";
-            gridViewCommandColumn10.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
-            gridViewCommandColumn10.MaxWidth = 50;
-            gridViewCommandColumn10.Name = "GridDeleteBtn";
+            gridViewCommandColumn5.AllowHide = false;
+            gridViewCommandColumn5.HeaderText = "ویرایش";
+            gridViewCommandColumn5.Image = global::WND.Properties.Resources.Icon_feather_edit;
+            gridViewCommandColumn5.MaxWidth = 60;
+            gridViewCommandColumn5.Name = "GridEditBtn";
+            gridViewCommandColumn5.Width = 60;
+            gridViewCommandColumn6.AllowHide = false;
+            gridViewCommandColumn6.HeaderText = "حذف";
+            gridViewCommandColumn6.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
+            gridViewCommandColumn6.MaxWidth = 50;
+            gridViewCommandColumn6.Name = "GridDeleteBtn";
             this.gridSecretaries.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewCommandColumn9,
-            gridViewCommandColumn10});
+            gridViewCommandColumn5,
+            gridViewCommandColumn6});
             this.gridSecretaries.MasterTemplate.EnableGrouping = false;
             this.gridSecretaries.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
-            this.gridSecretaries.MasterTemplate.ViewDefinition = tableViewDefinition5;
+            this.gridSecretaries.MasterTemplate.ViewDefinition = tableViewDefinition3;
             this.gridSecretaries.Name = "gridSecretaries";
             this.gridSecretaries.ReadOnly = true;
             // 

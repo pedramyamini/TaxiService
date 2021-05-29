@@ -21,6 +21,7 @@ namespace WND.Forms
 {
     public partial class frmDrivers : BaseForm
     {
+        bool Searching = false;
         public Bitmap CarImage
         {
             get; set;
@@ -387,6 +388,33 @@ namespace WND.Forms
         private void comboboxCarColor_TextUpdate(object sender, EventArgs e)
         {
             UpdateCarPhote();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSearch.Text) && !string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                Searching = !Searching;
+                if (Searching)
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.cancel;
+
+                    var result = TaxiDbContext.Instance.Users.OfType<Driver>().Include(d=>d.Car)
+                    .Where(d => !d.IsDeleted).Where(
+                    d => d.FullName.Contains(txtSearch.Text)
+                    || d.Mobile.Contains(txtSearch.Text)
+                    || d.Car.Model == txtSearch.Text
+                    || d.Car.Color == txtSearch.Text)
+                    .ToList();
+
+                    gridDrivers.DataSource = result;
+                }
+                else
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.search;
+                    UpdateGrid();
+                }
+            }
         }
     }
 }

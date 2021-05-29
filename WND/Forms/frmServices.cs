@@ -17,6 +17,8 @@ namespace WND.Forms
 {
     public partial class frmServices : BaseForm
     {
+        bool Searching = false;
+
         private TaxiDbContext db = TaxiDbContext.Instance;
         Models.Service ServiceToEdit;
         public frmServices()
@@ -259,6 +261,18 @@ namespace WND.Forms
                             Path = s.ServicePaths.First().Path.OriginDestination
                         }
                         ));
+
+                if(Searching)
+                {
+                    VMServices = VMServices
+                    .Where(
+                    s => s.DriverFullName.Contains(txtSearch.Text)
+                    || s.DriverMobile.Contains(txtSearch.Text)
+                    || s.CustomerFullName.Contains(txtSearch.Text)
+                    || s.CustomerMobile.Contains(txtSearch.Text)
+                    || s.Path.Contains(txtSearch.Text))
+                    .ToList();
+                }
 
                 gridServices.DataSource = VMServices.OrderByDescending(s => s.DateTime);
             }
@@ -582,6 +596,24 @@ namespace WND.Forms
             lblLicencePlate2.Text = string.Empty;
             lblLicencePlate3.Text = string.Empty;
             lblLicencePlate4.Text = string.Empty;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSearch.Text) && !string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                Searching = !Searching;
+                if (Searching)
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.cancel;
+                    UpdateGrid();
+                }
+                else
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.search;
+                    UpdateGrid();
+                }
+            }
         }
     }
 }

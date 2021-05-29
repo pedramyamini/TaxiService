@@ -18,6 +18,7 @@ namespace WND.Forms
 {
     public partial class frmSecretaries : BaseForm
     {
+        bool Searching = false;
         public frmSecretaries()
         {
             InitializeComponent();
@@ -167,7 +168,13 @@ namespace WND.Forms
 
             Secretary.FullName = BizObject.FullName;
             Secretary.Mobile = BizObject.Mobile;
-            Secretary.Password = EasyHash.Hash(BizObject.Password);
+
+            DialogResult dr=MessageBoxRTL.Ask("آیا مایل به ویرایش کلمه عبور هستید؟", string.Empty);
+            if(dr==DialogResult.OK)
+            {
+                Secretary.Password = EasyHash.Hash(BizObject.Password);
+            }
+            
             Secretary.Role = Roles.Secretary;
             Secretary.SecurityQuestion = string.Empty;
             Secretary.SecurityAnswer = string.Empty;
@@ -321,6 +328,28 @@ namespace WND.Forms
             new frmDashboard();
         }
 
-        
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSearch.Text) && !string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                Searching = !Searching;
+                if (Searching)
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.cancel;
+
+                    var result = TaxiDbContext.Instance.AuthenticatedUsers
+                    .Where(s => !s.IsDeleted && s.Role == Roles.Secretary).Where(
+                    s => s.FullName.Contains(txtSearch.Text)
+                    || s.Mobile.Contains(txtSearch.Text)).ToList();
+
+                    gridSecretaries.DataSource = result;
+                }
+                else
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.search;
+                    UpdateGrid();
+                }
+            }
+        }
     }
 }

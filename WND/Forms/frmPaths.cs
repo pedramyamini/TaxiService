@@ -16,6 +16,7 @@ namespace WND.Forms
 {
     public partial class frmPaths : BaseForm
     {
+        bool Searching=false;
 
         private Models.Path initialBizObject = new Models.Path()
         {
@@ -274,6 +275,30 @@ namespace WND.Forms
         private void txtCost_TextChanged(object sender, EventArgs e)
         {
             lblCost.Text = txtCost.Text;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrEmpty(txtSearch.Text) && !string.IsNullOrWhiteSpace(txtSearch.Text))
+            {
+                Searching = !Searching;
+                if (Searching)
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.cancel;
+
+                    var result = TaxiDbContext.Instance.Paths
+                    .Where(p => !p.IsDeleted).Where(
+                    p => p.Origin.Contains(txtSearch.Text)
+                    || p.Destination.Contains(txtSearch.Text)).ToList();
+
+                    gridPaths.DataSource = result;
+                }
+                else
+                {
+                    btnSearch.BackgroundImage = Properties.Resources.search;
+                    UpdateGrid();
+                }    
+            }
         }
     }
 }
