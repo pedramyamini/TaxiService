@@ -31,9 +31,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDrivers));
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn5 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn6 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn17 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn18 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition9 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -53,17 +53,47 @@ namespace WND.Forms
             this.CarPhoto = new System.Windows.Forms.PictureBox();
             this.gridDrivers = new Utility.RadGridViewCustom();
             this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CarPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDrivers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDrivers.MasterTemplate)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnDrivers
+            // 
+            this.btnDrivers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.BorderSize = 0;
+            this.btnDrivers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnServices
+            // 
+            this.btnServices.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.BorderSize = 0;
+            this.btnServices.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnPaths
+            // 
+            this.btnPaths.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.BorderSize = 0;
+            this.btnPaths.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
             // 
             // pictureBox2
             // 
@@ -100,7 +130,7 @@ namespace WND.Forms
             this.btnSearch.Location = new System.Drawing.Point(957, 152);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(38, 25);
-            this.btnSearch.TabIndex = 80;
+            this.btnSearch.TabIndex = 7;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -115,7 +145,7 @@ namespace WND.Forms
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(379, 25);
-            this.txtSearch.TabIndex = 81;
+            this.txtSearch.TabIndex = 6;
             // 
             // lblDateJoined
             // 
@@ -136,7 +166,7 @@ namespace WND.Forms
             this.txtSharePercent.Multiline = true;
             this.txtSharePercent.Name = "txtSharePercent";
             this.txtSharePercent.Size = new System.Drawing.Size(27, 28);
-            this.txtSharePercent.TabIndex = 83;
+            this.txtSharePercent.TabIndex = 11;
             // 
             // txtDriverName
             // 
@@ -149,7 +179,7 @@ namespace WND.Forms
             this.txtDriverName.Multiline = true;
             this.txtDriverName.Name = "txtDriverName";
             this.txtDriverName.Size = new System.Drawing.Size(163, 28);
-            this.txtDriverName.TabIndex = 84;
+            this.txtDriverName.TabIndex = 9;
             // 
             // comboboxCarModel
             // 
@@ -164,7 +194,7 @@ namespace WND.Forms
             this.comboboxCarModel.Name = "comboboxCarModel";
             this.comboboxCarModel.Size = new System.Drawing.Size(165, 30);
             this.comboboxCarModel.Sorted = true;
-            this.comboboxCarModel.TabIndex = 86;
+            this.comboboxCarModel.TabIndex = 12;
             this.comboboxCarModel.SelectedIndexChanged += new System.EventHandler(this.comboboxCarModel_SelectedIndexChanged);
             this.comboboxCarModel.TextUpdate += new System.EventHandler(this.comboboxCarModel_TextUpdate);
             this.comboboxCarModel.TextChanged += new System.EventHandler(this.comboboxCarModel_TextChanged);
@@ -182,7 +212,7 @@ namespace WND.Forms
             this.comboboxCarColor.Name = "comboboxCarColor";
             this.comboboxCarColor.Size = new System.Drawing.Size(165, 30);
             this.comboboxCarColor.Sorted = true;
-            this.comboboxCarColor.TabIndex = 87;
+            this.comboboxCarColor.TabIndex = 13;
             this.comboboxCarColor.SelectedIndexChanged += new System.EventHandler(this.comboboxCarColor_SelectedIndexChanged);
             this.comboboxCarColor.TextUpdate += new System.EventHandler(this.comboboxCarColor_TextUpdate);
             this.comboboxCarColor.TextChanged += new System.EventHandler(this.comboboxCarColor_TextChanged);
@@ -198,7 +228,7 @@ namespace WND.Forms
             this.txtDriverPhone.Multiline = true;
             this.txtDriverPhone.Name = "txtDriverPhone";
             this.txtDriverPhone.Size = new System.Drawing.Size(163, 28);
-            this.txtDriverPhone.TabIndex = 88;
+            this.txtDriverPhone.TabIndex = 10;
             // 
             // txtLicencePlate4
             // 
@@ -211,7 +241,7 @@ namespace WND.Forms
             this.txtLicencePlate4.Name = "txtLicencePlate4";
             this.txtLicencePlate4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtLicencePlate4.Size = new System.Drawing.Size(27, 27);
-            this.txtLicencePlate4.TabIndex = 89;
+            this.txtLicencePlate4.TabIndex = 17;
             this.txtLicencePlate4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtLicencePlate1
@@ -225,7 +255,7 @@ namespace WND.Forms
             this.txtLicencePlate1.Name = "txtLicencePlate1";
             this.txtLicencePlate1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtLicencePlate1.Size = new System.Drawing.Size(27, 27);
-            this.txtLicencePlate1.TabIndex = 90;
+            this.txtLicencePlate1.TabIndex = 14;
             this.txtLicencePlate1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtLicencePlate3
@@ -239,7 +269,7 @@ namespace WND.Forms
             this.txtLicencePlate3.Name = "txtLicencePlate3";
             this.txtLicencePlate3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtLicencePlate3.Size = new System.Drawing.Size(36, 27);
-            this.txtLicencePlate3.TabIndex = 91;
+            this.txtLicencePlate3.TabIndex = 16;
             this.txtLicencePlate3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtLicencePlate2
@@ -254,7 +284,7 @@ namespace WND.Forms
             this.txtLicencePlate2.Name = "txtLicencePlate2";
             this.txtLicencePlate2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtLicencePlate2.Size = new System.Drawing.Size(24, 27);
-            this.txtLicencePlate2.TabIndex = 92;
+            this.txtLicencePlate2.TabIndex = 15;
             this.txtLicencePlate2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSave
@@ -272,7 +302,7 @@ namespace WND.Forms
             this.btnSave.Location = new System.Drawing.Point(997, 666);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(272, 30);
-            this.btnSave.TabIndex = 94;
+            this.btnSave.TabIndex = 18;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -291,7 +321,7 @@ namespace WND.Forms
             this.btnCancel.Location = new System.Drawing.Point(844, 665);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(128, 30);
-            this.btnCancel.TabIndex = 93;
+            this.btnCancel.TabIndex = 19;
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -319,23 +349,23 @@ namespace WND.Forms
             this.gridDrivers.MasterTemplate.AllowDragToGroup = false;
             this.gridDrivers.MasterTemplate.AllowEditRow = false;
             this.gridDrivers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewCommandColumn5.AllowHide = false;
-            gridViewCommandColumn5.HeaderText = "ویرایش";
-            gridViewCommandColumn5.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn5.Image")));
-            gridViewCommandColumn5.MaxWidth = 60;
-            gridViewCommandColumn5.Name = "GridEditBtn";
-            gridViewCommandColumn5.Width = 60;
-            gridViewCommandColumn6.AllowHide = false;
-            gridViewCommandColumn6.HeaderText = "حذف";
-            gridViewCommandColumn6.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn6.Image")));
-            gridViewCommandColumn6.MaxWidth = 50;
-            gridViewCommandColumn6.Name = "GridDeleteBtn";
+            gridViewCommandColumn17.AllowHide = false;
+            gridViewCommandColumn17.HeaderText = "ویرایش";
+            gridViewCommandColumn17.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn17.Image")));
+            gridViewCommandColumn17.MaxWidth = 60;
+            gridViewCommandColumn17.Name = "GridEditBtn";
+            gridViewCommandColumn17.Width = 60;
+            gridViewCommandColumn18.AllowHide = false;
+            gridViewCommandColumn18.HeaderText = "حذف";
+            gridViewCommandColumn18.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn18.Image")));
+            gridViewCommandColumn18.MaxWidth = 50;
+            gridViewCommandColumn18.Name = "GridDeleteBtn";
             this.gridDrivers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewCommandColumn5,
-            gridViewCommandColumn6});
+            gridViewCommandColumn17,
+            gridViewCommandColumn18});
             this.gridDrivers.MasterTemplate.EnableGrouping = false;
             this.gridDrivers.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
-            this.gridDrivers.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.gridDrivers.MasterTemplate.ViewDefinition = tableViewDefinition9;
             this.gridDrivers.Name = "gridDrivers";
             this.gridDrivers.ReadOnly = true;
             // 
@@ -344,11 +374,12 @@ namespace WND.Forms
             this.gridDrivers.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
             this.gridDrivers.RootElement.ControlBounds = new System.Drawing.Rectangle(209, 188, 240, 150);
             this.gridDrivers.Size = new System.Drawing.Size(1102, 271);
-            this.gridDrivers.TabIndex = 96;
+            this.gridDrivers.TabIndex = 8;
             this.gridDrivers.ThemeName = "Material";
             // 
             // frmDrivers
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
@@ -397,11 +428,6 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.btnSave, 0);
             this.Controls.SetChildIndex(this.CarPhoto, 0);
             this.Controls.SetChildIndex(this.gridDrivers, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CarPhoto)).EndInit();

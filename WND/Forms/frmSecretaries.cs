@@ -227,6 +227,7 @@ namespace WND.Forms
                         }
                         BizObject.Role = Roles.Secretary;
                         BizObject.TaxiName = TaxiDbContext.Instance.AuthenticatedUsers.Where(u => u.Role == Roles.Admin).First().TaxiName;
+                        BizObject.Password = EasyHash.Hash(txtSecretaryPassword.Text);
                         TaxiDbContext.Instance.Users.Add(BizObject);
                         TaxiDbContext.Instance.SaveChanges();
                         MessageBoxRTL.Info(".منشی با موفقیت افزوده شد", string.Empty);

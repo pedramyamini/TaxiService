@@ -34,9 +34,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSecretaries));
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn5 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn6 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn7 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn8 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -51,11 +51,6 @@ namespace WND.Forms
             this.txtSecretaryPassword = new Utility.SizableTextBox();
             this.gridSecretaries = new Utility.RadGridViewCustom();
             this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -65,7 +60,39 @@ namespace WND.Forms
             // 
             // btnDashboard
             // 
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click_1);
+            // 
+            // btnDrivers
+            // 
+            this.btnDrivers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.BorderSize = 0;
+            this.btnDrivers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnServices
+            // 
+            this.btnServices.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.BorderSize = 0;
+            this.btnServices.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnPaths
+            // 
+            this.btnPaths.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.BorderSize = 0;
+            this.btnPaths.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
             // 
             // pictureBox3
             // 
@@ -113,7 +140,7 @@ namespace WND.Forms
             this.btnSearch.Location = new System.Drawing.Point(727, 191);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(36, 23);
-            this.btnSearch.TabIndex = 41;
+            this.btnSearch.TabIndex = 7;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -128,7 +155,7 @@ namespace WND.Forms
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(234, 24);
-            this.txtSearch.TabIndex = 46;
+            this.txtSearch.TabIndex = 6;
             // 
             // btnCancel
             // 
@@ -145,7 +172,7 @@ namespace WND.Forms
             this.btnCancel.Location = new System.Drawing.Point(1065, 611);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(71, 35);
-            this.btnCancel.TabIndex = 58;
+            this.btnCancel.TabIndex = 14;
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -164,7 +191,7 @@ namespace WND.Forms
             this.btnSave.Location = new System.Drawing.Point(1065, 528);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(71, 79);
-            this.btnSave.TabIndex = 59;
+            this.btnSave.TabIndex = 13;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -179,7 +206,7 @@ namespace WND.Forms
             this.txtSecretaryPhone.Multiline = true;
             this.txtSecretaryPhone.Name = "txtSecretaryPhone";
             this.txtSecretaryPhone.Size = new System.Drawing.Size(80, 28);
-            this.txtSecretaryPhone.TabIndex = 89;
+            this.txtSecretaryPhone.TabIndex = 10;
             // 
             // lblDateJoined
             // 
@@ -201,7 +228,7 @@ namespace WND.Forms
             this.txtSecretaryName.Multiline = true;
             this.txtSecretaryName.Name = "txtSecretaryName";
             this.txtSecretaryName.Size = new System.Drawing.Size(214, 28);
-            this.txtSecretaryName.TabIndex = 91;
+            this.txtSecretaryName.TabIndex = 9;
             // 
             // txtSecretaryUsername
             // 
@@ -214,7 +241,7 @@ namespace WND.Forms
             this.txtSecretaryUsername.Multiline = true;
             this.txtSecretaryUsername.Name = "txtSecretaryUsername";
             this.txtSecretaryUsername.Size = new System.Drawing.Size(107, 28);
-            this.txtSecretaryUsername.TabIndex = 92;
+            this.txtSecretaryUsername.TabIndex = 11;
             // 
             // txtSecretaryPassword
             // 
@@ -227,7 +254,7 @@ namespace WND.Forms
             this.txtSecretaryPassword.Multiline = true;
             this.txtSecretaryPassword.Name = "txtSecretaryPassword";
             this.txtSecretaryPassword.Size = new System.Drawing.Size(107, 28);
-            this.txtSecretaryPassword.TabIndex = 93;
+            this.txtSecretaryPassword.TabIndex = 12;
             // 
             // gridSecretaries
             // 
@@ -242,23 +269,23 @@ namespace WND.Forms
             this.gridSecretaries.MasterTemplate.AllowDragToGroup = false;
             this.gridSecretaries.MasterTemplate.AllowEditRow = false;
             this.gridSecretaries.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewCommandColumn5.AllowHide = false;
-            gridViewCommandColumn5.HeaderText = "ویرایش";
-            gridViewCommandColumn5.Image = global::WND.Properties.Resources.Icon_feather_edit;
-            gridViewCommandColumn5.MaxWidth = 60;
-            gridViewCommandColumn5.Name = "GridEditBtn";
-            gridViewCommandColumn5.Width = 60;
-            gridViewCommandColumn6.AllowHide = false;
-            gridViewCommandColumn6.HeaderText = "حذف";
-            gridViewCommandColumn6.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
-            gridViewCommandColumn6.MaxWidth = 50;
-            gridViewCommandColumn6.Name = "GridDeleteBtn";
+            gridViewCommandColumn7.AllowHide = false;
+            gridViewCommandColumn7.HeaderText = "ویرایش";
+            gridViewCommandColumn7.Image = global::WND.Properties.Resources.Icon_feather_edit;
+            gridViewCommandColumn7.MaxWidth = 60;
+            gridViewCommandColumn7.Name = "GridEditBtn";
+            gridViewCommandColumn7.Width = 60;
+            gridViewCommandColumn8.AllowHide = false;
+            gridViewCommandColumn8.HeaderText = "حذف";
+            gridViewCommandColumn8.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
+            gridViewCommandColumn8.MaxWidth = 50;
+            gridViewCommandColumn8.Name = "GridDeleteBtn";
             this.gridSecretaries.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewCommandColumn5,
-            gridViewCommandColumn6});
+            gridViewCommandColumn7,
+            gridViewCommandColumn8});
             this.gridSecretaries.MasterTemplate.EnableGrouping = false;
             this.gridSecretaries.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
-            this.gridSecretaries.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            this.gridSecretaries.MasterTemplate.ViewDefinition = tableViewDefinition4;
             this.gridSecretaries.Name = "gridSecretaries";
             this.gridSecretaries.ReadOnly = true;
             // 
@@ -266,11 +293,12 @@ namespace WND.Forms
             // 
             this.gridSecretaries.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
             this.gridSecretaries.Size = new System.Drawing.Size(599, 415);
-            this.gridSecretaries.TabIndex = 94;
+            this.gridSecretaries.TabIndex = 8;
             this.gridSecretaries.ThemeName = "Material";
             // 
             // frmSecretaries
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
@@ -309,11 +337,6 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.txtSecretaryUsername, 0);
             this.Controls.SetChildIndex(this.txtSecretaryPassword, 0);
             this.Controls.SetChildIndex(this.gridSecretaries, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

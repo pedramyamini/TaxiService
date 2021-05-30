@@ -22,15 +22,15 @@ namespace BaseFormLibrary
         private PictureBox pictureboxProfile;
         private Label lblFullName;
         private Label lblRule;
-        protected PictureBox btnDashboard;
-        protected PictureBox btnDrivers;
-        protected PictureBox btnServices;
-        protected PictureBox btnPaths;
+        protected Button btnDashboard;
+        protected Button btnDrivers;
+        protected Button btnServices;
+        protected Button btnPaths;
         private PictureBox pictureBox9;
         private PictureBox pictureBox10;
         private PictureBox pictureBox11;
         private Label lblDateTime;
-        public PictureBox btnExit;
+        public Button btnExit;
         private PictureBox pictureBox1;
         //private FormCustom _sourceForm;
 
@@ -40,6 +40,8 @@ namespace BaseFormLibrary
 
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             this.Size = new System.Drawing.Size(1386, 788);
+            this.MaximumSize = new System.Drawing.Size(1386, 788);
+            this.MinimumSize = new System.Drawing.Size(1386, 788);
             this.WindowState = FormWindowState.Maximized;
             this.RightToLeft = RightToLeft.Yes;
             this.RightToLeftLayout = true;
@@ -67,25 +69,25 @@ namespace BaseFormLibrary
         }
         void ResetMenu()
         {
-            btnDashboard.Image = Properties.Resources.Dashboard;
+            btnDashboard.BackgroundImage = Properties.Resources.Dashboard;
             btnDashboard.Width = 93;
             btnDashboard.Height = 67;
             btnDashboard.BackColor = Color.FromArgb(246, 190, 100);
             btnDashboard.Refresh();
 
-            btnDrivers.Image = Properties.Resources.Drivers;
+            btnDrivers.BackgroundImage = Properties.Resources.Drivers;
             btnDrivers.Refresh();
             btnDrivers.Width = 93;
             btnDrivers.Height = 67;
             btnDrivers.BackColor = Color.FromArgb(246, 190, 100);
 
-            btnServices.Image = Properties.Resources.Services;
+            btnServices.BackgroundImage = Properties.Resources.Services;
             btnServices.Refresh();
             btnServices.Width = 93;
             btnServices.Height = 67;
             btnServices.BackColor = Color.FromArgb(246, 190, 100);
 
-            btnPaths.Image = Properties.Resources.Paths;
+            btnPaths.BackgroundImage = Properties.Resources.Paths;
             btnPaths.Refresh();
             btnPaths.Width = 93;
             btnPaths.Height = 67;
@@ -118,21 +120,16 @@ namespace BaseFormLibrary
             this.lblFullName = new System.Windows.Forms.Label();
             this.lblRule = new System.Windows.Forms.Label();
             this.lblDateTime = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.PictureBox();
-            this.btnPaths = new System.Windows.Forms.PictureBox();
-            this.btnServices = new System.Windows.Forms.PictureBox();
-            this.btnDrivers = new System.Windows.Forms.PictureBox();
-            this.btnDashboard = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnPaths = new System.Windows.Forms.Button();
+            this.btnServices = new System.Windows.Forms.Button();
+            this.btnDrivers = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.pictureboxProfile = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -148,7 +145,7 @@ namespace BaseFormLibrary
             this.lblTaxiName.Name = "lblTaxiName";
             this.lblTaxiName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTaxiName.Size = new System.Drawing.Size(215, 35);
-            this.lblTaxiName.TabIndex = 1;
+            this.lblTaxiName.TabIndex = 1000;
             this.lblTaxiName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFullName
@@ -159,7 +156,7 @@ namespace BaseFormLibrary
             this.lblFullName.Name = "lblFullName";
             this.lblFullName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblFullName.Size = new System.Drawing.Size(94, 32);
-            this.lblFullName.TabIndex = 5;
+            this.lblFullName.TabIndex = 1002;
             this.lblFullName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblRule
@@ -170,7 +167,7 @@ namespace BaseFormLibrary
             this.lblRule.Name = "lblRule";
             this.lblRule.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblRule.Size = new System.Drawing.Size(91, 31);
-            this.lblRule.TabIndex = 6;
+            this.lblRule.TabIndex = 1003;
             this.lblRule.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDateTime
@@ -181,72 +178,104 @@ namespace BaseFormLibrary
             this.lblDateTime.Name = "lblDateTime";
             this.lblDateTime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblDateTime.Size = new System.Drawing.Size(134, 28);
-            this.lblDateTime.TabIndex = 14;
+            this.lblDateTime.TabIndex = 1001;
             this.lblDateTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.BackgroundImage = global::BaseFormLibrary.Properties.Resources.Exit;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Image = global::BaseFormLibrary.Properties.Resources.Exit;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(55)))));
             this.btnExit.Location = new System.Drawing.Point(4, 645);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(93, 67);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 15;
-            this.btnExit.TabStop = false;
+            this.btnExit.TabIndex = 5;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnPaths
             // 
             this.btnPaths.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.BackgroundImage = global::BaseFormLibrary.Properties.Resources.Paths;
+            this.btnPaths.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPaths.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPaths.Image = global::BaseFormLibrary.Properties.Resources.Paths;
+            this.btnPaths.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.BorderSize = 0;
+            this.btnPaths.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaths.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(55)))));
             this.btnPaths.Location = new System.Drawing.Point(4, 357);
+            this.btnPaths.Margin = new System.Windows.Forms.Padding(0);
             this.btnPaths.Name = "btnPaths";
             this.btnPaths.Size = new System.Drawing.Size(93, 67);
-            this.btnPaths.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnPaths.TabIndex = 10;
-            this.btnPaths.TabStop = false;
+            this.btnPaths.TabIndex = 4;
+            this.btnPaths.UseVisualStyleBackColor = false;
             this.btnPaths.Click += new System.EventHandler(this.btnPaths_Click);
             // 
             // btnServices
             // 
             this.btnServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.BackgroundImage = global::BaseFormLibrary.Properties.Resources.Services;
+            this.btnServices.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnServices.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnServices.Image = global::BaseFormLibrary.Properties.Resources.Services;
+            this.btnServices.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.BorderSize = 0;
+            this.btnServices.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(55)))));
             this.btnServices.Location = new System.Drawing.Point(4, 265);
             this.btnServices.Name = "btnServices";
             this.btnServices.Size = new System.Drawing.Size(93, 67);
-            this.btnServices.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnServices.TabIndex = 9;
-            this.btnServices.TabStop = false;
+            this.btnServices.TabIndex = 3;
+            this.btnServices.UseVisualStyleBackColor = false;
             this.btnServices.Click += new System.EventHandler(this.btnServices_Click);
             // 
             // btnDrivers
             // 
             this.btnDrivers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.BackgroundImage = global::BaseFormLibrary.Properties.Resources.Drivers;
+            this.btnDrivers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDrivers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDrivers.Image = global::BaseFormLibrary.Properties.Resources.Drivers;
+            this.btnDrivers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.BorderSize = 0;
+            this.btnDrivers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDrivers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(55)))));
             this.btnDrivers.Location = new System.Drawing.Point(4, 173);
             this.btnDrivers.Name = "btnDrivers";
             this.btnDrivers.Size = new System.Drawing.Size(93, 67);
-            this.btnDrivers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnDrivers.TabIndex = 8;
-            this.btnDrivers.TabStop = false;
+            this.btnDrivers.TabIndex = 2;
+            this.btnDrivers.UseVisualStyleBackColor = false;
             this.btnDrivers.Click += new System.EventHandler(this.btnDrivers_Click);
             // 
             // btnDashboard
             // 
             this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.BackgroundImage = global::BaseFormLibrary.Properties.Resources.Dashboard;
+            this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.Image = global::BaseFormLibrary.Properties.Resources.Dashboard;
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(55)))));
             this.btnDashboard.Location = new System.Drawing.Point(4, 81);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(93, 67);
-            this.btnDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnDashboard.TabIndex = 7;
-            this.btnDashboard.TabStop = false;
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // pictureboxProfile
@@ -301,6 +330,7 @@ namespace BaseFormLibrary
             // 
             // BaseForm
             // 
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblDateTime);
@@ -316,15 +346,13 @@ namespace BaseFormLibrary
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximumSize = new System.Drawing.Size(1386, 788);
+            this.MinimumSize = new System.Drawing.Size(1364, 766);
             this.Name = "BaseForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Load += new System.EventHandler(this.BaseForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();

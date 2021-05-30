@@ -58,18 +58,48 @@ namespace WND
             this.lblLicencePlate1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCustomersThumbnail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPathsThumbnail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServicesThumbnail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDriversThumbnail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSecretaryThumbnail)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnCustomersThumbnail)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnPathsThumbnail)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnServicesThumbnail)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnDriversThumbnail)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnSecretaryThumbnail)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnDrivers
+            // 
+            this.btnDrivers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.BorderSize = 0;
+            this.btnDrivers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnServices
+            // 
+            this.btnServices.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.BorderSize = 0;
+            this.btnServices.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnPaths
+            // 
+            this.btnPaths.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.BorderSize = 0;
+            this.btnPaths.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
             // 
             // pictureBox2
             // 
@@ -158,7 +188,7 @@ namespace WND
             this.txtCustomerName.Multiline = true;
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(163, 24);
-            this.txtCustomerName.TabIndex = 23;
+            this.txtCustomerName.TabIndex = 6;
             this.txtCustomerName.Leave += new System.EventHandler(this.txtCustomerName_Leave);
             // 
             // lblCost
@@ -180,7 +210,7 @@ namespace WND
             this.txtCustomerPhone.Name = "txtCustomerPhone";
             this.txtCustomerPhone.ReadOnly = true;
             this.txtCustomerPhone.Size = new System.Drawing.Size(163, 24);
-            this.txtCustomerPhone.TabIndex = 25;
+            this.txtCustomerPhone.TabIndex = 7;
             this.txtCustomerPhone.Text = "09";
             // 
             // comboboxPaths
@@ -196,7 +226,7 @@ namespace WND
             this.comboboxPaths.Name = "comboboxPaths";
             this.comboboxPaths.Size = new System.Drawing.Size(165, 30);
             this.comboboxPaths.Sorted = true;
-            this.comboboxPaths.TabIndex = 26;
+            this.comboboxPaths.TabIndex = 9;
             this.comboboxPaths.TextChanged += new System.EventHandler(this.comboboxPaths_TextChanged);
             // 
             // comboboxDrivers
@@ -212,7 +242,7 @@ namespace WND
             this.comboboxDrivers.Name = "comboboxDrivers";
             this.comboboxDrivers.Size = new System.Drawing.Size(165, 30);
             this.comboboxDrivers.Sorted = true;
-            this.comboboxDrivers.TabIndex = 27;
+            this.comboboxDrivers.TabIndex = 10;
             this.comboboxDrivers.TextChanged += new System.EventHandler(this.comboboxDrivers_TextChanged);
             // 
             // checkboxIsPaid
@@ -221,7 +251,7 @@ namespace WND
             this.checkboxIsPaid.Location = new System.Drawing.Point(712, 688);
             this.checkboxIsPaid.Name = "checkboxIsPaid";
             this.checkboxIsPaid.Size = new System.Drawing.Size(14, 14);
-            this.checkboxIsPaid.TabIndex = 28;
+            this.checkboxIsPaid.TabIndex = 11;
             this.checkboxIsPaid.UseVisualStyleBackColor = true;
             // 
             // txtDestinationInDetail
@@ -234,7 +264,7 @@ namespace WND
             this.txtDestinationInDetail.Multiline = true;
             this.txtDestinationInDetail.Name = "txtDestinationInDetail";
             this.txtDestinationInDetail.Size = new System.Drawing.Size(175, 28);
-            this.txtDestinationInDetail.TabIndex = 29;
+            this.txtDestinationInDetail.TabIndex = 13;
             // 
             // txtOriginInDetail
             // 
@@ -246,7 +276,7 @@ namespace WND
             this.txtOriginInDetail.Multiline = true;
             this.txtOriginInDetail.Name = "txtOriginInDetail";
             this.txtOriginInDetail.Size = new System.Drawing.Size(171, 28);
-            this.txtOriginInDetail.TabIndex = 30;
+            this.txtOriginInDetail.TabIndex = 12;
             // 
             // lblCar
             // 
@@ -276,7 +306,7 @@ namespace WND
             this.txtDelay.Multiline = true;
             this.txtDelay.Name = "txtDelay";
             this.txtDelay.Size = new System.Drawing.Size(27, 28);
-            this.txtDelay.TabIndex = 33;
+            this.txtDelay.TabIndex = 8;
             // 
             // lblLicencePlate3
             // 
@@ -337,7 +367,7 @@ namespace WND
             this.btnSave.Location = new System.Drawing.Point(992, 673);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(272, 30);
-            this.btnSave.TabIndex = 55;
+            this.btnSave.TabIndex = 14;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -356,12 +386,13 @@ namespace WND
             this.btnCancel.Location = new System.Drawing.Point(839, 672);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(128, 30);
-            this.btnCancel.TabIndex = 56;
+            this.btnCancel.TabIndex = 15;
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmDashboard
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
@@ -420,17 +451,12 @@ namespace WND
             this.Controls.SetChildIndex(this.lblLicencePlate1, 0);
             this.Controls.SetChildIndex(this.btnSave, 0);
             this.Controls.SetChildIndex(this.btnCancel, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCustomersThumbnail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPathsThumbnail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServicesThumbnail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDriversThumbnail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSecretaryThumbnail)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnCustomersThumbnail)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnPathsThumbnail)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnServicesThumbnail)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnDriversThumbnail)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.btnSecretaryThumbnail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

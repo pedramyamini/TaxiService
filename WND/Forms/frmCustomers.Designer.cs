@@ -34,9 +34,9 @@ namespace WND.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomers));
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn3 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn4 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn11 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn12 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition6 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -58,17 +58,47 @@ namespace WND.Forms
             this.gridCustomers = new Utility.RadGridViewCustom();
             this.lblCustomerName = new System.Windows.Forms.Label();
             this.materialTheme1 = new Telerik.WinControls.Themes.MaterialTheme();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCustomers.MasterTemplate)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.gridCustomers.MasterTemplate)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnDrivers
+            // 
+            this.btnDrivers.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.BorderSize = 0;
+            this.btnDrivers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnDrivers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnServices
+            // 
+            this.btnServices.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.BorderSize = 0;
+            this.btnServices.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnServices.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnPaths
+            // 
+            this.btnPaths.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.BorderSize = 0;
+            this.btnPaths.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnPaths.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(190)))), ((int)(((byte)(100)))));
             // 
             // pictureBox2
             // 
@@ -96,7 +126,7 @@ namespace WND.Forms
             this.btnSave.Location = new System.Drawing.Point(390, 624);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(272, 30);
-            this.btnSave.TabIndex = 38;
+            this.btnSave.TabIndex = 12;
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -125,7 +155,7 @@ namespace WND.Forms
             this.btnSearch.Location = new System.Drawing.Point(611, 138);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(48, 33);
-            this.btnSearch.TabIndex = 40;
+            this.btnSearch.TabIndex = 7;
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -150,7 +180,7 @@ namespace WND.Forms
             this.txtCustomerFullName.Multiline = true;
             this.txtCustomerFullName.Name = "txtCustomerFullName";
             this.txtCustomerFullName.Size = new System.Drawing.Size(167, 28);
-            this.txtCustomerFullName.TabIndex = 42;
+            this.txtCustomerFullName.TabIndex = 9;
             // 
             // txtCustomerPhone
             // 
@@ -163,7 +193,7 @@ namespace WND.Forms
             this.txtCustomerPhone.Multiline = true;
             this.txtCustomerPhone.Name = "txtCustomerPhone";
             this.txtCustomerPhone.Size = new System.Drawing.Size(163, 28);
-            this.txtCustomerPhone.TabIndex = 43;
+            this.txtCustomerPhone.TabIndex = 10;
             // 
             // txtCustomerAddress
             // 
@@ -176,7 +206,7 @@ namespace WND.Forms
             this.txtCustomerAddress.Multiline = true;
             this.txtCustomerAddress.Name = "txtCustomerAddress";
             this.txtCustomerAddress.Size = new System.Drawing.Size(388, 28);
-            this.txtCustomerAddress.TabIndex = 44;
+            this.txtCustomerAddress.TabIndex = 11;
             // 
             // txtSearch
             // 
@@ -189,7 +219,7 @@ namespace WND.Forms
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(384, 33);
-            this.txtSearch.TabIndex = 45;
+            this.txtSearch.TabIndex = 6;
             // 
             // lblTotalCost
             // 
@@ -258,7 +288,7 @@ namespace WND.Forms
             this.btnCancel.Location = new System.Drawing.Point(252, 624);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(128, 30);
-            this.btnCancel.TabIndex = 52;
+            this.btnCancel.TabIndex = 13;
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -277,7 +307,7 @@ namespace WND.Forms
             this.btnPrevious.Location = new System.Drawing.Point(1250, 635);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(31, 30);
-            this.btnPrevious.TabIndex = 53;
+            this.btnPrevious.TabIndex = 14;
             this.btnPrevious.UseVisualStyleBackColor = false;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
@@ -296,7 +326,7 @@ namespace WND.Forms
             this.btnNext.Location = new System.Drawing.Point(1212, 635);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(31, 30);
-            this.btnNext.TabIndex = 54;
+            this.btnNext.TabIndex = 15;
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
@@ -324,23 +354,23 @@ namespace WND.Forms
             this.gridCustomers.MasterTemplate.AllowDragToGroup = false;
             this.gridCustomers.MasterTemplate.AllowEditRow = false;
             this.gridCustomers.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewCommandColumn3.AllowHide = false;
-            gridViewCommandColumn3.HeaderText = "ویرایش";
-            gridViewCommandColumn3.Image = global::WND.Properties.Resources.Icon_feather_edit;
-            gridViewCommandColumn3.MaxWidth = 60;
-            gridViewCommandColumn3.Name = "GridEditBtn";
-            gridViewCommandColumn3.Width = 60;
-            gridViewCommandColumn4.AllowHide = false;
-            gridViewCommandColumn4.HeaderText = "حذف";
-            gridViewCommandColumn4.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
-            gridViewCommandColumn4.MaxWidth = 50;
-            gridViewCommandColumn4.Name = "GridDeleteBtn";
+            gridViewCommandColumn11.AllowHide = false;
+            gridViewCommandColumn11.HeaderText = "ویرایش";
+            gridViewCommandColumn11.Image = global::WND.Properties.Resources.Icon_feather_edit;
+            gridViewCommandColumn11.MaxWidth = 60;
+            gridViewCommandColumn11.Name = "GridEditBtn";
+            gridViewCommandColumn11.Width = 60;
+            gridViewCommandColumn12.AllowHide = false;
+            gridViewCommandColumn12.HeaderText = "حذف";
+            gridViewCommandColumn12.Image = global::WND.Properties.Resources.Icon_material_delete_forever;
+            gridViewCommandColumn12.MaxWidth = 50;
+            gridViewCommandColumn12.Name = "GridDeleteBtn";
             this.gridCustomers.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewCommandColumn3,
-            gridViewCommandColumn4});
+            gridViewCommandColumn11,
+            gridViewCommandColumn12});
             this.gridCustomers.MasterTemplate.EnableGrouping = false;
             this.gridCustomers.MasterTemplate.SelectionMode = Telerik.WinControls.UI.GridViewSelectionMode.None;
-            this.gridCustomers.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.gridCustomers.MasterTemplate.ViewDefinition = tableViewDefinition6;
             this.gridCustomers.Name = "gridCustomers";
             this.gridCustomers.ReadOnly = true;
             // 
@@ -348,7 +378,7 @@ namespace WND.Forms
             // 
             this.gridCustomers.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.Auto;
             this.gridCustomers.Size = new System.Drawing.Size(488, 271);
-            this.gridCustomers.TabIndex = 62;
+            this.gridCustomers.TabIndex = 8;
             this.gridCustomers.ThemeName = "Material";
             // 
             // lblCustomerName
@@ -388,6 +418,7 @@ namespace WND.Forms
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.pictureBox2);
             this.Location = new System.Drawing.Point(0, 0);
+            this.MaximizeBox = false;
             this.Name = "frmCustomers";
             this.ShowIcon = false;
             this.Text = "مسافران";
@@ -416,16 +447,11 @@ namespace WND.Forms
             this.Controls.SetChildIndex(this.btnExit, 0);
             this.Controls.SetChildIndex(this.gridCustomers, 0);
             this.Controls.SetChildIndex(this.lblCustomerName, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.btnDashboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDrivers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnServices)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPaths)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCustomers.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.gridCustomers.MasterTemplate)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.gridCustomers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

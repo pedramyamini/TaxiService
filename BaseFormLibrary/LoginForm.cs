@@ -19,8 +19,8 @@ namespace BaseFormLibrary
         public PictureBox btnExit;
         public Button btnRestorePassword;
         public Label lbl1;
-        public PictureBox btnLogin;
-        public PictureBox btnReset;
+        public Button btnLogin;
+        public Button btnReset;
         public PictureBox checkboxTogglePasswordDisplay;
         public SizableTextBox txtPassword;
         public SizableTextBox txtUsername;
@@ -58,16 +58,14 @@ namespace BaseFormLibrary
             this.btnExit = new System.Windows.Forms.PictureBox();
             this.btnRestorePassword = new System.Windows.Forms.Button();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.PictureBox();
-            this.btnReset = new System.Windows.Forms.PictureBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.checkboxTogglePasswordDisplay = new System.Windows.Forms.PictureBox();
-            this.txtPassword = new SizableTextBox();
-            this.txtUsername = new SizableTextBox();
+            this.txtPassword = new Utility.SizableTextBox();
+            this.txtUsername = new Utility.SizableTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +88,7 @@ namespace BaseFormLibrary
             this.pictureBox1.Image = global::BaseFormLibrary.Properties.Resources.Login__2_;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1354, 710);
+            this.pictureBox1.Size = new System.Drawing.Size(1370, 749);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -115,11 +113,11 @@ namespace BaseFormLibrary
             this.btnRestorePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestorePassword.Font = new System.Drawing.Font("IRANYekan", 8.25F, System.Drawing.FontStyle.Bold);
             this.btnRestorePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(56)))));
-            this.btnRestorePassword.Location = new System.Drawing.Point(932, 626);
+            this.btnRestorePassword.Location = new System.Drawing.Point(942, 653);
             this.btnRestorePassword.Margin = new System.Windows.Forms.Padding(0);
             this.btnRestorePassword.Name = "btnRestorePassword";
             this.btnRestorePassword.Size = new System.Drawing.Size(109, 26);
-            this.btnRestorePassword.TabIndex = 13;
+            this.btnRestorePassword.TabIndex = 5;
             this.btnRestorePassword.Text = "بازیابی کلمه عبور";
             this.btnRestorePassword.UseVisualStyleBackColor = false;
             this.btnRestorePassword.Click += new System.EventHandler(this.btnRestorePassword_Click);
@@ -130,7 +128,7 @@ namespace BaseFormLibrary
             this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
             this.lbl1.Font = new System.Drawing.Font("IRANYekan", 8F);
             this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(57)))), ((int)(((byte)(56)))));
-            this.lbl1.Location = new System.Drawing.Point(909, 603);
+            this.lbl1.Location = new System.Drawing.Point(919, 630);
             this.lbl1.Name = "lbl1";
             this.lbl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl1.Size = new System.Drawing.Size(155, 19);
@@ -141,27 +139,33 @@ namespace BaseFormLibrary
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.btnLogin.BackgroundImage = global::BaseFormLibrary.Properties.Resources.Group_104;
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Image = global::BaseFormLibrary.Properties.Resources.Group_104;
-            this.btnLogin.Location = new System.Drawing.Point(908, 538);
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(248)))));
+            this.btnLogin.Location = new System.Drawing.Point(918, 565);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(89, 47);
-            this.btnLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnLogin.TabIndex = 12;
-            this.btnLogin.TabStop = false;
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.btnReset.BackgroundImage = global::BaseFormLibrary.Properties.Resources.Group_107;
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.Image = global::BaseFormLibrary.Properties.Resources.Group_107;
-            this.btnReset.Location = new System.Drawing.Point(1003, 541);
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(249)))), ((int)(((byte)(248)))));
+            this.btnReset.Location = new System.Drawing.Point(1013, 568);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(52, 43);
-            this.btnReset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnReset.TabIndex = 9;
-            this.btnReset.TabStop = false;
+            this.btnReset.TabIndex = 4;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // checkboxTogglePasswordDisplay
@@ -169,7 +173,7 @@ namespace BaseFormLibrary
             this.checkboxTogglePasswordDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(190)))), ((int)(((byte)(87)))));
             this.checkboxTogglePasswordDisplay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkboxTogglePasswordDisplay.Image = global::BaseFormLibrary.Properties.Resources.Group_108;
-            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(1060, 497);
+            this.checkboxTogglePasswordDisplay.Location = new System.Drawing.Point(1063, 521);
             this.checkboxTogglePasswordDisplay.Name = "checkboxTogglePasswordDisplay";
             this.checkboxTogglePasswordDisplay.Size = new System.Drawing.Size(27, 26);
             this.checkboxTogglePasswordDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,7 +186,7 @@ namespace BaseFormLibrary
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(190)))), ((int)(((byte)(87)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("IRANYekan", 14F);
-            this.txtPassword.Location = new System.Drawing.Point(938, 491);
+            this.txtPassword.Location = new System.Drawing.Point(941, 515);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
@@ -195,7 +199,7 @@ namespace BaseFormLibrary
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(190)))), ((int)(((byte)(87)))));
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("IRANYekan", 14F);
-            this.txtUsername.Location = new System.Drawing.Point(941, 429);
+            this.txtUsername.Location = new System.Drawing.Point(944, 453);
             this.txtUsername.MaxLength = 20;
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
@@ -204,7 +208,8 @@ namespace BaseFormLibrary
             // 
             // LoginForm
             // 
-            this.ClientSize = new System.Drawing.Size(1354, 710);
+            this.AcceptButton = this.btnLogin;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnRestorePassword);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lbl1);
@@ -215,6 +220,7 @@ namespace BaseFormLibrary
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnContactUs);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LoginForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
@@ -222,8 +228,6 @@ namespace BaseFormLibrary
             ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLogin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -53,13 +53,18 @@ namespace Utility
             return persianStr;
         }
 
-        public static void ChangeMenuItemImage(this PictureBox btn,Image image)
+        public static void ChangeMenuItemImage(this Button btn,Image image)
         {
-            btn.Image = image;
+            btn.FlatAppearance.BorderSize = 0;
+            btn.BackgroundImage = image;
             btn.Width = 180;
             btn.Height = 67;
+            btn.ForeColor = Color.FromArgb(255, 178, 55);
             btn.BackColor = Color.FromArgb(242, 242, 242);
-            btn.SizeMode = PictureBoxSizeMode.StretchImage;
+            btn.FlatAppearance.BorderColor = Color.FromArgb(242, 242, 242);
+            btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(242, 242, 242);
+            btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
+            btn.BackgroundImageLayout = ImageLayout.Stretch;
             
             btn.Refresh();
         }

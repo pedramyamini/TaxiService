@@ -1,4 +1,5 @@
 ﻿using BaseFormLibrary;
+using System.Windows.Forms;
 using Utility;
 
 namespace WND
@@ -33,8 +34,8 @@ namespace WND
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRegister = new System.Windows.Forms.PictureBox();
-            this.btnReset = new System.Windows.Forms.PictureBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.checkboxTogglePasswordDisplay = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.PictureBox();
@@ -46,8 +47,6 @@ namespace WND
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtSecurityAnswer = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRegister)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).BeginInit();
@@ -68,27 +67,31 @@ namespace WND
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.btnRegister.BackgroundImage = global::WND.Properties.Resources.Group_104;
+            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegister.Image = global::WND.Properties.Resources.Group_104;
+            this.btnRegister.FlatAppearance.BorderSize = 0;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Location = new System.Drawing.Point(920, 646);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(89, 34);
-            this.btnRegister.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRegister.TabIndex = 19;
-            this.btnRegister.TabStop = false;
+            this.btnRegister.TabIndex = 7;
+            this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.btnReset.BackgroundImage = global::WND.Properties.Resources.Group_105;
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.Image = global::WND.Properties.Resources.Group_105;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Location = new System.Drawing.Point(1015, 643);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(52, 40);
-            this.btnReset.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnReset.TabIndex = 18;
-            this.btnReset.TabStop = false;
+            this.btnReset.TabIndex = 8;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // txtUsername
@@ -214,6 +217,7 @@ namespace WND
             // 
             // Register
             // 
+            this.AcceptButton = this.btnRegister;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
@@ -243,8 +247,6 @@ namespace WND
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register_FormClosed);
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRegister)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkboxTogglePasswordDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnContactUs)).EndInit();
@@ -257,8 +259,8 @@ namespace WND
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.PictureBox btnRegister;
-        public System.Windows.Forms.PictureBox btnReset;
+        public System.Windows.Forms.Button btnRegister;
+        public System.Windows.Forms.Button btnReset;
         public System.Windows.Forms.TextBox txtUsername;
         public System.Windows.Forms.PictureBox checkboxTogglePasswordDisplay;
         public System.Windows.Forms.PictureBox btnExit;
